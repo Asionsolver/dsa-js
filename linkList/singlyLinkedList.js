@@ -36,6 +36,38 @@ class SinglyLinkedList {
         }
     }
 
+    // remove the last node
+    pop() {
+        if (!this.head) {
+            return null;
+        }
+
+        if (this.length === 1) {
+            let removedNode = this.head;
+            this.head = null;
+            this.tail = null;
+            this.length = 0;
+            return removedNode;
+        }
+
+        let currentNode = this.head;
+        let lastNode = this.tail;
+        let newLastNode;
+
+        while (currentNode) {
+            if (currentNode.next === lastNode) {
+                newLastNode = currentNode;
+                break;
+            }
+            currentNode = currentNode.next;
+
+        }
+
+        newLastNode.next = null;
+        this.tail = newLastNode;
+        this.length--;
+        return lastNode;
+    }
 }
 
 let list = new SinglyLinkedList();
@@ -53,4 +85,11 @@ list.push(12);
 list.push(14);
 list.push(15);
 console.log(list);
-console.log(list.tail.next)
+// console.log(list.tail.next)
+
+console.log(list.pop());
+console.log(list.pop());
+console.log(list.pop());
+console.log(list.pop());
+console.log(list.pop());
+console.log(list)
