@@ -68,6 +68,23 @@ class SinglyLinkedList {
         this.length--;
         return lastNode;
     }
+
+    // remove the first node
+    shift() {
+        if (!this.head) {
+            return null;
+        }
+
+        let removedNode = this.head;
+        this.head = this.head.next;
+        this.length--;
+
+        if (this.length === 0) {
+            this.tail = null;
+        }
+
+        return removedNode;
+    }
 }
 
 let list = new SinglyLinkedList();
@@ -75,21 +92,27 @@ let list = new SinglyLinkedList();
 
 // console.log(list.isEmpty())
 
+list.push(1);
+list.push(2);
+list.push(3);
+list.push(4);
 list.push(5);
 // console.log(list.isEmpty());
 // console.log(list);
 
 list.push(10);
-
 list.push(12);
 list.push(14);
 list.push(15);
 console.log(list);
 // console.log(list.tail.next)
 
-console.log(list.pop());
-console.log(list.pop());
-console.log(list.pop());
-console.log(list.pop());
-console.log(list.pop());
-console.log(list)
+// console.log(list.pop());
+// console.log(list.pop());
+// console.log(list.pop());
+// console.log(list.pop());
+// console.log(list.pop());
+// console.log(list)
+
+console.log(list.shift());
+console.log(list);
