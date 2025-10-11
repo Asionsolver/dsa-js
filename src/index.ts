@@ -2,7 +2,8 @@
 // ! array file start
 // import "./array/1D-array/basic";
 // import "./array/1D-array/basicTwo";
-import "./array/1D-array/arrayMethod";
+// import "./array/1D-array/arrayMethod";
+import "./array/1D-array/array-like-statics";
 // ! array file end
 /**********************************************/
 
