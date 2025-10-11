@@ -3,7 +3,9 @@
 // import "./array/1D-array/basic";
 // import "./array/1D-array/basicTwo";
 // import "./array/1D-array/arrayMethod";
-import "./array/1D-array/array-like-statics";
+// import "./array/1D-array/array-like-statics";
+// import "./array/1D-array/copyWithin";
+import "./array/1D-array/iteratorMethod";
 // ! array file end
 /**********************************************/
 
