@@ -14,4 +14,4 @@ const totalStairs = (n: number): number => {
   return result;
 };
 
-console.log(totalStairs(10));
+console.log(totalStairs(stair));

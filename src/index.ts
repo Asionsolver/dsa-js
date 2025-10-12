@@ -25,6 +25,10 @@
 // import "./recursion/countingWithExtraArg";
 // import "./recursion/counting";
 // import "./recursion/fibonacci";
-import "./recursion/climb-stair";
+// import "./recursion/climb-stair";
+// import "./recursion/loop";
+// import "./recursion/loopReverse";
+// import "./recursion/arrayMaxElement";
+import "./recursion/arrayMaxElementWithoutVariable";
 // ! recursion file end
 /**********************************************/

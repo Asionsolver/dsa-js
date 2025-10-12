@@ -1,6 +1,6 @@
 type countingFnOne = (count: number) => void;
 
-const countingOne: countingFnOne = (n: number) => {
+const countingOne: countingFnOne = (n) => {
   // base case
   if (n == 0) {
     return;

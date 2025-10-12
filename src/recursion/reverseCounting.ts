@@ -1,6 +1,6 @@
 type countingReverseFn = (count: number) => void;
 
-const countingReverse: countingReverseFn = (n: number) => {
+const countingReverse: countingReverseFn = (n) => {
   // base case
   if (n == 0) {
     return;

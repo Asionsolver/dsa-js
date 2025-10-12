@@ -1,7 +1,7 @@
 type countingFn = (start: number, end: number) => void;
 
 // counting with extra argument
-const counting: countingFn = (start: number, end: number) => {
+const counting: countingFn = (start, end) => {
   // base case
   if (start > end) {
     return;

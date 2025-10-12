@@ -1,6 +1,6 @@
 type fibonacciFn = (n: number) => number;
 
-const fibonacciSum = (n: number) => {
+const fibonacciSum: fibonacciFn = (n) => {
   if (n == 1 || n == 2) {
     return 1;
   }
