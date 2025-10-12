@@ -5,7 +5,14 @@
 // import "./array/1D-array/arrayMethod";
 // import "./array/1D-array/array-like-statics";
 // import "./array/1D-array/copyWithin";
-import "./array/1D-array/iteratorMethod";
+// import "./array/1D-array/iteratorMethod";
+// import "./array/1D-array/problem/evenAndOdd";
+// import "./array/1D-array/problem/removeDuplicates";
+// import "./array/1D-array/problem/removeFirstAndLast";
+// import "./array/1D-array/problem/mergeAndModify";
+// import "./array/1D-array/problem/firstElementSendLastIndex";
+import "./array/1D-array/problem/sortStringLength";
+// import "./array/1D-array/problem/stringLengthArray";
 // ! array file end
 /**********************************************/
 
