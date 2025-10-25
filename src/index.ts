@@ -13,7 +13,7 @@
 // import "./array/1D-array/problem/firstElementSendLastIndex";
 // import "./array/1D-array/problem/sortStringLength";
 // import "./array/1D-array/problem/stringLengthArray";
-import "./array/1D-array/problem/maxElement";
+// import "./array/1D-array/problem/maxElement";
 // ! array file end
 
 /**********************************************/
@@ -24,7 +24,7 @@ import "./array/1D-array/problem/maxElement";
 
 /**********************************************/
 
-// import "./char-array/char-array";
+// import "./string/string";
 
 /**********************************************/
 // ! recursion file start
@@ -38,5 +38,8 @@ import "./array/1D-array/problem/maxElement";
 // import "./recursion/loopReverse";
 // import "./recursion/arrayMaxElement";
 // import "./recursion/arrayMaxElementWithoutVariable";
+// import "./recursion/charFindString";
+import "./recursion/numberToDigit";
+
 // ! recursion file end
 /**********************************************/
