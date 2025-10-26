@@ -39,7 +39,16 @@
 // import "./recursion/arrayMaxElement";
 // import "./recursion/arrayMaxElementWithoutVariable";
 // import "./recursion/charFindString";
-import "./recursion/numberToDigit";
+// import "./recursion/numberToDigit";
+// import "./recursion/arraySortOrNot";
+// import "./recursion/binarySearch";
 
 // ! recursion file end
+/**********************************************/
+
+/**********************************************/
+// !linked list start
+
+import "./linkList/singlyLinkedList";
+// !linked list end
 /**********************************************/
