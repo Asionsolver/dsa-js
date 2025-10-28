@@ -2,12 +2,11 @@
 @Singly_Linked List Implementation
 
     * isEmpty
-    * push
-    * pop
-    * shift
-    * unshift
-    * show list
-
+    * push -> O(1)
+    * pop -> O(n);
+    * shift -> O(1)
+    * unshift -> O(1)
+    * show list -> O(n)
 */
 
 class ListNode {
@@ -90,6 +89,35 @@ class SinglyLinkedList {
     return null;
   }
 
+  deleteByValue(value: number) {
+    if (!this.head) {
+      console.log(
+        "There is no node available. So you can not perform POP operation."
+      );
+      return null;
+    }
+
+    let current = this.head;
+    if (current.value === value) {
+      this.head = current?.next;
+      this.length--;
+      return;
+    }
+
+    let previous = null;
+    while (current.next !== null) {
+      previous = current;
+      current = current.next;
+
+      if (current.value === value) {
+        //
+        previous.next = current.next;
+        this.length--;
+        return;
+      }
+    }
+  }
+
   shift() {
     if (!this.head) {
       console.log(
@@ -109,6 +137,51 @@ class SinglyLinkedList {
 
     this.length--;
     return removeFirstNode;
+  }
+
+  searchNode(value: number) {
+    if (!this.head) {
+      console.log(
+        "There is no node available. So you can not perform POP operation."
+      );
+      return null;
+    }
+
+    let current = this.head;
+    if (current.value === value) {
+      return true;
+    }
+
+    while (current.next !== null) {
+      current = current.next;
+
+      if (current.value === value) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  getValueByIndex(index: number) {
+    if (!this.head) {
+      console.log("There is no node available.");
+      return null;
+    }
+
+    if (index < 1 || index > this.length) {
+      console.log(`Please provide valid index between 1 and ${this.length}`);
+      return null;
+    }
+
+    let current: ListNode | null = this.head;
+    for (let i = 1; i < index; i++) {
+      if (current && current.next) {
+        current = current.next;
+      } else {
+        return null;
+      }
+    }
+    return current;
   }
 
   unshift(value: number) {
@@ -202,7 +275,20 @@ list.unshift(3);
 list.unshift(2);
 list.unshift(1);
 // console.log(list);
+console.log("Delete By Value  Method Perform");
+list.deleteByValue(1);
+list.deleteByValue(4);
 
 console.log("All Node Show:");
 // console.log(list.showAllNode());
 console.log(list.printAllNode());
+if (list.searchNode(8)) {
+  console.log("This Node exists in this list.");
+} else {
+  console.log("This Node not exists in this list.");
+}
+
+console.log(list.length);
+// console.log(list.getValueByIndex(10));
+// console.log(list.getValueByIndex(1));
+// console.log(list.getValueByIndex(8));

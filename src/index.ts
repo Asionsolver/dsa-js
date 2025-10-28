@@ -48,7 +48,7 @@
 
 /**********************************************/
 // !linked list start
-
 import "./linkList/singlyLinkedList";
+// import "./linkList/doublyLinkedList";
 // !linked list end
 /**********************************************/
