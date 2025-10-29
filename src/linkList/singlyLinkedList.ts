@@ -15,11 +15,8 @@
     ** update value by index -> O(n)
     ** insert value by index -> O(n)
     ** reverse -> O(n)
-    * find middle ->
-    * has cycle ->
-    * remove duplicates ->
-    * find Nth from end ->
-    * clear ->
+    ** find middle -> O(n)
+    ** clear -> O(1)
 */
 
 class ListNode {
@@ -346,6 +343,7 @@ class SinglyLinkedList {
     let current = this.head;
     let next = null;
     this.tail = this.head;
+    // console.log((this.tail = this.head));
     while (current) {
       next = current.next;
       current.next = prev;
@@ -354,6 +352,28 @@ class SinglyLinkedList {
     }
 
     this.head = prev;
+  }
+
+  // Find the middle node
+  findMiddle() {
+    if (!this.head) return null;
+
+    let slow = this.head;
+    let fast = this.head;
+
+    while (fast && fast.next) {
+      slow = slow.next!;
+      fast = fast.next.next!;
+    }
+
+    return slow;
+  }
+
+  //  Entire list clear
+  clear() {
+    this.head = null;
+    this.tail = null;
+    this.length = 0;
   }
 }
 let list = new SinglyLinkedList();
@@ -446,3 +466,4 @@ console.log("Linked List Length: ", list.length);
 console.log("Reverse Method Perform");
 list.reverse();
 console.log(list.printAllNode());
+console.log("Middle Element: ", list.findMiddle());
