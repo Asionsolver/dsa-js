@@ -206,12 +206,12 @@ class SinglyLinkedList {
       current = current.next;
 
       if (current.value === value) {
-        //
         previous.next = current.next;
         this.length--;
-        return;
+        return current;
       }
     }
+    return null;
   }
   // Return the node at a specific index
   getValueByIndex(index: number) {
