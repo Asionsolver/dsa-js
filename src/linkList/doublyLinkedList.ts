@@ -9,7 +9,7 @@
     ** toArray -> O(n)
     ** print All node -> O(n)
     ** delete by Value -> O(n)
-    * search Node -> O(n)
+    ** search Node -> O(n)
     * get value by index -> O(n)
     * remove value by index -> O(n)
     * update value by index -> O(n)
@@ -156,7 +156,7 @@ class DoublyLinkedList {
     return output;
   }
 
-  deleteByValue(value: number) {
+  searchNode(value: number) {
     if (!this.head) {
       console.log(
         "There is no node available. So you can not perform POP operation."
@@ -166,13 +166,49 @@ class DoublyLinkedList {
 
     let current = this.head;
     if (current.value === value) {
-      this.head = current?.next;
-      this.head!.prev = null;
-      // current.next = null;
+      return true;
+    }
+
+    while (current.next !== null) {
+      current = current.next;
+
+      if (current.value === value) {
+        return true;
+      }
+    }
+    return false;
+  }
+  deleteByValue(value: number) {
+    if (!this.head) {
+      console.log(
+        "There is no node available. So you can not perform POP operation."
+      );
+      return null;
+    }
+
+    let current = this.head;
+    let tail = this.tail;
+    console.log(tail);
+    // Case 1: Only one node
+    if (this.length === 1) {
+      this.head = null;
+      this.tail = null;
       this.length--;
       return current;
     }
 
+    if (current.value === value) {
+      this.head = current?.next;
+      this.length--;
+      return current;
+    }
+
+    if (tail?.value === value) {
+      tail.prev!.next = null;
+      this.tail = tail.prev;
+      this.length--;
+      return tail;
+    }
     while (current.next !== null) {
       current = current.next;
       if (current.value === value) {
@@ -231,13 +267,23 @@ doublyList.unshift(9);
 // console.log("DOUBLY LINKED LIST LENGTH: ", doublyList.length);
 
 // console.log("Print All Node  Method Perform");
-console.log(doublyList.printAllNode());
-
-console.log("delete By Value Method Perform");
-// console.log("DELETED VALUE: ", doublyList.deleteByValue(9));
-console.log("DOUBLY LINKED LIST LENGTH: ", doublyList.length);
-console.log("DELETED VALUE: ", doublyList.deleteByValue(20));
-
 console.log(doublyList.toArray());
+
+// console.log("Delete By Value Method Perform");
+// console.log("DELETED VALUE: ", doublyList.deleteByValue(9));
+// console.log("DOUBLY LINKED LIST LENGTH: ", doublyList.length);
+// console.log("DELETED VALUE: ", doublyList.deleteByValue(9));
+// console.log("DELETED VALUE: ", doublyList.deleteByValue(20));
+
+// console.log(doublyList.toArray());
 // console.log("HEAD: ", doublyList.head);
-console.log("DOUBLY LINKED LIST LENGTH: ", doublyList.length);
+// console.log("DOUBLY LINKED LIST LENGTH: ", doublyList.length);
+// console.log("HEAD: ", doublyList.head);
+// console.log("TAIL: ", doublyList.tail);
+
+console.log("Search Node Method Perform");
+if (doublyList.searchNode(18)) {
+  console.log("This Node exists in this list.");
+} else {
+  console.log("This Node not exists in this list.");
+}
