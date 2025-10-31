@@ -50,9 +50,17 @@
 // ! stack start
 
 // import "./stack/stackUsingArray";
-import "./stack/stackUsingObject";
+// import "./stack/stackUsingObject";
 
 // ! stack end
+/**********************************************/
+
+/**********************************************/
+// ! queue start
+
+import "./queue/queue";
+
+// ! queue end
 /**********************************************/
 
 /**********************************************/
