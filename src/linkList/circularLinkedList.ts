@@ -52,14 +52,21 @@ class CircularLinkedList {
   }
 
   toArray() {
+    if (this.isEmpty()) {
+      return [];
+    }
     let arr = [];
     let currentNode = this.head;
 
     while (currentNode) {
       arr.push(currentNode.value);
       currentNode = currentNode.next;
-    }
 
+      // Break when we return to the head
+      if (currentNode === this.head) {
+        break;
+      }
+    }
     return arr;
   }
 
@@ -99,11 +106,11 @@ let CircularList = new CircularLinkedList();
 // console.log(CircularList.tail?.next?.value);
 
 // console.log("UNSHIFT  Method Perform");
-[10, 9].forEach((value) => CircularList.unshift(value));
+[10, 9, 8].forEach((value) => CircularList.unshift(value));
 // console.log("CIRCULAR LINKED LIST HEAD", CircularList.head);
 // console.log("CIRCULAR LINKED LIST TAIL", CircularList.tail);
 // console.log("CIRCULAR LINKED LIST LENGTH: ", CircularList.length);
 // console.log(CircularList.tail?.next?.value);
 
 console.log("TO ARRAY  Method Perform");
-console.log("CIRCULAR LINKED LIST HEAD", CircularList.toArray());
+console.log("CIRCULAR LINKED LIST", CircularList.toArray());
