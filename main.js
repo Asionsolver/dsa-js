@@ -1,4 +1,4 @@
-class BinaryTreeNode {
+class BSTNode {
   value;
   leftNode;
   rightNode;
@@ -8,92 +8,55 @@ class BinaryTreeNode {
     this.rightNode = null;
   }
 }
-
-class BinarySearchTree {
+class BST {
   root;
   constructor() {
     this.root = null;
   }
 
   addChild(value) {
-    const newNode = new BinaryTreeNode(value);
+    const newNode = new BSTNode(value);
     if (this.root === null) {
       this.root = newNode;
       return newNode;
     }
 
     let currentNode = this.root;
-    let addedValue = false;
-
-    while (!addedValue && currentNode) {
-      if (currentNode.value === value) {
-        console.log("🚫 Duplicate value not allowed");
+    while (currentNode) {
+      if (value === currentNode.value) {
         return "🚫 Duplicate value not allowed";
-      }
-      // if current node value is greater than value
-      else if (currentNode.value > value) {
-        // going left side
+      } else if (value < currentNode.value) {
         if (currentNode.leftNode === null) {
           currentNode.leftNode = newNode;
-          addedValue = true;
+          return newNode;
         } else {
           currentNode = currentNode.leftNode;
         }
       } else {
         if (currentNode.rightNode === null) {
           currentNode.rightNode = newNode;
-          addedValue = true;
+          return newNode;
         } else {
           currentNode = currentNode.rightNode;
         }
       }
     }
   }
-
-  findChild(value) {
-    if (!this.root) {
-      return "No node Available.";
-    }
-
-    let currentNode = this.root;
-
-    while (currentNode) {
-      if (currentNode.value === value) {
-        return currentNode;
-      } else if (currentNode.value > value) {
-        currentNode = currentNode.leftNode;
-      } else {
-        currentNode = currentNode.rightNode;
-      }
-    }
-    return "Node not found";
-  }
 }
 
-let binarySearchTree = new BinarySearchTree();
-binarySearchTree.addChild(100);
-binarySearchTree.addChild(200);
-binarySearchTree.addChild(190);
-binarySearchTree.addChild(195);
-binarySearchTree.addChild(180);
-binarySearchTree.addChild(185);
-binarySearchTree.addChild(170);
-binarySearchTree.addChild(175);
-binarySearchTree.addChild(160);
-binarySearchTree.addChild(165);
-binarySearchTree.addChild(90);
-binarySearchTree.addChild(95);
-binarySearchTree.addChild(80);
-binarySearchTree.addChild(85);
-binarySearchTree.addChild(70);
-binarySearchTree.addChild(75);
-binarySearchTree.addChild(60);
-binarySearchTree.addChild(65);
-// console.log("FULL BINARY TREE PERFORM");
-// console.log(binarySearchTree);
+const bst = new BST();
+const values = [
+  50, 30, 70, 20, 40, 60, 80, 10, 25, 35, 45, 55, 65, 75, 85, 5, 15, 27, 42, 47,
+  3, 7, 14, 16, 24,
+];
+console.log(`Adding ${values.length} values to BST:`);
+values.forEach((value, index) => {
+  const result = bst.addChild(value);
+  if (result instanceof BSTNode) {
+    console.log(`${index + 1}. Added Value: ${value} ✅`);
+  } else {
+    console.log(`${index + 1}. ${result} (Value: ${value})`);
+  }
+});
 
-// console.log("FULL BINARY TREE PERFORM");
-console.log("Final Tree Structure:");
-console.log(binarySearchTree.findChild(60));
-// console.log(binarySearchTree);
-// console.log(JSON.stringify(binarySearchTree, null, 4));
+console.log(bst);
