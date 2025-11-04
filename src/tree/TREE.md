@@ -25,6 +25,52 @@
 ## AVL Tree
 
 - An AVL tree is a self-balancing binary search tree where the difference in heights between the left and right subtrees of any node is at most one.
+- Balance Factor = Height of Left Subtree - Height of Right Subtree
+- Balance Factor can be -1, 0, or +1 for all nodes in an AVL tree.
+
+### Height of a Tree
+
+- For any non-leaf node:
+  - Height = 1 + max(Height of Left Subtree, Height of Right Subtree)
+- For leaf nodes always have a height of 1
+  - Height = 1 + max(0, 0) = 1
+- Empty Subtree: No nodes at all, height = 0
+
+### AVL Tree Rotations
+
+- Right Rotation (LL Rotation)
+- Left Rotation (RR Rotation) (Example: A -> B -> C)
+  - Occurs when a node's balance factor is -2 and its right child has a balance factor of -1 or 0.
+  - Right Rotation is performed on the unbalanced node.
+  - Imbalance is caused by its right child's subtree.
+  - Right-Right case.
+    - Step 1: Make B the new root.
+    - Step 2: Make A the left child of B.
+    - Step 3: Update the heights.
+- Left-Right Rotation (LR Rotation)
+- Right-Left Rotation (RL Rotation)
+
+  - Occurs when a node's balance factor is +2 and its left child has a balance factor of +1 or 0.
+  <!--
+
+         40*    ← Delete this
+        /   \
+      20     60
+     /  \    / \
+    10  30  50  70
+
+       50    ← 40 replaced with 50
+      /   \
+    20     60
+   /  \    / \
+  10  30  50  70
+
+       50
+      /   \
+    20     60
+   /  \      \
+  10  30      70
+  -->
 
 ## Trie Tree
 

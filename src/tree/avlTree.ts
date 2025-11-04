@@ -1,9 +1,9 @@
 class AVLNode {
-  value;
-  leftNode;
-  rightNode;
-  height;
-  constructor(value) {
+  value: number;
+  leftNode: AVLNode | null;
+  rightNode: AVLNode | null;
+  height: number;
+  constructor(value: number) {
     this.value = value;
     this.leftNode = null;
     this.rightNode = null;
@@ -11,12 +11,12 @@ class AVLNode {
   }
 }
 class AVL {
-  root;
+  root: null | AVLNode;
   constructor() {
     this.root = null;
   }
 
-  treeHeight(node) {
+  treeHeight(node: AVLNode | null) {
     if (!node) {
       return 0;
     }
@@ -24,7 +24,7 @@ class AVL {
     return node.height;
   }
 
-  balanceFactor(node) {
+  balanceFactor(node: AVLNode) {
     const leftHeight = this.treeHeight(node.leftNode);
     const rightHeight = this.treeHeight(node.rightNode);
     const balanceFactor = leftHeight - rightHeight;
@@ -32,18 +32,18 @@ class AVL {
     return balanceFactor;
   }
 
-  add(value) {
+  add(value: number) {
     this.root = this.insert(this.root, value);
     console.log(this.root);
   }
-  updateHeight(node) {
+  updateHeight(node: AVLNode) {
     node.height =
       Math.max(
         this.treeHeight(node.leftNode),
         this.treeHeight(node.rightNode)
       ) + 1;
   }
-  insert(node, value) {
+  insert(node: AVLNode | null, value: number) {
     if (!node) {
       return new AVLNode(value);
     }
@@ -52,6 +52,7 @@ class AVL {
     } else if (value > node.value) {
       node.rightNode = this.insert(node.rightNode, value);
     } else {
+      console.log("Please Provide Unique Value");
       return node;
     }
 
@@ -59,27 +60,31 @@ class AVL {
 
     const balance = this.balanceFactor(node);
 
-    if (balance < -1 && value > node.rightNode.value) {
+    // left rotation
+    if (balance < -1 && value > node.rightNode!.value) {
       return this.rotateLeft(node);
     }
-    if (balance > 1 && value < node.leftNode.value) {
+    // right rotation
+    if (balance > 1 && value < node.leftNode!.value) {
       return this.rotateRight(node);
     }
 
-    if (balance > 1 && value < node.leftNode.value) {
-      node.leftNode = this.rotateLeft(node.leftNode);
+    // left-right rotation
+    if (balance > 1 && value < node.leftNode!.value) {
+      node.leftNode = this.rotateLeft(node.leftNode!);
       return this.rotateRight(node);
     }
-    if (balance < -1 && value < node.rightNode.value) {
-      node.rightNode = this.rotateRight(node.leftNode);
+    //right-left rotation
+    if (balance < -1 && value < node.rightNode!.value) {
+      node.rightNode = this.rotateRight(node.leftNode!);
       return this.rotateLeft(node);
     }
 
     return node;
   }
 
-  rotateLeft(node) {
-    const newRoot = node.rightNode;
+  rotateLeft(node: AVLNode) {
+    const newRoot = node.rightNode!;
 
     const temp = newRoot?.leftNode;
     if (newRoot) {
@@ -103,8 +108,8 @@ class AVL {
     return newRoot;
   }
 
-  rotateRight(node) {
-    const newRoot = node.leftNode;
+  rotateRight(node: AVLNode) {
+    const newRoot = node.leftNode!;
     const temp = newRoot?.rightNode;
 
     if (newRoot) {
@@ -127,12 +132,12 @@ class AVL {
     return newRoot;
   }
 
-  findChild(value) {
+  findChild(value: number) {
     if (!this.root) {
       return "No node Available.";
     }
 
-    let currentNode = this.root;
+    let currentNode: AVLNode | null = this.root;
 
     while (currentNode) {
       if (currentNode.value === value) {
@@ -146,19 +151,27 @@ class AVL {
 
     return "Node not found";
   }
+  inOrder(node = this.root, result: number[] = []) {
+    if (node) {
+      this.inOrder(node.leftNode, result);
+      result.push(node.value);
+      this.inOrder(node.rightNode, result);
+    }
 
+    return result;
+  }
   // Helper method to find node with minimum value
-  minValueNode(node) {
+  minValueNode(node: AVLNode) {
     let current = node;
     while (current.leftNode) {
       current = current.leftNode;
     }
     return current;
   }
-  delete(value) {
+  delete(value: number) {
     this.root = this.deleteNode(this.root, value);
   }
-  deleteNode(node, value) {
+  deleteNode(node: null | AVLNode, value: number) {
     //
     if (!node) {
       return node;
@@ -190,22 +203,22 @@ class AVL {
     const balance = this.balanceFactor(node);
 
     // left rotation
-    if (balance < -1 && value > node.rightNode.value) {
+    if (balance < -1 && value > node.rightNode!.value) {
       return this.rotateLeft(node);
     }
     // right rotation
-    if (balance > 1 && value < node.leftNode.value) {
+    if (balance > 1 && value < node.leftNode!.value) {
       return this.rotateRight(node);
     }
 
     // left-right rotation
-    if (balance > 1 && value < node.leftNode.value) {
-      node.leftNode = this.rotateLeft(node.leftNode);
+    if (balance > 1 && value < node.leftNode!.value) {
+      node.leftNode = this.rotateLeft(node.leftNode!);
       return this.rotateRight(node);
     }
     //right-left rotation
-    if (balance < -1 && value < node.rightNode.value) {
-      node.rightNode = this.rotateRight(node.rightNode);
+    if (balance < -1 && value < node.rightNode!.value) {
+      node.rightNode = this.rotateRight(node.rightNode!);
       return this.rotateLeft(node);
     }
 
@@ -216,12 +229,12 @@ class AVL {
 const avlTree = new AVL();
 
 avlTree.add(10);
+// avlTree.add(10);
 avlTree.add(20);
 avlTree.add(30);
 avlTree.add(40);
 avlTree.add(50);
-avlTree.add(60);
-avlTree.add(70);
+
 console.log("DELETING...");
-avlTree.delete(50);
-console.log("SEARCHING ", avlTree.findChild(10));
+avlTree.delete(10);
+console.log("SEARCHING ", avlTree.findChild(40));

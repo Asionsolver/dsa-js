@@ -86,12 +86,21 @@ class BST {
     }
     return result;
   }
+
+  getHeight(node: BSTNode | null = this.root): number {
+    if (node === null) return 0;
+
+    const leftHeight = this.getHeight(node.leftNode);
+    const rightHeight = this.getHeight(node.rightNode);
+
+    return Math.max(leftHeight, rightHeight) + 1;
+  }
 }
 
 const bst = new BST();
 const values = [
   50, 30, 70, 20, 40, 60, 80, 10, 25, 35, 45, 55, 65, 75, 85, 5, 15, 27, 42, 47,
-  3, 7, 14, 16, 24,
+  3, 7, 14, 16, 24, 1,
 ];
 console.log(`Adding ${values.length} values to BST:`);
 values.forEach((value, index) => {
@@ -107,5 +116,6 @@ values.forEach((value, index) => {
 // console.log("BINARY TREE FIND CHILD METHOD PERFORM");
 // console.log(bst.findChild(25));
 
-console.log("BINARY TREE TRAVERSAL LEVEL ORDER METHOD PERFORM");
+console.log("BINARY SEARCH TREE TRAVERSAL LEVEL ORDER METHOD PERFORM");
 console.log(bst.traversalLevelOrder());
+console.log("BINARY SEARCH TREE: ", bst.getHeight());
