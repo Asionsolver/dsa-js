@@ -76,7 +76,8 @@
 // ! tree start
 
 // import "./tree/binaryTree";
-import "./tree/avlTree";
+import "./tree/nAryTree";
+// import "./tree/avlTree";
 // import "./tree/binarySearchTree";
 
 // ! tree end

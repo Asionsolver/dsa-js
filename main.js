@@ -1,227 +1,64 @@
-class AVLNode {
+class NAryTreeNode {
   value;
-  leftNode;
-  rightNode;
-  height;
+  children;
   constructor(value) {
     this.value = value;
-    this.leftNode = null;
-    this.rightNode = null;
-    this.height = 1;
+    this.children = [];
   }
 }
-class AVL {
+
+class NAryTree {
   root;
   constructor() {
     this.root = null;
   }
 
-  treeHeight(node) {
+  findNode(node, value) {
     if (!node) {
-      return 0;
+      return null;
     }
 
-    return node.height;
-  }
-
-  balanceFactor(node) {
-    const leftHeight = this.treeHeight(node.leftNode);
-    const rightHeight = this.treeHeight(node.rightNode);
-    const balanceFactor = leftHeight - rightHeight;
-
-    return balanceFactor;
-  }
-
-  add(value) {
-    this.root = this.insert(this.root, value);
-    console.log(this.root);
-  }
-  updateHeight(node) {
-    node.height =
-      Math.max(
-        this.treeHeight(node.leftNode),
-        this.treeHeight(node.rightNode)
-      ) + 1;
-  }
-  insert(node, value) {
-    if (!node) {
-      return new AVLNode(value);
-    }
-    if (value < node.value) {
-      node.leftNode = this.insert(node.leftNode, value);
-    } else if (value > node.value) {
-      node.rightNode = this.insert(node.rightNode, value);
-    } else {
+    if (node.value === value) {
       return node;
     }
 
-    this.updateHeight(node);
-
-    const balance = this.balanceFactor(node);
-
-    if (balance < -1 && value > node.rightNode.value) {
-      return this.rotateLeft(node);
-    }
-    if (balance > 1 && value < node.leftNode.value) {
-      return this.rotateRight(node);
-    }
-
-    if (balance > 1 && value < node.leftNode.value) {
-      node.leftNode = this.rotateLeft(node.leftNode);
-      return this.rotateRight(node);
-    }
-    if (balance < -1 && value < node.rightNode.value) {
-      node.rightNode = this.rotateRight(node.leftNode);
-      return this.rotateLeft(node);
-    }
-
-    return node;
-  }
-
-  rotateLeft(node) {
-    const newRoot = node.rightNode;
-
-    const temp = newRoot?.leftNode;
-    if (newRoot) {
-      newRoot.leftNode = node;
-      node.rightNode = temp;
-      node.height =
-        1 +
-        Math.max(
-          this.treeHeight(node.leftNode),
-          this.treeHeight(node.rightNode)
-        );
-
-      newRoot.height =
-        1 +
-        Math.max(
-          this.treeHeight(newRoot.leftNode),
-          this.treeHeight(newRoot.rightNode)
-        );
-    }
-
-    return newRoot;
-  }
-
-  rotateRight(node) {
-    const newRoot = node.leftNode;
-    const temp = newRoot?.rightNode;
-
-    if (newRoot) {
-      newRoot.rightNode = node;
-      node.leftNode = temp;
-      node.height =
-        1 +
-        Math.max(
-          this.treeHeight(node.leftNode),
-          this.treeHeight(node.rightNode)
-        );
-      newRoot.height =
-        1 +
-        Math.max(
-          this.treeHeight(newRoot.leftNode),
-          this.treeHeight(newRoot.rightNode)
-        );
-    }
-
-    return newRoot;
-  }
-
-  findChild(value) {
-    if (!this.root) {
-      return "No node Available.";
-    }
-
-    let currentNode = this.root;
-
-    while (currentNode) {
-      if (currentNode.value === value) {
-        return currentNode;
-      } else if (currentNode.value > value) {
-        currentNode = currentNode.leftNode;
-      } else {
-        currentNode = currentNode.rightNode;
+    for (let child of node.children) {
+      const result = this.findNode(child, value);
+      if (result) {
+        return result;
       }
     }
 
-    return "Node not found";
+    return null;
   }
 
-  // Helper method to find node with minimum value
-  minValueNode(node) {
-    let current = node;
-    while (current.leftNode) {
-      current = current.leftNode;
-    }
-    return current;
-  }
-  delete(value) {
-    this.root = this.deleteNode(this.root, value);
-  }
-  deleteNode(node, value) {
+  insert(parentNodeValue, value) {
     //
-    if (!node) {
-      return node;
+    const newNode = new NAryTreeNode(value);
+    if (this.root === null) {
+      this.root = newNode;
+      return;
     }
 
-    if (value < node.value) {
-      node.leftNode = this.deleteNode(node.leftNode, value);
-    } else if (value > node.value) {
-      node.rightNode = this.deleteNode(node.rightNode, value);
-    } else {
-      // Node to be deleted found
-      if (!node.leftNode || !node.rightNode) {
-        // Node with one child or no child
-        const temp = node.leftNode ? node.leftNode : node.rightNode;
-        node = temp; // Replace with the child (or null if no child)
-      } else {
-        // Node with two children
-        const temp = this.minValueNode(node.rightNode); // In-order successor
-        node.value = temp.value; // Replace value with successor
-        node.rightNode = this.deleteNode(node.rightNode, temp.value); // Delete successor
-      }
-    }
+    const parent = this.findNode(this.root, parentNodeValue);
 
-    if (!node) {
-      return node;
+    if (!parent) {
+      console.log(`Could not find parent with value ${parentNodeValue}`);
+      return;
     }
-    this.updateHeight(node);
-
-    const balance = this.balanceFactor(node);
-
-    // left rotation
-    if (balance < -1 && value > node.rightNode.value) {
-      return this.rotateLeft(node);
-    }
-    // right rotation
-    if (balance > 1 && value < node.leftNode.value) {
-      return this.rotateRight(node);
-    }
-
-    // left-right rotation
-    if (balance > 1 && value < node.leftNode.value) {
-      node.leftNode = this.rotateLeft(node.leftNode);
-      return this.rotateRight(node);
-    }
-    //right-left rotation
-    if (balance < -1 && value < node.rightNode.value) {
-      node.rightNode = this.rotateRight(node.rightNode);
-      return this.rotateLeft(node);
-    }
-
-    return node;
+    parent.children.push(newNode);
+    console.log(this.root);
   }
 }
 
-const avlTree = new AVL();
-
-avlTree.add(10);
-avlTree.add(20);
-avlTree.add(30);
-avlTree.add(40);
-avlTree.add(50);
-avlTree.add(60);
-avlTree.add(70);
-console.log("DELETING...");
-avlTree.delete(50);
-console.log("SEARCHING ", avlTree.findChild(10));
+const nAryTree = new NAryTree();
+nAryTree.insert(null, 1);
+nAryTree.insert(1, 2);
+nAryTree.insert(1, 3);
+nAryTree.insert(1, 4);
+nAryTree.insert(2, 5);
+nAryTree.insert(2, 6);
+nAryTree.insert(4, 7);
+nAryTree.insert(4, 8);
+nAryTree.insert(4, 9);
+// console.log(nAryTree);

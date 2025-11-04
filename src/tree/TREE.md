@@ -52,25 +52,26 @@
 
   - Occurs when a node's balance factor is +2 and its left child has a balance factor of +1 or 0.
   <!--
-
+  
          40*    ← Delete this
         /   \
       20     60
      /  \    / \
     10  30  50  70
-
+  
        50    ← 40 replaced with 50
       /   \
     20     60
    /  \    / \
   10  30  50  70
-
+  
        50
       /   \
     20     60
    /  \      \
   10  30      70
-  -->
+
+-->
 
 ## Trie Tree
 
@@ -82,3 +83,31 @@
 - An N-ary tree is a tree data structure where each node can have at most N children.
 - Generalization of binary trees (where N=2).
 - Used in scenarios like file systems, organizational hierarchies, and game trees.
+
+### N-Ary Tree - Key Characteristics
+
+- Node Structure
+  - Each node contains data and links to its child nodes.
+  - The root node is the topmost node of the tree.
+- Child Nodes
+  - A code can have n children.
+- Parent and Siblings
+  - Each node (except the root) has one parent node.
+  - Nodes with the same parent are called siblings.
+- Levels
+  - The tree grows downward in levels. Root is at level 0, its children at level 1, and so on.
+- Height
+  - The height of the tree is the number of edges on the longest path from the root to a leaf node.
+- Leaf Nodes
+  - Nodes that do not have any children are called leaf nodes.
+- Fixed or Variable N
+  - N can be fixed (e.g., ternary tree with N=3) or variable (each node can have a different number of children).
+- Traversal
+  - N-ary trees can be traversed using methods like depth-first search (DFS) and breadth-first search (BFS).
+  - BFS
+    - Start at the root node(or the starting node).
+    - Visit all nodes at the current level before moving to the next level.
+  - DFS
+    - Start at the root node (or the starting node).
+    - Move to the first unvisited child node, continuing this process until reaching a leaf node.
+    - Backtrack to the most recent node with unvisited children and repeat the process until all nodes are visited.
