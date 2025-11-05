@@ -10,7 +10,7 @@ Input: nums = [-1,1,0,-3,3]
 Output: [0,0,9,0,0]
 */
 
-const numProduct = [1, 2, 3, 4];
+const numProduct = [-1, 1, 0, -3, 3];
 function productExceptSelf(nums: number[]) {
   const length = nums.length;
   let answer = new Array(length).fill(1);

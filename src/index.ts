@@ -14,7 +14,7 @@
 // import "./array/1D-array/problem/sortStringLength";
 // import "./array/1D-array/problem/stringLengthArray";
 // import "./array/1D-array/problem/maxElement";
-import "./array/1D-array/leetcode/productExceptSelf";
+// import "./array/1D-array/leetcode/productExceptSelf";
 // ! array file end
 
 /**********************************************/
@@ -26,6 +26,13 @@ import "./array/1D-array/leetcode/productExceptSelf";
 /**********************************************/
 
 // import "./string/string";
+
+/**********************************************/
+// ! two pointer start
+import "./twoPointer/leetcode/isSubsequence";
+
+// ! two pointer file end
+/**********************************************/
 
 /**********************************************/
 // ! recursion file start
@@ -43,6 +50,7 @@ import "./array/1D-array/leetcode/productExceptSelf";
 // import "./recursion/numberToDigit";
 // import "./recursion/arraySortOrNot";
 // import "./recursion/binarySearch";
+// import "./recursion/subsequencesString";
 
 // ! recursion file end
 /**********************************************/
