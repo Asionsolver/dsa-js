@@ -93,7 +93,8 @@
 // import "./hash-table/leetcode/twoSum";
 // import "./hash-table/leetcode/intersection";
 // import "./hash-table/leetcode/subarraySum";
-import "./hash-table/leetcode/consecutiveSequence";
+// import "./hash-table/leetcode/consecutiveSequence";
+import "./hash-table/leetcode/groupAnagrams";
 
 // ! hash table end
 /**********************************************/
