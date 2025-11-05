@@ -90,7 +90,8 @@
 // import "./hash-table/problem/frequency";
 // import "./hash-table/leetcode/sortPeople";
 // import "./hash-table/leetcode/twoSum";
-import "./hash-table/leetcode/intersection";
+// import "./hash-table/leetcode/intersection";
+import "./hash-table/leetcode/subarraySum";
 
 // ! hash table end
 /**********************************************/
