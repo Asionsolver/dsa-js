@@ -88,11 +88,12 @@
 
 // import "./hash-table/set";
 // import "./hash-table/problem/frequency";
-import "./hash-table/problem/longestSubArray";
+// import "./hash-table/problem/longestSubArray";
 // import "./hash-table/leetcode/sortPeople";
 // import "./hash-table/leetcode/twoSum";
 // import "./hash-table/leetcode/intersection";
 // import "./hash-table/leetcode/subarraySum";
+import "./hash-table/leetcode/consecutiveSequence";
 
 // ! hash table end
 /**********************************************/
