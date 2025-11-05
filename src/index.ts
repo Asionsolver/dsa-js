@@ -14,6 +14,7 @@
 // import "./array/1D-array/problem/sortStringLength";
 // import "./array/1D-array/problem/stringLengthArray";
 // import "./array/1D-array/problem/maxElement";
+import "./array/1D-array/leetcode/productExceptSelf";
 // ! array file end
 
 /**********************************************/
@@ -94,7 +95,7 @@
 // import "./hash-table/leetcode/sortPeople";
 // import "./hash-table/leetcode/twoSum";
 // import "./hash-table/leetcode/intersection";
-import "./hash-table/leetcode/intersectionTwo";
+// import "./hash-table/leetcode/intersectionTwo";
 // import "./hash-table/leetcode/subarraySum";
 // import "./hash-table/leetcode/consecutiveSequence";
 // import "./hash-table/leetcode/groupAnagrams";
