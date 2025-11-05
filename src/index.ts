@@ -76,7 +76,7 @@
 // ! tree start
 
 // import "./tree/binaryTree";
-import "./tree/nAryTree";
+// import "./tree/nAryTree";
 // import "./tree/avlTree";
 // import "./tree/binarySearchTree";
 
@@ -86,7 +86,11 @@ import "./tree/nAryTree";
 /**********************************************/
 // ! hash table start
 
-// import "./hash-table/keyValuePair";
+// import "./hash-table/set";
+// import "./hash-table/problem/frequency";
+// import "./hash-table/leetcode/sortPeople";
+// import "./hash-table/leetcode/twoSum";
+import "./hash-table/leetcode/intersection";
 
 // ! hash table end
 /**********************************************/
