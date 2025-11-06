@@ -18,7 +18,8 @@
 // import "./array/1D-array/leetcode/rotateArray";
 // import "./array/1D-array/leetcode/mergeSortedArray";
 // import "./array/1D-array/leetcode/removeDuplicate";
-import "./array/1D-array/leetcode/maxProfit";
+// import "./array/1D-array/leetcode/maxProfit";
+import "./array/1D-array/leetcode/maxSubArray";
 // ! array file end
 
 /**********************************************/
