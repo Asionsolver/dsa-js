@@ -15,6 +15,7 @@
 // import "./array/1D-array/problem/stringLengthArray";
 // import "./array/1D-array/problem/maxElement";
 // import "./array/1D-array/leetcode/productExceptSelf";
+import "./array/1D-array/leetcode/rotateArray";
 // ! array file end
 
 /**********************************************/
@@ -29,7 +30,7 @@
 
 /**********************************************/
 // ! two pointer start
-import "./twoPointer/leetcode/isSubsequence";
+// import "./twoPointer/leetcode/isSubsequence";
 
 // ! two pointer file end
 /**********************************************/
