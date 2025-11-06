@@ -15,7 +15,9 @@
 // import "./array/1D-array/problem/stringLengthArray";
 // import "./array/1D-array/problem/maxElement";
 // import "./array/1D-array/leetcode/productExceptSelf";
-import "./array/1D-array/leetcode/rotateArray";
+// import "./array/1D-array/leetcode/rotateArray";
+import "./array/1D-array/leetcode/mergeSortedArray";
+// import "./array/1D-array/leetcode/removeDuplicate";
 // ! array file end
 
 /**********************************************/
