@@ -20,7 +20,8 @@
 // import "./array/1D-array/leetcode/removeDuplicate";
 // import "./array/1D-array/leetcode/maxProfit";
 // import "./array/1D-array/leetcode/maxSubArray";
-import "./array/1D-array/leetcode/trappingRainWater";
+// import "./array/1D-array/leetcode/trappingRainWater";
+import "./array/1D-array/leetcode/applyOperation";
 // ! array file end
 
 /**********************************************/
