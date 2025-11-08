@@ -21,7 +21,9 @@
 // import "./array/1D-array/leetcode/maxProfit";
 // import "./array/1D-array/leetcode/maxSubArray";
 // import "./array/1D-array/leetcode/trappingRainWater";
-import "./array/1D-array/leetcode/applyOperation";
+// import "./array/1D-array/leetcode/applyOperation";
+// import "./array/1D-array/leetcode/distanceSum";
+// import "./array/1D-array/leetcode/findSubArray";
 // ! array file end
 
 /**********************************************/
@@ -102,7 +104,7 @@ import "./array/1D-array/leetcode/applyOperation";
 /**********************************************/
 // ! hash table start
 
-// import "./hash-table/set";
+import "./hash-table/set";
 
 // import "./hash-table/problem/frequency";
 // import "./hash-table/problem/longestSubArray";
@@ -115,6 +117,7 @@ import "./array/1D-array/leetcode/applyOperation";
 // import "./hash-table/leetcode/consecutiveSequence";
 // import "./hash-table/leetcode/groupAnagrams";
 // import "./hash-table/leetcode/topFrequentElement";
+// import "./hash-table/leetcode/findSubArray";
 
 // ! hash table end
 /**********************************************/

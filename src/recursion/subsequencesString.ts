@@ -6,7 +6,7 @@ const subsequenceString = function (
   output: string,
   index: number
 ) {
-  if (index > str.length) {
+  if (index >= str.length) {
     console.log(output);
     return;
   }
