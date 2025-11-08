@@ -15,7 +15,8 @@
 // import "./array/1D-array/problem/stringLengthArray";
 // import "./array/1D-array/problem/maxElement";
 // import "./array/1D-array/problem/findTwoEqualSubArray";
-import "./array/1D-array/problem/largestSumContiguousSubarray";
+// import "./array/1D-array/problem/largestSumContiguousSubarray";
+import "./array/1D-array/problem/maxDifTwoElement";
 
 // import "./array/1D-array/leetcode/productExceptSelf";
 // import "./array/1D-array/leetcode/rotateArray";
