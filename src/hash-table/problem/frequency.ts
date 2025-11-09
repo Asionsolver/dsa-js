@@ -12,4 +12,4 @@ for (const element of arrNumber) {
   }
 }
 
-console.log(freqMap);
+console.log(freqMap); // Map(6) { 10 => 2, 3 => 2, 5 => 3, 6 => 1, 1 => 1, 7 => 1 }

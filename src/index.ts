@@ -29,7 +29,8 @@
 // import "./array/1D-array/leetcode/distanceSum";
 // import "./array/1D-array/leetcode/findSubArray";
 // import "./array/1D-array/leetcode/minSumOfLengths";
-import "./array/1D-array/leetcode/maxGap";
+// import "./array/1D-array/leetcode/maxGap";
+import "./array/1D-array/leetcode/removeElementWithTarget";
 
 // ! array file end
 
