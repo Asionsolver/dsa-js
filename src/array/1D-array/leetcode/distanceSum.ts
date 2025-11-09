@@ -35,5 +35,32 @@ const distanceNums = [1, 3, 1, 1, 2];
 
 //   return arr;
 // };
-
-// console.log(distance(distanceNums));
+const distance = function (nums: number[]) {
+  const map = new Map(); // value → [list of indices]
+  const n = nums.length;
+  const ans = new Array(n).fill(0);
+  // Step 1: Group indices by value
+  for (let i = 0; i < n; i++) {
+    if (!map.has(nums[i])) map.set(nums[i], []);
+    map.get(nums[i]).push(i);
+  }
+  // Step 2: For each group, calculate distances
+  for (const [val, indices] of map.entries()) {
+    const m = indices.length;
+    if (m === 1) continue; // only one element → all 0
+    // prefix sum
+    const prefix = new Array(m).fill(0);
+    prefix[0] = indices[0];
+    for (let i = 1; i < m; i++) {
+      prefix[i] = prefix[i - 1] + indices[i];
+    }
+    for (let i = 0; i < m; i++) {
+      const idx = indices[i];
+      const leftSum = i > 0 ? i * idx - prefix[i - 1] : 0;
+      const rightSum = prefix[m - 1] - prefix[i] - (m - 1 - i) * idx;
+      ans[idx] = leftSum + rightSum;
+    }
+  }
+  return ans;
+};
+console.log(distance(distanceNums));
