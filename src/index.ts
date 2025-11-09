@@ -23,7 +23,7 @@
 // import "./array/1D-array/leetcode/mergeSortedArray";
 // import "./array/1D-array/leetcode/maxProfit";
 // import "./array/1D-array/leetcode/maxSubArray";
-import "./array/1D-array/leetcode/trappingRainWater";
+// import "./array/1D-array/leetcode/trappingRainWater";
 // import "./array/1D-array/leetcode/applyOperation";
 // import "./array/1D-array/leetcode/distanceSum";
 // import "./array/1D-array/leetcode/findSubArray";
@@ -113,7 +113,7 @@ import "./array/1D-array/leetcode/trappingRainWater";
 /**********************************************/
 // ! hash table start
 
-import "./hash-table/set";
+// import "./hash-table/set";
 
 // import "./hash-table/problem/frequency";
 // import "./hash-table/problem/longestSubArray";
@@ -127,6 +127,7 @@ import "./hash-table/set";
 // import "./hash-table/leetcode/groupAnagrams";
 // import "./hash-table/leetcode/topFrequentElement";
 // import "./hash-table/leetcode/findSubArray";
+import "./hash-table/leetcode/threeSum";
 
 // ! hash table end
 /**********************************************/
