@@ -9,7 +9,8 @@ Example 2:
 Input: height = [4,2,0,3,2,5]
 Output: 9
 */
-const height = [4, 2, 0, 3, 2, 5];
+// const height = [4, 2, 0, 3, 2, 5];
+const height = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1];
 // Two Pointer Approach (O(n), O(n) space
 // const trap = function (height: number[]) {
 //   let left = new Array(height.length);
@@ -65,5 +66,39 @@ const trap = function (height: number[]) {
 
   return totalWater;
 };
+
+// 2nd approach
+// const trap = function (height: number[]) {
+//   let leftMax = 0;
+//   let rightMax = 0;
+//   let maxHeight = height[0];
+//   let totalWater = 0;
+//   let maxHeightIndex = 0;
+//   for (let i = 0; i < height.length; i++) {
+//     if (height[i] > maxHeight) {
+//       maxHeight = height[i];
+//       maxHeightIndex = i;
+//     }
+//   }
+
+//   // left side
+//   for (let i = 0; i < maxHeightIndex; i++) {
+//     if (leftMax > height[i]) {
+//       totalWater += leftMax - height[i];
+//     } else {
+//       leftMax = height[i];
+//     }
+//   }
+
+//   // right side
+//   for (let i = height.length - 1; i > maxHeightIndex; i--) {
+//     if (rightMax > height[i]) {
+//       totalWater += rightMax - height[i];
+//     } else {
+//       rightMax = height[i];
+//     }
+//   }
+//   return totalWater;
+// };
 
 console.log(trap(height));

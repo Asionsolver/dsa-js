@@ -23,14 +23,14 @@
 // import "./array/1D-array/leetcode/mergeSortedArray";
 // import "./array/1D-array/leetcode/maxProfit";
 // import "./array/1D-array/leetcode/maxSubArray";
-// import "./array/1D-array/leetcode/trappingRainWater";
+import "./array/1D-array/leetcode/trappingRainWater";
 // import "./array/1D-array/leetcode/applyOperation";
 // import "./array/1D-array/leetcode/distanceSum";
 // import "./array/1D-array/leetcode/findSubArray";
 // import "./array/1D-array/leetcode/minSumOfLengths";
 // import "./array/1D-array/leetcode/maxGap";
 // import "./array/1D-array/leetcode/removeDuplicate";
-import "./array/1D-array/leetcode/removeDuplicatesTwo";
+// import "./array/1D-array/leetcode/removeDuplicatesTwo";
 // import "./array/1D-array/leetcode/removeElementWithTarget";
 
 // ! array file end
