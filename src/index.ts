@@ -69,6 +69,7 @@
 // import "./recursion/arraySortOrNot";
 // import "./recursion/binarySearch";
 // import "./recursion/subsequencesString";
+import "./recursion/minNumberToTargetSum";
 
 // ! recursion file end
 /**********************************************/
@@ -127,7 +128,7 @@
 // import "./hash-table/leetcode/groupAnagrams";
 // import "./hash-table/leetcode/topFrequentElement";
 // import "./hash-table/leetcode/findSubArray";
-import "./hash-table/leetcode/threeSum";
+// import "./hash-table/leetcode/threeSum";
 
 // ! hash table end
 /**********************************************/
