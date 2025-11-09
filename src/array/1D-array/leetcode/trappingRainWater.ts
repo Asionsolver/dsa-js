@@ -38,7 +38,9 @@ const height = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1];
 //   return ans;
 // };
 
+// best approach
 // Two Pointer Approach (O(n), O(1) space
+// 1st approach
 const trap = function (height: number[]) {
   let left = 0;
   let right = height.length - 1;
@@ -67,6 +69,8 @@ const trap = function (height: number[]) {
   return totalWater;
 };
 
+// better approach
+// Two Pointer Approach (O(n), O(1) space
 // 2nd approach
 // const trap = function (height: number[]) {
 //   let leftMax = 0;
