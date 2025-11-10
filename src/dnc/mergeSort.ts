@@ -61,9 +61,9 @@ const mergeSort = function (nums: number[], start: number, end: number) {
 };
 
 mergeSort(nonSortedArray, sIdx, eIdx);
-for (const element of nonSortedArray) {
-  console.log(element);
-}
+// for (const element of nonSortedArray) {
+//   console.log(element);
+// }
 
 // T.C --> O(n log n)
 // S.C --> O(n)
