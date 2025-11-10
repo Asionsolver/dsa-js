@@ -70,7 +70,8 @@
 // import "./recursion/binarySearch";
 // import "./recursion/subsequencesString";
 // import "./recursion/minNumberToTargetSum";
-import "./recursion/cutIntoSegment";
+// import "./recursion/cutIntoSegment";
+import "./recursion/maxNumberNotAdjacent";
 
 // ! recursion file end
 /**********************************************/
