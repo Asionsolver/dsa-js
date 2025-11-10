@@ -70,4 +70,4 @@ for (const e of element) {
 }
 
 // T.C-->  n2(worst case) n log n(average)
-// S.C-->
+// S.C--> O(log n)

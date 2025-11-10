@@ -139,7 +139,8 @@
 // ! DnC start
 
 // import "./dnc/mergeSort";
-import "./dnc/quickSort";
+// import "./dnc/quickSort";
+import "./dnc/backtracking";
 
 // ! DnC end
 /**********************************************/
