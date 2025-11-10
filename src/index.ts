@@ -71,7 +71,7 @@
 // import "./recursion/subsequencesString";
 // import "./recursion/minNumberToTargetSum";
 // import "./recursion/cutIntoSegment";
-import "./recursion/maxNumberNotAdjacent";
+// import "./recursion/maxNumberNotAdjacent";
 
 // ! recursion file end
 /**********************************************/
@@ -133,4 +133,12 @@ import "./recursion/maxNumberNotAdjacent";
 // import "./hash-table/leetcode/threeSum";
 
 // ! hash table end
+/**********************************************/
+
+/**********************************************/
+// ! DnC start
+
+import "./dnc/mergeSort";
+
+// ! DnC end
 /**********************************************/
