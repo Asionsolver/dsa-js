@@ -138,7 +138,8 @@
 /**********************************************/
 // ! DnC start
 
-import "./dnc/mergeSort";
+// import "./dnc/mergeSort";
+import "./dnc/quickSort";
 
 // ! DnC end
 /**********************************************/
