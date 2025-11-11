@@ -69,24 +69,28 @@ const solveMaze = function (
   if (isSafe(maze, row, col, mazeX + 1, mazeY, visited)) {
     visited[mazeX + 1][mazeY] = true;
     solveMaze(maze, row, col, mazeX + 1, mazeY, visited, path, output + "D");
+    // backtracking
     visited[mazeX + 1][mazeY] = false;
   }
   // Left --> mazeX, mazeY-1
   if (isSafe(maze, row, col, mazeX, mazeY - 1, visited)) {
     visited[mazeX][mazeY - 1] = true;
     solveMaze(maze, row, col, mazeX, mazeY - 1, visited, path, output + "L");
+    // backtracking
     visited[mazeX][mazeY - 1] = false;
   }
   // Right --> mazeX, mazeY+1
   if (isSafe(maze, row, col, mazeX, mazeY + 1, visited)) {
     visited[mazeX][mazeY + 1] = true;
     solveMaze(maze, row, col, mazeX, mazeY + 1, visited, path, output + "R");
+    // backtracking
     visited[mazeX][mazeY + 1] = false;
   }
   // Up --> mazeX-1, mazeY
   if (isSafe(maze, row, col, mazeX - 1, mazeY, visited)) {
     visited[mazeX - 1][mazeY] = true;
     solveMaze(maze, row, col, mazeX - 1, mazeY, visited, path, output + "U");
+    // backtracking
     visited[mazeX - 1][mazeY] = false;
   }
 };
