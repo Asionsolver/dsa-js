@@ -140,7 +140,8 @@
 
 // import "./dnc/mergeSort";
 // import "./dnc/quickSort";
-import "./dnc/backtracking";
+// import "./dnc/backtracking";
+import "./dnc/problem/ratInMaze";
 
 // ! DnC end
 /**********************************************/
