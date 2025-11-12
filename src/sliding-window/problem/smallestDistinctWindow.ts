@@ -30,7 +30,9 @@ const findSmallestSubString = function (s: string) {
       count[s.charCodeAt(second)]++;
       second++;
     }
+
     length = Math.min(length, second - first);
+
     // prevent the difference value from becoming 1
     while (difference !== 1) {
       length = Math.min(length, second - first);
