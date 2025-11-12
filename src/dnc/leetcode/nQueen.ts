@@ -14,6 +14,7 @@ function solveNQueens(n: number): string[][] {
   const board = Array.from({ length: n }, () => Array(n).fill(0));
   const res: string[][] = [];
 
+  // This function T.C: O(n)
   const isSafe = function (
     board: number[][],
     row: number,

@@ -142,10 +142,22 @@
 // import "./dnc/quickSort";
 // import "./dnc/backtracking";
 
-import "./dnc/leetcode/nQueen";
+// import "./dnc/leetcode/nQueen";
 
 // import "./dnc/problem/ratInMaze";
 // import "./dnc/problem/nQueen";
 
 // ! DnC end
+/**********************************************/
+
+/**********************************************/
+// ! String start
+// import "./string/string";
+// ! String End
+/**********************************************/
+
+/**********************************************/
+// ! Sliding Window start
+import "./sliding-window/leetcode/longestSubstring";
+// ! Sliding Window End
 /**********************************************/
