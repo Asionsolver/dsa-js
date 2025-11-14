@@ -99,6 +99,8 @@
 // import "./linkList/doublyLinkedList";
 // import "./linkList/circularLinkedList";
 // import "./linkList/stackWithLinkedList";
+
+// import "./linkList/leetcode/reorderList";
 // !linked list end
 /**********************************************/
 
@@ -143,6 +145,7 @@
 // import "./dnc/backtracking";
 
 // import "./dnc/leetcode/nQueen";
+import "./dnc/leetcode/generateParentheses";
 
 // import "./dnc/problem/ratInMaze";
 // import "./dnc/problem/nQueen";
@@ -161,7 +164,7 @@
 // import "./sliding-window/leetcode/longestSubstring";
 // import "./sliding-window/leetcode/minWindowSubstring";
 // import "./sliding-window/leetcode/smallestSubsequence";
-import "./sliding-window/leetcode/characterReplacement";
+// import "./sliding-window/leetcode/characterReplacement";
 
 // import "./sliding-window/problem/smallestDistinctWindow";
 // ! Sliding Window End
