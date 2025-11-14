@@ -1,7 +1,5 @@
 // 22. Generate Parentheses
 
-import { Output } from "tsc-alias/dist/utils";
-
 /**
 Example 1:
 

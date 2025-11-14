@@ -145,7 +145,8 @@
 // import "./dnc/backtracking";
 
 // import "./dnc/leetcode/nQueen";
-import "./dnc/leetcode/generateParentheses";
+// import "./dnc/leetcode/generateParentheses";
+import "./dnc/leetcode/letterCombination";
 
 // import "./dnc/problem/ratInMaze";
 // import "./dnc/problem/nQueen";
