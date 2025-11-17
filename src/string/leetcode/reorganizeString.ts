@@ -59,3 +59,5 @@ const reorganizeString = function (s: string) {
 };
 
 console.log(reorganizeString(s));
+
+// T.C-O(n)
