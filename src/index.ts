@@ -159,7 +159,8 @@
 // import "./string/string";
 // import "./string/leetcode/largeNumber";
 // import "./string/leetcode/reorganizeString";
-import "./string/leetcode/longestPalindrome";
+// import "./string/leetcode/longestPalindrome";
+import "./string/leetcode/stringToInt";
 
 // ! String End
 /**********************************************/
