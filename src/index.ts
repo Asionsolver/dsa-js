@@ -178,6 +178,8 @@
 
 /**********************************************/
 // ! Regex Window start
-import "./regex/regex";
+// import "./regex/regex";
+// import "./regex/emailExtraction";
+import "./regex/gmailExtraction";
 // ! Regex Window start
 /**********************************************/
