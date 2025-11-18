@@ -160,7 +160,7 @@
 // import "./string/leetcode/largeNumber";
 // import "./string/leetcode/reorganizeString";
 // import "./string/leetcode/longestPalindrome";
-import "./string/leetcode/stringToInt";
+// import "./string/leetcode/stringToInt";
 
 // ! String End
 /**********************************************/
@@ -174,4 +174,10 @@ import "./string/leetcode/stringToInt";
 
 // import "./sliding-window/problem/smallestDistinctWindow";
 // ! Sliding Window End
+/**********************************************/
+
+/**********************************************/
+// ! Regex Window start
+import "./regex/regex";
+// ! Regex Window start
 /**********************************************/
