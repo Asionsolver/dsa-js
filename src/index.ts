@@ -180,6 +180,7 @@
 // ! Regex Window start
 // import "./regex/regex";
 // import "./regex/emailExtraction";
-import "./regex/gmailExtraction";
+// import "./regex/gmailExtraction";
+import "./regex/variousPatter";
 // ! Regex Window start
 /**********************************************/
