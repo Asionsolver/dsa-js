@@ -32,6 +32,7 @@
 // import "./array/1D-array/leetcode/removeDuplicate";
 // import "./array/1D-array/leetcode/removeDuplicatesTwo";
 // import "./array/1D-array/leetcode/removeElementWithTarget";
+import "./array/1D-array/leetcode/fourSum";
 
 // ! array file end
 
@@ -133,7 +134,7 @@
 // import "./hash-table/leetcode/topFrequentElement";
 // import "./hash-table/leetcode/findSubArray";
 // import "./hash-table/leetcode/threeSum";
-import "./hash-table/leetcode/minSumOfLengths";
+// import "./hash-table/leetcode/minSumOfLengths";
 
 // ! hash table end
 /**********************************************/
