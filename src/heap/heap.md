@@ -9,14 +9,29 @@
 ## Types of Heaps
 
 - Max-Heap
+
   - Parent node is greater than or equal to its children
   - Root node contains the maximum value
   - Example: [50, 30, 20, 15, 10, 8, 16]
 
-```
+  ```
         50
        /  \
      30    20
     / \    / \
    15 10  8  16
-```
+  ```
+
+- Min-Heap
+
+  - Parent node is less than or equal to its children
+  - Root node contains the minimum value
+  - Example: [8, 10, 15, 30, 50, 20, 16]
+
+  ```
+      8
+     / \
+   10   15
+  / \   / \
+  30 50 20 16
+  ```
