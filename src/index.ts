@@ -34,7 +34,7 @@
 // import "./array/1D-array/leetcode/removeElementWithTarget";
 // import "./array/1D-array/leetcode/threeSumMulti";
 // import "./array/1D-array/leetcode/fourSum";
-import "./array/1D-array/leetcode/minimumSum";
+// import "./array/1D-array/leetcode/minimumSum";
 
 // ! array file end
 
@@ -150,6 +150,7 @@ import "./array/1D-array/leetcode/minimumSum";
 // import "./dnc/leetcode/generateParentheses";
 // import "./dnc/leetcode/letterCombination";
 // import "./dnc/leetcode/subSetSums";
+import "./dnc/leetcode/combination";
 
 // import "./dnc/problem/ratInMaze";
 // import "./dnc/problem/nQueen";
