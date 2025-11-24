@@ -34,6 +34,7 @@
 // import "./array/1D-array/leetcode/removeElementWithTarget";
 // import "./array/1D-array/leetcode/threeSumMulti";
 // import "./array/1D-array/leetcode/fourSum";
+import "./array/1D-array/leetcode/minimumSum";
 
 // ! array file end
 
@@ -200,7 +201,7 @@
 // ! Graph file start
 
 // import "./graph/graphList";
-import "./graph/graphMatrix";
+// import "./graph/graphMatrix";
 
 // ! Graph file end
 /**********************************************/
