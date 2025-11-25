@@ -35,6 +35,7 @@
 // import "./array/1D-array/leetcode/threeSumMulti";
 // import "./array/1D-array/leetcode/fourSum";
 // import "./array/1D-array/leetcode/minimumSum";
+import "./array/1D-array/leetcode/numTilePossibilities";
 
 // ! array file end
 
@@ -203,7 +204,7 @@
 
 // import "./graph/graphList";
 // import "./graph/graphMatrix";
-import "./graph/bfs";
+// import "./graph/bfs";
 
 // ! Graph file end
 /**********************************************/
