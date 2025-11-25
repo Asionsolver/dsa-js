@@ -136,6 +136,7 @@
 // import "./hash-table/leetcode/findSubArray";
 // import "./hash-table/leetcode/threeSum";
 // import "./hash-table/leetcode/minSumOfLengths";
+import "./hash-table/leetcode/wordBreak";
 
 // ! hash table end
 /**********************************************/
@@ -152,7 +153,7 @@
 // import "./dnc/leetcode/letterCombination";
 // import "./dnc/leetcode/subSetSums";
 // import "./dnc/leetcode/combination";
-import "./dnc/leetcode/permuteUnique";
+// import "./dnc/leetcode/permuteUnique";
 
 // import "./dnc/problem/ratInMaze";
 // import "./dnc/problem/nQueen";
