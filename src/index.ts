@@ -22,6 +22,7 @@
 // import "./array/1D-array/problem/prefixSum";
 // import "./array/1D-array/problem/rangeSum";
 // import "./array/1D-array/problem/equilibriumPoint";
+import "./array/1D-array/problem/equalSum";
 
 // import "./array/1D-array/leetcode/productExceptSelf";
 // import "./array/1D-array/leetcode/rotateArray";
@@ -41,7 +42,7 @@
 // import "./array/1D-array/leetcode/fourSum";
 // import "./array/1D-array/leetcode/minimumSum";
 // import "./array/1D-array/leetcode/numTilePossibilities";
-import "./array/1D-array/leetcode/pivotIndex";
+// import "./array/1D-array/leetcode/pivotIndex";
 
 // 2D Array
 // import "./array/2d-array/basic";
