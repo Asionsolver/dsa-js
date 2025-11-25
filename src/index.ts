@@ -24,7 +24,10 @@
 
 // 2D Array
 // import "./array/2d-array/basic";
-import "./array/2d-array/problem/2DPrefixSum";
+// import "./array/2d-array/problem/2DPrefixSum";
+// import "./array/2d-array/problem/buildPrefix";
+
+import "./array/2d-array/leetcode/2DrangeSum";
 
 // import "./array/1D-array/leetcode/productExceptSelf";
 // import "./array/1D-array/leetcode/rotateArray";
