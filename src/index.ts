@@ -1,5 +1,7 @@
 /**********************************************/
 // ! array file start
+
+// 1D Array
 // import "./array/1D-array/basic";
 // import "./array/1D-array/basicTwo";
 // import "./array/1D-array/arrayMethod";
@@ -18,7 +20,11 @@
 // import "./array/1D-array/problem/largestSumContiguousSubarray";
 // import "./array/1D-array/problem/maxDifTwoElement";
 // import "./array/1D-array/problem/prefixSum";
-import "./array/1D-array/problem/rangeSum";
+// import "./array/1D-array/problem/rangeSum";
+
+// 2D Array
+// import "./array/2d-array/basic";
+import "./array/2d-array/problem/2DPrefixSum";
 
 // import "./array/1D-array/leetcode/productExceptSelf";
 // import "./array/1D-array/leetcode/rotateArray";
