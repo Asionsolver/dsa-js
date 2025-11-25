@@ -35,7 +35,7 @@
 // import "./array/1D-array/leetcode/threeSumMulti";
 // import "./array/1D-array/leetcode/fourSum";
 // import "./array/1D-array/leetcode/minimumSum";
-import "./array/1D-array/leetcode/numTilePossibilities";
+// import "./array/1D-array/leetcode/numTilePossibilities";
 
 // ! array file end
 
@@ -152,6 +152,7 @@ import "./array/1D-array/leetcode/numTilePossibilities";
 // import "./dnc/leetcode/letterCombination";
 // import "./dnc/leetcode/subSetSums";
 // import "./dnc/leetcode/combination";
+import "./dnc/leetcode/permuteUnique";
 
 // import "./dnc/problem/ratInMaze";
 // import "./dnc/problem/nQueen";
