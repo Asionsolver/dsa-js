@@ -17,6 +17,7 @@
 // import "./array/1D-array/problem/findTwoEqualSubArray";
 // import "./array/1D-array/problem/largestSumContiguousSubarray";
 // import "./array/1D-array/problem/maxDifTwoElement";
+import "./array/1D-array/problem/prefixSum";
 
 // import "./array/1D-array/leetcode/productExceptSelf";
 // import "./array/1D-array/leetcode/rotateArray";
@@ -207,7 +208,7 @@
 // import "./graph/graphList";
 // import "./graph/graphMatrix";
 // import "./graph/bfs";
-import "./graph/dfs";
+// import "./graph/dfs";
 
 // ! Graph file end
 /**********************************************/

@@ -13,10 +13,10 @@
 // const k = 5;
 // Output: 0
 
-const subArr = [94, -33, -13, 40, -82, 94, -33, -13, 40, -82];
-const k = 52;
-// Output: 3
-// Explanation: No subarray with sum = 5 is present in arr[].
+// const subArr = [94, -33, -13, 40, -82, 94, -33, -13, 40, -82];
+// const k = 52;
+const subArr = [10, 5, 2, 7, 1, -10];
+const k = 15;
 
 // optimize way
 const longestSubArray = function (nums: number[], k: number) {
