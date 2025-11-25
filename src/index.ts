@@ -22,7 +22,8 @@
 // import "./array/1D-array/problem/prefixSum";
 // import "./array/1D-array/problem/rangeSum";
 // import "./array/1D-array/problem/equilibriumPoint";
-import "./array/1D-array/problem/equalSum";
+// import "./array/1D-array/problem/equalSum";
+import "./array/1D-array/problem/prefixAvg";
 
 // import "./array/1D-array/leetcode/productExceptSelf";
 // import "./array/1D-array/leetcode/rotateArray";
