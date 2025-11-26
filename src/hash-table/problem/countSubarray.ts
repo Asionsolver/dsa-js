@@ -1,5 +1,5 @@
 // Subarrays with equal 1s and 0s
-
+ghfd;
 /**
 Given an array arr[] containing 0s and 1s. Count the number of subarrays having equal number of 0s and 1s.
 
