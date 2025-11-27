@@ -1,4 +1,4 @@
-// 206. Reverse Linked List
+// Reverse Linked List using recursion
 
 /**
 Example 1:
@@ -54,17 +54,14 @@ listNode1.insertAtEnd(3);
 listNode1.insertAtEnd(4);
 listNode1.insertAtEnd(5);
 
-const reverseList = function (head: Node | null) {
-  let prev = null;
-  let current = head;
-  let next = null;
-  while (current) {
-    next = current.next;
-    current.next = prev;
-    prev = current;
-    current = next;
+const reverseListRecursive = function (head: Node | null): Node | null {
+  if (head === null || head.next === null) {
+    return head;
   }
-  return prev; // prev becomes new head
+  let last: Node | null = reverseListRecursive(head.next);
+  head.next.next = head;
+  head.next = null;
+  return last;
 };
 
-console.log(reverseList(listNode1.head));
+console.log(reverseListRecursive(listNode1.head));
