@@ -67,6 +67,46 @@ list.push(5);
 
 // console.log(list);
 console.log(list.length());
-const reorderList = function (head: Node | null) {};
+const reorderList = function (head: Node | null) {
+  if (head === null || head.next === null || head.next.next === null) {
+    return;
+  }
+  // find middle
+  let slow: Node | null = head;
+  let fast: Node | null = head;
+  while (fast !== null && fast.next !== null) {
+    slow = slow!.next;
+    fast = fast.next.next;
+  }
+  let secondeHead = slow?.next;
+
+  // detach two linked list
+  slow!.next = null;
+
+  // reverse the second linked list
+
+  let prev = null;
+  let current = secondeHead;
+  let next = null;
+  while (current) {
+    next = current.next;
+    current.next = prev;
+    prev = current;
+    current = next;
+  }
+
+  // insert nodes of second list into the first list
+  let tempOne = head;
+  let tempTwo = prev;
+
+  while (tempTwo !== null) {
+    let markerOne = tempOne.next!;
+    let markerTwo = tempTwo.next;
+    tempOne.next = tempTwo;
+    tempTwo.next = markerOne;
+    tempOne = markerOne;
+    tempTwo = markerTwo;
+  }
+};
 
 console.log(reorderList(list.head));
