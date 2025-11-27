@@ -119,6 +119,7 @@
 // import "./linkList/stackWithLinkedList";
 
 // import "./linkList/leetcode/reorderList";
+import "./linkList/leetcode/mergeTwoSortedList";
 // !linked list end
 /**********************************************/
 
@@ -154,7 +155,7 @@
 // import "./hash-table/leetcode/threeSum";
 // import "./hash-table/leetcode/minSumOfLengths";
 // import "./hash-table/leetcode/wordBreak";
-import "./hash-table/leetcode/sumDivisibleByK";
+// import "./hash-table/leetcode/sumDivisibleByK";
 
 // ! hash table end
 /**********************************************/
