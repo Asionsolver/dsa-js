@@ -118,9 +118,10 @@
 // import "./linkList/circularLinkedList";
 // import "./linkList/stackWithLinkedList";
 
+import "./linkList/leetcode/findMiddle";
 // import "./linkList/leetcode/reorderList";
 // import "./linkList/leetcode/mergeTwoSortedList";
-import "./linkList/leetcode/reverseList";
+// import "./linkList/leetcode/reverseList";
 // !linked list end
 /**********************************************/
 

@@ -1,16 +1,19 @@
-// 143. Reorder List
+// 876. Middle of the Linked List
 
 /**
  Example 1:
 
 
-Input: head = [1,2,3,4]
-Output: [1,4,2,3]
+Input: head = [1,2,3,4,5]
+Output: [3,4,5]
+Explanation: The middle node of the list is node 3.
 Example 2:
 
 
-Input: head = [1,2,3,4,5]
-Output: [1,5,2,4,3]
+Input: head = [1,2,3,4,5,6]
+Output: [4,5,6]
+Explanation: Since the list has two middle nodes with values 3 and 4, we return the second one.
+
 
  */
 
@@ -43,20 +46,6 @@ class SinglyLinkedList {
       current.next = newNode;
     }
   }
-
-  length() {
-    if (this.head === null) {
-      return 0;
-    }
-    let counter = 0;
-    let current = this.head;
-    while (current.next !== null) {
-      current = current.next;
-      counter++;
-    }
-
-    return counter;
-  }
 }
 let list = new SinglyLinkedList();
 list.push(1);
@@ -66,7 +55,16 @@ list.push(4);
 list.push(5);
 
 // console.log(list);
-console.log(list.length());
-const reorderList = function (head: Node | null) {};
 
-console.log(reorderList(list.head));
+const middleNode = function (head: Node | null) {
+  let slow = head;
+  let fast = head;
+  while (fast !== null && fast.next !== null) {
+    slow = slow!.next;
+    fast = fast.next.next;
+  }
+
+  return slow;
+};
+
+console.log(middleNode(list.head));
