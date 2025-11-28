@@ -118,7 +118,7 @@
 // import "./linkList/circularLinkedList";
 // import "./linkList/stackWithLinkedList";
 
-import "./linkList/problem/reverseListRecursive";
+// import "./linkList/problem/reverseListRecursive";
 
 // import "./linkList/leetcode/findMiddle";
 // import "./linkList/leetcode/reorderList";
@@ -145,7 +145,7 @@ import "./linkList/problem/reverseListRecursive";
 
 // import "./hash-table/problem/frequency";
 // import "./hash-table/problem/longestSubArray";
-// import "./hash-table/problem/countSubarray";
+import "./hash-table/problem/countSubarray";
 
 // import "./hash-table/leetcode/sortPeople";
 // import "./hash-table/leetcode/twoSum";

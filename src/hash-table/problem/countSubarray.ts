@@ -1,3 +1,4 @@
+import { it } from "node:test";
 // Subarrays with equal 1s and 0s
 
 /**
@@ -15,3 +16,30 @@ Constraints:
 1 ≤ arr.size() ≤ 105
 0 ≤ arr[i] ≤ 1
 */
+
+const arr = [1, 1, 1, 1, 0];
+const countSubArrWithEqualZeroAndOne = function (arr: number[]) {
+  const sumMap = new Map<number, number>();
+
+  let sum = 0;
+  let ans = 0;
+  sumMap.set(0, 1);
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === 0) {
+      sum -= 1;
+    } else {
+      sum += 1;
+    }
+
+    if (sumMap.has(sum)) {
+      ans += sumMap.get(sum)!;
+      sumMap.set(sum, sumMap.get(sum)! + 1);
+    } else {
+      sumMap.set(sum, 1);
+    }
+  }
+  return ans;
+};
+
+console.log(countSubArrWithEqualZeroAndOne(arr));
