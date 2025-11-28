@@ -145,7 +145,7 @@
 
 // import "./hash-table/problem/frequency";
 // import "./hash-table/problem/longestSubArray";
-import "./hash-table/problem/countSubarray";
+// import "./hash-table/problem/countSubarray";
 
 // import "./hash-table/leetcode/sortPeople";
 // import "./hash-table/leetcode/twoSum";
@@ -160,6 +160,7 @@ import "./hash-table/problem/countSubarray";
 // import "./hash-table/leetcode/minSumOfLengths";
 // import "./hash-table/leetcode/wordBreak";
 // import "./hash-table/leetcode/sumDivisibleByK";
+import "./hash-table/leetcode/contiguousArray";
 
 // ! hash table end
 /**********************************************/
