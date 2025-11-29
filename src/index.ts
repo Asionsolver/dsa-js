@@ -52,6 +52,7 @@
 // import "./array/2d-array/problem/buildPrefix";
 
 // import "./array/2d-array/leetcode/2DrangeSum";
+// import "./array/2d-array/leetcode/maxSumSubMatrix";
 
 // ! array file end
 
@@ -127,7 +128,7 @@
 // import "./linkList/leetcode/mergeTwoSortedList";
 // import "./linkList/leetcode/reverseList";
 // import "./linkList/leetcode/mergeKSortedList";
-import "./linkList/leetcode/removeNthFromEnd";
+// import "./linkList/leetcode/removeNthFromEnd";
 // !linked list end
 /**********************************************/
 
@@ -238,4 +239,10 @@ import "./linkList/leetcode/removeNthFromEnd";
 // import "./graph/dfs";
 
 // ! Graph file end
+/**********************************************/
+
+/**********************************************/
+// ! Bit Manipulation start
+import "./bit-manipulation/leetcode/sumTwoInt";
+// ! Bit Manipulation end
 /**********************************************/
