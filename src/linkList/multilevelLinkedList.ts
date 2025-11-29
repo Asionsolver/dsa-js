@@ -20,7 +20,6 @@ function connect(a: ListNode, b: ListNode) {
 
 function createMultiLevelList(): ListNode {
   // Level 1
-
   const n1 = new ListNode(1);
   const n2 = new ListNode(2);
   const n3 = new ListNode(3);
