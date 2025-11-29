@@ -1,3 +1,4 @@
+import { it } from "node:test";
 // 19. Remove Nth Node From End of List
 
 /**
@@ -56,43 +57,68 @@ listNode1.insertAtEnd(5);
 
 const n = 2;
 
-const getLengthOfLinkedList = function (head: Node | null) {
-  let length = 0;
-  while (head !== null) {
-    length++;
-    head = head.next;
-  }
+// const getLengthOfLinkedList = function (head: Node | null) {
+//   let length = 0;
+//   let current = head;
 
-  return length;
-};
+//   while (current !== null) {
+//     length++;
+//     current = current.next;
+//   }
+
+//   return length;
+// };
 
 // two pass solution
-const removeNthFromEnd = function (head: Node | null, n: number): Node | null {
-  let length = getLengthOfLinkedList(head);
+// const removeNthFromEnd = function (head: Node | null, n: number): Node | null {
+//   let length = getLengthOfLinkedList(head);
 
-  if (n === length) {
-    let temp = head?.next!;
-    head = null;
-    return temp;
-  }
+//   if (n === length) {
+//     let temp = head?.next!;
+//     head = null;
+//     return temp;
+//   }
 
-  let travel_front = length - n;
-  let temp: Node | null = head;
-  let prev: Node | null = null;
+//   let travel_front = length - n;
+//   let temp: Node | null = head;
+//   let prev: Node | null = null;
 
-  while (travel_front--) {
-    prev = temp;
-    temp = temp?.next!;
-  }
+//   while (travel_front--) {
+//     prev = temp;
+//     temp = temp?.next!;
+//   }
 
-  if (prev !== null) {
-    prev.next = temp?.next ?? null;
-  }
+//   if (prev !== null) {
+//     prev.next = temp?.next ?? null;
+//   }
 
-  temp = null;
-  return head;
-};
+//   temp = null;
+//   return head;
+// };
 
 // one pass solution
+const removeNthFromEnd = function (head: Node | null, n: number): Node | null {
+  if (head === null) return null;
 
+  let temp = head;
+  for (let i = 1; i <= n; i++) {
+    temp = temp.next!;
+  }
+
+  if (temp === null) {
+    let result = head?.next!;
+    head = null;
+    return result;
+  }
+
+  let prev = head;
+
+  while (temp !== null && temp.next !== null) {
+    prev = prev?.next!;
+    temp = temp?.next;
+  }
+
+  prev.next = prev?.next?.next!;
+  return head;
+};
 console.log(removeNthFromEnd(listNode1.head, n));
