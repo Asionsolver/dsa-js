@@ -13,6 +13,18 @@ Output: 5
  */
 const a = 1,
   b = 2;
-const getSum = function (a: number, b: number) {};
+const getSum = function (a: number, b: number) {
+  let carry = a & b;
+  let sumWithoutCarry = a ^ b;
+  let actualCarry = carry << 1;
+
+  while (carry !== 0) {
+    carry = sumWithoutCarry & actualCarry;
+    sumWithoutCarry = sumWithoutCarry ^ actualCarry;
+    actualCarry = carry << 1;
+  }
+
+  return sumWithoutCarry;
+};
 
 console.log(getSum(a, b));
