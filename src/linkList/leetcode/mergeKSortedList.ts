@@ -67,6 +67,48 @@ let listNode3 = new LinkedList();
 listNode3.insertAtEnd(2);
 listNode3.insertAtEnd(6);
 
-const mergeKLists = function (lists: Array<Node | null>) {};
+const mergeTwoLists = function (list1: Node | null, list2: Node | null) {
+  if (list1 === null || list2 === null) {
+    return list1 === null ? list2 : list1;
+  }
+
+  if (list1.val <= list2.val) {
+    list1.next = mergeTwoLists(list1.next, list2);
+    return list1;
+  } else {
+    list2.next = mergeTwoLists(list1, list2.next);
+    return list2;
+  }
+};
+
+const partitionAndMerge = function (
+  start: number,
+  end: number,
+  lists: Array<Node | null>
+): Node | null {
+  if (start > end) {
+    return null;
+  }
+
+  if (start === end) {
+    return lists[start];
+  }
+
+  let mid = Math.floor(start + (end - start) / 2);
+
+  let l1 = partitionAndMerge(start, mid, lists);
+  let l2 = partitionAndMerge(mid + 1, end, lists);
+
+  return mergeTwoLists(l1, l2);
+};
+
+const mergeKLists = function (lists: Array<Node | null>) {
+  let size = lists.length;
+  if (size === 0) {
+    return null;
+  }
+
+  return partitionAndMerge(0, size - 1, lists);
+};
 
 console.log(mergeKLists([listNode1.head, listNode2.head, listNode3.head]));
