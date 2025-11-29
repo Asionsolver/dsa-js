@@ -126,7 +126,8 @@
 // import "./linkList/leetcode/reorderList";
 // import "./linkList/leetcode/mergeTwoSortedList";
 // import "./linkList/leetcode/reverseList";
-import "./linkList/leetcode/mergeKSortedList";
+// import "./linkList/leetcode/mergeKSortedList";
+import "./linkList/leetcode/removeNthFromEnd";
 // !linked list end
 /**********************************************/
 
