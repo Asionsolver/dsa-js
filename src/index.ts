@@ -243,6 +243,7 @@
 
 /**********************************************/
 // ! Bit Manipulation start
-import "./bit-manipulation/leetcode/sumTwoInt";
+// import "./bit-manipulation/leetcode/sumTwoInt";
+import "./bit-manipulation/leetcode/missingNumber";
 // ! Bit Manipulation end
 /**********************************************/
