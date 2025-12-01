@@ -1,4 +1,3 @@
-import { it } from "node:test";
 // 349. Intersection of two array
 
 const nums1 = [1, 2, 2, 1];

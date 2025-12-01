@@ -69,3 +69,7 @@ TypeScript 5.0 থেকে introduce হয়েছে এই setting:
 
 তাই variable clash gone ✔️
 আরও predictable scope ✔️
+
+// 164. Maximum Gap
+// Maximum sum Rectangle
+// 76. Minimum Window Substring

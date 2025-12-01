@@ -129,7 +129,7 @@
 // import "./linkList/leetcode/reverseList";
 // import "./linkList/leetcode/mergeKSortedList";
 // import "./linkList/leetcode/removeNthFromEnd";
-import "./linkList/leetcode/linkedListCycle";
+// import "./linkList/leetcode/linkedListCycle";
 // !linked list end
 /**********************************************/
 
@@ -140,6 +140,8 @@ import "./linkList/leetcode/linkedListCycle";
 // import "./tree/nAryTree";
 // import "./tree/avlTree";
 // import "./tree/binarySearchTree";
+
+import "./tree/leetcode/invertBinaryTree";
 
 // ! tree end
 /**********************************************/
