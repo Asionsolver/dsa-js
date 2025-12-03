@@ -142,7 +142,8 @@
 // import "./tree/binarySearchTree";
 
 // import "./tree/leetcode/invertBinaryTree";
-import "./tree/leetcode/maxDepth";
+// import "./tree/leetcode/maxDepth";
+import "./tree/leetcode/sameTree";
 
 // ! tree end
 /**********************************************/
