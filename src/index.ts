@@ -143,7 +143,7 @@
 
 // import "./tree/leetcode/invertBinaryTree";
 // import "./tree/leetcode/maxDepth";
-import "./tree/leetcode/sameTree";
+// import "./tree/leetcode/sameTree";
 
 // ! tree end
 /**********************************************/
@@ -250,5 +250,6 @@ import "./tree/leetcode/sameTree";
 // ! Bit Manipulation start
 // import "./bit-manipulation/leetcode/sumTwoInt";
 // import "./bit-manipulation/leetcode/missingNumber";
+import "./bit-manipulation/leetcode/numberOneBit";
 // ! Bit Manipulation end
 /**********************************************/
