@@ -45,6 +45,7 @@
 // import "./array/1D-array/leetcode/minimumSum";
 // import "./array/1D-array/leetcode/numTilePossibilities";
 // import "./array/1D-array/leetcode/pivotIndex";
+import "./array/1D-array/leetcode/countPartition";
 
 // 2D Array
 // import "./array/2d-array/basic";
@@ -250,6 +251,6 @@
 // ! Bit Manipulation start
 // import "./bit-manipulation/leetcode/sumTwoInt";
 // import "./bit-manipulation/leetcode/missingNumber";
-import "./bit-manipulation/leetcode/numberOneBit";
+// import "./bit-manipulation/leetcode/numberOneBit";
 // ! Bit Manipulation end
 /**********************************************/
