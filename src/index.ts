@@ -45,7 +45,8 @@
 // import "./array/1D-array/leetcode/minimumSum";
 // import "./array/1D-array/leetcode/numTilePossibilities";
 // import "./array/1D-array/leetcode/pivotIndex";
-import "./array/1D-array/leetcode/countPartition";
+// import "./array/1D-array/leetcode/countPartition";
+import "./array/1D-array/leetcode/countPartitionTwo";
 
 // 2D Array
 // import "./array/2d-array/basic";
