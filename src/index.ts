@@ -255,3 +255,10 @@ import "./array/1D-array/leetcode/countPartitionTwo";
 // import "./bit-manipulation/leetcode/numberOneBit";
 // ! Bit Manipulation end
 /**********************************************/
+
+/**********************************************/
+// ! Math start
+import "./math/leetcode/countOddNumber";
+
+// ! Math end
+/**********************************************/
