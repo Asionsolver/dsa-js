@@ -46,7 +46,7 @@
 // import "./array/1D-array/leetcode/numTilePossibilities";
 // import "./array/1D-array/leetcode/pivotIndex";
 // import "./array/1D-array/leetcode/countPartition";
-import "./array/1D-array/leetcode/countPartitionTwo";
+// import "./array/1D-array/leetcode/countPartitionTwo";
 
 // 2D Array
 // import "./array/2d-array/basic";
@@ -258,7 +258,8 @@ import "./array/1D-array/leetcode/countPartitionTwo";
 
 /**********************************************/
 // ! Math start
-import "./math/leetcode/countOddNumber";
+// import "./math/leetcode/countOddNumber";
+import "./math/leetcode/countTriple";
 
 // ! Math end
 /**********************************************/
