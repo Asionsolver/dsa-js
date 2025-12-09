@@ -173,6 +173,7 @@
 // import "./hash-table/leetcode/wordBreak";
 // import "./hash-table/leetcode/sumDivisibleByK";
 // import "./hash-table/leetcode/contiguousArray";
+import "./hash-table/leetcode/countSpecialTriplets";
 
 // ! hash table end
 /**********************************************/
@@ -259,7 +260,7 @@
 /**********************************************/
 // ! Math start
 // import "./math/leetcode/countOddNumber";
-import "./math/leetcode/countTriple";
+// import "./math/leetcode/countTriple";
 
 // ! Math end
 /**********************************************/
