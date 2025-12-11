@@ -104,6 +104,9 @@
 // import "./stack/stackUsingArray";
 // import "./stack/stackUsingObject";
 
+import "./stack/leetcode/countCollisions";
+
+
 // ! stack end
 /**********************************************/
 
@@ -175,7 +178,7 @@
 // import "./hash-table/leetcode/sumDivisibleByK";
 // import "./hash-table/leetcode/contiguousArray";
 // import "./hash-table/leetcode/countSpecialTriplets";
-import "./hash-table/leetcode/countTrapezoids";
+// import "./hash-table/leetcode/countTrapezoids";
 // import "./hash-table/leetcode/countCoveredBuildings";
 
 // ! hash table end

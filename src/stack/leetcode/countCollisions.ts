@@ -1,0 +1,48 @@
+// 2211. Count Collisions on a Road
+
+/**
+Example 1:
+
+Input: directions = "RLRSLL"
+Output: 5
+Explanation:
+The collisions that will happen on the road are:
+- Cars 0 and 1 will collide with each other. Since they are moving in opposite directions, the number of collisions becomes 0 + 2 = 2.
+- Cars 2 and 3 will collide with each other. Since car 3 is stationary, the number of collisions becomes 2 + 1 = 3.
+- Cars 3 and 4 will collide with each other. Since car 3 is stationary, the number of collisions becomes 3 + 1 = 4.
+- Cars 4 and 5 will collide with each other. After car 4 collides with car 3, it will stay at the point of collision and get hit by car 5. The number of collisions becomes 4 + 1 = 5.
+Thus, the total number of collisions that will happen on the road is 5. 
+Example 2:
+
+Input: directions = "LLRR"
+Output: 0
+Explanation:
+No cars will collide with each other. Thus, the total number of collisions that will happen on the road is 0.
+*/
+const directions = "RLRSLL";
+
+const countCollisions = function (directions: string) {
+  let n = directions.length;
+  let left = 0;
+  let right = n - 1;
+
+  while (left < n && directions[left] === "L") {
+    left++;
+  }
+
+  while (right >= 0 && directions[right] === "R") {
+    right--;
+  }
+
+  let count = 0;
+
+  for (let i = left; i <= right; i++) {
+    if (directions[i] !== "S") {
+      count++;
+    }
+  }
+
+  return count;
+};
+
+console.log(countCollisions(directions));
