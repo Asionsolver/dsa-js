@@ -175,7 +175,8 @@
 // import "./hash-table/leetcode/sumDivisibleByK";
 // import "./hash-table/leetcode/contiguousArray";
 // import "./hash-table/leetcode/countSpecialTriplets";
-import "./hash-table/leetcode/countCoveredBuildings";
+import "./hash-table/leetcode/countTrapezoids";
+// import "./hash-table/leetcode/countCoveredBuildings";
 
 // ! hash table end
 /**********************************************/
