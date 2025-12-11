@@ -47,7 +47,7 @@
 // import "./array/1D-array/leetcode/pivotIndex";
 // import "./array/1D-array/leetcode/countPartition";
 // import "./array/1D-array/leetcode/countPartitionTwo";
-import "./array/1D-array/leetcode/countPermutations";
+// import "./array/1D-array/leetcode/countPermutations";
 
 // 2D Array
 // import "./array/2d-array/basic";
@@ -175,6 +175,7 @@ import "./array/1D-array/leetcode/countPermutations";
 // import "./hash-table/leetcode/sumDivisibleByK";
 // import "./hash-table/leetcode/contiguousArray";
 // import "./hash-table/leetcode/countSpecialTriplets";
+import "./hash-table/leetcode/countCoveredBuildings";
 
 // ! hash table end
 /**********************************************/
