@@ -104,8 +104,7 @@
 // import "./stack/stackUsingArray";
 // import "./stack/stackUsingObject";
 
-import "./stack/leetcode/countCollisions";
-
+// import "./stack/leetcode/countCollisions";
 
 // ! stack end
 /**********************************************/
@@ -267,6 +266,7 @@ import "./stack/leetcode/countCollisions";
 // ! Math start
 // import "./math/leetcode/countOddNumber";
 // import "./math/leetcode/countTriple";
+import "./math/leetcode/countMentions";
 
 // ! Math end
 /**********************************************/
