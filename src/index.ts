@@ -178,7 +178,7 @@
 // import "./hash-table/leetcode/contiguousArray";
 // import "./hash-table/leetcode/countSpecialTriplets";
 // import "./hash-table/leetcode/countTrapezoids";
-import "./hash-table/leetcode/countTrapezoidsTwo";
+// import "./hash-table/leetcode/countTrapezoidsTwo";
 // import "./hash-table/leetcode/countCoveredBuildings";
 // import "./hash-table/leetcode/validateCoupons";
 
@@ -269,6 +269,7 @@ import "./hash-table/leetcode/countTrapezoidsTwo";
 // import "./math/leetcode/countOddNumber";
 // import "./math/leetcode/countTriple";
 // import "./math/leetcode/countMentions";
+import "./math/leetcode/minOperations";
 
 // ! Math end
 /**********************************************/
