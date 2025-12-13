@@ -178,8 +178,9 @@
 // import "./hash-table/leetcode/contiguousArray";
 // import "./hash-table/leetcode/countSpecialTriplets";
 // import "./hash-table/leetcode/countTrapezoids";
+import "./hash-table/leetcode/countTrapezoidsTwo";
 // import "./hash-table/leetcode/countCoveredBuildings";
-import "./hash-table/leetcode/validateCoupons";
+// import "./hash-table/leetcode/validateCoupons";
 
 // ! hash table end
 /**********************************************/
