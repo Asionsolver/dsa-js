@@ -179,6 +179,7 @@
 // import "./hash-table/leetcode/countSpecialTriplets";
 // import "./hash-table/leetcode/countTrapezoids";
 // import "./hash-table/leetcode/countCoveredBuildings";
+import "./hash-table/leetcode/validateCoupons";
 
 // ! hash table end
 /**********************************************/
@@ -266,7 +267,7 @@
 // ! Math start
 // import "./math/leetcode/countOddNumber";
 // import "./math/leetcode/countTriple";
-import "./math/leetcode/countMentions";
+// import "./math/leetcode/countMentions";
 
 // ! Math end
 /**********************************************/
