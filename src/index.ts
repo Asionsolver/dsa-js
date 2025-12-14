@@ -269,7 +269,14 @@
 // import "./math/leetcode/countOddNumber";
 // import "./math/leetcode/countTriple";
 // import "./math/leetcode/countMentions";
-import "./math/leetcode/minOperations";
+// import "./math/leetcode/minOperations";
 
 // ! Math end
+/**********************************************/
+
+/**********************************************/
+// ! Dynamic Programming start
+import "./dp/leetcode/numberOfWays";
+
+// ! Dynamic Programming end
 /**********************************************/
