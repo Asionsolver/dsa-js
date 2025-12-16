@@ -36,7 +36,7 @@
 // import "./array/1D-array/leetcode/distanceSum";
 // import "./array/1D-array/leetcode/findSubArray";
 // import "./array/1D-array/leetcode/minSumOfLengths";
-// import "./array/1D-array/leetcode/maxGap";
+import "./array/1D-array/leetcode/medium/maxGap";
 // import "./array/1D-array/leetcode/removeDuplicate";
 // import "./array/1D-array/leetcode/removeDuplicatesTwo";
 // import "./array/1D-array/leetcode/removeElementWithTarget";
@@ -149,7 +149,7 @@
 // import "./tree/leetcode/invertBinaryTree";
 // import "./tree/leetcode/maxDepth";
 // import "./tree/leetcode/sameTree";
-import "./tree/leetcode/maxProfit";
+// import "./tree/leetcode/maxProfit";
 
 // ! tree end
 /**********************************************/
@@ -243,6 +243,8 @@ import "./tree/leetcode/maxProfit";
 // ! Heap start
 // import "./heap/maxHeaps";
 
+// import "./heap/leetcode/hard/findSomeTwo";
+
 // ! Heap file end
 /**********************************************/
 
@@ -278,7 +280,7 @@ import "./tree/leetcode/maxProfit";
 
 /**********************************************/
 // ! Dynamic Programming start
-// import "./dp/leetcode/numberOfWays";
+// import "./dp/leetcode/hard/numberOfWays";
 
 // ! Dynamic Programming end
 /**********************************************/

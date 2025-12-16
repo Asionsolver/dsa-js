@@ -1,4 +1,3 @@
-import { it } from "node:test";
 // 19. Remove Nth Node From End of List
 
 /**

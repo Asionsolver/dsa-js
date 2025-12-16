@@ -1,4 +1,3 @@
-import { it } from "node:test";
 // 121. Best Time to Buy and Sell Stock
 
 /**

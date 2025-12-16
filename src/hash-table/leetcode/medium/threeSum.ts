@@ -1,4 +1,4 @@
-// Three Sum
+// 15. 3Sum
 
 const numsThree = [1, 4, 45, 6, 10, 8];
 const sumTarget = 13;

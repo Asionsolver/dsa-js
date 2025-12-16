@@ -1,4 +1,3 @@
-import { it } from "node:test";
 // 26. Remove Duplicates from Sorted Array
 
 /**

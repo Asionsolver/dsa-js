@@ -1,7 +1,5 @@
 // 100. Same Tree
 
-import { sign } from "crypto";
-
 /**
 
 Example 1:
