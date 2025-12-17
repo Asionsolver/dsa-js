@@ -57,6 +57,7 @@
 // import "./array/2d-array/leetcode/2DrangeSum";
 // import "./array/2d-array/leetcode/maxSumSubMatrix";
 // import "./array/2d-array/leetcode/medium/countUnguarded";
+import "./array/2d-array/leetcode/medium/rangeAddQueries";
 
 // ! array file end
 
