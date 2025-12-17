@@ -57,7 +57,7 @@
 // import "./array/2d-array/leetcode/2DrangeSum";
 // import "./array/2d-array/leetcode/maxSumSubMatrix";
 // import "./array/2d-array/leetcode/medium/countUnguarded";
-import "./array/2d-array/leetcode/medium/rangeAddQueries";
+// import "./array/2d-array/leetcode/medium/rangeAddQueries";
 
 // ! array file end
 
@@ -277,13 +277,15 @@ import "./array/2d-array/leetcode/medium/rangeAddQueries";
 // import "./math/leetcode/minOperations";
 // import "./math/leetcode/getDescentPeriods";
 
+import "./math/leetcode/medium/smallestRepunitDivByK";
+
 // ! Math end
 /**********************************************/
 
 /**********************************************/
 // ! Dynamic Programming start
 // import "./dp/leetcode/hard/numberOfWays";
-import "./dp/leetcode/medium/maximumProfit";
+// import "./dp/leetcode/medium/maximumProfit";
 
 // ! Dynamic Programming end
 /**********************************************/
