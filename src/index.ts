@@ -218,7 +218,7 @@
 // import "./string/leetcode/stringToInt";
 // import "./string/leetcode/intToRoman";
 // import "./string/leetcode/wordBreakTwo";
-import "./string/leetcode/medium/maxOperations";
+// import "./string/leetcode/medium/maxOperations";
 
 // ! String End
 /**********************************************/
@@ -281,6 +281,7 @@ import "./string/leetcode/medium/maxOperations";
 // import "./math/leetcode/getDescentPeriods";
 
 // import "./math/leetcode/medium/smallestRepunitDivByK";
+import "./math/leetcode/medium/minOperations";
 
 // ! Math end
 /**********************************************/
