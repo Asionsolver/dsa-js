@@ -58,6 +58,7 @@
 // import "./array/2d-array/leetcode/maxSumSubMatrix";
 // import "./array/2d-array/leetcode/medium/countUnguarded";
 // import "./array/2d-array/leetcode/medium/rangeAddQueries";
+import "./array/2d-array/leetcode/hard/numberOfPaths";
 
 // ! array file end
 
@@ -227,7 +228,7 @@
 // import "./sliding-window/leetcode/hard/minWindowSubstring";
 // import "./sliding-window/leetcode/smallestSubsequence";
 // import "./sliding-window/leetcode/characterReplacement";
-import "./sliding-window/leetcode/medium/maxProfit";
+// import "./sliding-window/leetcode/medium/maxProfit";
 
 // import "./sliding-window/problem/smallestDistinctWindow";
 // ! Sliding Window End
