@@ -58,7 +58,7 @@
 // import "./array/2d-array/leetcode/maxSumSubMatrix";
 // import "./array/2d-array/leetcode/medium/countUnguarded";
 // import "./array/2d-array/leetcode/medium/rangeAddQueries";
-import "./array/2d-array/leetcode/hard/numberOfPaths";
+// import "./array/2d-array/leetcode/hard/numberOfPaths";
 
 // ! array file end
 
@@ -218,6 +218,7 @@ import "./array/2d-array/leetcode/hard/numberOfPaths";
 // import "./string/leetcode/stringToInt";
 // import "./string/leetcode/intToRoman";
 // import "./string/leetcode/wordBreakTwo";
+import "./string/leetcode/medium/maxOperations";
 
 // ! String End
 /**********************************************/
