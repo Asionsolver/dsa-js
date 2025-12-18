@@ -290,6 +290,7 @@ import "./math/leetcode/medium/minOperations";
 // ! Dynamic Programming start
 // import "./dp/leetcode/hard/numberOfWays";
 // import "./dp/leetcode/medium/maximumProfit";
+import "./dp/leetcode/medium/findMaxForm";
 
 // ! Dynamic Programming end
 /**********************************************/
