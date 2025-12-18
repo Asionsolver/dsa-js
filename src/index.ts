@@ -227,6 +227,7 @@
 // import "./sliding-window/leetcode/hard/minWindowSubstring";
 // import "./sliding-window/leetcode/smallestSubsequence";
 // import "./sliding-window/leetcode/characterReplacement";
+import "./sliding-window/leetcode/medium/maxProfit";
 
 // import "./sliding-window/problem/smallestDistinctWindow";
 // ! Sliding Window End
@@ -277,7 +278,7 @@
 // import "./math/leetcode/minOperations";
 // import "./math/leetcode/getDescentPeriods";
 
-import "./math/leetcode/medium/smallestRepunitDivByK";
+// import "./math/leetcode/medium/smallestRepunitDivByK";
 
 // ! Math end
 /**********************************************/
