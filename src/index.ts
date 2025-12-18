@@ -230,6 +230,7 @@
 // import "./sliding-window/leetcode/smallestSubsequence";
 // import "./sliding-window/leetcode/characterReplacement";
 // import "./sliding-window/leetcode/medium/maxProfit";
+import "./sliding-window/leetcode/hard/maxPower";
 
 // import "./sliding-window/problem/smallestDistinctWindow";
 // ! Sliding Window End
@@ -281,7 +282,7 @@
 // import "./math/leetcode/getDescentPeriods";
 
 // import "./math/leetcode/medium/smallestRepunitDivByK";
-import "./math/leetcode/medium/minOperations";
+// import "./math/leetcode/medium/minOperations";
 
 // ! Math end
 /**********************************************/
@@ -290,7 +291,7 @@ import "./math/leetcode/medium/minOperations";
 // ! Dynamic Programming start
 // import "./dp/leetcode/hard/numberOfWays";
 // import "./dp/leetcode/medium/maximumProfit";
-import "./dp/leetcode/medium/findMaxForm";
+// import "./dp/leetcode/medium/findMaxForm";
 
 // ! Dynamic Programming end
 /**********************************************/
