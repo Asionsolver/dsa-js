@@ -230,7 +230,7 @@
 // import "./sliding-window/leetcode/smallestSubsequence";
 // import "./sliding-window/leetcode/characterReplacement";
 // import "./sliding-window/leetcode/medium/maxProfit";
-import "./sliding-window/leetcode/hard/maxPower";
+// import "./sliding-window/leetcode/hard/maxPower";
 
 // import "./sliding-window/problem/smallestDistinctWindow";
 // ! Sliding Window End
@@ -261,6 +261,8 @@ import "./sliding-window/leetcode/hard/maxPower";
 // import "./graph/graphMatrix";
 // import "./graph/bfs";
 // import "./graph/dfs";
+
+import "./graph/leetcode/hard/findAllPeople";
 
 // ! Graph file end
 /**********************************************/
