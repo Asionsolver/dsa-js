@@ -138,6 +138,8 @@
 // import "./linkList/leetcode/mergeKSortedList";
 // import "./linkList/leetcode/removeNthFromEnd";
 // import "./linkList/leetcode/linkedListCycle";
+import "./linkList/leetcode/medium/modifiedList";
+
 // !linked list end
 /**********************************************/
 
@@ -262,7 +264,7 @@
 // import "./graph/bfs";
 // import "./graph/dfs";
 
-import "./graph/leetcode/hard/findAllPeople";
+// import "./graph/leetcode/hard/findAllPeople";
 
 // ! Graph file end
 /**********************************************/
