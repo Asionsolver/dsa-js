@@ -108,7 +108,7 @@
 // import "./stack/stackUsingObject";
 
 // import "./stack/leetcode/countCollisions";
-import "./stack/leetcode/medium/minOperations";
+// import "./stack/leetcode/medium/minOperations";
 
 // ! stack end
 /**********************************************/
@@ -297,6 +297,7 @@ import "./stack/leetcode/medium/minOperations";
 // import "./dp/leetcode/hard/numberOfWays";
 // import "./dp/leetcode/medium/maximumProfit";
 // import "./dp/leetcode/medium/findMaxForm";
+import "./dp/leetcode/medium/minCost";
 
 // ! Dynamic Programming end
 /**********************************************/
