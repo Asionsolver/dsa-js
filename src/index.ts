@@ -286,6 +286,7 @@
 // import "./math/leetcode/minOperations";
 // import "./math/leetcode/getDescentPeriods";
 
+import "./math/leetcode/easy/countOperations";
 // import "./math/leetcode/medium/smallestRepunitDivByK";
 // import "./math/leetcode/medium/minOperations";
 
@@ -297,7 +298,7 @@
 // import "./dp/leetcode/hard/numberOfWays";
 // import "./dp/leetcode/medium/maximumProfit";
 // import "./dp/leetcode/medium/findMaxForm";
-import "./dp/leetcode/medium/minCost";
+// import "./dp/leetcode/medium/minCost";
 
 // ! Dynamic Programming end
 /**********************************************/
