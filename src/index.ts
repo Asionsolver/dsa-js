@@ -108,6 +108,7 @@
 // import "./stack/stackUsingObject";
 
 // import "./stack/leetcode/countCollisions";
+import "./stack/leetcode/medium/minOperations";
 
 // ! stack end
 /**********************************************/
@@ -138,7 +139,7 @@
 // import "./linkList/leetcode/mergeKSortedList";
 // import "./linkList/leetcode/removeNthFromEnd";
 // import "./linkList/leetcode/linkedListCycle";
-import "./linkList/leetcode/medium/modifiedList";
+// import "./linkList/leetcode/medium/modifiedList";
 
 // !linked list end
 /**********************************************/
