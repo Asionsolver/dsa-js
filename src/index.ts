@@ -156,6 +156,7 @@
 // import "./tree/leetcode/maxDepth";
 // import "./tree/leetcode/sameTree";
 // import "./tree/leetcode/maxProfit";
+import "./tree/leetcode/hard/maxKDivisibleComponents";
 
 // ! tree end
 /**********************************************/
@@ -302,7 +303,7 @@
 // import "./dp/leetcode/medium/maximumProfit";
 // import "./dp/leetcode/medium/findMaxForm";
 // import "./dp/leetcode/medium/minCost";
-import "./dp/leetcode/medium/maxSumDivThree";
+// import "./dp/leetcode/medium/maxSumDivThree";
 
 // ! Dynamic Programming end
 /**********************************************/
