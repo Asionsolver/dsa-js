@@ -272,6 +272,7 @@
 // import "./graph/dfs";
 
 // import "./graph/leetcode/hard/findAllPeople";
+import "./graph/leetcode/medium/processQueries";
 
 // ! Graph file end
 /**********************************************/
@@ -294,7 +295,7 @@
 // import "./math/leetcode/getDescentPeriods";
 
 // import "./math/leetcode/easy/countOperations";
-import "./math/leetcode/easy/minimumOperation";
+// import "./math/leetcode/easy/minimumOperation";
 // import "./math/leetcode/medium/smallestRepunitDivByK";
 // import "./math/leetcode/medium/minOperations";
 
