@@ -156,7 +156,7 @@
 // import "./tree/leetcode/maxDepth";
 // import "./tree/leetcode/sameTree";
 // import "./tree/leetcode/maxProfit";
-import "./tree/leetcode/hard/maxKDivisibleComponents";
+// import "./tree/leetcode/hard/maxKDivisibleComponents";
 
 // ! tree end
 /**********************************************/
@@ -279,6 +279,7 @@ import "./tree/leetcode/hard/maxKDivisibleComponents";
 // import "./bit-manipulation/leetcode/sumTwoInt";
 // import "./bit-manipulation/leetcode/missingNumber";
 // import "./bit-manipulation/leetcode/numberOneBit";
+import "./bit-manipulation/leetcode/easy/prefixesDivBy5";
 // ! Bit Manipulation end
 /**********************************************/
 
