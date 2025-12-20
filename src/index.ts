@@ -189,6 +189,7 @@
 // import "./hash-table/leetcode/countTrapezoidsTwo";
 // import "./hash-table/leetcode/countCoveredBuildings";
 // import "./hash-table/leetcode/validateCoupons";
+import "./hash-table/leetcode/medium/maxSubarraySum";
 
 // ! hash table end
 /**********************************************/
@@ -279,7 +280,7 @@
 // import "./bit-manipulation/leetcode/sumTwoInt";
 // import "./bit-manipulation/leetcode/missingNumber";
 // import "./bit-manipulation/leetcode/numberOneBit";
-import "./bit-manipulation/leetcode/easy/prefixesDivBy5";
+// import "./bit-manipulation/leetcode/easy/prefixesDivBy5";
 // ! Bit Manipulation end
 /**********************************************/
 
