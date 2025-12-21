@@ -191,7 +191,7 @@
 // import "./hash-table/leetcode/validateCoupons";
 // import "./hash-table/leetcode/medium/maxSubarraySum";
 // import "./hash-table/leetcode/medium/countPalindromicSubsequence";
-import "./hash-table/leetcode/easy/findFinalValue";
+// import "./hash-table/leetcode/easy/findFinalValue";
 
 // ! hash table end
 /**********************************************/
@@ -284,6 +284,7 @@ import "./hash-table/leetcode/easy/findFinalValue";
 // import "./bit-manipulation/leetcode/missingNumber";
 // import "./bit-manipulation/leetcode/numberOneBit";
 // import "./bit-manipulation/leetcode/easy/prefixesDivBy5";
+import "./bit-manipulation/leetcode/hard/minimumOneBitOperations";
 // ! Bit Manipulation end
 /**********************************************/
 
@@ -306,6 +307,7 @@ import "./hash-table/leetcode/easy/findFinalValue";
 /**********************************************/
 // ! Dynamic Programming start
 // import "./dp/leetcode/hard/numberOfWays";
+// import "./dp/leetcode/hard/minimumOneBitOperations";
 // import "./dp/leetcode/medium/maximumProfit";
 // import "./dp/leetcode/medium/findMaxForm";
 // import "./dp/leetcode/medium/minCost";
