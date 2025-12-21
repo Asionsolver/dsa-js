@@ -48,6 +48,7 @@
 // import "./array/1D-array/leetcode/countPartition";
 // import "./array/1D-array/leetcode/countPartitionTwo";
 // import "./array/1D-array/leetcode/countPermutations";
+import "./array/1D-array/leetcode/easy/isOneBitCharacter";
 
 // 2D Array
 // import "./array/2d-array/basic";
@@ -284,7 +285,7 @@
 // import "./bit-manipulation/leetcode/missingNumber";
 // import "./bit-manipulation/leetcode/numberOneBit";
 // import "./bit-manipulation/leetcode/easy/prefixesDivBy5";
-import "./bit-manipulation/leetcode/hard/minimumOneBitOperations";
+// import "./bit-manipulation/leetcode/hard/minimumOneBitOperations";
 // ! Bit Manipulation end
 /**********************************************/
 
