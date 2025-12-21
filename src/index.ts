@@ -272,7 +272,7 @@
 // import "./graph/dfs";
 
 // import "./graph/leetcode/hard/findAllPeople";
-import "./graph/leetcode/medium/processQueries";
+// import "./graph/leetcode/medium/processQueries";
 
 // ! Graph file end
 /**********************************************/
@@ -316,5 +316,6 @@ import "./graph/leetcode/medium/processQueries";
 /**********************************************/
 // ! Greedy Algorithm start
 // import "./greedy/leetcode/hard/intersectionSizeTwo";
+import "./greedy/leetcode/medium/minDeletionSize";
 // ! Greedy Algorithm end
 /**********************************************/
