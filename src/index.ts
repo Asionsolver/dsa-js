@@ -211,7 +211,7 @@
 // import "./dnc/leetcode/subSetSums";
 // import "./dnc/leetcode/combination";
 // import "./dnc/leetcode/permuteUnique";
-import "./dnc/leetcode/hard/numSquarefulPerms";
+// import "./dnc/leetcode/hard/numSquarefulPerms";
 
 // import "./dnc/problem/ratInMaze";
 // import "./dnc/problem/nQueen";
@@ -324,5 +324,6 @@ import "./dnc/leetcode/hard/numSquarefulPerms";
 // ! Greedy Algorithm start
 // import "./greedy/leetcode/hard/intersectionSizeTwo";
 // import "./greedy/leetcode/medium/minDeletionSize";
+import "./greedy/leetcode/medium/findOriginalArray";
 // ! Greedy Algorithm end
 /**********************************************/
