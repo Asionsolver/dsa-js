@@ -74,6 +74,7 @@
 /**********************************************/
 // ! two pointer start
 // import "./twoPointer/leetcode/isSubsequence";
+import "./twoPointer/leetcode/hard/recoverArray";
 
 // ! two pointer file end
 /**********************************************/
@@ -308,7 +309,7 @@
 /**********************************************/
 // ! Dynamic Programming start
 // import "./dp/leetcode/hard/numberOfWays";
-import "./dp/leetcode/hard/minDeletionSize";
+// import "./dp/leetcode/hard/minDeletionSize";
 // import "./dp/leetcode/hard/minimumOneBitOperations";
 // import "./dp/leetcode/medium/maximumProfit";
 // import "./dp/leetcode/medium/findMaxForm";
