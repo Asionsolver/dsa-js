@@ -74,7 +74,7 @@
 /**********************************************/
 // ! two pointer start
 // import "./twoPointer/leetcode/isSubsequence";
-import "./twoPointer/leetcode/hard/recoverArray";
+// import "./twoPointer/leetcode/hard/recoverArray";
 
 // ! two pointer file end
 /**********************************************/
@@ -211,6 +211,7 @@ import "./twoPointer/leetcode/hard/recoverArray";
 // import "./dnc/leetcode/subSetSums";
 // import "./dnc/leetcode/combination";
 // import "./dnc/leetcode/permuteUnique";
+import "./dnc/leetcode/hard/numSquarefulPerms";
 
 // import "./dnc/problem/ratInMaze";
 // import "./dnc/problem/nQueen";
