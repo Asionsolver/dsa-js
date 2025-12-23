@@ -60,7 +60,7 @@
 // import "./array/2d-array/leetcode/maxSumSubMatrix";
 // import "./array/2d-array/leetcode/medium/countUnguarded";
 // import "./array/2d-array/leetcode/medium/rangeAddQueries";
-import "./array/2d-array/leetcode/medium/maxTwoEvents";
+// import "./array/2d-array/leetcode/medium/maxTwoEvents";
 // import "./array/2d-array/leetcode/hard/numberOfPaths";
 
 // ! array file end
@@ -327,5 +327,6 @@ import "./array/2d-array/leetcode/medium/maxTwoEvents";
 // import "./greedy/leetcode/hard/intersectionSizeTwo";
 // import "./greedy/leetcode/medium/minDeletionSize";
 // import "./greedy/leetcode/medium/findOriginalArray";
+import "./greedy/leetcode/medium/canReorderDoubled";
 // ! Greedy Algorithm end
 /**********************************************/
