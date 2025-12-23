@@ -49,7 +49,7 @@
 // import "./array/1D-array/leetcode/countPartitionTwo";
 // import "./array/1D-array/leetcode/countPermutations";
 // import "./array/1D-array/leetcode/easy/isOneBitCharacter";
-import "./array/1D-array/leetcode/medium/minimumSum";
+// import "./array/1D-array/leetcode/medium/minimumSum";
 
 // 2D Array
 // import "./array/2d-array/basic";
@@ -60,6 +60,7 @@ import "./array/1D-array/leetcode/medium/minimumSum";
 // import "./array/2d-array/leetcode/maxSumSubMatrix";
 // import "./array/2d-array/leetcode/medium/countUnguarded";
 // import "./array/2d-array/leetcode/medium/rangeAddQueries";
+import "./array/2d-array/leetcode/medium/maxTwoEvents";
 // import "./array/2d-array/leetcode/hard/numberOfPaths";
 
 // ! array file end
