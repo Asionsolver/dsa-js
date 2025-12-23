@@ -331,6 +331,7 @@ import "./dp/leetcode/hard/maxValue";
 // import "./greedy/leetcode/medium/minDeletionSize";
 // import "./greedy/leetcode/medium/findOriginalArray";
 // import "./greedy/leetcode/medium/canReorderDoubled";
-import "./greedy/leetcode/medium/maxSumDistinctTriplet";
+// import "./greedy/leetcode/medium/maxSumDistinctTriplet";
+import "./greedy/leetcode/medium/largestValsFromLabels";
 // ! Greedy Algorithm end
 /**********************************************/
