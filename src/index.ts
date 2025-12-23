@@ -49,6 +49,7 @@
 // import "./array/1D-array/leetcode/countPartitionTwo";
 // import "./array/1D-array/leetcode/countPermutations";
 // import "./array/1D-array/leetcode/easy/isOneBitCharacter";
+import "./array/1D-array/leetcode/easy/subarraySum";
 // import "./array/1D-array/leetcode/medium/minimumSum";
 
 // 2D Array
@@ -327,6 +328,6 @@
 // import "./greedy/leetcode/hard/intersectionSizeTwo";
 // import "./greedy/leetcode/medium/minDeletionSize";
 // import "./greedy/leetcode/medium/findOriginalArray";
-import "./greedy/leetcode/medium/canReorderDoubled";
+// import "./greedy/leetcode/medium/canReorderDoubled";
 // ! Greedy Algorithm end
 /**********************************************/
