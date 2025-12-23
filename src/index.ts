@@ -246,7 +246,7 @@
 // import "./sliding-window/leetcode/smallestSubsequence";
 // import "./sliding-window/leetcode/characterReplacement";
 // import "./sliding-window/leetcode/medium/maxProfit";
-import "./sliding-window/leetcode/medium/maximizeWin";
+// import "./sliding-window/leetcode/medium/maximizeWin";
 // import "./sliding-window/leetcode/hard/maxPower";
 
 // import "./sliding-window/problem/smallestDistinctWindow";
@@ -316,6 +316,7 @@ import "./sliding-window/leetcode/medium/maximizeWin";
 // import "./dp/leetcode/hard/numberOfWays";
 // import "./dp/leetcode/hard/minDeletionSize";
 // import "./dp/leetcode/hard/minimumOneBitOperations";
+import "./dp/leetcode/hard/maxValue";
 // import "./dp/leetcode/medium/maximumProfit";
 // import "./dp/leetcode/medium/findMaxForm";
 // import "./dp/leetcode/medium/minCost";
