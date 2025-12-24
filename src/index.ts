@@ -317,6 +317,7 @@
 // import "./dp/leetcode/hard/minDeletionSize";
 // import "./dp/leetcode/hard/minimumOneBitOperations";
 // import "./dp/leetcode/hard/maxValue";
+import "./dp/leetcode/hard/maxProfit";
 // import "./dp/leetcode/medium/maximumProfit";
 // import "./dp/leetcode/medium/findMaxForm";
 // import "./dp/leetcode/medium/minCost";
@@ -333,6 +334,6 @@
 // import "./greedy/leetcode/medium/canReorderDoubled";
 // import "./greedy/leetcode/medium/maxSumDistinctTriplet";
 // import "./greedy/leetcode/medium/largestValsFromLabels";
-import "./greedy/leetcode/easy/minimumBoxes";
+// import "./greedy/leetcode/easy/minimumBoxes";
 // ! Greedy Algorithm end
 /**********************************************/
