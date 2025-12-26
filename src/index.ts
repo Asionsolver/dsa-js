@@ -249,6 +249,7 @@ import "./string/leetcode/medium/bestClosingTime";
 // import "./sliding-window/leetcode/medium/maxProfit";
 // import "./sliding-window/leetcode/medium/maximizeWin";
 // import "./sliding-window/leetcode/hard/maxPower";
+import "./sliding-window/leetcode/hard/maxSumOfThreeSubarrays";
 
 // import "./sliding-window/problem/smallestDistinctWindow";
 // ! Sliding Window End
