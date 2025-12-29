@@ -215,6 +215,7 @@
 // import "./dnc/leetcode/combination";
 // import "./dnc/leetcode/permuteUnique";
 // import "./dnc/leetcode/hard/numSquarefulPerms";
+import "./dnc/leetcode/medium/pyramidTransition";
 
 // import "./dnc/problem/ratInMaze";
 // import "./dnc/problem/nQueen";
@@ -234,7 +235,7 @@
 // import "./string/leetcode/medium/maxOperations";
 // import "./string/leetcode/medium/numSub";
 // import "./string/leetcode/medium/countHomogenous";
-import "./string/leetcode/medium/bestClosingTime";
+// import "./string/leetcode/medium/bestClosingTime";
 // import "./string/leetcode/easy/minDeletionSize";
 
 // ! String End
