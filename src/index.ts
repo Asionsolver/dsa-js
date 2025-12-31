@@ -215,7 +215,7 @@
 // import "./dnc/leetcode/combination";
 // import "./dnc/leetcode/permuteUnique";
 // import "./dnc/leetcode/hard/numSquarefulPerms";
-import "./dnc/leetcode/medium/pyramidTransition";
+// import "./dnc/leetcode/medium/pyramidTransition";
 
 // import "./dnc/problem/ratInMaze";
 // import "./dnc/problem/nQueen";
