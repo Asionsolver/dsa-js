@@ -176,7 +176,6 @@
 // import "./hash-table/problem/countSubarray";
 
 // import "./hash-table/leetcode/sortPeople";
-// import "./hash-table/leetcode/twoSum";
 // import "./hash-table/leetcode/intersection";
 // import "./hash-table/leetcode/intersectionTwo";
 // import "./hash-table/leetcode/subarraySum";
@@ -191,12 +190,17 @@
 // import "./hash-table/leetcode/contiguousArray";
 // import "./hash-table/leetcode/countSpecialTriplets";
 // import "./hash-table/leetcode/countTrapezoids";
-// import "./hash-table/leetcode/countTrapezoidsTwo";
 // import "./hash-table/leetcode/countCoveredBuildings";
 // import "./hash-table/leetcode/validateCoupons";
+
+// import "./hash-table/leetcode/easy/twoSum";
+// import "./hash-table/leetcode/easy/findFinalValue";
+import "./hash-table/leetcode/easy/repeatedNTimes";
+
 // import "./hash-table/leetcode/medium/maxSubarraySum";
 // import "./hash-table/leetcode/medium/countPalindromicSubsequence";
-// import "./hash-table/leetcode/easy/findFinalValue";
+
+// import "./hash-table/leetcode/hard/countTrapezoidsTwo";
 
 // ! hash table end
 /**********************************************/
@@ -329,7 +333,7 @@
 // import "./dp/leetcode/medium/findMaxForm";
 // import "./dp/leetcode/medium/minCost";
 // import "./dp/leetcode/medium/maxSumDivThree";
-import "./dp/leetcode/medium/pacificAtlantic";
+// import "./dp/leetcode/medium/pacificAtlantic";
 
 // ! Dynamic Programming end
 /**********************************************/
