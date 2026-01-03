@@ -329,7 +329,7 @@
 // import "./dp/leetcode/hard/maxValue";
 // import "./dp/leetcode/hard/maxProfit";
 // import "./dp/leetcode/hard/maxProfitFour";
-import "./dp/leetcode/hard/numOfWays";
+// import "./dp/leetcode/hard/numOfWays";
 // import "./dp/leetcode/medium/maximumProfit";
 // import "./dp/leetcode/medium/findMaxForm";
 // import "./dp/leetcode/medium/minCost";
@@ -350,4 +350,18 @@ import "./dp/leetcode/hard/numOfWays";
 // import "./greedy/leetcode/medium/maximumHappinessSum";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // ! Greedy Algorithm end
+/**********************************************/
+
+/**********************************************/
+// ! Binary Search Start
+import "./binary-search/leetcode/medium/maxFrequency";
+import "./binary-search/leetcode/easy/countNegatives";
+import "./binary-search/leetcode/hard/latestDayToCross";
+// ! Binary Search End
+/**********************************************/
+
+/**********************************************/
+// ! Prefix Sum Start
+import "./prefix-sum/leetcode/medium/minTime";
+// ! Prefix Sum End
 /**********************************************/
