@@ -195,7 +195,7 @@
 
 // import "./hash-table/leetcode/easy/twoSum";
 // import "./hash-table/leetcode/easy/findFinalValue";
-import "./hash-table/leetcode/easy/repeatedNTimes";
+// import "./hash-table/leetcode/easy/repeatedNTimes";
 
 // import "./hash-table/leetcode/medium/maxSubarraySum";
 // import "./hash-table/leetcode/medium/countPalindromicSubsequence";
@@ -329,6 +329,7 @@ import "./hash-table/leetcode/easy/repeatedNTimes";
 // import "./dp/leetcode/hard/maxValue";
 // import "./dp/leetcode/hard/maxProfit";
 // import "./dp/leetcode/hard/maxProfitFour";
+import "./dp/leetcode/hard/numOfWays";
 // import "./dp/leetcode/medium/maximumProfit";
 // import "./dp/leetcode/medium/findMaxForm";
 // import "./dp/leetcode/medium/minCost";
