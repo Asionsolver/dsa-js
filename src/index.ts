@@ -220,7 +220,7 @@
 // import "./dnc/leetcode/permuteUnique";
 // import "./dnc/leetcode/hard/numSquarefulPerms";
 // import "./dnc/leetcode/medium/pyramidTransition";
-import "./dnc/leetcode/medium/nextBeautifulNumber";
+// import "./dnc/leetcode/medium/nextBeautifulNumber";
 
 // import "./dnc/problem/ratInMaze";
 // import "./dnc/problem/nQueen";
