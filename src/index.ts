@@ -62,6 +62,7 @@
 // import "./array/2d-array/leetcode/medium/countUnguarded";
 // import "./array/2d-array/leetcode/medium/rangeAddQueries";
 // import "./array/2d-array/leetcode/medium/maxTwoEvents";
+import "./array/2d-array/leetcode/medium/maxMatrixSum";
 // import "./array/2d-array/leetcode/hard/numberOfPaths";
 
 // ! array file end
@@ -302,7 +303,7 @@
 // import "./bit-manipulation/leetcode/numberOneBit";
 // import "./bit-manipulation/leetcode/easy/prefixesDivBy5";
 // import "./bit-manipulation/leetcode/hard/minimumOneBitOperations";
-import "./bit-manipulation/leetcode/medium/minOperations";
+// import "./bit-manipulation/leetcode/medium/minOperations";
 // ! Bit Manipulation end
 /**********************************************/
 
