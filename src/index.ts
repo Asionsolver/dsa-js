@@ -241,7 +241,7 @@
 // import "./string/leetcode/medium/numSub";
 // import "./string/leetcode/medium/countHomogenous";
 // import "./string/leetcode/medium/bestClosingTime";
-import "./string/leetcode/medium/multiply";
+// import "./string/leetcode/medium/multiply";
 // import "./string/leetcode/easy/minDeletionSize";
 
 // ! String End
@@ -302,6 +302,7 @@ import "./string/leetcode/medium/multiply";
 // import "./bit-manipulation/leetcode/numberOneBit";
 // import "./bit-manipulation/leetcode/easy/prefixesDivBy5";
 // import "./bit-manipulation/leetcode/hard/minimumOneBitOperations";
+import "./bit-manipulation/leetcode/medium/minOperations";
 // ! Bit Manipulation end
 /**********************************************/
 
