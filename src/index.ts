@@ -163,7 +163,7 @@
 // import "./tree/leetcode/sameTree";
 // import "./tree/leetcode/maxProfit";
 // import "./tree/leetcode/hard/maxKDivisibleComponents";
-import "./tree/leetcode/hard/sumOfDistancesInTree";
+// import "./tree/leetcode/hard/sumOfDistancesInTree";
 // import "./tree/leetcode/medium/maxLevelSum";
 // import "./tree/leetcode/medium/countHighestScoreNodes";
 // import "./tree/leetcode/medium/maxProduct";
@@ -227,6 +227,7 @@ import "./tree/leetcode/hard/sumOfDistancesInTree";
 // import "./dnc/leetcode/hard/numSquarefulPerms";
 // import "./dnc/leetcode/medium/pyramidTransition";
 // import "./dnc/leetcode/medium/nextBeautifulNumber";
+import "./dnc/leetcode/medium/rangeSumQuery";
 
 // import "./dnc/problem/ratInMaze";
 // import "./dnc/problem/nQueen";
