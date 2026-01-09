@@ -168,6 +168,7 @@
 // import "./tree/leetcode/medium/countHighestScoreNodes";
 // import "./tree/leetcode/medium/maxProduct";
 // import "./tree/leetcode/medium/delNodes";
+import "./tree/leetcode/medium/subtreeWithAllDeepest";
 
 // ! tree end
 /**********************************************/
@@ -227,7 +228,7 @@
 // import "./dnc/leetcode/hard/numSquarefulPerms";
 // import "./dnc/leetcode/medium/pyramidTransition";
 // import "./dnc/leetcode/medium/nextBeautifulNumber";
-import "./dnc/leetcode/medium/rangeSumQuery";
+// import "./dnc/leetcode/medium/rangeSumQuery";
 
 // import "./dnc/problem/ratInMaze";
 // import "./dnc/problem/nQueen";
