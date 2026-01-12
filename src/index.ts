@@ -327,6 +327,7 @@
 // import "./math/leetcode/easy/countOperations";
 // import "./math/leetcode/easy/plusOne";
 // import "./math/leetcode/easy/minimumOperation";
+import "./math/leetcode/easy/minTimeToVisitAllPoints";
 // import "./math/leetcode/medium/smallestRepunitDivByK";
 // import "./math/leetcode/medium/maxBottlesDrunk";
 // import "./math/leetcode/medium/minOperations";
@@ -380,7 +381,7 @@
 /**********************************************/
 // ! Prefix Sum Start
 // import "./prefix-sum/leetcode/medium/minTime";
-import "./prefix-sum/leetcode/medium/maxSum";
+// import "./prefix-sum/leetcode/medium/maxSum";
 // ! Prefix Sum End
 /**********************************************/
 
