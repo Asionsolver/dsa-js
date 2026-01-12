@@ -327,7 +327,7 @@
 // import "./math/leetcode/easy/countOperations";
 // import "./math/leetcode/easy/plusOne";
 // import "./math/leetcode/easy/minimumOperation";
-import "./math/leetcode/easy/minTimeToVisitAllPoints";
+// import "./math/leetcode/easy/minTimeToVisitAllPoints";
 // import "./math/leetcode/medium/smallestRepunitDivByK";
 // import "./math/leetcode/medium/maxBottlesDrunk";
 // import "./math/leetcode/medium/minOperations";
@@ -364,6 +364,7 @@ import "./math/leetcode/easy/minTimeToVisitAllPoints";
 // import "./greedy/leetcode/medium/canReorderDoubled";
 // import "./greedy/leetcode/medium/maxSumDistinctTriplet";
 // import "./greedy/leetcode/medium/largestValsFromLabels";
+import "./greedy/leetcode/medium/rearrangeArray";
 // import "./greedy/leetcode/medium/maximumHappinessSum";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // ! Greedy Algorithm end
