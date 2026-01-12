@@ -50,6 +50,37 @@ const rearrangeArray = function (nums: number[]): number[] {
 };
 */
 
+// better version
+
+/**
+ function rearrangeArray(nums: number[]): number[] {
+    const n = nums.length;
+    
+    // Iterate over odd indices (1, 3, 5...)
+    // We want nums[i] to be a "Peak" (larger than both neighbors)
+    for (let i = 1; i < n; i += 2) {
+        
+        // 1. Compare with left neighbor
+        // If current is smaller than left, swap to make current larger
+        if (nums[i] < nums[i - 1]) {
+            const temp = nums[i];
+            nums[i] = nums[i - 1];
+            nums[i - 1] = temp;
+        }
+
+        // 2. Compare with right neighbor (if it exists)
+        // If current is smaller than right, swap to make current larger
+        if (i + 1 < n && nums[i] < nums[i + 1]) {
+            const temp = nums[i];
+            nums[i] = nums[i + 1];
+            nums[i + 1] = temp;
+        }
+    }
+    
+    return nums;
+}
+*/
+
 // optimize version
 
 function rearrangeArray(nums: number[]): number[] {
