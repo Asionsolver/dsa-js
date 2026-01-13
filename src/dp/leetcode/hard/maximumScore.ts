@@ -408,6 +408,411 @@ const intervals = [
 //   return result;
 // }
 
+// ! slightly improve runtime (181ms)
+// function maximumScore(intervals: number[][]): number[] {
+//     const n = intervals.length;
+
+//     // 1. Sort indices based on interval start times.
+//     // We use an index array to avoid creating new object structures.
+//     const indices = new Int32Array(n);
+//     for (let i = 0; i < n; i++) indices[i] = i;
+//     indices.sort((a, b) => intervals[a][0] - intervals[b][0]);
+
+//     // 2. Flatten sorted interval data into Struct of Arrays (SoA).
+//     // This improves cache locality during sequential access.
+//     const starts = new Int32Array(n);
+//     const ends = new Int32Array(n);
+//     const weights = new Int32Array(n);
+//     const originalIds = new Int32Array(n);
+
+//     for (let i = 0; i < n; i++) {
+//         const id = indices[i];
+//         const inv = intervals[id];
+//         starts[i] = inv[0];
+//         ends[i] = inv[1];
+//         weights[i] = inv[2];
+//         originalIds[i] = id;
+//     }
+
+//     // 3. Precompute nextValid index using Binary Search.
+//     // Maps each interval i to the first interval j such that starts[j] > ends[i].
+//     const nextValid = new Int32Array(n);
+//     for (let i = 0; i < n; i++) {
+//         const target = ends[i];
+//         let l = i + 1;
+//         let r = n;
+//         while (l < r) {
+//             const mid = (l + r) >>> 1;
+//             if (starts[mid] > target) {
+//                 r = mid;
+//             } else {
+//                 l = mid + 1;
+//             }
+//         }
+//         nextValid[i] = l;
+//     }
+
+//     // 4. DP Initialization.
+//     // dpWeight: flattened array (N+1)*5. Stores max weight. Init to -1.
+//     // dpRef: flattened array (N+1)*5. Stores pointer to index pool.
+//     // Pool: Stores the actual index combinations (blocks of 4 integers).
+//     const ROW_SIZE = 5;
+//     const dpSize = (n + 1) * ROW_SIZE;
+//     const dpWeight = new Float64Array(dpSize).fill(-1);
+//     const dpRef = new Int32Array(dpSize);
+
+//     // Pool size estimate: Max 4N entries. Safe buffer size is 16 * N.
+//     const pool = new Int32Array(n * 16 + 1024);
+//     let poolPtr = 0;
+
+//     // 5. Main DP Loop (Backwards from N-1 to 0)
+//     for (let i = n - 1; i >= 0; i--) {
+//         const rowOff = i * ROW_SIZE;
+//         const skipRowOff = (i + 1) * ROW_SIZE;
+
+//         const cId = originalIds[i];
+//         const cW = weights[i];
+//         const nextIdx = nextValid[i];
+//         const nextRowOff = nextIdx * ROW_SIZE;
+
+//         // --- Unrolled Case k=1 ---
+//         {
+//             // Option Skip: comes from [i+1][1]
+//             const sW = dpWeight[skipRowOff + 1];
+//             // Option Take: current weight (next state is k=0, weight 0)
+//             const tW = cW;
+
+//             let resW = sW;
+//             let resRef = dpRef[skipRowOff + 1];
+//             let useTake = false;
+
+//             if (tW > sW) {
+//                 useTake = true;
+//             } else if (tW === sW) {
+//                 // Tie-break: Lexicographical check
+//                 // Take set is [cId]. Skip set is pool[sRef] (size 1).
+//                 // If sW == -1, skip is impossible, force Take.
+//                 if (sW !== -1) {
+//                     const sRef = dpRef[skipRowOff + 1];
+//                     // Skip set start
+//                     const sId = pool[sRef << 2];
+//                     if (cId < sId) useTake = true;
+//                 } else {
+//                     useTake = true;
+//                 }
+//             }
+
+//             if (useTake) {
+//                 resW = tW;
+//                 poolPtr++;
+//                 resRef = poolPtr;
+//                 // Write [cId, 0, 0, 0] to pool
+//                 pool[resRef << 2] = cId;
+//             }
+//             dpWeight[rowOff + 1] = resW;
+//             dpRef[rowOff + 1] = resRef;
+//         }
+
+//         // --- Unrolled Case k=2 ---
+//         {
+//             const sW = dpWeight[skipRowOff + 2];
+//             const prevW = dpWeight[nextRowOff + 1];
+//             let resW = sW;
+//             let resRef = dpRef[skipRowOff + 2];
+
+//             if (prevW !== -1) {
+//                 const tW = cW + prevW;
+//                 let useTake = false;
+
+//                 if (tW > sW) {
+//                     useTake = true;
+//                 } else if (tW === sW) {
+//                     if (sW !== -1) {
+//                         // Compare [cId + prevSet] vs [skipSet]
+//                         const prevRef = dpRef[nextRowOff + 1];
+//                         const sRef = dpRef[skipRowOff + 2];
+//                         const baseSrc = prevRef << 2;
+//                         const baseSkip = sRef << 2;
+
+//                         const P0 = pool[baseSrc];
+//                         const S0 = pool[baseSkip];
+
+//                         // Merge logic: Take 0th element
+//                         const T0 = (cId < P0) ? cId : P0;
+//                         if (T0 < S0) useTake = true;
+//                         else if (T0 === S0) {
+//                             // Take 1st element
+//                             const T1 = (cId < P0) ? P0 : cId; // remaining one
+//                             const S1 = pool[baseSkip + 1];
+//                             if (T1 < S1) useTake = true;
+//                         }
+//                     } else {
+//                         useTake = true;
+//                     }
+//                 }
+
+//                 if (useTake) {
+//                     resW = tW;
+//                     poolPtr++;
+//                     resRef = poolPtr;
+//                     const baseDest = resRef << 2;
+//                     const baseSrc = dpRef[nextRowOff + 1] << 2;
+//                     const P0 = pool[baseSrc];
+//                     // Sort insertion of cId
+//                     if (cId < P0) {
+//                         pool[baseDest] = cId; pool[baseDest + 1] = P0;
+//                     } else {
+//                         pool[baseDest] = P0; pool[baseDest + 1] = cId;
+//                     }
+//                 }
+//             }
+//             dpWeight[rowOff + 2] = resW;
+//             dpRef[rowOff + 2] = resRef;
+//         }
+
+//         // --- Unrolled Case k=3 ---
+//         {
+//             const sW = dpWeight[skipRowOff + 3];
+//             const prevW = dpWeight[nextRowOff + 2];
+//             let resW = sW;
+//             let resRef = dpRef[skipRowOff + 3];
+
+//             if (prevW !== -1) {
+//                 const tW = cW + prevW;
+//                 let useTake = false;
+
+//                 if (tW > sW) {
+//                     useTake = true;
+//                 } else if (tW === sW) {
+//                     if (sW !== -1) {
+//                         const prevRef = dpRef[nextRowOff + 2];
+//                         const sRef = dpRef[skipRowOff + 3];
+//                         const baseSrc = prevRef << 2;
+//                         const baseSkip = sRef << 2;
+
+//                         const P0 = pool[baseSrc];
+//                         const P1 = pool[baseSrc + 1];
+//                         const S0 = pool[baseSkip];
+
+//                         // Unrolled Merge Compare
+//                         let T0, nextP = 0;
+//                         if (cId < P0) { T0 = cId; nextP = 0; }
+//                         else { T0 = P0; nextP = 1; }
+
+//                         if (T0 < S0) useTake = true;
+//                         else if (T0 === S0) {
+//                             let T1;
+//                             // if nextP==0 (cId used), cand is P0. if nextP==1 (P0 used), cand is min(cId, P1)
+//                             if (nextP === 0) { T1 = P0; nextP = 1; }
+//                             else {
+//                                 if (cId < P1) { T1 = cId; nextP = 1; } // logic: cId used now?
+//                                 else { T1 = P1; nextP = 2; }
+//                             }
+//                             // Correction: The `nextP` tracking here is tricky to inline perfectly without vars.
+//                             // Simplified: Just 3-way check for T1.
+//                             // If cId used, next is P0. If P0 used, next is min(cId, P1).
+//                             // Wait, if nextP=0, T1 is P0. T2 is P1.
+//                             // If nextP=1 (T0=P0), remaining are {cId, P1}. min is T1.
+//                             // Let's rely on standard logic:
+//                             // If we didn't pick cId yet, compare cId vs current P.
+//                             // Actually, just sorting 3 numbers is fast.
+//                             // But comparison is simpler:
+//                             const S1 = pool[baseSkip + 1];
+//                             // Re-eval T1
+//                             // T0 determined.
+//                             // Determine T1:
+//                             let rem1, rem2;
+//                             if (T0 === cId) { rem1 = P0; rem2 = P1; }
+//                             else { // T0 was P0
+//                                 if (cId < P1) { rem1 = cId; rem2 = P1; }
+//                                 else { rem1 = P1; rem2 = cId; }
+//                             }
+//                             T1 = rem1;
+
+//                             if (T1 < S1) useTake = true;
+//                             else if (T1 === S1) {
+//                                 const T2 = rem2;
+//                                 const S2 = pool[baseSkip + 2];
+//                                 if (T2 < S2) useTake = true;
+//                             }
+//                         }
+//                     } else {
+//                         useTake = true;
+//                     }
+//                 }
+
+//                 if (useTake) {
+//                     resW = tW;
+//                     poolPtr++;
+//                     resRef = poolPtr;
+//                     const baseDest = resRef << 2;
+//                     const baseSrc = dpRef[nextRowOff + 2] << 2;
+//                     const P0 = pool[baseSrc];
+//                     const P1 = pool[baseSrc + 1];
+//                     // Insert cId into sorted P0, P1
+//                     if (cId < P0) {
+//                         pool[baseDest] = cId; pool[baseDest+1] = P0; pool[baseDest+2] = P1;
+//                     } else if (cId < P1) {
+//                         pool[baseDest] = P0; pool[baseDest+1] = cId; pool[baseDest+2] = P1;
+//                     } else {
+//                         pool[baseDest] = P0; pool[baseDest+1] = P1; pool[baseDest+2] = cId;
+//                     }
+//                 }
+//             }
+//             dpWeight[rowOff + 3] = resW;
+//             dpRef[rowOff + 3] = resRef;
+//         }
+
+//         // --- Unrolled Case k=4 ---
+//         {
+//             const sW = dpWeight[skipRowOff + 4];
+//             const prevW = dpWeight[nextRowOff + 3];
+//             let resW = sW;
+//             let resRef = dpRef[skipRowOff + 4];
+
+//             if (prevW !== -1) {
+//                 const tW = cW + prevW;
+//                 let useTake = false;
+
+//                 if (tW > sW) {
+//                     useTake = true;
+//                 } else if (tW === sW) {
+//                     if (sW !== -1) {
+//                         const prevRef = dpRef[nextRowOff + 3];
+//                         const sRef = dpRef[skipRowOff + 4];
+//                         const baseSrc = prevRef << 2;
+//                         const baseSkip = sRef << 2;
+//                         const P0 = pool[baseSrc]; const P1 = pool[baseSrc+1]; const P2 = pool[baseSrc+2];
+//                         const S0 = pool[baseSkip];
+
+//                         let T0, mode = 0; // 0: cId available. 1: cId used.
+//                         if (cId < P0) { T0 = cId; mode = 1; } else { T0 = P0; }
+
+//                         if (T0 < S0) useTake = true;
+//                         else if (T0 === S0) {
+//                             const S1 = pool[baseSkip + 1];
+//                             let T1;
+//                             // Find T1
+//                             if (mode === 1) T1 = P0; // cId used at T0
+//                             else { // cId avail, P0 used.
+//                                 if (cId < P1) { T1 = cId; mode = 1; } else T1 = P1;
+//                             }
+
+//                             if (T1 < S1) useTake = true;
+//                             else if (T1 === S1) {
+//                                 const S2 = pool[baseSkip + 2];
+//                                 let T2;
+//                                 if (mode === 1) T2 = P1; // cId used previously
+//                                 else { // cId avail, P0, P1 used
+//                                     if (cId < P2) { T2 = cId; mode = 1; } else T2 = P2;
+//                                 }
+
+//                                 if (T2 < S2) useTake = true;
+//                                 else if (T2 === S2) {
+//                                     const S3 = pool[baseSkip + 3];
+//                                     const T3 = (mode === 1) ? P2 : cId;
+//                                     if (T3 < S3) useTake = true;
+//                                 }
+//                             }
+//                         }
+//                     } else {
+//                         useTake = true;
+//                     }
+//                 }
+
+//                 if (useTake) {
+//                     resW = tW;
+//                     poolPtr++;
+//                     resRef = poolPtr;
+//                     const baseDest = resRef << 2;
+//                     const baseSrc = dpRef[nextRowOff + 3] << 2;
+//                     const P0 = pool[baseSrc]; const P1 = pool[baseSrc+1]; const P2 = pool[baseSrc+2];
+
+//                     if (cId < P0) {
+//                         pool[baseDest] = cId; pool[baseDest+1] = P0; pool[baseDest+2] = P1; pool[baseDest+3] = P2;
+//                     } else if (cId < P1) {
+//                         pool[baseDest] = P0; pool[baseDest+1] = cId; pool[baseDest+2] = P1; pool[baseDest+3] = P2;
+//                     } else if (cId < P2) {
+//                         pool[baseDest] = P0; pool[baseDest+1] = P1; pool[baseDest+2] = cId; pool[baseDest+3] = P2;
+//                     } else {
+//                         pool[baseDest] = P0; pool[baseDest+1] = P1; pool[baseDest+2] = P2; pool[baseDest+3] = cId;
+//                     }
+//                 }
+//             }
+//             dpWeight[rowOff + 4] = resW;
+//             dpRef[rowOff + 4] = resRef;
+//         }
+//     }
+
+//     // 6. Final Result Aggregation
+//     // Find best k in [1..4]
+//     let bestK = 1;
+//     let maxVal = dpWeight[1];
+//     let bestRef = dpRef[1];
+
+//     // Check k=2
+//     {
+//         const w = dpWeight[2];
+//         if (w > maxVal) { maxVal = w; bestK = 2; bestRef = dpRef[2]; }
+//         else if (w === maxVal && w !== -1) {
+//             // Lexicographical comparison: [bestK] vs [2].
+//             // If prefix matches, shorter wins.
+//             const baseBest = bestRef << 2;
+//             const baseCurr = dpRef[2] << 2;
+//             // bestK is 1. Check if best[0] > curr[0] (curr smaller)
+//             const vB = pool[baseBest];
+//             const vC = pool[baseCurr];
+//             if (vC < vB) { bestK = 2; bestRef = dpRef[2]; }
+//             // If vC == vB, bestK (len 1) is shorter than len 2, so bestK wins.
+//         }
+//     }
+//     // Check k=3
+//     {
+//         const w = dpWeight[3];
+//         if (w > maxVal) { maxVal = w; bestK = 3; bestRef = dpRef[3]; }
+//         else if (w === maxVal && w !== -1) {
+//             const baseBest = bestRef << 2;
+//             const baseCurr = dpRef[3] << 2;
+//             // Compare prefix of length bestK
+//             let better = false;
+//             let equal = true;
+//             for(let x=0; x<bestK; x++) {
+//                 const vB = pool[baseBest + x];
+//                 const vC = pool[baseCurr + x];
+//                 if (vC < vB) { better = true; equal = false; break; }
+//                 if (vC > vB) { equal = false; break; }
+//             }
+//             if (better) { bestK = 3; bestRef = dpRef[3]; }
+//         }
+//     }
+//     // Check k=4
+//     {
+//         const w = dpWeight[4];
+//         if (w > maxVal) { maxVal = w; bestK = 4; bestRef = dpRef[4]; }
+//         else if (w === maxVal && w !== -1) {
+//             const baseBest = bestRef << 2;
+//             const baseCurr = dpRef[4] << 2;
+//             let better = false;
+//             let equal = true;
+//             for(let x=0; x<bestK; x++) {
+//                 const vB = pool[baseBest + x];
+//                 const vC = pool[baseCurr + x];
+//                 if (vC < vB) { better = true; equal = false; break; }
+//                 if (vC > vB) { equal = false; break; }
+//             }
+//             if (better) { bestK = 4; bestRef = dpRef[4]; }
+//         }
+//     }
+
+//     if (maxVal === -1) return [];
+
+//     const result = new Array(bestK);
+//     const base = bestRef << 2;
+//     for (let i = 0; i < bestK; i++) result[i] = pool[base + i];
+
+//     return result;
+// }
+
 // * slightly improve runtime (176ms)
 function maximumScore(intervals: number[][]): number[] {
   const n = intervals.length;
