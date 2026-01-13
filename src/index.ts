@@ -211,6 +211,7 @@
 // import "./hash-table/leetcode/medium/maxSubarraySum";
 // import "./hash-table/leetcode/medium/countPalindromicSubsequence";
 // import "./hash-table/leetcode/medium/digArtifacts";
+import "./hash-table/leetcode/medium/findMatrix";
 
 // import "./hash-table/leetcode/hard/countTrapezoidsTwo";
 
@@ -355,7 +356,7 @@
 // import "./dp/leetcode/medium/maxSumDivThree";
 // import "./dp/leetcode/medium/pacificAtlantic";
 // import "./dp/leetcode/medium/minimumDeleteSum";
-import "./dp/leetcode/medium/maximalSquare";
+// import "./dp/leetcode/medium/maximalSquare";
 
 // ! Dynamic Programming end
 /**********************************************/
