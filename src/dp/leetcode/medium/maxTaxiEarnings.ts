@@ -61,43 +61,101 @@ const n = 5,
 // };
 
 // better solution
-const maxTaxiEarnings = function (n: number, rides: number[][]): number {
-  // 1. Sort rides by their end point.
-  // This allows us to process rides in order without creating a heavy Map/Adjacency list.
-  // Time: O(M log M)
-  rides.sort((a, b) => a[1] - b[1]);
+// const maxTaxiEarnings = function (n: number, rides: number[][]): number {
+//   // 1. Sort rides by their end point.
+//   // This allows us to process rides in order without creating a heavy Map/Adjacency list.
+//   // Time: O(M log M)
+//   rides.sort((a, b) => a[1] - b[1]);
 
-  // 2. Use Float64Array for the DP table.
-  // It is much faster than a standard generic Array and handles large numbers safeley.
-  // dp[i] = max earnings at point i
+//   // 2. Use Float64Array for the DP table.
+//   // It is much faster than a standard generic Array and handles large numbers safeley.
+//   // dp[i] = max earnings at point i
+//   const dp = new Float64Array(n + 1);
+
+//   let rideIdx = 0;
+//   const m = rides.length;
+
+//   // 3. Iterate linearly from point 1 to n.
+//   // Time: O(N)
+//   for (let i = 1; i <= n; i++) {
+//     // Default strategy: The max profit at 'i' is at least the same as 'i-1'
+//     // (carrying over earnings if we drop no one off here)
+//     dp[i] = dp[i - 1];
+
+//     // Process all rides that end exactly at point 'i'
+//     while (rideIdx < m && rides[rideIdx][1] === i) {
+//       // Direct access is faster than destructuring in tight loops
+//       // ride = [start, end, tip]
+//       const start = rides[rideIdx][0];
+//       const tip = rides[rideIdx][2];
+
+//       // Calculate profit: (end - start + tip) + dp[start]
+//       // Note: rides[rideIdx][1] is equal to 'i' here
+//       const earn = i - start + tip + dp[start];
+
+//       if (earn > dp[i]) {
+//         dp[i] = earn;
+//       }
+
+//       rideIdx++;
+//     }
+//   }
+
+//   return dp[n];
+// };
+
+// best solution
+const maxTaxiEarnings = function (n: number, rides: number[][]): number {
+  // 1. Allocate Typed Arrays
+  // 'dp' stores max earnings at point i. Float64 is required as earnings can exceed 2^31.
   const dp = new Float64Array(n + 1);
 
-  let rideIdx = 0;
-  const m = rides.length;
+  // 'head' and 'next' form a Linked List in array format.
+  // head[i] stores the index of the first ride ending at point i.
+  const head = new Int32Array(n + 1).fill(-1);
 
-  // 3. Iterate linearly from point 1 to n.
-  // Time: O(N)
+  const m = rides.length;
+  // next[r] stores the index of the next ride ending at the same point as ride r.
+  const next = new Int32Array(m);
+
+  // Store ride data in flat arrays for fast access (avoids accessing the 2D rides array repeatedly)
+  const starts = new Int32Array(m);
+  const profits = new Int32Array(m);
+
+  // 2. Build the Graph (Adjacency List) - O(M)
+  for (let i = 0; i < m; i++) {
+    // Direct access to the input array
+    const s = rides[i][0];
+    const e = rides[i][1];
+    const t = rides[i][2];
+
+    // Store properties flatly
+    starts[i] = s;
+    profits[i] = e - s + t;
+
+    // Link the ride into the list for destination 'e'
+    // This effectively groups rides by end point without sorting.
+    next[i] = head[e];
+    head[e] = i;
+  }
+
+  // 3. Compute DP - O(N)
   for (let i = 1; i <= n; i++) {
-    // Default strategy: The max profit at 'i' is at least the same as 'i-1'
-    // (carrying over earnings if we drop no one off here)
+    // Carry forward the max profit from the previous point
     dp[i] = dp[i - 1];
 
     // Process all rides that end exactly at point 'i'
-    while (rideIdx < m && rides[rideIdx][1] === i) {
-      // Direct access is faster than destructuring in tight loops
-      // ride = [start, end, tip]
-      const start = rides[rideIdx][0];
-      const tip = rides[rideIdx][2];
+    let rideIdx = head[i];
+    while (rideIdx !== -1) {
+      // Calculate potential profit: (Max profit at ride start) + (Ride profit)
+      const currentProfit = dp[starts[rideIdx]] + profits[rideIdx];
 
-      // Calculate profit: (end - start + tip) + dp[start]
-      // Note: rides[rideIdx][1] is equal to 'i' here
-      const earn = i - start + tip + dp[start];
-
-      if (earn > dp[i]) {
-        dp[i] = earn;
+      if (currentProfit > dp[i]) {
+        dp[i] = currentProfit;
       }
 
-      rideIdx++;
+      // Move to the next ride ending at 'i'
+      rideIdx = next[rideIdx];
     }
   }
 
