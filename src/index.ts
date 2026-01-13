@@ -115,7 +115,8 @@
 
 // import "./stack/leetcode/countCollisions";
 // import "./stack/leetcode/medium/minOperations";
-import "./stack/leetcode/medium/separateSquares";
+import "./stack/leetcode/medium/asteroidCollision";
+// import "./stack/leetcode/medium/separateSquares";
 // import "./stack/leetcode/hard/maximalRectangle";
 
 // ! stack end
