@@ -14,7 +14,7 @@ Example 2:
 
 Input: cookies = [6,1,3,2,2,4,1,2], k = 3
 Output: 7
-Explanation: One optimal distribution is [6,1], [3,2,2], and [4,1,2]
+Explanation: One optimal distribution is [6,1], [3,2,2], and [4,1,2] 
 - The 1st child receives [6,1] which has a total of 6 + 1 = 7 cookies.
 - The 2nd child receives [3,2,2] which has a total of 3 + 2 + 2 = 7 cookies.
 - The 3rd child receives [4,1,2] which has a total of 4 + 1 + 2 = 7 cookies.

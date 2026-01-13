@@ -235,7 +235,7 @@
 // import "./dnc/leetcode/medium/pyramidTransition";
 // import "./dnc/leetcode/medium/nextBeautifulNumber";
 // import "./dnc/leetcode/medium/rangeSumQuery";
-import "./dnc/leetcode/medium/distributeCookies";
+// import "./dnc/leetcode/medium/distributeCookies";
 
 // import "./dnc/problem/ratInMaze";
 // import "./dnc/problem/nQueen";
@@ -351,6 +351,7 @@ import "./dnc/leetcode/medium/distributeCookies";
 // import "./dp/leetcode/hard/maxProfitFour";
 // import "./dp/leetcode/hard/numOfWays";
 // import "./dp/leetcode/hard/maxDotProduct";
+import "./dp/leetcode/hard/maximumScore";
 // import "./dp/leetcode/medium/maximumProfit";
 // import "./dp/leetcode/medium/findMaxForm";
 // import "./dp/leetcode/medium/minCost";
