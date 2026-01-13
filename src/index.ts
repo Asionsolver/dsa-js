@@ -115,7 +115,7 @@
 
 // import "./stack/leetcode/countCollisions";
 // import "./stack/leetcode/medium/minOperations";
-import "./stack/leetcode/medium/asteroidCollision";
+// import "./stack/leetcode/medium/asteroidCollision";
 // import "./stack/leetcode/medium/separateSquares";
 // import "./stack/leetcode/hard/maximalRectangle";
 
@@ -355,6 +355,7 @@ import "./stack/leetcode/medium/asteroidCollision";
 // import "./dp/leetcode/medium/maxSumDivThree";
 // import "./dp/leetcode/medium/pacificAtlantic";
 // import "./dp/leetcode/medium/minimumDeleteSum";
+import "./dp/leetcode/medium/maximalSquare";
 
 // ! Dynamic Programming end
 /**********************************************/
