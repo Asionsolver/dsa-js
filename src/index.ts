@@ -211,7 +211,7 @@
 // import "./hash-table/leetcode/medium/maxSubarraySum";
 // import "./hash-table/leetcode/medium/countPalindromicSubsequence";
 // import "./hash-table/leetcode/medium/digArtifacts";
-import "./hash-table/leetcode/medium/findMatrix";
+// import "./hash-table/leetcode/medium/findMatrix";
 
 // import "./hash-table/leetcode/hard/countTrapezoidsTwo";
 
@@ -235,6 +235,7 @@ import "./hash-table/leetcode/medium/findMatrix";
 // import "./dnc/leetcode/medium/pyramidTransition";
 // import "./dnc/leetcode/medium/nextBeautifulNumber";
 // import "./dnc/leetcode/medium/rangeSumQuery";
+import "./dnc/leetcode/medium/distributeCookies";
 
 // import "./dnc/problem/ratInMaze";
 // import "./dnc/problem/nQueen";
