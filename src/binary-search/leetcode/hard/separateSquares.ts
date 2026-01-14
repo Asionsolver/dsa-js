@@ -350,79 +350,282 @@ const squares = [
 // };
 
 // best solution
+// const separateSquares = function (squares: number[][]): number {
+//   const n = squares.length;
+//   // Edge case: if no squares, return 0 (though constraints say n >= 1)
+//   if (n === 0) return 0;
+
+//   // ---------------------------------------------------------
+//   // 1. Coordinate Compression for X-axis
+//   // ---------------------------------------------------------
+//   // We need to map X coordinates to ranks [0, k].
+//   // Using typed arrays for memory efficiency.
+
+//   // xCoords stores [x_start_0, x_end_0, x_start_1, x_end_1, ...]
+//   const xCoords = new Float64Array(2 * n);
+//   // xIndices will be sorted to determine the rank of each coordinate
+//   const xIndices = new Int32Array(2 * n);
+
+//   for (let i = 0; i < n; i++) {
+//     const x = squares[i][0];
+//     const l = squares[i][2];
+//     const i1 = i << 1; // Index for start coordinate
+//     const i2 = i1 | 1; // Index for end coordinate
+//     xCoords[i1] = x;
+//     xCoords[i2] = x + l;
+//     xIndices[i1] = i1;
+//     xIndices[i2] = i2;
+//   }
+
+//   // Sort indices based on the coordinate values they point to.
+//   // This avoids sorting the heavier Float64Array directly and allows mapping back easily.
+//   xIndices.sort((a, b) => xCoords[a] - xCoords[b]);
+
+//   // distinctX: unique sorted x coordinates
+//   // rankMap: maps the original index in xCoords to its rank in distinctX
+//   const distinctX = new Float64Array(2 * n);
+//   const rankMap = new Int32Array(2 * n);
+
+//   let k = 0;
+//   // Initialize first element
+//   distinctX[0] = xCoords[xIndices[0]];
+//   rankMap[xIndices[0]] = 0;
+
+//   for (let i = 1; i < 2 * n; i++) {
+//     const idx = xIndices[i];
+//     const prevIdx = xIndices[i - 1];
+//     if (xCoords[idx] !== xCoords[prevIdx]) {
+//       k++;
+//       distinctX[k] = xCoords[idx];
+//     }
+//     rankMap[idx] = k;
+//   }
+//   k++; // k is now the number of unique x coordinates
+
+//   // ---------------------------------------------------------
+//   // 2. Segment Tree Initialization
+//   // ---------------------------------------------------------
+//   // The segment tree covers elementary intervals between distinct X coordinates.
+//   // There are k-1 such intervals.
+//   const numLeaves = k - 1;
+
+//   // If all x coordinates are identical (width 0), return top of last square.
+//   if (numLeaves <= 0) return squares[0][1];
+
+//   // Use a flat array for the segment tree to avoid object overhead.
+//   // Size 4 * numLeaves is sufficient.
+//   const treeSize = 4 * numLeaves;
+//   const count = new Int32Array(treeSize);
+//   const len = new Float64Array(treeSize);
+
+//   // Recursive update function
+//   // node: current tree node index (1-based)
+//   // start, end: current range of elementary intervals [start, end)
+//   // l, r: update range [l, r)
+//   // val: +1 (add square) or -1 (remove square)
+//   function update(
+//     node: number,
+//     start: number,
+//     end: number,
+//     l: number,
+//     r: number,
+//     val: number
+//   ) {
+//     // If update range covers current node range completely
+//     if (l <= start && end <= r) {
+//       count[node] += val;
+//     } else {
+//       const mid = (start + end) >>> 1;
+//       const left = node << 1;
+//       const right = left | 1;
+//       // Pruning: only recurse if overlap exists
+//       if (l < mid) update(left, start, mid, l, r, val);
+//       if (r > mid) update(right, mid, end, l, r, val);
+//     }
+
+//     // Update the length covered by this node
+//     if (count[node] > 0) {
+//       // If count > 0, the whole range is covered
+//       len[node] = distinctX[end] - distinctX[start];
+//     } else if (end - start === 1) {
+//       // Leaf node with count 0
+//       len[node] = 0;
+//     } else {
+//       // Internal node with count 0: sum of children
+//       len[node] = len[node << 1] + len[(node << 1) | 1];
+//     }
+//   }
+
+//   // ---------------------------------------------------------
+//   // 3. Prepare Sweep Line Events
+//   // ---------------------------------------------------------
+//   const evID = new Int32Array(2 * n);
+//   const evY = new Float64Array(2 * n);
+
+//   for (let i = 0; i < n; i++) {
+//     const y = squares[i][1];
+//     const l = squares[i][2];
+//     const i1 = i << 1; // Event ID for bottom edge
+//     const i2 = i1 | 1; // Event ID for top edge
+//     evY[i1] = y;
+//     evY[i2] = y + l;
+//     evID[i1] = i1;
+//     evID[i2] = i2;
+//   }
+
+//   // Sort event IDs by their Y coordinate
+//   evID.sort((a, b) => evY[a] - evY[b]);
+
+//   // ---------------------------------------------------------
+//   // 4. Sweep Line Execution
+//   // ---------------------------------------------------------
+//   // History arrays to store (y, accumulated_area) checkpoints
+//   const histY = new Float64Array(2 * n);
+//   const histArea = new Float64Array(2 * n);
+//   let hPtr = 0; // History pointer
+
+//   let curArea = 0;
+//   let prevY = evY[evID[0]];
+//   let i = 0;
+//   const limit = 2 * n;
+
+//   while (i < limit) {
+//     const id = evID[i];
+//     const y = evY[id];
+
+//     // If we advanced in Y, calculate area of the strip we just passed
+//     if (y > prevY) {
+//       // len[1] is the covered length of the root of the segment tree
+//       const width = len[1];
+//       curArea += width * (y - prevY);
+
+//       // Record checkpoint
+//       histY[hPtr] = y;
+//       histArea[hPtr] = curArea;
+//       hPtr++;
+
+//       prevY = y;
+//     }
+
+//     // Process all events at the current Y coordinate
+//     while (i < limit && evY[evID[i]] === y) {
+//       const currId = evID[i];
+
+//       // Determine type: Even ID = Bottom (+1), Odd ID = Top (-1)
+//       const type = (currId & 1) === 0 ? 1 : -1;
+
+//       // Retrieve ranks for start and end x-coordinates
+//       // If currId is start edge, start=rankMap[currId], end=rankMap[currId+1]
+//       // If currId is end edge, start=rankMap[currId-1], end=rankMap[currId]
+//       const r1 = rankMap[currId & ~1];
+//       const r2 = rankMap[currId | 1];
+
+//       if (r1 < r2) {
+//         update(1, 0, numLeaves, r1, r2, type);
+//       }
+//       i++;
+//     }
+//   }
+
+//   // ---------------------------------------------------------
+//   // 5. Calculate Result
+//   // ---------------------------------------------------------
+//   const target = curArea / 2;
+//   let acc = 0;
+//   let ly = evY[evID[0]]; // Last Y
+
+//   for (let j = 0; j < hPtr; j++) {
+//     const hy = histY[j]; // Current Y
+//     const ha = histArea[j]; // Current Accumulated Area
+
+//     if (ha >= target) {
+//       // The target area is reached within the interval [ly, hy].
+//       // We need 'target - acc' more area.
+//       // The segment area is 'ha - acc'.
+//       // The segment height is 'hy - ly'.
+//       // Interpolate: result = ly + height_needed
+//       // height_needed = total_height * (area_needed / total_segment_area)
+//       return ly + ((hy - ly) * (target - acc)) / (ha - acc);
+//     }
+
+//     acc = ha;
+//     ly = hy;
+//   }
+
+//   return ly;
+// };
+
+// best ans little bit faster solution
 const separateSquares = function (squares: number[][]): number {
   const n = squares.length;
-  // Edge case: if no squares, return 0 (though constraints say n >= 1)
   if (n === 0) return 0;
 
-  // ---------------------------------------------------------
-  // 1. Coordinate Compression for X-axis
-  // ---------------------------------------------------------
-  // We need to map X coordinates to ranks [0, k].
-  // Using typed arrays for memory efficiency.
+  // Constant for packing: 2^20 (approx 1e6) is sufficient for index (up to 50,000)
+  // Packing format: (Value * OFFSET) + Index
+  // This fits within the 53-bit significand of a double (max value ~2e15 < 9e15)
+  const PACK_OFFSET = 1048576;
 
-  // xCoords stores [x_start_0, x_end_0, x_start_1, x_end_1, ...]
-  const xCoords = new Float64Array(2 * n);
-  // xIndices will be sorted to determine the rank of each coordinate
-  const xIndices = new Int32Array(2 * n);
-
+  // ---------------------------------------------------------
+  // 1. Coordinate Compression with Packed Sort
+  // ---------------------------------------------------------
+  const encodedX = new Float64Array(2 * n);
   for (let i = 0; i < n; i++) {
     const x = squares[i][0];
     const l = squares[i][2];
-    const i1 = i << 1; // Index for start coordinate
-    const i2 = i1 | 1; // Index for end coordinate
-    xCoords[i1] = x;
-    xCoords[i2] = x + l;
-    xIndices[i1] = i1;
-    xIndices[i2] = i2;
+    // Pack Left X with index 2*i
+    encodedX[2 * i] = x * PACK_OFFSET + 2 * i;
+    // Pack Right X with index 2*i + 1
+    encodedX[2 * i + 1] = (x + l) * PACK_OFFSET + (2 * i + 1);
   }
 
-  // Sort indices based on the coordinate values they point to.
-  // This avoids sorting the heavier Float64Array directly and allows mapping back easily.
-  xIndices.sort((a, b) => xCoords[a] - xCoords[b]);
+  // Native numeric sort is highly optimized
+  encodedX.sort();
 
-  // distinctX: unique sorted x coordinates
-  // rankMap: maps the original index in xCoords to its rank in distinctX
   const distinctX = new Float64Array(2 * n);
-  const rankMap = new Int32Array(2 * n);
+  // Maps square index -> rank of left edge, rank of right edge
+  const x1Ranks = new Int32Array(n);
+  const x2Ranks = new Int32Array(n);
 
   let k = 0;
-  // Initialize first element
-  distinctX[0] = xCoords[xIndices[0]];
-  rankMap[xIndices[0]] = 0;
+
+  // Unpack first element manually
+  let valAndIdx = encodedX[0];
+  let prevCoord = Math.floor(valAndIdx / PACK_OFFSET);
+  let id = valAndIdx - prevCoord * PACK_OFFSET;
+
+  distinctX[0] = prevCoord;
+  // Assign rank for first element
+  if ((id & 1) === 0) x1Ranks[id >>> 1] = 0;
+  else x2Ranks[id >>> 1] = 0;
 
   for (let i = 1; i < 2 * n; i++) {
-    const idx = xIndices[i];
-    const prevIdx = xIndices[i - 1];
-    if (xCoords[idx] !== xCoords[prevIdx]) {
+    valAndIdx = encodedX[i];
+    const coord = Math.floor(valAndIdx / PACK_OFFSET);
+    id = valAndIdx - coord * PACK_OFFSET;
+
+    if (coord !== prevCoord) {
       k++;
-      distinctX[k] = xCoords[idx];
+      distinctX[k] = coord;
+      prevCoord = coord;
     }
-    rankMap[idx] = k;
+
+    // id is 2*sqIdx for left, 2*sqIdx+1 for right
+    if ((id & 1) === 0) x1Ranks[id >>> 1] = k;
+    else x2Ranks[id >>> 1] = k;
   }
-  k++; // k is now the number of unique x coordinates
+  k++; // Number of unique X coordinates
 
   // ---------------------------------------------------------
-  // 2. Segment Tree Initialization
+  // 2. Segment Tree Setup
   // ---------------------------------------------------------
-  // The segment tree covers elementary intervals between distinct X coordinates.
-  // There are k-1 such intervals.
   const numLeaves = k - 1;
-
-  // If all x coordinates are identical (width 0), return top of last square.
   if (numLeaves <= 0) return squares[0][1];
 
-  // Use a flat array for the segment tree to avoid object overhead.
-  // Size 4 * numLeaves is sufficient.
   const treeSize = 4 * numLeaves;
   const count = new Int32Array(treeSize);
   const len = new Float64Array(treeSize);
 
-  // Recursive update function
-  // node: current tree node index (1-based)
-  // start, end: current range of elementary intervals [start, end)
-  // l, r: update range [l, r)
-  // val: +1 (add square) or -1 (remove square)
+  // Recursive update with pruning
   function update(
     node: number,
     start: number,
@@ -431,73 +634,65 @@ const separateSquares = function (squares: number[][]): number {
     r: number,
     val: number
   ) {
-    // If update range covers current node range completely
     if (l <= start && end <= r) {
       count[node] += val;
     } else {
       const mid = (start + end) >>> 1;
       const left = node << 1;
       const right = left | 1;
-      // Pruning: only recurse if overlap exists
       if (l < mid) update(left, start, mid, l, r, val);
       if (r > mid) update(right, mid, end, l, r, val);
     }
 
-    // Update the length covered by this node
     if (count[node] > 0) {
-      // If count > 0, the whole range is covered
       len[node] = distinctX[end] - distinctX[start];
     } else if (end - start === 1) {
-      // Leaf node with count 0
       len[node] = 0;
     } else {
-      // Internal node with count 0: sum of children
       len[node] = len[node << 1] + len[(node << 1) | 1];
     }
   }
 
   // ---------------------------------------------------------
-  // 3. Prepare Sweep Line Events
+  // 3. Event Sorting with Packed Sort
   // ---------------------------------------------------------
-  const evID = new Int32Array(2 * n);
-  const evY = new Float64Array(2 * n);
-
+  const encodedEvents = new Float64Array(2 * n);
   for (let i = 0; i < n; i++) {
     const y = squares[i][1];
     const l = squares[i][2];
-    const i1 = i << 1; // Event ID for bottom edge
-    const i2 = i1 | 1; // Event ID for top edge
-    evY[i1] = y;
-    evY[i2] = y + l;
-    evID[i1] = i1;
-    evID[i2] = i2;
+    // Pack: Y * OFFSET + ID
+    // ID i: Bottom edge of square i
+    // ID i+n: Top edge of square i
+    encodedEvents[i] = y * PACK_OFFSET + i;
+    encodedEvents[i + n] = (y + l) * PACK_OFFSET + (i + n);
   }
 
-  // Sort event IDs by their Y coordinate
-  evID.sort((a, b) => evY[a] - evY[b]);
+  encodedEvents.sort();
 
   // ---------------------------------------------------------
   // 4. Sweep Line Execution
   // ---------------------------------------------------------
-  // History arrays to store (y, accumulated_area) checkpoints
+  // Pre-allocate history buffers
   const histY = new Float64Array(2 * n);
   const histArea = new Float64Array(2 * n);
-  let hPtr = 0; // History pointer
+  let hPtr = 0;
 
   let curArea = 0;
-  let prevY = evY[evID[0]];
+  // Decode first Y
+  let prevY = Math.floor(encodedEvents[0] / PACK_OFFSET);
+
+  const totalEv = 2 * n;
   let i = 0;
-  const limit = 2 * n;
 
-  while (i < limit) {
-    const id = evID[i];
-    const y = evY[id];
+  while (i < totalEv) {
+    // Decode current Y
+    const packed = encodedEvents[i];
+    const y = Math.floor(packed / PACK_OFFSET);
 
-    // If we advanced in Y, calculate area of the strip we just passed
     if (y > prevY) {
-      // len[1] is the covered length of the root of the segment tree
-      const width = len[1];
-      curArea += width * (y - prevY);
+      const dy = y - prevY;
+      const width = len[1]; // Root covers total active union width
+      curArea += width * dy;
 
       // Record checkpoint
       histY[hPtr] = y;
@@ -507,18 +702,26 @@ const separateSquares = function (squares: number[][]): number {
       prevY = y;
     }
 
-    // Process all events at the current Y coordinate
-    while (i < limit && evY[evID[i]] === y) {
-      const currId = evID[i];
+    // Process all events at current Y
+    while (i < totalEv) {
+      const p = encodedEvents[i];
+      const cy = Math.floor(p / PACK_OFFSET);
+      if (cy !== y) break;
 
-      // Determine type: Even ID = Bottom (+1), Odd ID = Top (-1)
-      const type = (currId & 1) === 0 ? 1 : -1;
+      const idx = p - cy * PACK_OFFSET;
 
-      // Retrieve ranks for start and end x-coordinates
-      // If currId is start edge, start=rankMap[currId], end=rankMap[currId+1]
-      // If currId is end edge, start=rankMap[currId-1], end=rankMap[currId]
-      const r1 = rankMap[currId & ~1];
-      const r2 = rankMap[currId | 1];
+      let type = 0;
+      let sqIdx = 0;
+      if (idx < n) {
+        type = 1; // Bottom
+        sqIdx = idx;
+      } else {
+        type = -1; // Top
+        sqIdx = idx - n;
+      }
+
+      const r1 = x1Ranks[sqIdx];
+      const r2 = x2Ranks[sqIdx];
 
       if (r1 < r2) {
         update(1, 0, numLeaves, r1, r2, type);
@@ -528,26 +731,23 @@ const separateSquares = function (squares: number[][]): number {
   }
 
   // ---------------------------------------------------------
-  // 5. Calculate Result
+  // 5. Result Interpolation
   // ---------------------------------------------------------
   const target = curArea / 2;
   let acc = 0;
-  let ly = evY[evID[0]]; // Last Y
+  let ly = Math.floor(encodedEvents[0] / PACK_OFFSET);
 
   for (let j = 0; j < hPtr; j++) {
-    const hy = histY[j]; // Current Y
-    const ha = histArea[j]; // Current Accumulated Area
+    const hy = histY[j];
+    const ha = histArea[j];
 
     if (ha >= target) {
-      // The target area is reached within the interval [ly, hy].
-      // We need 'target - acc' more area.
-      // The segment area is 'ha - acc'.
-      // The segment height is 'hy - ly'.
-      // Interpolate: result = ly + height_needed
-      // height_needed = total_height * (area_needed / total_segment_area)
-      return ly + ((hy - ly) * (target - acc)) / (ha - acc);
+      // Linear interpolation
+      // area needed = target - acc
+      // segment area = ha - acc
+      // height = hy - ly
+      return ly + ((target - acc) * (hy - ly)) / (ha - acc);
     }
-
     acc = ha;
     ly = hy;
   }
