@@ -360,7 +360,7 @@
 // import "./dp/leetcode/medium/pacificAtlantic";
 // import "./dp/leetcode/medium/minimumDeleteSum";
 // import "./dp/leetcode/medium/maximalSquare";
-import "./dp/leetcode/medium/maxProfit";
+// import "./dp/leetcode/medium/maxProfit";
 
 // ! Dynamic Programming end
 /**********************************************/
@@ -376,6 +376,7 @@ import "./dp/leetcode/medium/maxProfit";
 // import "./greedy/leetcode/medium/rearrangeArray";
 // import "./greedy/leetcode/medium/maximumHappinessSum";
 // import "./greedy/leetcode/medium/avoidFlood";
+import "./greedy/leetcode/medium/maxEvents";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // ! Greedy Algorithm end
 /**********************************************/
