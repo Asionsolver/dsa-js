@@ -360,6 +360,7 @@
 // import "./dp/leetcode/medium/pacificAtlantic";
 // import "./dp/leetcode/medium/minimumDeleteSum";
 // import "./dp/leetcode/medium/maximalSquare";
+import "./dp/leetcode/medium/maxProfit";
 
 // ! Dynamic Programming end
 /**********************************************/
@@ -386,7 +387,7 @@
 // import "./binary-search/leetcode/easy/countNegatives";
 // import "./binary-search/leetcode/hard/latestDayToCross";
 // import "./binary-search/leetcode/hard/swimInWater";
-import "./binary-search/leetcode/hard/separateSquares";
+// import "./binary-search/leetcode/hard/separateSquares";
 // ! Binary Search End
 /**********************************************/
 
