@@ -51,7 +51,7 @@
 // import "./array/1D-array/leetcode/easy/isOneBitCharacter";
 // import "./array/1D-array/leetcode/easy/subarraySum";
 // import "./array/1D-array/leetcode/medium/minimumSum";
-import "./array/1D-array/leetcode/medium/maximizeSquareHoleArea";
+// import "./array/1D-array/leetcode/medium/maximizeSquareHoleArea";
 
 // 2D Array
 // import "./array/2d-array/basic";
@@ -213,6 +213,7 @@ import "./array/1D-array/leetcode/medium/maximizeSquareHoleArea";
 // import "./hash-table/leetcode/medium/countPalindromicSubsequence";
 // import "./hash-table/leetcode/medium/digArtifacts";
 // import "./hash-table/leetcode/medium/findMatrix";
+import "./hash-table/leetcode/medium/maximizeSquareArea";
 
 // import "./hash-table/leetcode/hard/countTrapezoidsTwo";
 
