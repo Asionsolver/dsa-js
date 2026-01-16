@@ -213,7 +213,8 @@
 // import "./hash-table/leetcode/medium/countPalindromicSubsequence";
 // import "./hash-table/leetcode/medium/digArtifacts";
 // import "./hash-table/leetcode/medium/findMatrix";
-import "./hash-table/leetcode/medium/maximizeSquareArea";
+// import "./hash-table/leetcode/medium/maximizeSquareArea";
+import "./hash-table/leetcode/medium/findLexSmallestString";
 
 // import "./hash-table/leetcode/hard/countTrapezoidsTwo";
 
