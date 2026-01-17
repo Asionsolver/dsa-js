@@ -295,7 +295,7 @@
 
 // import "./heap/leetcode/hard/findSomeTwo";
 // import "./heap/leetcode/hard/mostBooked";
-import "./heap/leetcode/hard/busiestServers";
+// import "./heap/leetcode/hard/busiestServers";
 
 // ! Heap file end
 /**********************************************/
@@ -342,6 +342,7 @@ import "./heap/leetcode/hard/busiestServers";
 // import "./math/leetcode/medium/maxBottlesDrunk";
 // import "./math/leetcode/medium/minOperations";
 // import "./math/leetcode/medium/sumFourDivisors";
+import "./math/leetcode/medium/largestSquareArea";
 
 // ! Math end
 /**********************************************/
