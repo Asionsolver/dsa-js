@@ -342,7 +342,7 @@
 // import "./math/leetcode/medium/maxBottlesDrunk";
 // import "./math/leetcode/medium/minOperations";
 // import "./math/leetcode/medium/sumFourDivisors";
-import "./math/leetcode/medium/largestSquareArea";
+// import "./math/leetcode/medium/largestSquareArea";
 
 // ! Math end
 /**********************************************/
@@ -382,6 +382,7 @@ import "./math/leetcode/medium/largestSquareArea";
 // import "./greedy/leetcode/medium/maximumHappinessSum";
 // import "./greedy/leetcode/medium/avoidFlood";
 // import "./greedy/leetcode/medium/maxEvents";
+import "./greedy/leetcode/medium/maxDistinctElements";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // ! Greedy Algorithm end
 /**********************************************/
