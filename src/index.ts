@@ -407,7 +407,8 @@
 // ! Prefix Sum Start
 // import "./prefix-sum/leetcode/medium/minTime";
 // import "./prefix-sum/leetcode/medium/maxSum";
-import "./prefix-sum/leetcode/medium/matrixBlockSum";
+// import "./prefix-sum/leetcode/medium/matrixBlockSum";
+import "./prefix-sum/leetcode/medium/maximumEnergy";
 // import "./prefix-sum/leetcode/medium/largestMagicSquare";
 // ! Prefix Sum End
 /**********************************************/
