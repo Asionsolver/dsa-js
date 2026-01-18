@@ -382,7 +382,7 @@
 // import "./greedy/leetcode/medium/maximumHappinessSum";
 // import "./greedy/leetcode/medium/avoidFlood";
 // import "./greedy/leetcode/medium/maxEvents";
-import "./greedy/leetcode/medium/maxDistinctElements";
+// import "./greedy/leetcode/medium/maxDistinctElements";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // ! Greedy Algorithm end
 /**********************************************/
@@ -402,6 +402,7 @@ import "./greedy/leetcode/medium/maxDistinctElements";
 // ! Prefix Sum Start
 // import "./prefix-sum/leetcode/medium/minTime";
 // import "./prefix-sum/leetcode/medium/maxSum";
+import "./prefix-sum/leetcode/medium/largestMagicSquare";
 // ! Prefix Sum End
 /**********************************************/
 
