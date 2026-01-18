@@ -368,7 +368,7 @@
 // import "./dp/leetcode/medium/minimumDeleteSum";
 // import "./dp/leetcode/medium/maximalSquare";
 // import "./dp/leetcode/medium/maxProfit";
-import "./dp/leetcode/medium/orderOfLargestPlusSign";
+// import "./dp/leetcode/medium/orderOfLargestPlusSign";
 
 // ! Dynamic Programming end
 /**********************************************/
@@ -386,6 +386,7 @@ import "./dp/leetcode/medium/orderOfLargestPlusSign";
 // import "./greedy/leetcode/medium/avoidFlood";
 // import "./greedy/leetcode/medium/maxEvents";
 // import "./greedy/leetcode/medium/maxDistinctElements";
+import "./greedy/leetcode/medium/findSmallestInteger";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // ! Greedy Algorithm end
 /**********************************************/
