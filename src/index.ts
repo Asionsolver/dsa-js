@@ -386,7 +386,7 @@
 // import "./greedy/leetcode/medium/avoidFlood";
 // import "./greedy/leetcode/medium/maxEvents";
 // import "./greedy/leetcode/medium/maxDistinctElements";
-import "./greedy/leetcode/medium/findSmallestInteger";
+// import "./greedy/leetcode/medium/findSmallestInteger";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // ! Greedy Algorithm end
 /**********************************************/
@@ -395,6 +395,7 @@ import "./greedy/leetcode/medium/findSmallestInteger";
 // ! Binary Search Start
 // import "./binary-search/leetcode/medium/maxFrequency";
 // import "./binary-search/leetcode/medium/successfulPairs";
+import "./binary-search/leetcode/medium/maxIncreasingSubarrays";
 // import "./binary-search/leetcode/easy/countNegatives";
 // import "./binary-search/leetcode/hard/latestDayToCross";
 // import "./binary-search/leetcode/hard/swimInWater";
