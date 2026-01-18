@@ -119,6 +119,7 @@
 // import "./stack/leetcode/medium/asteroidCollision";
 // import "./stack/leetcode/medium/separateSquares";
 // import "./stack/leetcode/hard/maximalRectangle";
+import "./stack/leetcode/hard/totalStrength";
 
 // ! stack end
 /**********************************************/
@@ -402,7 +403,7 @@
 // ! Prefix Sum Start
 // import "./prefix-sum/leetcode/medium/minTime";
 // import "./prefix-sum/leetcode/medium/maxSum";
-import "./prefix-sum/leetcode/medium/largestMagicSquare";
+// import "./prefix-sum/leetcode/medium/largestMagicSquare";
 // ! Prefix Sum End
 /**********************************************/
 
