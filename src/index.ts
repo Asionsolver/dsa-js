@@ -241,6 +241,7 @@
 // import "./dnc/leetcode/medium/nextBeautifulNumber";
 // import "./dnc/leetcode/medium/rangeSumQuery";
 // import "./dnc/leetcode/medium/distributeCookies";
+import "./dnc/leetcode/medium/wiggleSort";
 
 // import "./dnc/problem/ratInMaze";
 // import "./dnc/problem/nQueen";
@@ -408,7 +409,7 @@
 // import "./prefix-sum/leetcode/medium/minTime";
 // import "./prefix-sum/leetcode/medium/maxSum";
 // import "./prefix-sum/leetcode/medium/matrixBlockSum";
-import "./prefix-sum/leetcode/medium/maximumEnergy";
+// import "./prefix-sum/leetcode/medium/maximumEnergy";
 // import "./prefix-sum/leetcode/medium/largestMagicSquare";
 // ! Prefix Sum End
 /**********************************************/
