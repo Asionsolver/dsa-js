@@ -300,6 +300,7 @@ import "./linkList/leetcode/medium/sortList";
 // import "./heap/leetcode/hard/findSomeTwo";
 // import "./heap/leetcode/hard/mostBooked";
 // import "./heap/leetcode/hard/busiestServers";
+import "./heap/leetcode/hard/trapRainWater";
 
 // ! Heap file end
 /**********************************************/
