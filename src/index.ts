@@ -152,7 +152,7 @@
 // import "./linkList/leetcode/removeNthFromEnd";
 // import "./linkList/leetcode/linkedListCycle";
 // import "./linkList/leetcode/medium/modifiedList";
-import "./linkList/leetcode/medium/sortList";
+// import "./linkList/leetcode/medium/sortList";
 
 // !linked list end
 /**********************************************/
@@ -300,7 +300,7 @@ import "./linkList/leetcode/medium/sortList";
 // import "./heap/leetcode/hard/findSomeTwo";
 // import "./heap/leetcode/hard/mostBooked";
 // import "./heap/leetcode/hard/busiestServers";
-import "./heap/leetcode/hard/trapRainWater";
+// import "./heap/leetcode/hard/trapRainWater";
 
 // ! Heap file end
 /**********************************************/
@@ -326,6 +326,7 @@ import "./heap/leetcode/hard/trapRainWater";
 // import "./bit-manipulation/leetcode/missingNumber";
 // import "./bit-manipulation/leetcode/numberOneBit";
 // import "./bit-manipulation/leetcode/easy/prefixesDivBy5";
+import "./bit-manipulation/leetcode/easy/minBitwiseArray";
 // import "./bit-manipulation/leetcode/hard/minimumOneBitOperations";
 // import "./bit-manipulation/leetcode/medium/minOperations";
 // ! Bit Manipulation end
