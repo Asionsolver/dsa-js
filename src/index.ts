@@ -243,7 +243,7 @@
 // import "./dnc/leetcode/medium/rangeSumQuery";
 // import "./dnc/leetcode/medium/distributeCookies";
 // import "./dnc/leetcode/medium/wiggleSort";
-import "./dnc/leetcode/medium/findKthLargest";
+// import "./dnc/leetcode/medium/findKthLargest";
 
 // import "./dnc/problem/ratInMaze";
 // import "./dnc/problem/nQueen";
@@ -330,6 +330,7 @@ import "./dnc/leetcode/medium/findKthLargest";
 // import "./bit-manipulation/leetcode/easy/minBitwiseArray";
 // import "./bit-manipulation/leetcode/hard/minimumOneBitOperations";
 // import "./bit-manipulation/leetcode/medium/minOperations";
+import "./bit-manipulation/leetcode/medium/minBitwiseArray";
 // ! Bit Manipulation end
 /**********************************************/
 
