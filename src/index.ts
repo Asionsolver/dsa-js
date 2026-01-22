@@ -299,6 +299,7 @@
 // import "./heap/maxHeaps";
 
 // import "./heap/leetcode/hard/findSomeTwo";
+import "./heap/leetcode/easy/minimumPairRemoval";
 // import "./heap/leetcode/hard/mostBooked";
 // import "./heap/leetcode/hard/busiestServers";
 // import "./heap/leetcode/hard/trapRainWater";
@@ -330,7 +331,7 @@
 // import "./bit-manipulation/leetcode/easy/minBitwiseArray";
 // import "./bit-manipulation/leetcode/hard/minimumOneBitOperations";
 // import "./bit-manipulation/leetcode/medium/minOperations";
-import "./bit-manipulation/leetcode/medium/minBitwiseArray";
+// import "./bit-manipulation/leetcode/medium/minBitwiseArray";
 // ! Bit Manipulation end
 /**********************************************/
 
