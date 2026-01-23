@@ -153,6 +153,7 @@
 // import "./linkList/leetcode/linkedListCycle";
 // import "./linkList/leetcode/medium/modifiedList";
 // import "./linkList/leetcode/medium/sortList";
+import "./linkList/leetcode/hard/minimumPairRemoval";
 
 // !linked list end
 /**********************************************/
@@ -299,7 +300,7 @@
 // import "./heap/maxHeaps";
 
 // import "./heap/leetcode/hard/findSomeTwo";
-import "./heap/leetcode/easy/minimumPairRemoval";
+// import "./heap/leetcode/easy/minimumPairRemoval";
 // import "./heap/leetcode/hard/mostBooked";
 // import "./heap/leetcode/hard/busiestServers";
 // import "./heap/leetcode/hard/trapRainWater";
