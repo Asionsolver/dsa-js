@@ -153,7 +153,7 @@
 // import "./linkList/leetcode/linkedListCycle";
 // import "./linkList/leetcode/medium/modifiedList";
 // import "./linkList/leetcode/medium/sortList";
-import "./linkList/leetcode/hard/minimumPairRemoval";
+// import "./linkList/leetcode/hard/minimumPairRemoval";
 
 // !linked list end
 /**********************************************/
@@ -395,6 +395,7 @@ import "./linkList/leetcode/hard/minimumPairRemoval";
 // import "./greedy/leetcode/medium/maxEvents";
 // import "./greedy/leetcode/medium/maxDistinctElements";
 // import "./greedy/leetcode/medium/findSmallestInteger";
+import "./greedy/leetcode/medium/minPairSum";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // ! Greedy Algorithm end
 /**********************************************/
