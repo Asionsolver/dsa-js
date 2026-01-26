@@ -50,6 +50,7 @@
 // import "./array/1D-array/leetcode/countPermutations";
 // import "./array/1D-array/leetcode/easy/isOneBitCharacter";
 // import "./array/1D-array/leetcode/easy/subarraySum";
+import "./array/1D-array/leetcode/easy/minimumAbsDifference";
 // import "./array/1D-array/leetcode/medium/minimumSum";
 // import "./array/1D-array/leetcode/medium/maximizeSquareHoleArea";
 
@@ -277,6 +278,7 @@
 // import "./sliding-window/leetcode/hard/minWindowSubstring";
 // import "./sliding-window/leetcode/smallestSubsequence";
 // import "./sliding-window/leetcode/characterReplacement";
+// import "./sliding-window/leetcode/easy/minimumDifference";
 // import "./sliding-window/leetcode/medium/maxProfit";
 // import "./sliding-window/leetcode/medium/maximizeWin";
 // import "./sliding-window/leetcode/hard/maxPower";
@@ -395,7 +397,7 @@
 // import "./greedy/leetcode/medium/maxEvents";
 // import "./greedy/leetcode/medium/maxDistinctElements";
 // import "./greedy/leetcode/medium/findSmallestInteger";
-import "./greedy/leetcode/medium/minPairSum";
+// import "./greedy/leetcode/medium/minPairSum";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // ! Greedy Algorithm end
 /**********************************************/
