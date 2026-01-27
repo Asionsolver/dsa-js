@@ -117,6 +117,7 @@
 
 // import "./stack/leetcode/countCollisions";
 // import "./stack/leetcode/medium/minOperations";
+import "./stack/leetcode/easy/nextGreaterElement";
 // import "./stack/leetcode/medium/asteroidCollision";
 // import "./stack/leetcode/medium/separateSquares";
 // import "./stack/leetcode/hard/maximalRectangle";
@@ -320,7 +321,7 @@
 // import "./graph/dfs";
 
 // import "./graph/leetcode/hard/findAllPeople";
-import "./graph/leetcode/hard/minCost";
+// import "./graph/leetcode/hard/minCost";
 // import "./graph/leetcode/medium/processQueries";
 // import "./graph/leetcode/medium/pacificAtlantic";
 
