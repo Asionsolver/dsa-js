@@ -303,7 +303,7 @@
 
 // import "./heap/leetcode/hard/findSomeTwo";
 // import "./heap/leetcode/easy/minimumPairRemoval";
-import "./heap/leetcode/medium/minCost";
+// import "./heap/leetcode/medium/minCost";
 // import "./heap/leetcode/hard/mostBooked";
 // import "./heap/leetcode/hard/busiestServers";
 // import "./heap/leetcode/hard/trapRainWater";
@@ -320,6 +320,7 @@ import "./heap/leetcode/medium/minCost";
 // import "./graph/dfs";
 
 // import "./graph/leetcode/hard/findAllPeople";
+import "./graph/leetcode/hard/minCost";
 // import "./graph/leetcode/medium/processQueries";
 // import "./graph/leetcode/medium/pacificAtlantic";
 
