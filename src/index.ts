@@ -50,7 +50,7 @@
 // import "./array/1D-array/leetcode/countPermutations";
 // import "./array/1D-array/leetcode/easy/isOneBitCharacter";
 // import "./array/1D-array/leetcode/easy/subarraySum";
-import "./array/1D-array/leetcode/easy/minimumAbsDifference";
+// import "./array/1D-array/leetcode/easy/minimumAbsDifference";
 // import "./array/1D-array/leetcode/medium/minimumSum";
 // import "./array/1D-array/leetcode/medium/maximizeSquareHoleArea";
 
@@ -303,6 +303,7 @@ import "./array/1D-array/leetcode/easy/minimumAbsDifference";
 
 // import "./heap/leetcode/hard/findSomeTwo";
 // import "./heap/leetcode/easy/minimumPairRemoval";
+import "./heap/leetcode/medium/minCost";
 // import "./heap/leetcode/hard/mostBooked";
 // import "./heap/leetcode/hard/busiestServers";
 // import "./heap/leetcode/hard/trapRainWater";
