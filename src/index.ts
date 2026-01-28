@@ -117,7 +117,7 @@
 
 // import "./stack/leetcode/countCollisions";
 // import "./stack/leetcode/medium/minOperations";
-import "./stack/leetcode/easy/nextGreaterElement";
+// import "./stack/leetcode/easy/nextGreaterElement";
 // import "./stack/leetcode/medium/asteroidCollision";
 // import "./stack/leetcode/medium/separateSquares";
 // import "./stack/leetcode/hard/maximalRectangle";
@@ -373,6 +373,7 @@ import "./stack/leetcode/easy/nextGreaterElement";
 // import "./dp/leetcode/hard/numOfWays";
 // import "./dp/leetcode/hard/maxDotProduct";
 // import "./dp/leetcode/hard/maximumScore";
+import "./dp/leetcode/hard/minCost";
 // import "./dp/leetcode/medium/maximumProfit";
 // import "./dp/leetcode/medium/findMaxForm";
 // import "./dp/leetcode/medium/minCost";
