@@ -323,7 +323,8 @@
 // import "./graph/leetcode/hard/findAllPeople";
 // import "./graph/leetcode/hard/minCost";
 // import "./graph/leetcode/medium/processQueries";
-import "./graph/leetcode/medium/minimumCost";
+// import "./graph/leetcode/medium/minimumCost";
+import "./graph/leetcode/hard/minimumCost";
 // import "./graph/leetcode/medium/pacificAtlantic";
 
 // ! Graph file end
