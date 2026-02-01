@@ -18,9 +18,26 @@ Since there are two elements with the value 3, in total there are 2 elements hav
 
 // easy
 const nums = [11, 7, 2, 15];
+// function countElements(nums: number[]): number {
+//   const min = Math.min(...nums);
+//   const max = Math.max(...nums);
+//   return nums.filter((num) => num > min && num < max).length;
+// }
+
 function countElements(nums: number[]): number {
+  // 1. Find the minimum and maximum values in the array
   const min = Math.min(...nums);
   const max = Math.max(...nums);
-  return nums.filter((num) => num > min && num < max).length;
+
+  let count = 0;
+
+  // 2. Iterate and count elements strictly between min and max
+  for (const num of nums) {
+    if (num > min && num < max) {
+      count++;
+    }
+  }
+
+  return count;
 }
 console.log(countElements(nums));
