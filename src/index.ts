@@ -271,7 +271,7 @@
 // import "./string/leetcode/medium/countHomogenous";
 // import "./string/leetcode/medium/bestClosingTime";
 // import "./string/leetcode/medium/multiply";
-import "./string/leetcode/medium/canConvertStri";
+// import "./string/leetcode/medium/canConvertStri";
 // import "./string/leetcode/easy/minDeletionSize";
 
 // ! String End
@@ -312,6 +312,7 @@ import "./string/leetcode/medium/canConvertStri";
 // import "./heap/leetcode/hard/mostBooked";
 // import "./heap/leetcode/hard/busiestServers";
 // import "./heap/leetcode/hard/trapRainWater";
+import "./heap/leetcode/hard/minimumCost";
 
 // ! Heap file end
 /**********************************************/
