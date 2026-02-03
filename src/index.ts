@@ -50,6 +50,7 @@
 // import "./array/1D-array/leetcode/countPermutations";
 // import "./array/1D-array/leetcode/easy/isOneBitCharacter";
 // import "./array/1D-array/leetcode/easy/subarraySum";
+import "./array/1D-array/leetcode/easy/isTrionic";
 // import "./array/1D-array/leetcode/easy/minimumAbsDifference";
 // import "./array/1D-array/leetcode/easy/countElements";
 // import "./array/1D-array/leetcode/easy/minimumCost";
@@ -312,7 +313,7 @@
 // import "./heap/leetcode/hard/mostBooked";
 // import "./heap/leetcode/hard/busiestServers";
 // import "./heap/leetcode/hard/trapRainWater";
-import "./heap/leetcode/hard/minimumCost";
+// import "./heap/leetcode/hard/minimumCost";
 
 // ! Heap file end
 /**********************************************/
