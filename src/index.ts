@@ -52,7 +52,7 @@
 // import "./array/1D-array/leetcode/easy/subarraySum";
 // import "./array/1D-array/leetcode/easy/isTrionic";
 // import "./array/1D-array/leetcode/easy/minimumAbsDifference";
-import "./array/1D-array/leetcode/easy/constructTransformedArray";
+// import "./array/1D-array/leetcode/easy/constructTransformedArray";
 // import "./array/1D-array/leetcode/easy/countElements";
 // import "./array/1D-array/leetcode/easy/minimumCost";
 // import "./array/1D-array/leetcode/medium/minimumSum";
@@ -288,6 +288,7 @@ import "./array/1D-array/leetcode/easy/constructTransformedArray";
 // import "./sliding-window/leetcode/easy/minimumDifference";
 // import "./sliding-window/leetcode/medium/maxProfit";
 // import "./sliding-window/leetcode/medium/maximizeWin";
+import "./sliding-window/leetcode/medium/minRemoval";
 // import "./sliding-window/leetcode/hard/maxPower";
 // import "./sliding-window/leetcode/hard/maxSumOfThreeSubarrays";
 
