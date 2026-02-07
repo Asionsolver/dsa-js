@@ -288,7 +288,7 @@
 // import "./sliding-window/leetcode/easy/minimumDifference";
 // import "./sliding-window/leetcode/medium/maxProfit";
 // import "./sliding-window/leetcode/medium/maximizeWin";
-import "./sliding-window/leetcode/medium/minRemoval";
+// import "./sliding-window/leetcode/medium/minRemoval";
 // import "./sliding-window/leetcode/hard/maxPower";
 // import "./sliding-window/leetcode/hard/maxSumOfThreeSubarrays";
 
@@ -394,6 +394,7 @@ import "./sliding-window/leetcode/medium/minRemoval";
 // import "./dp/leetcode/medium/maximalSquare";
 // import "./dp/leetcode/medium/maxProfit";
 // import "./dp/leetcode/medium/orderOfLargestPlusSign";
+import "./dp/leetcode/medium/minimumDeletions";
 
 // ! Dynamic Programming end
 /**********************************************/
