@@ -384,6 +384,7 @@
 // import "./dp/leetcode/hard/maxDotProduct";
 // import "./dp/leetcode/hard/maximumScore";
 // import "./dp/leetcode/hard/maxSumTrionic";
+import "./dp/leetcode/hard/magicalSum";
 // import "./dp/leetcode/hard/minCost";
 // import "./dp/leetcode/medium/maximumProfit";
 // import "./dp/leetcode/medium/findMaxForm";
@@ -394,7 +395,7 @@
 // import "./dp/leetcode/medium/maximalSquare";
 // import "./dp/leetcode/medium/maxProfit";
 // import "./dp/leetcode/medium/orderOfLargestPlusSign";
-import "./dp/leetcode/medium/minimumDeletions";
+// import "./dp/leetcode/medium/minimumDeletions";
 
 // ! Dynamic Programming end
 /**********************************************/
