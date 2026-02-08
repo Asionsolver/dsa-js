@@ -185,6 +185,7 @@
 // import "./tree/leetcode/medium/maxProduct";
 // import "./tree/leetcode/medium/delNodes";
 // import "./tree/leetcode/medium/subtreeWithAllDeepest";
+import "./tree/leetcode/easy/isBalanced";
 
 // ! tree end
 /**********************************************/
@@ -384,7 +385,7 @@
 // import "./dp/leetcode/hard/maxDotProduct";
 // import "./dp/leetcode/hard/maximumScore";
 // import "./dp/leetcode/hard/maxSumTrionic";
-import "./dp/leetcode/hard/magicalSum";
+// import "./dp/leetcode/hard/magicalSum";
 // import "./dp/leetcode/hard/minCost";
 // import "./dp/leetcode/medium/maximumProfit";
 // import "./dp/leetcode/medium/findMaxForm";
