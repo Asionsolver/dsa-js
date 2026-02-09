@@ -185,7 +185,8 @@
 // import "./tree/leetcode/medium/maxProduct";
 // import "./tree/leetcode/medium/delNodes";
 // import "./tree/leetcode/medium/subtreeWithAllDeepest";
-import "./tree/leetcode/easy/isBalanced";
+import "./tree/leetcode/medium/balanceBST";
+// import "./tree/leetcode/easy/isBalanced";
 
 // ! tree end
 /**********************************************/
