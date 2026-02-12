@@ -228,6 +228,7 @@
 // import "./hash-table/leetcode/medium/findMatrix";
 // import "./hash-table/leetcode/medium/maximizeSquareArea";
 // import "./hash-table/leetcode/medium/findLexSmallestString";
+import "./hash-table/leetcode/medium/longestBalanced";
 
 // import "./hash-table/leetcode/hard/countTrapezoidsTwo";
 
@@ -251,7 +252,7 @@
 // import "./dnc/leetcode/medium/pyramidTransition";
 // import "./dnc/leetcode/medium/nextBeautifulNumber";
 // import "./dnc/leetcode/medium/longestBalanced";
-import "./dnc/leetcode/hard/longestBalanced";
+// import "./dnc/leetcode/hard/longestBalanced";
 // import "./dnc/leetcode/medium/rangeSumQuery";
 // import "./dnc/leetcode/medium/distributeCookies";
 // import "./dnc/leetcode/medium/wiggleSort";
