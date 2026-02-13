@@ -228,7 +228,7 @@
 // import "./hash-table/leetcode/medium/findMatrix";
 // import "./hash-table/leetcode/medium/maximizeSquareArea";
 // import "./hash-table/leetcode/medium/findLexSmallestString";
-import "./hash-table/leetcode/medium/longestBalanced";
+// import "./hash-table/leetcode/medium/longestBalanced";
 
 // import "./hash-table/leetcode/hard/countTrapezoidsTwo";
 
@@ -445,6 +445,7 @@ import "./hash-table/leetcode/medium/longestBalanced";
 // import "./prefix-sum/leetcode/medium/maximumEnergy";
 // import "./prefix-sum/leetcode/medium/largestMagicSquare";
 // import "./prefix-sum/leetcode/medium/maxSideLength";
+import "./prefix-sum/leetcode/medium/longestBalanced";
 // ! Prefix Sum End
 /**********************************************/
 
