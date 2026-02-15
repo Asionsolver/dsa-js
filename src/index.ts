@@ -366,6 +366,7 @@
 
 // import "./math/leetcode/easy/countOperations";
 // import "./math/leetcode/easy/plusOne";
+import "./math/leetcode/easy/addBinary";
 // import "./math/leetcode/easy/minimumOperation";
 // import "./math/leetcode/easy/minTimeToVisitAllPoints";
 // import "./math/leetcode/medium/smallestRepunitDivByK";
@@ -401,7 +402,7 @@
 // import "./dp/leetcode/medium/maxProfit";
 // import "./dp/leetcode/medium/orderOfLargestPlusSign";
 // import "./dp/leetcode/medium/minimumDeletions";
-import "./dp/leetcode/medium/champagneTower";
+// import "./dp/leetcode/medium/champagneTower";
 
 // ! Dynamic Programming end
 /**********************************************/
