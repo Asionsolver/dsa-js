@@ -257,6 +257,7 @@
 // import "./dnc/leetcode/medium/distributeCookies";
 // import "./dnc/leetcode/medium/wiggleSort";
 // import "./dnc/leetcode/medium/findKthLargest";
+import "./dnc/leetcode/easy/reverseBits";
 
 // import "./dnc/problem/ratInMaze";
 // import "./dnc/problem/nQueen";
@@ -366,7 +367,7 @@
 
 // import "./math/leetcode/easy/countOperations";
 // import "./math/leetcode/easy/plusOne";
-import "./math/leetcode/easy/addBinary";
+// import "./math/leetcode/easy/addBinary";
 // import "./math/leetcode/easy/minimumOperation";
 // import "./math/leetcode/easy/minTimeToVisitAllPoints";
 // import "./math/leetcode/medium/smallestRepunitDivByK";
