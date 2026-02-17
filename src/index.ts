@@ -257,7 +257,8 @@
 // import "./dnc/leetcode/medium/distributeCookies";
 // import "./dnc/leetcode/medium/wiggleSort";
 // import "./dnc/leetcode/medium/findKthLargest";
-import "./dnc/leetcode/easy/reverseBits";
+// import "./dnc/leetcode/easy/reverseBits";
+import "./dnc/leetcode/easy/readBinaryWatch";
 
 // import "./dnc/problem/ratInMaze";
 // import "./dnc/problem/nQueen";
