@@ -258,7 +258,7 @@
 // import "./dnc/leetcode/medium/wiggleSort";
 // import "./dnc/leetcode/medium/findKthLargest";
 // import "./dnc/leetcode/easy/reverseBits";
-import "./dnc/leetcode/easy/readBinaryWatch";
+// import "./dnc/leetcode/easy/readBinaryWatch";F
 
 // import "./dnc/problem/ratInMaze";
 // import "./dnc/problem/nQueen";
@@ -351,6 +351,7 @@ import "./dnc/leetcode/easy/readBinaryWatch";
 // import "./bit-manipulation/leetcode/missingNumber";
 // import "./bit-manipulation/leetcode/numberOneBit";
 // import "./bit-manipulation/leetcode/easy/prefixesDivBy5";
+import "./bit-manipulation/leetcode/easy/hasAlternatingBits";
 // import "./bit-manipulation/leetcode/easy/minBitwiseArray";
 // import "./bit-manipulation/leetcode/hard/minimumOneBitOperations";
 // import "./bit-manipulation/leetcode/medium/minOperations";
