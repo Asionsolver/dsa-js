@@ -85,6 +85,7 @@
 // ! two pointer start
 // import "./twoPointer/leetcode/isSubsequence";
 // import "./twoPointer/leetcode/hard/recoverArray";
+import "./twoPointer/leetcode/easy/countBinarySubstrings";
 
 // ! two pointer file end
 /**********************************************/
@@ -351,7 +352,7 @@
 // import "./bit-manipulation/leetcode/missingNumber";
 // import "./bit-manipulation/leetcode/numberOneBit";
 // import "./bit-manipulation/leetcode/easy/prefixesDivBy5";
-import "./bit-manipulation/leetcode/easy/hasAlternatingBits";
+// import "./bit-manipulation/leetcode/easy/hasAlternatingBits";
 // import "./bit-manipulation/leetcode/easy/minBitwiseArray";
 // import "./bit-manipulation/leetcode/hard/minimumOneBitOperations";
 // import "./bit-manipulation/leetcode/medium/minOperations";
