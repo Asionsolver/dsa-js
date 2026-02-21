@@ -125,6 +125,7 @@
 // import "./stack/leetcode/easy/nextGreaterElement";
 // import "./stack/leetcode/medium/asteroidCollision";
 // import "./stack/leetcode/medium/separateSquares";
+import "./stack/leetcode/medium/StockSpanner";
 // import "./stack/leetcode/hard/maximalRectangle";
 // import "./stack/leetcode/hard/totalStrength";
 // import "./stack/leetcode/hard/canSeePersonsCount";
@@ -353,7 +354,7 @@
 // import "./bit-manipulation/leetcode/missingNumber";
 // import "./bit-manipulation/leetcode/numberOneBit";
 // import "./bit-manipulation/leetcode/easy/prefixesDivBy5";
-import "./bit-manipulation/leetcode/easy/countPrimeSetBits";
+// import "./bit-manipulation/leetcode/easy/countPrimeSetBits";
 // import "./bit-manipulation/leetcode/easy/hasAlternatingBits";
 // import "./bit-manipulation/leetcode/easy/minBitwiseArray";
 // import "./bit-manipulation/leetcode/hard/minimumOneBitOperations";
