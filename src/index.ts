@@ -250,7 +250,7 @@
 // import "./dnc/leetcode/combination";
 // import "./dnc/leetcode/permuteUnique";
 // import "./dnc/leetcode/hard/numSquarefulPerms";
-import "./dnc/leetcode/hard/makeLargestSpecial";
+// import "./dnc/leetcode/hard/makeLargestSpecial";
 // import "./dnc/leetcode/medium/pyramidTransition";
 // import "./dnc/leetcode/medium/nextBeautifulNumber";
 // import "./dnc/leetcode/medium/longestBalanced";
@@ -353,6 +353,7 @@ import "./dnc/leetcode/hard/makeLargestSpecial";
 // import "./bit-manipulation/leetcode/missingNumber";
 // import "./bit-manipulation/leetcode/numberOneBit";
 // import "./bit-manipulation/leetcode/easy/prefixesDivBy5";
+import "./bit-manipulation/leetcode/easy/countPrimeSetBits";
 // import "./bit-manipulation/leetcode/easy/hasAlternatingBits";
 // import "./bit-manipulation/leetcode/easy/minBitwiseArray";
 // import "./bit-manipulation/leetcode/hard/minimumOneBitOperations";
