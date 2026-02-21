@@ -126,7 +126,8 @@
 // import "./stack/leetcode/medium/asteroidCollision";
 // import "./stack/leetcode/medium/separateSquares";
 // import "./stack/leetcode/medium/StockSpanner";
-import "./stack/leetcode/medium/sumSubarrayMins";
+// import "./stack/leetcode/medium/sumSubarrayMins";
+import "./stack/leetcode/medium/subArrayRanges";
 // import "./stack/leetcode/hard/maximalRectangle";
 // import "./stack/leetcode/hard/totalStrength";
 // import "./stack/leetcode/hard/canSeePersonsCount";
