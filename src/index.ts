@@ -127,7 +127,8 @@
 // import "./stack/leetcode/medium/separateSquares";
 // import "./stack/leetcode/medium/StockSpanner";
 // import "./stack/leetcode/medium/sumSubarrayMins";
-import "./stack/leetcode/medium/subArrayRanges";
+// import "./stack/leetcode/medium/subArrayRanges";
+// import "./stack/leetcode/medium/dailyTemperatures.ts";
 // import "./stack/leetcode/hard/maximalRectangle";
 // import "./stack/leetcode/hard/totalStrength";
 // import "./stack/leetcode/hard/canSeePersonsCount";
@@ -357,6 +358,7 @@ import "./stack/leetcode/medium/subArrayRanges";
 // import "./bit-manipulation/leetcode/numberOneBit";
 // import "./bit-manipulation/leetcode/easy/prefixesDivBy5";
 // import "./bit-manipulation/leetcode/easy/countPrimeSetBits";
+import "./bit-manipulation/leetcode/easy/binaryGap";
 // import "./bit-manipulation/leetcode/easy/hasAlternatingBits";
 // import "./bit-manipulation/leetcode/easy/minBitwiseArray";
 // import "./bit-manipulation/leetcode/hard/minimumOneBitOperations";
