@@ -127,7 +127,7 @@
 // import "./stack/leetcode/medium/separateSquares";
 // import "./stack/leetcode/medium/StockSpanner";
 // import "./stack/leetcode/medium/sumSubarrayMins";
-import "./stack/leetcode/medium/nextGreaterElements";
+// import "./stack/leetcode/medium/nextGreaterElements";
 // import "./stack/leetcode/medium/subArrayRanges";
 // import "./stack/leetcode/medium/dailyTemperatures.ts";
 // import "./stack/leetcode/hard/maximalRectangle";
@@ -235,6 +235,7 @@ import "./stack/leetcode/medium/nextGreaterElements";
 // import "./hash-table/leetcode/medium/maximizeSquareArea";
 // import "./hash-table/leetcode/medium/findLexSmallestString";
 // import "./hash-table/leetcode/medium/longestBalanced";
+import "./hash-table/leetcode/medium/hasAllCodes";
 
 // import "./hash-table/leetcode/hard/countTrapezoidsTwo";
 
