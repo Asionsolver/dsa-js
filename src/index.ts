@@ -193,6 +193,7 @@
 // import "./tree/leetcode/medium/subtreeWithAllDeepest";
 // import "./tree/leetcode/medium/balanceBST";
 // import "./tree/leetcode/easy/isBalanced";
+import "./tree/leetcode/easy/sumRootToLeaf";
 
 // ! tree end
 /**********************************************/
@@ -235,7 +236,7 @@
 // import "./hash-table/leetcode/medium/maximizeSquareArea";
 // import "./hash-table/leetcode/medium/findLexSmallestString";
 // import "./hash-table/leetcode/medium/longestBalanced";
-import "./hash-table/leetcode/medium/hasAllCodes";
+// import "./hash-table/leetcode/medium/hasAllCodes";
 
 // import "./hash-table/leetcode/hard/countTrapezoidsTwo";
 
