@@ -193,7 +193,7 @@
 // import "./tree/leetcode/medium/subtreeWithAllDeepest";
 // import "./tree/leetcode/medium/balanceBST";
 // import "./tree/leetcode/easy/isBalanced";
-import "./tree/leetcode/easy/sumRootToLeaf";
+// import "./tree/leetcode/easy/sumRootToLeaf";
 
 // ! tree end
 /**********************************************/
@@ -363,6 +363,7 @@ import "./tree/leetcode/easy/sumRootToLeaf";
 // import "./bit-manipulation/leetcode/easy/countPrimeSetBits";
 // import "./bit-manipulation/leetcode/easy/binaryGap";
 // import "./bit-manipulation/leetcode/easy/hasAlternatingBits";
+import "./bit-manipulation/leetcode/easy/sortByBits";
 // import "./bit-manipulation/leetcode/easy/minBitwiseArray";
 // import "./bit-manipulation/leetcode/hard/minimumOneBitOperations";
 // import "./bit-manipulation/leetcode/medium/minOperations";
