@@ -368,7 +368,7 @@
 // import "./bit-manipulation/leetcode/hard/minimumOneBitOperations";
 // import "./bit-manipulation/leetcode/medium/minOperations";
 // import "./bit-manipulation/leetcode/medium/minBitwiseArray";
-import "./bit-manipulation/leetcode/medium/numSteps";
+// import "./bit-manipulation/leetcode/medium/numSteps";
 // ! Bit Manipulation end
 /**********************************************/
 
@@ -390,6 +390,7 @@ import "./bit-manipulation/leetcode/medium/numSteps";
 // import "./math/leetcode/medium/minOperations";
 // import "./math/leetcode/medium/sumFourDivisors";
 // import "./math/leetcode/medium/largestSquareArea";
+import "./math/leetcode/hard/minOperations";
 
 // ! Math end
 /**********************************************/
