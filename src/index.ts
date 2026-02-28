@@ -79,7 +79,7 @@
 // import "./twoPointer/leetcode/isSubsequence";
 // import "./twoPointer/leetcode/hard/recoverArray";
 // import "./twoPointer/leetcode/easy/countBinarySubstrings";
-import "./twoPointer/leetcode/medium/nextGreaterElement";
+// import "./twoPointer/leetcode/medium/nextGreaterElement";
 
 // ! two pointer file end
 /**********************************************/
@@ -128,6 +128,7 @@ import "./twoPointer/leetcode/medium/nextGreaterElement";
 // import "./stack/leetcode/hard/totalStrength";
 // import "./stack/leetcode/hard/canSeePersonsCount";
 // import "./stack/leetcode/hard/minMaxSubarraySum";
+import "./stack/leetcode/hard/secondGreaterElement";
 
 // ! stack end
 /**********************************************/
