@@ -1,6 +1,5 @@
 /**********************************************/
 // ! array file start
-
 // 1D Array
 // import "./array/1D-array/basic";
 // import "./array/1D-array/basicTwo";
@@ -25,7 +24,6 @@
 // import "./array/1D-array/problem/equalSum";
 // import "./array/1D-array/problem/prefixAvg";
 // import "./array/1D-array/problem/productArrayPuzzle";
-
 // import "./array/1D-array/leetcode/productExceptSelf";
 // import "./array/1D-array/leetcode/rotateArray";
 // import "./array/1D-array/leetcode/mergeSortedArray";
@@ -42,7 +40,6 @@
 // import "./array/1D-array/leetcode/removeElementWithTarget";
 // import "./array/1D-array/leetcode/threeSumMulti";
 // import "./array/1D-array/leetcode/fourSum";
-
 // import "./array/1D-array/leetcode/numTilePossibilities";
 // import "./array/1D-array/leetcode/pivotIndex";
 // import "./array/1D-array/leetcode/countPartition";
@@ -57,12 +54,10 @@
 // import "./array/1D-array/leetcode/easy/minimumCost";
 // import "./array/1D-array/leetcode/medium/minimumSum";
 // import "./array/1D-array/leetcode/medium/maximizeSquareHoleArea";
-
 // 2D Array
 // import "./array/2d-array/basic";
 // import "./array/2d-array/problem/2DPrefixSum";
 // import "./array/2d-array/problem/buildPrefix";
-
 // import "./array/2d-array/leetcode/2DrangeSum";
 // import "./array/2d-array/leetcode/maxSumSubMatrix";
 // import "./array/2d-array/leetcode/medium/countUnguarded";
@@ -70,9 +65,7 @@
 // import "./array/2d-array/leetcode/medium/maxTwoEvents";
 // import "./array/2d-array/leetcode/medium/maxMatrixSum";
 // import "./array/2d-array/leetcode/hard/numberOfPaths";
-
 // ! array file end
-
 /**********************************************/
 
 /**********************************************/
@@ -86,6 +79,7 @@
 // import "./twoPointer/leetcode/isSubsequence";
 // import "./twoPointer/leetcode/hard/recoverArray";
 // import "./twoPointer/leetcode/easy/countBinarySubstrings";
+import "./twoPointer/leetcode/medium/nextGreaterElement";
 
 // ! two pointer file end
 /**********************************************/
@@ -173,7 +167,6 @@
 
 /**********************************************/
 // ! tree start
-
 // import "./tree/binaryTree";
 // import "./tree/nAryTree";
 // import "./tree/avlTree";
@@ -194,19 +187,15 @@
 // import "./tree/leetcode/medium/balanceBST";
 // import "./tree/leetcode/easy/isBalanced";
 // import "./tree/leetcode/easy/sumRootToLeaf";
-
 // ! tree end
 /**********************************************/
 
 /**********************************************/
 // ! hash table start
-
 // import "./hash-table/set";
-
 // import "./hash-table/problem/frequency";
 // import "./hash-table/problem/longestSubArray";
 // import "./hash-table/problem/countSubarray";
-
 // import "./hash-table/leetcode/sortPeople";
 // import "./hash-table/leetcode/intersection";
 // import "./hash-table/leetcode/intersectionTwo";
@@ -224,11 +213,9 @@
 // import "./hash-table/leetcode/countTrapezoids";
 // import "./hash-table/leetcode/countCoveredBuildings";
 // import "./hash-table/leetcode/validateCoupons";
-
 // import "./hash-table/leetcode/easy/twoSum";
 // import "./hash-table/leetcode/easy/findFinalValue";
 // import "./hash-table/leetcode/easy/repeatedNTimes";
-
 // import "./hash-table/leetcode/medium/maxSubarraySum";
 // import "./hash-table/leetcode/medium/countPalindromicSubsequence";
 // import "./hash-table/leetcode/medium/digArtifacts";
@@ -237,19 +224,15 @@
 // import "./hash-table/leetcode/medium/findLexSmallestString";
 // import "./hash-table/leetcode/medium/longestBalanced";
 // import "./hash-table/leetcode/medium/hasAllCodes";
-
 // import "./hash-table/leetcode/hard/countTrapezoidsTwo";
-
 // ! hash table end
 /**********************************************/
 
 /**********************************************/
 // ! DnC start
-
 // import "./dnc/mergeSort";
 // import "./dnc/quickSort";
 // import "./dnc/backtracking";
-
 // import "./dnc/leetcode/nQueen";
 // import "./dnc/leetcode/generateParentheses";
 // import "./dnc/leetcode/letterCombination";
@@ -268,10 +251,8 @@
 // import "./dnc/leetcode/medium/findKthLargest";
 // import "./dnc/leetcode/easy/reverseBits";
 // import "./dnc/leetcode/easy/readBinaryWatch";F
-
 // import "./dnc/problem/ratInMaze";
 // import "./dnc/problem/nQueen";
-
 // ! DnC end
 /**********************************************/
 
@@ -307,7 +288,6 @@
 // import "./sliding-window/leetcode/medium/minRemoval";
 // import "./sliding-window/leetcode/hard/maxPower";
 // import "./sliding-window/leetcode/hard/maxSumOfThreeSubarrays";
-
 // import "./sliding-window/problem/smallestDistinctWindow";
 // ! Sliding Window End
 /**********************************************/
@@ -324,7 +304,6 @@
 /**********************************************/
 // ! Heap start
 // import "./heap/maxHeaps";
-
 // import "./heap/leetcode/hard/findSomeTwo";
 // import "./heap/leetcode/easy/minimumPairRemoval";
 // import "./heap/leetcode/medium/minCost";
@@ -332,25 +311,21 @@
 // import "./heap/leetcode/hard/busiestServers";
 // import "./heap/leetcode/hard/trapRainWater";
 // import "./heap/leetcode/hard/minimumCost";
-
 // ! Heap file end
 /**********************************************/
 
 /**********************************************/
 // ! Graph file start
-
 // import "./graph/graphList";
 // import "./graph/graphMatrix";
 // import "./graph/bfs";
 // import "./graph/dfs";
-
 // import "./graph/leetcode/hard/findAllPeople";
 // import "./graph/leetcode/hard/minCost";
 // import "./graph/leetcode/medium/processQueries";
 // import "./graph/leetcode/medium/minimumCost";
 // import "./graph/leetcode/hard/minimumCost";
 // import "./graph/leetcode/medium/pacificAtlantic";
-
 // ! Graph file end
 /**********************************************/
 
@@ -392,7 +367,6 @@
 // import "./math/leetcode/medium/sumFourDivisors";
 // import "./math/leetcode/medium/largestSquareArea";
 // import "./math/leetcode/hard/minOperations";
-
 // ! Math end
 /**********************************************/
 
@@ -421,8 +395,7 @@
 // import "./dp/leetcode/medium/orderOfLargestPlusSign";
 // import "./dp/leetcode/medium/minimumDeletions";
 // import "./dp/leetcode/medium/champagneTower";
-import "./dp/leetcode/medium/largest1BorderedSquare";
-
+// import "./dp/leetcode/medium/largest1BorderedSquare";
 // ! Dynamic Programming end
 /**********************************************/
 
