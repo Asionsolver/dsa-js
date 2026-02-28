@@ -128,7 +128,8 @@
 // import "./stack/leetcode/hard/totalStrength";
 // import "./stack/leetcode/hard/canSeePersonsCount";
 // import "./stack/leetcode/hard/minMaxSubarraySum";
-import "./stack/leetcode/hard/secondGreaterElement";
+// import "./stack/leetcode/hard/secondGreaterElement";
+import "./stack/leetcode/hard/maximumScore";
 
 // ! stack end
 /**********************************************/
