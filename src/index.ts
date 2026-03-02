@@ -129,7 +129,7 @@
 // import "./stack/leetcode/hard/canSeePersonsCount";
 // import "./stack/leetcode/hard/minMaxSubarraySum";
 // import "./stack/leetcode/hard/secondGreaterElement";
-import "./stack/leetcode/hard/maximumScore";
+// import "./stack/leetcode/hard/maximumScore";
 
 // ! stack end
 /**********************************************/
@@ -416,6 +416,7 @@ import "./stack/leetcode/hard/maximumScore";
 // import "./greedy/leetcode/medium/maxDistinctElements";
 // import "./greedy/leetcode/medium/findSmallestInteger";
 // import "./greedy/leetcode/medium/minPairSum";
+import "./greedy/leetcode/medium/minSwaps";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // ! Greedy Algorithm end
 /**********************************************/
