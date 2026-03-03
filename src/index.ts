@@ -273,6 +273,7 @@
 // import "./string/leetcode/medium/bestClosingTime";
 // import "./string/leetcode/medium/multiply";
 // import "./string/leetcode/medium/canConvertStri";
+import "./string/leetcode/medium/findKthBit";
 // import "./string/leetcode/easy/minDeletionSize";
 
 // ! String End
@@ -416,7 +417,7 @@
 // import "./greedy/leetcode/medium/maxDistinctElements";
 // import "./greedy/leetcode/medium/findSmallestInteger";
 // import "./greedy/leetcode/medium/minPairSum";
-import "./greedy/leetcode/medium/minSwaps";
+// import "./greedy/leetcode/medium/minSwaps";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // ! Greedy Algorithm end
 /**********************************************/
