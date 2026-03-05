@@ -65,7 +65,7 @@
 // import "./array/2d-array/leetcode/medium/maxTwoEvents";
 // import "./array/2d-array/leetcode/medium/maxMatrixSum";
 // import "./array/2d-array/leetcode/hard/numberOfPaths";
-import "./array/2d-array/leetcode/easy/numSpecial";
+// import "./array/2d-array/leetcode/easy/numSpecial";
 // ! array file end
 /**********************************************/
 
@@ -276,6 +276,7 @@ import "./array/2d-array/leetcode/easy/numSpecial";
 // import "./string/leetcode/medium/canConvertStri";
 // import "./string/leetcode/medium/findKthBit";
 // import "./string/leetcode/easy/minDeletionSize";
+import "./string/leetcode/easy/minOperations";
 
 // ! String End
 /**********************************************/
