@@ -276,7 +276,8 @@
 // import "./string/leetcode/medium/canConvertStri";
 // import "./string/leetcode/medium/findKthBit";
 // import "./string/leetcode/easy/minDeletionSize";
-import "./string/leetcode/easy/minOperations";
+// import "./string/leetcode/easy/minOperations";
+import "./string/leetcode/easy/checkOnesSegment";
 
 // ! String End
 /**********************************************/
