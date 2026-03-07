@@ -277,7 +277,7 @@
 // import "./string/leetcode/medium/findKthBit";
 // import "./string/leetcode/easy/minDeletionSize";
 // import "./string/leetcode/easy/minOperations";
-import "./string/leetcode/easy/checkOnesSegment";
+// import "./string/leetcode/easy/checkOnesSegment";
 
 // ! String End
 /**********************************************/
@@ -292,6 +292,7 @@ import "./string/leetcode/easy/checkOnesSegment";
 // import "./sliding-window/leetcode/medium/maxProfit";
 // import "./sliding-window/leetcode/medium/maximizeWin";
 // import "./sliding-window/leetcode/medium/minRemoval";
+import "./sliding-window/leetcode/medium/minFlips";
 // import "./sliding-window/leetcode/hard/maxPower";
 // import "./sliding-window/leetcode/hard/maxSumOfThreeSubarrays";
 // import "./sliding-window/problem/smallestDistinctWindow";
