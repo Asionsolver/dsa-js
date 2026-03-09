@@ -54,7 +54,7 @@
 // import "./array/1D-array/leetcode/easy/minimumCost";
 // import "./array/1D-array/leetcode/medium/minimumSum";
 // import "./array/1D-array/leetcode/medium/maximizeSquareHoleArea";
-import "./array/1D-array/leetcode/medium/findDifferentBinaryString";
+// import "./array/1D-array/leetcode/medium/findDifferentBinaryString";
 // 2D Array
 // import "./array/2d-array/basic";
 // import "./array/2d-array/problem/2DPrefixSum";
@@ -449,6 +449,7 @@ import "./array/1D-array/leetcode/medium/findDifferentBinaryString";
 // import "./prefix-sum/leetcode/medium/largestMagicSquare";
 // import "./prefix-sum/leetcode/medium/maxSideLength";
 // import "./prefix-sum/leetcode/medium/longestBalanced";
+import "./prefix-sum/leetcode/medium/numberOfStableArrays";
 // ! Prefix Sum End
 /**********************************************/
 
