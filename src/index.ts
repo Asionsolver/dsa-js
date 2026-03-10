@@ -449,7 +449,8 @@
 // import "./prefix-sum/leetcode/medium/largestMagicSquare";
 // import "./prefix-sum/leetcode/medium/maxSideLength";
 // import "./prefix-sum/leetcode/medium/longestBalanced";
-import "./prefix-sum/leetcode/medium/numberOfStableArrays";
+// import "./prefix-sum/leetcode/medium/numberOfStableArrays";
+import "./prefix-sum/leetcode/hard/numberOfStableArrays";
 // ! Prefix Sum End
 /**********************************************/
 
