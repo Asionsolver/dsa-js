@@ -183,7 +183,7 @@
 // import "./tree/leetcode/hard/maxKDivisibleComponents";
 // import "./tree/leetcode/hard/sumOfDistancesInTree";
 // import "./tree/leetcode/hard/timeTaken";
-import "./tree/leetcode/hard/Fancy";
+// import "./tree/leetcode/hard/Fancy";
 // import "./tree/leetcode/medium/maxLevelSum";
 // import "./tree/leetcode/medium/countHighestScoreNodes";
 // import "./tree/leetcode/medium/maxProduct";
@@ -449,6 +449,7 @@ import "./tree/leetcode/hard/Fancy";
 // import "./prefix-sum/leetcode/medium/minTime";
 // import "./prefix-sum/leetcode/medium/maxSum";
 // import "./prefix-sum/leetcode/medium/matrixBlockSum";
+import "./prefix-sum/leetcode/medium/getBiggestThree";
 // import "./prefix-sum/leetcode/medium/maximumEnergy";
 // import "./prefix-sum/leetcode/medium/largestMagicSquare";
 // import "./prefix-sum/leetcode/medium/maxSideLength";
