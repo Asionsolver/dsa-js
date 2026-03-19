@@ -456,7 +456,8 @@
 // import "./prefix-sum/leetcode/medium/maxSideLength";
 // import "./prefix-sum/leetcode/medium/longestBalanced";
 // import "./prefix-sum/leetcode/medium/numberOfStableArrays";
-import "./prefix-sum/leetcode/medium/countSubmatrices";
+// import "./prefix-sum/leetcode/medium/countSubmatrices";
+import "./prefix-sum/leetcode/medium/numberOfSubmatrices";
 // import "./prefix-sum/leetcode/hard/numberOfStableArrays";
 // ! Prefix Sum End
 /**********************************************/
