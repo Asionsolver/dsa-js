@@ -68,6 +68,7 @@
 // import "./array/2d-array/leetcode/medium/minAbsDiff";
 // import "./array/2d-array/leetcode/hard/numberOfPaths";
 // import "./array/2d-array/leetcode/easy/numSpecial";
+import "./array/2d-array/leetcode/easy/findRotation";
 // ! array file end
 /**********************************************/
 
@@ -82,7 +83,7 @@
 // import "./twoPointer/leetcode/isSubsequence";
 // import "./twoPointer/leetcode/hard/recoverArray";
 // import "./twoPointer/leetcode/easy/countBinarySubstrings";
-import "./twoPointer/leetcode/easy/flipSubmatrix";
+// import "./twoPointer/leetcode/easy/flipSubmatrix";
 // import "./twoPointer/leetcode/medium/nextGreaterElement";
 
 // ! two pointer file end
