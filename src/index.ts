@@ -68,7 +68,7 @@
 // import "./array/2d-array/leetcode/medium/minAbsDiff";
 // import "./array/2d-array/leetcode/hard/numberOfPaths";
 // import "./array/2d-array/leetcode/easy/numSpecial";
-import "./array/2d-array/leetcode/easy/findRotation";
+// import "./array/2d-array/leetcode/easy/findRotation";
 // ! array file end
 /**********************************************/
 
@@ -410,6 +410,7 @@ import "./array/2d-array/leetcode/easy/findRotation";
 // import "./dp/leetcode/medium/minimumDeletions";
 // import "./dp/leetcode/medium/champagneTower";
 // import "./dp/leetcode/medium/largest1BorderedSquare";
+import "./dp/leetcode/medium/maxProductPath";
 // ! Dynamic Programming end
 /**********************************************/
 
