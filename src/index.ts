@@ -410,7 +410,7 @@
 // import "./dp/leetcode/medium/minimumDeletions";
 // import "./dp/leetcode/medium/champagneTower";
 // import "./dp/leetcode/medium/largest1BorderedSquare";
-import "./dp/leetcode/medium/maxProductPath";
+// import "./dp/leetcode/medium/maxProductPath";
 // ! Dynamic Programming end
 /**********************************************/
 
@@ -462,6 +462,7 @@ import "./dp/leetcode/medium/maxProductPath";
 // import "./prefix-sum/leetcode/medium/numberOfStableArrays";
 // import "./prefix-sum/leetcode/medium/countSubmatrices";
 // import "./prefix-sum/leetcode/medium/numberOfSubmatrices";
+import "./prefix-sum/leetcode/medium/constructProductMatrix";
 // import "./prefix-sum/leetcode/hard/numberOfStableArrays";
 // ! Prefix Sum End
 /**********************************************/
