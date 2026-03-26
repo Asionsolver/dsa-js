@@ -463,8 +463,9 @@
 // import "./prefix-sum/leetcode/medium/countSubmatrices";
 // import "./prefix-sum/leetcode/medium/numberOfSubmatrices";
 // import "./prefix-sum/leetcode/medium/constructProductMatrix";
-import "./prefix-sum/leetcode/medium/canPartitionGrid";
+// import "./prefix-sum/leetcode/medium/canPartitionGrid";
 // import "./prefix-sum/leetcode/hard/numberOfStableArrays";
+import "./prefix-sum/leetcode/hard/canPartitionGrid";
 // ! Prefix Sum End
 /**********************************************/
 
