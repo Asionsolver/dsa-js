@@ -284,6 +284,7 @@
 // import "./string/leetcode/easy/minDeletionSize";
 // import "./string/leetcode/easy/minOperations";
 // import "./string/leetcode/easy/checkOnesSegment";
+import "./string/leetcode/easy/canBeEqual";
 
 // ! String End
 /**********************************************/
@@ -419,7 +420,7 @@
 /**********************************************/
 // ! Greedy Algorithm start
 // import "./greedy/leetcode/hard/intersectionSizeTwo";
-import "./greedy/leetcode/hard/findTheString";
+// import "./greedy/leetcode/hard/findTheString";
 // import "./greedy/leetcode/medium/minDeletionSize";
 // import "./greedy/leetcode/medium/findOriginalArray";
 // import "./greedy/leetcode/medium/canReorderDoubled";
