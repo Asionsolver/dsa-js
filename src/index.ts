@@ -233,6 +233,7 @@
 // import "./hash-table/leetcode/medium/findLexSmallestString";
 // import "./hash-table/leetcode/medium/longestBalanced";
 // import "./hash-table/leetcode/medium/hasAllCodes";
+import "./hash-table/leetcode/medium/checkStrings";
 // import "./hash-table/leetcode/hard/countTrapezoidsTwo";
 // ! hash table end
 /**********************************************/
@@ -284,7 +285,7 @@
 // import "./string/leetcode/easy/minDeletionSize";
 // import "./string/leetcode/easy/minOperations";
 // import "./string/leetcode/easy/checkOnesSegment";
-import "./string/leetcode/easy/canBeEqual";
+// import "./string/leetcode/easy/canBeEqual";
 
 // ! String End
 /**********************************************/
