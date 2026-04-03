@@ -403,8 +403,9 @@
 // import "./dp/leetcode/hard/maxSumTrionic";
 // import "./dp/leetcode/hard/magicalSum";
 // import "./dp/leetcode/hard/minCost";
+import "./dp/leetcode/hard/maxWalls";
 // import "./dp/leetcode/medium/maximumProfit";
-import "./dp/leetcode/medium/maximumAmount";
+// import "./dp/leetcode/medium/maximumAmount";
 // import "./dp/leetcode/medium/findMaxForm";
 // import "./dp/leetcode/medium/minCost";
 // import "./dp/leetcode/medium/maxSumDivThree";
