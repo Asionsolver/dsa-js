@@ -283,7 +283,8 @@
 // import "./string/leetcode/medium/multiply";
 // import "./string/leetcode/medium/canConvertStri";
 // import "./string/leetcode/medium/findKthBit";
-import "./string/leetcode/medium/decodeCiphertext";
+// import "./string/leetcode/medium/decodeCiphertext";
+import "./string/leetcode/medium/judgeCircle";
 // import "./string/leetcode/easy/minDeletionSize";
 // import "./string/leetcode/easy/minOperations";
 // import "./string/leetcode/easy/checkOnesSegment";
