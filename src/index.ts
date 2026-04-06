@@ -235,6 +235,7 @@
 // import "./hash-table/leetcode/medium/longestBalanced";
 // import "./hash-table/leetcode/medium/hasAllCodes";
 // import "./hash-table/leetcode/medium/checkStrings";
+import "./hash-table/leetcode/medium/robotSim";
 // import "./hash-table/leetcode/hard/countTrapezoidsTwo";
 // ! hash table end
 /**********************************************/
@@ -284,7 +285,7 @@
 // import "./string/leetcode/medium/canConvertStri";
 // import "./string/leetcode/medium/findKthBit";
 // import "./string/leetcode/medium/decodeCiphertext";
-import "./string/leetcode/medium/judgeCircle";
+// import "./string/leetcode/medium/judgeCircle";
 // import "./string/leetcode/easy/minDeletionSize";
 // import "./string/leetcode/easy/minOperations";
 // import "./string/leetcode/easy/checkOnesSegment";
