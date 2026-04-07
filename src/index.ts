@@ -235,7 +235,7 @@
 // import "./hash-table/leetcode/medium/longestBalanced";
 // import "./hash-table/leetcode/medium/hasAllCodes";
 // import "./hash-table/leetcode/medium/checkStrings";
-import "./hash-table/leetcode/medium/robotSim";
+// import "./hash-table/leetcode/medium/robotSim";
 // import "./hash-table/leetcode/hard/countTrapezoidsTwo";
 // ! hash table end
 /**********************************************/
@@ -491,4 +491,10 @@ import "./hash-table/leetcode/medium/robotSim";
 // ! Backtracking Start
 // import "./backtracking/leetcode/medium/getHappyString";
 // ! Backtracking End
+/**********************************************/
+
+/**********************************************/
+// ! Simulation Start
+import "./simulation/leetcode/medium/Robot";
+// ! Simulation End
 /**********************************************/
