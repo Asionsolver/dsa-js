@@ -261,6 +261,7 @@
 // import "./dnc/leetcode/medium/distributeCookies";
 // import "./dnc/leetcode/medium/wiggleSort";
 // import "./dnc/leetcode/medium/findKthLargest";
+import "./dnc/leetcode/medium/xorAfterQueries";
 // import "./dnc/leetcode/easy/reverseBits";
 // import "./dnc/leetcode/easy/readBinaryWatch";F
 // import "./dnc/problem/ratInMaze";
@@ -495,6 +496,6 @@
 
 /**********************************************/
 // ! Simulation Start
-import "./simulation/leetcode/medium/Robot";
+// import "./simulation/leetcode/medium/Robot";
 // ! Simulation End
 /**********************************************/
