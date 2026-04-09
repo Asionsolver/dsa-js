@@ -253,6 +253,7 @@
 // import "./dnc/leetcode/permuteUnique";
 // import "./dnc/leetcode/hard/numSquarefulPerms";
 // import "./dnc/leetcode/hard/makeLargestSpecial";
+import "./dnc/leetcode/hard/xorAfterQueries";
 // import "./dnc/leetcode/medium/pyramidTransition";
 // import "./dnc/leetcode/medium/nextBeautifulNumber";
 // import "./dnc/leetcode/medium/longestBalanced";
@@ -261,7 +262,7 @@
 // import "./dnc/leetcode/medium/distributeCookies";
 // import "./dnc/leetcode/medium/wiggleSort";
 // import "./dnc/leetcode/medium/findKthLargest";
-import "./dnc/leetcode/medium/xorAfterQueries";
+// import "./dnc/leetcode/medium/xorAfterQueries";
 // import "./dnc/leetcode/easy/reverseBits";
 // import "./dnc/leetcode/easy/readBinaryWatch";F
 // import "./dnc/problem/ratInMaze";
