@@ -189,6 +189,7 @@
 // import "./tree/leetcode/hard/timeTaken";
 // import "./tree/leetcode/hard/Fancy";
 // import "./tree/leetcode/hard/CountIntervals";
+import "./tree/leetcode/hard/RangeModule";
 // import "./tree/leetcode/medium/maxLevelSum";
 // import "./tree/leetcode/medium/countHighestScoreNodes";
 // import "./tree/leetcode/medium/maxProduct";
@@ -226,7 +227,7 @@
 // import "./hash-table/leetcode/easy/twoSum";
 // import "./hash-table/leetcode/easy/findFinalValue";
 // import "./hash-table/leetcode/easy/repeatedNTimes";
-import "./hash-table/leetcode/easy/minimumDistance";
+// import "./hash-table/leetcode/easy/minimumDistance";
 // import "./hash-table/leetcode/medium/maxSubarraySum";
 // import "./hash-table/leetcode/medium/countPalindromicSubsequence";
 // import "./hash-table/leetcode/medium/digArtifacts";
