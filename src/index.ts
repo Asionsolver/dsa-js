@@ -189,7 +189,8 @@
 // import "./tree/leetcode/hard/timeTaken";
 // import "./tree/leetcode/hard/Fancy";
 // import "./tree/leetcode/hard/CountIntervals";
-import "./tree/leetcode/hard/RangeModule";
+// import "./tree/leetcode/hard/RangeModule";
+import "./tree/leetcode/hard/longestRepeating";
 // import "./tree/leetcode/medium/maxLevelSum";
 // import "./tree/leetcode/medium/countHighestScoreNodes";
 // import "./tree/leetcode/medium/maxProduct";
