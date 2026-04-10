@@ -226,6 +226,7 @@
 // import "./hash-table/leetcode/easy/twoSum";
 // import "./hash-table/leetcode/easy/findFinalValue";
 // import "./hash-table/leetcode/easy/repeatedNTimes";
+import "./hash-table/leetcode/easy/minimumDistance";
 // import "./hash-table/leetcode/medium/maxSubarraySum";
 // import "./hash-table/leetcode/medium/countPalindromicSubsequence";
 // import "./hash-table/leetcode/medium/digArtifacts";
@@ -253,7 +254,7 @@
 // import "./dnc/leetcode/permuteUnique";
 // import "./dnc/leetcode/hard/numSquarefulPerms";
 // import "./dnc/leetcode/hard/makeLargestSpecial";
-import "./dnc/leetcode/hard/xorAfterQueries";
+// import "./dnc/leetcode/hard/xorAfterQueries";
 // import "./dnc/leetcode/medium/pyramidTransition";
 // import "./dnc/leetcode/medium/nextBeautifulNumber";
 // import "./dnc/leetcode/medium/longestBalanced";
