@@ -457,7 +457,8 @@
 // import "./greedy/leetcode/medium/findSmallestInteger";
 // import "./greedy/leetcode/medium/minPairSum";
 // import "./greedy/leetcode/medium/minSwaps";
-import "./greedy/leetcode/medium/asteroidsDestroyed";
+// import "./greedy/leetcode/medium/asteroidsDestroyed";
+import "./greedy/leetcode/medium/predictPartyVictory";
 // import "./greedy/leetcode/medium/largestSubmatrix";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // ! Greedy Algorithm end
