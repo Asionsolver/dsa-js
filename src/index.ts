@@ -85,6 +85,7 @@
 // import "./twoPointer/leetcode/easy/countBinarySubstrings";
 // import "./twoPointer/leetcode/easy/flipSubmatrix";
 // import "./twoPointer/leetcode/medium/nextGreaterElement";
+import "./twoPointer/leetcode/medium/intervalIntersection";
 
 // ! two pointer file end
 /**********************************************/
@@ -489,7 +490,7 @@
 // import "./prefix-sum/leetcode/hard/numberOfStableArrays";
 // import "./prefix-sum/leetcode/hard/canPartitionGrid";
 // import "./prefix-sum/leetcode/hard/possibleToStamp";
-import "./prefix-sum/leetcode/hard/maxFrequency";
+// import "./prefix-sum/leetcode/hard/maxFrequency";
 // ! Prefix Sum End
 /**********************************************/
 
