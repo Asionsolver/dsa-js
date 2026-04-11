@@ -242,6 +242,7 @@ import "./stack/leetcode/hard/largestRectangleArea";
 // import "./hash-table/leetcode/medium/hasAllCodes";
 // import "./hash-table/leetcode/medium/checkStrings";
 // import "./hash-table/leetcode/medium/robotSim";
+import "./hash-table/leetcode/medium/minimumDistance";
 // import "./hash-table/leetcode/hard/countTrapezoidsTwo";
 // ! hash table end
 /**********************************************/
