@@ -87,7 +87,7 @@
 // import "./twoPointer/leetcode/easy/flipSubmatrix";
 // import "./twoPointer/leetcode/medium/nextGreaterElement";
 // import "./twoPointer/leetcode/medium/intervalIntersection";
-import "./twoPointer/leetcode/medium/partitionLabels";
+// import "./twoPointer/leetcode/medium/partitionLabels";
 
 // ! two pointer file end
 /**********************************************/
@@ -342,6 +342,7 @@ import "./twoPointer/leetcode/medium/partitionLabels";
 // import "./heap/leetcode/hard/findSomeTwo";
 // import "./heap/leetcode/easy/minimumPairRemoval";
 // import "./heap/leetcode/medium/minCost";
+import "./heap/leetcode/medium/minGroups";
 // import "./heap/leetcode/hard/mostBooked";
 // import "./heap/leetcode/hard/busiestServers";
 // import "./heap/leetcode/hard/trapRainWater";
