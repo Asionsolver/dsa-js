@@ -416,7 +416,7 @@
 // import "./dp/leetcode/hard/magicalSum";
 // import "./dp/leetcode/hard/minCost";
 // import "./dp/leetcode/hard/maxWalls";
-import "./dp/leetcode/hard/maxPartitionsAfterOperations";
+// import "./dp/leetcode/hard/maxPartitionsAfterOperations";
 // import "./dp/leetcode/medium/maximumProfit";
 // import "./dp/leetcode/medium/maximumAmount";
 // import "./dp/leetcode/medium/findMaxForm";
@@ -489,6 +489,7 @@ import "./dp/leetcode/hard/maxPartitionsAfterOperations";
 // import "./prefix-sum/leetcode/hard/numberOfStableArrays";
 // import "./prefix-sum/leetcode/hard/canPartitionGrid";
 // import "./prefix-sum/leetcode/hard/possibleToStamp";
+import "./prefix-sum/leetcode/hard/maxFrequency";
 // ! Prefix Sum End
 /**********************************************/
 
