@@ -18,30 +18,52 @@ Output: [10]
 
 const s = "ababcbacadefegdehijhklij";
 
-const partitionLabels = function (s: string): number[] {
-  const lastOccurrence = new Map<string, number>();
+// Approach: Two Pointer
+// const partitionLabels = function (s: string): number[] {
+//   const lastOccurrence = new Map<string, number>();
 
-  // Step 1: Record the last occurrence of each character
+//   // Step 1: Record the last occurrence of each character
+//   for (let i = 0; i < s.length; i++) {
+//     lastOccurrence.set(s[i], i);
+//   }
+
+//   const result: number[] = [];
+//   let start = 0;
+//   let end = 0;
+
+//   // Step 2: Traverse the string and find the boundary of each part
+//   for (let i = 0; i < s.length; i++) {
+//     end = Math.max(end, lastOccurrence.get(s[i])!);
+
+//     // If we reach the end of the current partition
+//     if (i === end) {
+//       result.push(i - start + 1);
+//       start = i + 1; // Move start to the next character
+//     }
+//   }
+
+//   return result;
+// };
+
+// Approach: Two Pointer with Object
+const partitionLabels = function (s: string): number[] {
+  const lastOccurrence: { [char: string]: number } = {};
   for (let i = 0; i < s.length; i++) {
-    lastOccurrence.set(s[i], i);
+    lastOccurrence[s[i]] = i;
   }
 
   const result: number[] = [];
   let start = 0;
   let end = 0;
 
-  // Step 2: Traverse the string and find the boundary of each part
   for (let i = 0; i < s.length; i++) {
-    end = Math.max(end, lastOccurrence.get(s[i])!);
-
-    // If we reach the end of the current partition
+    end = Math.max(end, lastOccurrence[s[i]]);
     if (i === end) {
-      result.push(i - start + 1);
-      start = i + 1; // Move start to the next character
+      result.push(end - start + 1);
+      start = i + 1;
     }
   }
 
   return result;
 };
-
 console.log(partitionLabels(s));
