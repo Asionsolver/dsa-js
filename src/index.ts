@@ -202,6 +202,7 @@
 // import "./tree/leetcode/medium/delNodes";
 // import "./tree/leetcode/medium/subtreeWithAllDeepest";
 // import "./tree/leetcode/medium/balanceBST";
+import "./tree/leetcode/medium/MyCalendar";
 // import "./tree/leetcode/easy/isBalanced";
 // import "./tree/leetcode/easy/sumRootToLeaf";
 // ! tree end
@@ -297,7 +298,7 @@
 // import "./string/leetcode/medium/findKthBit";
 // import "./string/leetcode/medium/decodeCiphertext";
 // import "./string/leetcode/medium/judgeCircle";
-import "./string/leetcode/medium/haveConflict";
+// import "./string/leetcode/medium/haveConflict";
 // import "./string/leetcode/easy/minDeletionSize";
 // import "./string/leetcode/easy/minOperations";
 // import "./string/leetcode/easy/checkOnesSegment";
