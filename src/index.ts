@@ -66,6 +66,7 @@
 // import "./array/2d-array/leetcode/medium/maxTwoEvents";
 // import "./array/2d-array/leetcode/medium/maxMatrixSum";
 // import "./array/2d-array/leetcode/medium/minAbsDiff";
+import "./array/2d-array/leetcode/medium/countWays";
 // import "./array/2d-array/leetcode/hard/numberOfPaths";
 // import "./array/2d-array/leetcode/easy/numSpecial";
 // import "./array/2d-array/leetcode/easy/findRotation";
@@ -85,7 +86,7 @@
 // import "./twoPointer/leetcode/easy/countBinarySubstrings";
 // import "./twoPointer/leetcode/easy/flipSubmatrix";
 // import "./twoPointer/leetcode/medium/nextGreaterElement";
-import "./twoPointer/leetcode/medium/intervalIntersection";
+// import "./twoPointer/leetcode/medium/intervalIntersection";
 
 // ! two pointer file end
 /**********************************************/
