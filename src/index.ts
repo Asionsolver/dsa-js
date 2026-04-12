@@ -173,6 +173,7 @@
 // import "./linkList/leetcode/linkedListCycle";
 // import "./linkList/leetcode/medium/modifiedList";
 // import "./linkList/leetcode/medium/sortList";
+import "./linkList/leetcode/medium/deleteMiddle";
 // import "./linkList/leetcode/hard/minimumPairRemoval";
 
 // !linked list end
@@ -424,7 +425,7 @@
 // import "./dp/leetcode/hard/minCost";
 // import "./dp/leetcode/hard/maxWalls";
 // import "./dp/leetcode/hard/maxPartitionsAfterOperations";
-import "./dp/leetcode/hard/minimumDistance";
+// import "./dp/leetcode/hard/minimumDistance";
 // import "./dp/leetcode/medium/maximumProfit";
 // import "./dp/leetcode/medium/maximumAmount";
 // import "./dp/leetcode/medium/findMaxForm";
