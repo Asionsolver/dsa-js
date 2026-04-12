@@ -342,7 +342,7 @@
 // import "./heap/leetcode/hard/findSomeTwo";
 // import "./heap/leetcode/easy/minimumPairRemoval";
 // import "./heap/leetcode/medium/minCost";
-import "./heap/leetcode/medium/minGroups";
+// import "./heap/leetcode/medium/minGroups";
 // import "./heap/leetcode/hard/mostBooked";
 // import "./heap/leetcode/hard/busiestServers";
 // import "./heap/leetcode/hard/trapRainWater";
@@ -424,6 +424,7 @@ import "./heap/leetcode/medium/minGroups";
 // import "./dp/leetcode/hard/minCost";
 // import "./dp/leetcode/hard/maxWalls";
 // import "./dp/leetcode/hard/maxPartitionsAfterOperations";
+import "./dp/leetcode/hard/minimumDistance";
 // import "./dp/leetcode/medium/maximumProfit";
 // import "./dp/leetcode/medium/maximumAmount";
 // import "./dp/leetcode/medium/findMaxForm";
