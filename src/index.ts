@@ -173,7 +173,8 @@
 // import "./linkList/leetcode/linkedListCycle";
 // import "./linkList/leetcode/medium/modifiedList";
 // import "./linkList/leetcode/medium/sortList";
-import "./linkList/leetcode/medium/deleteMiddle";
+// import "./linkList/leetcode/medium/deleteMiddle";
+import "./linkList/leetcode/medium/deleteNode";
 // import "./linkList/leetcode/hard/minimumPairRemoval";
 
 // !linked list end
