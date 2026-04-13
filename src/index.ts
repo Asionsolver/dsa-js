@@ -52,6 +52,7 @@
 // import "./array/1D-array/leetcode/easy/constructTransformedArray";
 // import "./array/1D-array/leetcode/easy/countElements";
 // import "./array/1D-array/leetcode/easy/minimumCost";
+import "./array/1D-array/leetcode/easy/getMinDistance";
 // import "./array/1D-array/leetcode/medium/minimumSum";
 // import "./array/1D-array/leetcode/medium/maximizeSquareHoleArea";
 // import "./array/1D-array/leetcode/medium/findDifferentBinaryString";
@@ -467,7 +468,7 @@
 // import "./greedy/leetcode/medium/minSwaps";
 // import "./greedy/leetcode/medium/asteroidsDestroyed";
 // import "./greedy/leetcode/medium/predictPartyVictory";
-import "./greedy/leetcode/medium/matchPlayersAndTrainers";
+// import "./greedy/leetcode/medium/matchPlayersAndTrainers";
 // import "./greedy/leetcode/medium/largestSubmatrix";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // ! Greedy Algorithm end
