@@ -212,7 +212,8 @@
 // import "./tree/leetcode/medium/MyCalendarTwo";
 // import "./tree/leetcode/medium/mostProfitablePath";
 // import "./tree/leetcode/medium/countPairsOfConnectableServers";
-import "./tree/leetcode/medium/findMinHeightTrees";
+// import "./tree/leetcode/medium/findMinHeightTrees";
+import "./tree/leetcode/medium/canFinish";
 // import "./tree/leetcode/easy/isBalanced";
 // import "./tree/leetcode/easy/sumRootToLeaf";
 // ! tree end
