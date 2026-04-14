@@ -369,7 +369,8 @@
 // import "./graph/leetcode/medium/processQueries";
 // import "./graph/leetcode/medium/minimumCost";
 // import "./graph/leetcode/medium/pacificAtlantic";
-import "./graph/leetcode/medium/eventualSafeNodes";
+// import "./graph/leetcode/medium/eventualSafeNodes";
+import "./graph/leetcode/medium/loudAndRich";
 // import "./graph/leetcode/hard/findAllPeople";
 // import "./graph/leetcode/hard/minCost";
 // import "./graph/leetcode/hard/minimumCost";
