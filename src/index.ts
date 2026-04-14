@@ -372,13 +372,14 @@
 // import "./graph/leetcode/medium/pacificAtlantic";
 // import "./graph/leetcode/medium/eventualSafeNodes";
 // import "./graph/leetcode/medium/loudAndRich";
-import "./graph/leetcode/medium/findRedundantConnection";
+// import "./graph/leetcode/medium/findRedundantConnection";
 // import "./graph/leetcode/hard/findAllPeople";
 // import "./graph/leetcode/hard/minCost";
 // import "./graph/leetcode/hard/minimumCost";
 // import "./graph/leetcode/hard/buildMatrix";
 // import "./graph/leetcode/hard/minimumTime";
 // import "./graph/leetcode/hard/maximumInvitations";
+import "./graph/leetcode/hard/findRedundantDirectedConnection";
 // ! Graph file end
 /**********************************************/
 
