@@ -213,7 +213,7 @@
 // import "./tree/leetcode/medium/mostProfitablePath";
 // import "./tree/leetcode/medium/countPairsOfConnectableServers";
 // import "./tree/leetcode/medium/findMinHeightTrees";
-import "./tree/leetcode/medium/canFinish";
+// import "./tree/leetcode/medium/canFinish";
 // import "./tree/leetcode/easy/isBalanced";
 // import "./tree/leetcode/easy/sumRootToLeaf";
 // ! tree end
@@ -435,6 +435,7 @@ import "./tree/leetcode/medium/canFinish";
 // import "./dp/leetcode/hard/maxWalls";
 // import "./dp/leetcode/hard/maxPartitionsAfterOperations";
 // import "./dp/leetcode/hard/minimumDistance";
+import "./dp/leetcode/hard/minimumTotalDistance";
 // import "./dp/leetcode/medium/maximumProfit";
 // import "./dp/leetcode/medium/maximumAmount";
 // import "./dp/leetcode/medium/findMaxForm";
