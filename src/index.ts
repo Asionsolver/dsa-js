@@ -380,7 +380,8 @@
 // import "./graph/leetcode/hard/minimumTime";
 // import "./graph/leetcode/hard/maximumInvitations";
 // import "./graph/leetcode/hard/findRedundantDirectedConnection";
-import "./graph/leetcode/hard/findShortestCycle";
+// import "./graph/leetcode/hard/findShortestCycle";
+import "./graph/leetcode/hard/magnificentSets";
 // ! Graph file end
 /**********************************************/
 
