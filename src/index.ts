@@ -366,12 +366,13 @@
 // import "./graph/graphMatrix";
 // import "./graph/bfs";
 // import "./graph/dfs";
-// import "./graph/leetcode/hard/findAllPeople";
-// import "./graph/leetcode/hard/minCost";
 // import "./graph/leetcode/medium/processQueries";
 // import "./graph/leetcode/medium/minimumCost";
-// import "./graph/leetcode/hard/minimumCost";
 // import "./graph/leetcode/medium/pacificAtlantic";
+// import "./graph/leetcode/hard/findAllPeople";
+// import "./graph/leetcode/hard/minCost";
+// import "./graph/leetcode/hard/minimumCost";
+import "./graph/leetcode/hard/buildMatrix";
 // ! Graph file end
 /**********************************************/
 
@@ -435,7 +436,7 @@
 // import "./dp/leetcode/hard/maxWalls";
 // import "./dp/leetcode/hard/maxPartitionsAfterOperations";
 // import "./dp/leetcode/hard/minimumDistance";
-import "./dp/leetcode/hard/minimumTotalDistance";
+// import "./dp/leetcode/hard/minimumTotalDistance";
 // import "./dp/leetcode/medium/maximumProfit";
 // import "./dp/leetcode/medium/maximumAmount";
 // import "./dp/leetcode/medium/findMaxForm";
