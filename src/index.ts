@@ -357,6 +357,7 @@
 // import "./heap/leetcode/hard/busiestServers";
 // import "./heap/leetcode/hard/trapRainWater";
 // import "./heap/leetcode/hard/minimumCost";
+import "./heap/leetcode/hard/scheduleCourse";
 // ! Heap file end
 /**********************************************/
 
@@ -370,7 +371,7 @@
 // import "./graph/leetcode/medium/minimumCost";
 // import "./graph/leetcode/medium/pacificAtlantic";
 // import "./graph/leetcode/medium/eventualSafeNodes";
-import "./graph/leetcode/medium/loudAndRich";
+// import "./graph/leetcode/medium/loudAndRich";
 // import "./graph/leetcode/hard/findAllPeople";
 // import "./graph/leetcode/hard/minCost";
 // import "./graph/leetcode/hard/minimumCost";
