@@ -357,7 +357,7 @@
 // import "./heap/leetcode/hard/busiestServers";
 // import "./heap/leetcode/hard/trapRainWater";
 // import "./heap/leetcode/hard/minimumCost";
-import "./heap/leetcode/hard/scheduleCourse";
+// import "./heap/leetcode/hard/scheduleCourse";
 // ! Heap file end
 /**********************************************/
 
@@ -376,6 +376,7 @@ import "./heap/leetcode/hard/scheduleCourse";
 // import "./graph/leetcode/hard/minCost";
 // import "./graph/leetcode/hard/minimumCost";
 // import "./graph/leetcode/hard/buildMatrix";
+import "./graph/leetcode/hard/minimumTime";
 // ! Graph file end
 /**********************************************/
 
