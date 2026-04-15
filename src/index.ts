@@ -221,7 +221,8 @@
 // import "./tree/leetcode/medium/levelOrderBottom";
 // import "./tree/leetcode/easy/isBalanced";
 // import "./tree/leetcode/easy/sumRootToLeaf";
-import "./tree/leetcode/easy/minDepth";
+// import "./tree/leetcode/easy/minDepth";
+import "./tree/leetcode/easy/averageOfLevels";
 // ! tree end
 /**********************************************/
 
