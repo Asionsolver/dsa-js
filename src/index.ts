@@ -222,7 +222,7 @@
 // import "./tree/leetcode/easy/isBalanced";
 // import "./tree/leetcode/easy/sumRootToLeaf";
 // import "./tree/leetcode/easy/minDepth";
-import "./tree/leetcode/easy/averageOfLevels";
+// import "./tree/leetcode/easy/averageOfLevels";
 // ! tree end
 /**********************************************/
 
@@ -503,6 +503,7 @@ import "./tree/leetcode/easy/averageOfLevels";
 // import "./binary-search/leetcode/medium/successfulPairs";
 // import "./binary-search/leetcode/medium/maxIncreasingSubarrays";
 // import "./binary-search/leetcode/medium/minNumberOfSeconds";
+import "./binary-search/leetcode/medium/solveQueries";
 // import "./binary-search/leetcode/easy/countNegatives";
 // import "./binary-search/leetcode/easy/nextGreatestLetter";
 // import "./binary-search/leetcode/hard/latestDayToCross";
