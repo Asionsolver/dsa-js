@@ -16,54 +16,133 @@ Explanation: Start at vertex 0, collect the coins at vertices 4 and 3, move to v
 */
 
 // Kahn's Algorithm for Topological Sort (BFS) + Degree Counting
+// const collectTheCoins = (coins: number[], edges: number[][]): number => {
+//   const n = coins.length;
+//   // If the tree consists of 1 or fewer nodes, 0 edges are traversed
+//   if (n <= 1) return 0;
+
+//   const adj: number[][] = [];
+//   for (let i = 0; i < n; i++) {
+//     adj.push([]);
+//   }
+
+//   // Track degrees to identify leaves at any given state
+//   const degree = new Int32Array(n);
+
+//   for (let i = 0; i < edges.length; i++) {
+//     const u = edges[i][0];
+//     const v = edges[i][1];
+//     adj[u].push(v);
+//     adj[v].push(u);
+//     degree[u]++;
+//     degree[v]++;
+//   }
+
+//   const deleted = new Uint8Array(n);
+//   const queue: number[] = [];
+
+//   // ---------------------------------------------------------
+//   // Phase 1: Remove all subtrees & leaves that do not have any coins
+//   // ---------------------------------------------------------
+//   for (let i = 0; i < n; i++) {
+//     if (degree[i] === 1 && coins[i] === 0) {
+//       queue.push(i);
+//     }
+//   }
+
+//   let remaining_nodes = n;
+//   let head = 0;
+
+//   while (head < queue.length) {
+//     const u = queue[head++];
+//     deleted[u] = 1;
+//     remaining_nodes--;
+
+//     const neighbors = adj[u];
+//     for (let i = 0; i < neighbors.length; i++) {
+//       const v = neighbors[i];
+//       if (deleted[v] === 0) {
+//         degree[v]--;
+//         // If its neighbor becomes a leaf and holds no coin, push it down the queue
+//         if (degree[v] === 1 && coins[v] === 0) {
+//           queue.push(v);
+//         }
+//       }
+//     }
+//   }
+
+//   // ---------------------------------------------------------
+//   // Phase 2: Remove exact two layers of extreme leaves (radius = 2 distance)
+//   // ---------------------------------------------------------
+//   const leavesQueue: number[] = [];
+//   for (let i = 0; i < n; i++) {
+//     if (deleted[i] === 0 && degree[i] === 1) {
+//       leavesQueue.push(i);
+//     }
+//   }
+
+//   let currentQueue = leavesQueue;
+//   for (let step = 0; step < 2; step++) {
+//     const nextQueue: number[] = [];
+
+//     for (let j = 0; j < currentQueue.length; j++) {
+//       const u = currentQueue[j];
+//       deleted[u] = 1;
+//       remaining_nodes--;
+
+//       const neighbors = adj[u];
+//       for (let i = 0; i < neighbors.length; i++) {
+//         const v = neighbors[i];
+//         if (deleted[v] === 0) {
+//           degree[v]--;
+//           if (degree[v] === 1) {
+//             nextQueue.push(v);
+//           }
+//         }
+//       }
+//     }
+//     currentQueue = nextQueue;
+//   }
+
+//   // Calculating 2 * edges (since an edge path in the required minimum subtree guarantees a return loop to the root.)
+//   return Math.max(0, 2 * (remaining_nodes - 1));
+// };
+
+// Single queue implementation with two phases combined
 const collectTheCoins = (coins: number[], edges: number[][]): number => {
   const n = coins.length;
-  // If the tree consists of 1 or fewer nodes, 0 edges are traversed
+  // A single node graph requires 0 edges to traverse
   if (n <= 1) return 0;
 
-  const adj: number[][] = [];
-  for (let i = 0; i < n; i++) {
-    adj.push([]);
-  }
+  const adj: number[][] = Array.from({ length: n }, () => []);
+  const degree: number[] = new Array(n).fill(0);
 
-  // Track degrees to identify leaves at any given state
-  const degree = new Int32Array(n);
-
-  for (let i = 0; i < edges.length; i++) {
-    const u = edges[i][0];
-    const v = edges[i][1];
+  // Build adjacency list and calculate initial degrees
+  for (const [u, v] of edges) {
     adj[u].push(v);
     adj[v].push(u);
     degree[u]++;
     degree[v]++;
   }
 
-  const deleted = new Uint8Array(n);
+  const deleted: boolean[] = new Array(n).fill(false);
   const queue: number[] = [];
+  let head = 0;
 
-  // ---------------------------------------------------------
-  // Phase 1: Remove all subtrees & leaves that do not have any coins
-  // ---------------------------------------------------------
+  // Step 1: Find initially useless leaves (0 coins)
   for (let i = 0; i < n; i++) {
-    if (degree[i] === 1 && coins[i] === 0) {
+    if (degree[i] <= 1 && coins[i] === 0) {
       queue.push(i);
     }
   }
 
-  let remaining_nodes = n;
-  let head = 0;
-
+  // Iteratively remove all leaves that have no coins
   while (head < queue.length) {
     const u = queue[head++];
-    deleted[u] = 1;
-    remaining_nodes--;
-
-    const neighbors = adj[u];
-    for (let i = 0; i < neighbors.length; i++) {
-      const v = neighbors[i];
-      if (deleted[v] === 0) {
+    deleted[u] = true;
+    for (const v of adj[u]) {
+      if (!deleted[v]) {
         degree[v]--;
-        // If its neighbor becomes a leaf and holds no coin, push it down the queue
         if (degree[v] === 1 && coins[v] === 0) {
           queue.push(v);
         }
@@ -71,29 +150,21 @@ const collectTheCoins = (coins: number[], edges: number[][]): number => {
     }
   }
 
-  // ---------------------------------------------------------
-  // Phase 2: Remove exact two layers of extreme leaves (radius = 2 distance)
-  // ---------------------------------------------------------
-  const leavesQueue: number[] = [];
+  // Step 2: Grab the new leaves of the pruned tree (all of which MUST contain a coin now)
+  let leafQueue: number[] = [];
   for (let i = 0; i < n; i++) {
-    if (deleted[i] === 0 && degree[i] === 1) {
-      leavesQueue.push(i);
+    if (!deleted[i] && degree[i] === 1) {
+      leafQueue.push(i);
     }
   }
 
-  let currentQueue = leavesQueue;
+  // Step 3: Trim two layers of leaves because coins can be collected from a distance of up to 2
   for (let step = 0; step < 2; step++) {
     const nextQueue: number[] = [];
-
-    for (let j = 0; j < currentQueue.length; j++) {
-      const u = currentQueue[j];
-      deleted[u] = 1;
-      remaining_nodes--;
-
-      const neighbors = adj[u];
-      for (let i = 0; i < neighbors.length; i++) {
-        const v = neighbors[i];
-        if (deleted[v] === 0) {
+    for (const u of leafQueue) {
+      deleted[u] = true;
+      for (const v of adj[u]) {
+        if (!deleted[v]) {
           degree[v]--;
           if (degree[v] === 1) {
             nextQueue.push(v);
@@ -101,13 +172,20 @@ const collectTheCoins = (coins: number[], edges: number[][]): number => {
         }
       }
     }
-    currentQueue = nextQueue;
+    leafQueue = nextQueue;
   }
 
-  // Calculating 2 * edges (since an edge path in the required minimum subtree guarantees a return loop to the root.)
-  return Math.max(0, 2 * (remaining_nodes - 1));
-};
+  // Step 4: Count the un-deleted vertices remaining in our target travel zone
+  let remaining = 0;
+  for (let i = 0; i < n; i++) {
+    if (!deleted[i]) {
+      remaining++;
+    }
+  }
 
+  // The number of edges to traverse in a valid tree is (V - 1). Every edge is walked 2x (forth & back).
+  return Math.max(0, (remaining - 1) * 2);
+};
 // Example usage:
 const coins = [1, 0, 0, 0, 0, 1];
 const edges = [
