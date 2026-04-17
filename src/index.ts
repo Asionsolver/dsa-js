@@ -204,6 +204,7 @@
 // import "./tree/leetcode/hard/MyCalendarThree";
 // import "./tree/leetcode/hard/minimumDiameterAfterMerge";
 // import "./tree/leetcode/hard/placedCoins";
+import "./tree/leetcode/hard/collectTheCoins";
 // import "./tree/leetcode/medium/maxLevelSum";
 // import "./tree/leetcode/medium/countHighestScoreNodes";
 // import "./tree/leetcode/medium/maxProduct";
@@ -224,7 +225,7 @@
 // import "./tree/leetcode/medium/levelOrderTwo";
 // import "./tree/leetcode/medium/minimumOperations";
 // import "./tree/leetcode/medium/maximumScoreAfterOperations";
-import "./tree/leetcode/medium/lcaDeepestLeaves";
+// import "./tree/leetcode/medium/lcaDeepestLeaves";
 // import "./tree/leetcode/easy/isBalanced";
 // import "./tree/leetcode/easy/sumRootToLeaf";
 // import "./tree/leetcode/easy/minDepth";
