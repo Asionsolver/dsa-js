@@ -222,7 +222,8 @@
 // import "./tree/leetcode/medium/levelOrderBottom";
 // import "./tree/leetcode/medium/levelOrderTwo";
 // import "./tree/leetcode/medium/minimumOperations";
-import "./tree/leetcode/medium/maximumScoreAfterOperations";
+// import "./tree/leetcode/medium/maximumScoreAfterOperations";
+import "./tree/leetcode/medium/placedCoins";
 // import "./tree/leetcode/easy/isBalanced";
 // import "./tree/leetcode/easy/sumRootToLeaf";
 // import "./tree/leetcode/easy/minDepth";
