@@ -220,7 +220,7 @@
 // import "./tree/leetcode/medium/zigzagLevelOrder";
 // import "./tree/leetcode/medium/levelOrderBottom";
 // import "./tree/leetcode/medium/levelOrderTwo";
-import "./tree/leetcode/medium/minimumOperations";
+// import "./tree/leetcode/medium/minimumOperations";
 // import "./tree/leetcode/easy/isBalanced";
 // import "./tree/leetcode/easy/sumRootToLeaf";
 // import "./tree/leetcode/easy/minDepth";
@@ -385,6 +385,7 @@ import "./tree/leetcode/medium/minimumOperations";
 // import "./graph/leetcode/medium/eventualSafeNodes";
 // import "./graph/leetcode/medium/loudAndRich";
 // import "./graph/leetcode/medium/findRedundantConnection";
+import "./graph/leetcode/medium/isBipartite";
 // import "./graph/leetcode/hard/findAllPeople";
 // import "./graph/leetcode/hard/minCost";
 // import "./graph/leetcode/hard/minimumCost";
