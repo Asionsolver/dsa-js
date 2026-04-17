@@ -365,7 +365,7 @@
 // import "./heap/leetcode/easy/minimumPairRemoval";
 // import "./heap/leetcode/medium/minCost";
 // import "./heap/leetcode/medium/minGroups";
-import "./heap/leetcode/medium/getOrder";
+// import "./heap/leetcode/medium/getOrder";
 // import "./heap/leetcode/hard/mostBooked";
 // import "./heap/leetcode/hard/busiestServers";
 // import "./heap/leetcode/hard/trapRainWater";
@@ -387,6 +387,7 @@ import "./heap/leetcode/medium/getOrder";
 // import "./graph/leetcode/medium/loudAndRich";
 // import "./graph/leetcode/medium/findRedundantConnection";
 // import "./graph/leetcode/medium/isBipartite";
+import "./graph/leetcode/medium/findOrder";
 // import "./graph/leetcode/hard/findAllPeople";
 // import "./graph/leetcode/hard/minCost";
 // import "./graph/leetcode/hard/minimumCost";
