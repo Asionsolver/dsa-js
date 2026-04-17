@@ -264,6 +264,7 @@
 // import "./hash-table/leetcode/medium/checkStrings";
 // import "./hash-table/leetcode/medium/robotSim";
 // import "./hash-table/leetcode/medium/minimumDistance";
+import "./hash-table/leetcode/medium/minMirrorPairDistance";
 // import "./hash-table/leetcode/hard/countTrapezoidsTwo";
 // ! hash table end
 /**********************************************/
@@ -503,7 +504,7 @@
 // import "./binary-search/leetcode/medium/successfulPairs";
 // import "./binary-search/leetcode/medium/maxIncreasingSubarrays";
 // import "./binary-search/leetcode/medium/minNumberOfSeconds";
-import "./binary-search/leetcode/medium/solveQueries";
+// import "./binary-search/leetcode/medium/solveQueries";
 // import "./binary-search/leetcode/easy/countNegatives";
 // import "./binary-search/leetcode/easy/nextGreatestLetter";
 // import "./binary-search/leetcode/hard/latestDayToCross";
