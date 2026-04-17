@@ -202,6 +202,7 @@
 // import "./tree/leetcode/hard/RangeModule";
 // import "./tree/leetcode/hard/longestRepeating";
 // import "./tree/leetcode/hard/MyCalendarThree";
+import "./tree/leetcode/hard/minimumDiameterAfterMerge";
 // import "./tree/leetcode/medium/maxLevelSum";
 // import "./tree/leetcode/medium/countHighestScoreNodes";
 // import "./tree/leetcode/medium/maxProduct";
@@ -387,7 +388,7 @@
 // import "./graph/leetcode/medium/loudAndRich";
 // import "./graph/leetcode/medium/findRedundantConnection";
 // import "./graph/leetcode/medium/isBipartite";
-import "./graph/leetcode/medium/findOrder";
+// import "./graph/leetcode/medium/findOrder";
 // import "./graph/leetcode/hard/findAllPeople";
 // import "./graph/leetcode/hard/minCost";
 // import "./graph/leetcode/hard/minimumCost";
