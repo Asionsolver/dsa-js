@@ -395,7 +395,8 @@
 // import "./graph/leetcode/hard/findRedundantDirectedConnection";
 // import "./graph/leetcode/hard/findShortestCycle";
 // import "./graph/leetcode/hard/magnificentSets";
-import "./graph/leetcode/hard/longestCycle";
+// import "./graph/leetcode/hard/longestCycle";
+import "./graph/leetcode/hard/friendRequests";
 // ! Graph file end
 /**********************************************/
 
