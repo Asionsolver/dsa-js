@@ -385,7 +385,7 @@
 // import "./graph/leetcode/medium/eventualSafeNodes";
 // import "./graph/leetcode/medium/loudAndRich";
 // import "./graph/leetcode/medium/findRedundantConnection";
-import "./graph/leetcode/medium/isBipartite";
+// import "./graph/leetcode/medium/isBipartite";
 // import "./graph/leetcode/hard/findAllPeople";
 // import "./graph/leetcode/hard/minCost";
 // import "./graph/leetcode/hard/minimumCost";
@@ -395,6 +395,7 @@ import "./graph/leetcode/medium/isBipartite";
 // import "./graph/leetcode/hard/findRedundantDirectedConnection";
 // import "./graph/leetcode/hard/findShortestCycle";
 // import "./graph/leetcode/hard/magnificentSets";
+import "./graph/leetcode/hard/longestCycle";
 // ! Graph file end
 /**********************************************/
 
