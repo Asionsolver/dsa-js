@@ -202,7 +202,7 @@
 // import "./tree/leetcode/hard/RangeModule";
 // import "./tree/leetcode/hard/longestRepeating";
 // import "./tree/leetcode/hard/MyCalendarThree";
-import "./tree/leetcode/hard/minimumDiameterAfterMerge";
+// import "./tree/leetcode/hard/minimumDiameterAfterMerge";
 // import "./tree/leetcode/medium/maxLevelSum";
 // import "./tree/leetcode/medium/countHighestScoreNodes";
 // import "./tree/leetcode/medium/maxProduct";
@@ -222,6 +222,7 @@ import "./tree/leetcode/hard/minimumDiameterAfterMerge";
 // import "./tree/leetcode/medium/levelOrderBottom";
 // import "./tree/leetcode/medium/levelOrderTwo";
 // import "./tree/leetcode/medium/minimumOperations";
+import "./tree/leetcode/medium/maximumScoreAfterOperations";
 // import "./tree/leetcode/easy/isBalanced";
 // import "./tree/leetcode/easy/sumRootToLeaf";
 // import "./tree/leetcode/easy/minDepth";
