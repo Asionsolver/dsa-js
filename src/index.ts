@@ -441,7 +441,7 @@
 // import "./math/leetcode/easy/minimumOperation";
 // import "./math/leetcode/easy/areSimilar";
 // import "./math/leetcode/easy/minTimeToVisitAllPoints";
-import "./math/leetcode/easy/mirrorDistance";
+// import "./math/leetcode/easy/mirrorDistance";
 // import "./math/leetcode/medium/smallestRepunitDivByK";
 // import "./math/leetcode/medium/maxBottlesDrunk";
 // import "./math/leetcode/medium/minOperations";
@@ -519,6 +519,7 @@ import "./math/leetcode/easy/mirrorDistance";
 // import "./binary-search/leetcode/medium/maxIncreasingSubarrays";
 // import "./binary-search/leetcode/medium/minNumberOfSeconds";
 // import "./binary-search/leetcode/medium/solveQueries";
+import "./binary-search/leetcode/medium/findRightInterval";
 // import "./binary-search/leetcode/easy/countNegatives";
 // import "./binary-search/leetcode/easy/nextGreatestLetter";
 // import "./binary-search/leetcode/hard/latestDayToCross";
