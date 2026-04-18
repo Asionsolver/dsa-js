@@ -508,6 +508,7 @@
 // import "./greedy/leetcode/medium/predictPartyVictory";
 // import "./greedy/leetcode/medium/matchPlayersAndTrainers";
 // import "./greedy/leetcode/medium/largestSubmatrix";
+import "./greedy/leetcode/medium/partitionString";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // ! Greedy Algorithm end
 /**********************************************/
@@ -519,7 +520,7 @@
 // import "./binary-search/leetcode/medium/maxIncreasingSubarrays";
 // import "./binary-search/leetcode/medium/minNumberOfSeconds";
 // import "./binary-search/leetcode/medium/solveQueries";
-import "./binary-search/leetcode/medium/findRightInterval";
+// import "./binary-search/leetcode/medium/findRightInterval";
 // import "./binary-search/leetcode/easy/countNegatives";
 // import "./binary-search/leetcode/easy/nextGreatestLetter";
 // import "./binary-search/leetcode/hard/latestDayToCross";
