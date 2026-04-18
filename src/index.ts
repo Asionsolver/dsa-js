@@ -56,7 +56,8 @@
 // import "./array/1D-array/leetcode/medium/minimumSum";
 // import "./array/1D-array/leetcode/medium/maximizeSquareHoleArea";
 // import "./array/1D-array/leetcode/medium/findDifferentBinaryString";
-import "./array/1D-array/leetcode/medium/sumOfBeauties";
+// import "./array/1D-array/leetcode/medium/sumOfBeauties";
+import "./array/1D-array/leetcode/medium/maximumTripletValue";
 // 2D Array
 // import "./array/2d-array/basic";
 // import "./array/2d-array/problem/2DPrefixSum";
