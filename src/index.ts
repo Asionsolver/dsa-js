@@ -326,6 +326,7 @@
 // import "./string/leetcode/medium/decodeCiphertext";
 // import "./string/leetcode/medium/judgeCircle";
 // import "./string/leetcode/medium/haveConflict";
+import "./string/leetcode/medium/merge";
 // import "./string/leetcode/easy/minDeletionSize";
 // import "./string/leetcode/easy/minOperations";
 // import "./string/leetcode/easy/checkOnesSegment";
@@ -508,7 +509,7 @@
 // import "./greedy/leetcode/medium/predictPartyVictory";
 // import "./greedy/leetcode/medium/matchPlayersAndTrainers";
 // import "./greedy/leetcode/medium/largestSubmatrix";
-import "./greedy/leetcode/medium/partitionString";
+// import "./greedy/leetcode/medium/partitionString";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // ! Greedy Algorithm end
 /**********************************************/
