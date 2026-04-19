@@ -91,6 +91,7 @@
 // import "./twoPointer/leetcode/medium/nextGreaterElement";
 // import "./twoPointer/leetcode/medium/intervalIntersection";
 // import "./twoPointer/leetcode/medium/partitionLabels";
+import "./twoPointer/leetcode/medium/maxDistance";
 
 // ! two pointer file end
 /**********************************************/
@@ -355,7 +356,7 @@
 // import "./sliding-window/leetcode/medium/maximumLength";
 // import "./sliding-window/leetcode/medium/maximumLengthTwo";
 // import "./sliding-window/leetcode/medium/maxSubarrayLength";
-import "./sliding-window/leetcode/medium/resultsArray";
+// import "./sliding-window/leetcode/medium/resultsArray";
 // import "./sliding-window/leetcode/hard/maxPower";
 // import "./sliding-window/leetcode/hard/maxSumOfThreeSubarrays";
 // import "./sliding-window/leetcode/hard/maxStability";
