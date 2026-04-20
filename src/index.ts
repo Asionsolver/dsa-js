@@ -362,6 +362,7 @@
 // import "./sliding-window/leetcode/medium/countCompleteSubarrays";
 // import "./sliding-window/leetcode/medium/maximumUniqueSubarray";
 // import "./sliding-window/leetcode/medium/minimumCardPickup";
+import "./sliding-window/leetcode/medium/longestOnes";
 // import "./sliding-window/leetcode/hard/maxPower";
 // import "./sliding-window/leetcode/hard/maxSumOfThreeSubarrays";
 // import "./sliding-window/leetcode/hard/maxStability";
@@ -525,7 +526,7 @@
 // import "./greedy/leetcode/medium/largestSubmatrix";
 // import "./greedy/leetcode/medium/partitionString";
 // import "./greedy/leetcode/medium/partitionDisjoint";
-import "./greedy/leetcode/medium/maxStrength";
+// import "./greedy/leetcode/medium/maxStrength";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // import "./greedy/leetcode/easy/maxDistance";
 // ! Greedy Algorithm end
