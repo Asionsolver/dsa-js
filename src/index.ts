@@ -442,7 +442,8 @@
 // import "./bit-manipulation/leetcode/medium/minBitwiseArray";
 // import "./bit-manipulation/leetcode/medium/numSteps";
 // import "./bit-manipulation/leetcode/medium/concatenatedBinary";
-import "./bit-manipulation/leetcode/medium/rangeBitwiseAnd";
+// import "./bit-manipulation/leetcode/medium/rangeBitwiseAnd";
+import "./bit-manipulation/leetcode/medium/subarrayBitwiseORs";
 // ! Bit Manipulation end
 /**********************************************/
 
