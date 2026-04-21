@@ -229,6 +229,7 @@
 // import "./tree/leetcode/medium/minimumOperations";
 // import "./tree/leetcode/medium/maximumScoreAfterOperations";
 // import "./tree/leetcode/medium/lcaDeepestLeaves";
+import "./tree/leetcode/medium/minimumHammingDistance";
 // import "./tree/leetcode/easy/isBalanced";
 // import "./tree/leetcode/easy/sumRootToLeaf";
 // import "./tree/leetcode/easy/minDepth";
@@ -363,7 +364,7 @@
 // import "./sliding-window/leetcode/medium/maximumUniqueSubarray";
 // import "./sliding-window/leetcode/medium/minimumCardPickup";
 // import "./sliding-window/leetcode/medium/longestOnes";
-import "./sliding-window/leetcode/medium/longestNiceSubarray";
+// import "./sliding-window/leetcode/medium/longestNiceSubarray";
 // import "./sliding-window/leetcode/hard/maxPower";
 // import "./sliding-window/leetcode/hard/maxSumOfThreeSubarrays";
 // import "./sliding-window/leetcode/hard/maxStability";
