@@ -368,7 +368,8 @@
 // import "./sliding-window/leetcode/medium/totalFruit";
 // import "./sliding-window/leetcode/medium/numMovesStonesII";
 // import "./sliding-window/leetcode/medium/maxConsecutiveAnswers";
-import "./sliding-window/leetcode/medium/longestSubarray";
+// import "./sliding-window/leetcode/medium/longestSubarray";
+import "./sliding-window/leetcode/medium/equalSubstring";
 // import "./sliding-window/leetcode/hard/maxPower";
 // import "./sliding-window/leetcode/hard/maxSumOfThreeSubarrays";
 // import "./sliding-window/leetcode/hard/maxStability";
