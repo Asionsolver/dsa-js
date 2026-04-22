@@ -370,6 +370,8 @@
 // import "./sliding-window/leetcode/medium/maxConsecutiveAnswers";
 // import "./sliding-window/leetcode/medium/longestSubarray";
 // import "./sliding-window/leetcode/medium/equalSubstring";
+// import "./sliding-window/leetcode/medium/characterReplacement";
+import "./sliding-window/leetcode/medium/longestBeautifulSubstring";
 // import "./sliding-window/leetcode/hard/maxPower";
 // import "./sliding-window/leetcode/hard/maxSumOfThreeSubarrays";
 // import "./sliding-window/leetcode/hard/maxStability";
