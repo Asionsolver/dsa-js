@@ -371,7 +371,7 @@
 // import "./sliding-window/leetcode/medium/longestSubarray";
 // import "./sliding-window/leetcode/medium/equalSubstring";
 // import "./sliding-window/leetcode/medium/characterReplacement";
-import "./sliding-window/leetcode/medium/longestBeautifulSubstring";
+// import "./sliding-window/leetcode/medium/longestBeautifulSubstring";
 // import "./sliding-window/leetcode/hard/maxPower";
 // import "./sliding-window/leetcode/hard/maxSumOfThreeSubarrays";
 // import "./sliding-window/leetcode/hard/maxStability";
@@ -452,6 +452,7 @@ import "./sliding-window/leetcode/medium/longestBeautifulSubstring";
 // import "./bit-manipulation/leetcode/medium/rangeBitwiseAnd";
 // import "./bit-manipulation/leetcode/medium/subarrayBitwiseORs";
 // import "./bit-manipulation/leetcode/medium/smallestSubarrays";
+import "./bit-manipulation/leetcode/medium/minOperationsTwo";
 // ! Bit Manipulation end
 /**********************************************/
 
