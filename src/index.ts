@@ -136,7 +136,7 @@
 // import "./stack/leetcode/medium/nextGreaterElements";
 // import "./stack/leetcode/medium/subArrayRanges";
 // import "./stack/leetcode/medium/dailyTemperatures.ts";
-import "./stack/leetcode/medium/MinStack";
+// import "./stack/leetcode/medium/MinStack";
 // import "./stack/leetcode/hard/maximalRectangle";
 // import "./stack/leetcode/hard/totalStrength";
 // import "./stack/leetcode/hard/canSeePersonsCount";
@@ -517,6 +517,7 @@ import "./stack/leetcode/medium/MinStack";
 // import "./dp/leetcode/medium/champagneTower";
 // import "./dp/leetcode/medium/largest1BorderedSquare";
 // import "./dp/leetcode/medium/maxProductPath";
+import "./dp/leetcode/medium/maxProduct";
 // ! Dynamic Programming end
 /**********************************************/
 
