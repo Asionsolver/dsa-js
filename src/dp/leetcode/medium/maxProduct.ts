@@ -14,33 +14,54 @@ Output: 0
 Explanation: The result cannot be 2, because [-2,-1] is not a subarray.
 */
 
+// function maxProduct(nums: number[]): number {
+//   if (nums.length === 0) return 0;
+
+//   let maxSoFar = nums[0];
+//   let minSoFar = nums[0];
+//   let result = maxSoFar;
+
+//   for (let i = 1; i < nums.length; i++) {
+//     let curr = nums[i];
+
+//     // If the current number is negative, it will flip the signs.
+//     // Therefore, the max becomes the min and the min becomes the max.
+//     if (curr < 0) {
+//       let temp = maxSoFar;
+//       maxSoFar = minSoFar;
+//       minSoFar = temp;
+//     }
+
+//     // Calculate the maximum and minimum ending at the current index
+//     maxSoFar = Math.max(curr, maxSoFar * curr);
+//     minSoFar = Math.min(curr, minSoFar * curr);
+
+//     // Update the global result with the highest product found so far
+//     result = Math.max(result, maxSoFar);
+//   }
+
+//   return result;
+// }
+
+//  (Prefix & Suffix Products)
 function maxProduct(nums: number[]): number {
-  if (nums.length === 0) return 0;
+  let max = -Infinity;
+  let prefix = 1;
+  let suffix = 1;
+  let n = nums.length;
 
-  let maxSoFar = nums[0];
-  let minSoFar = nums[0];
-  let result = maxSoFar;
+  for (let i = 0; i < n; i++) {
+    // Reset to 1 if we encounter a 0
+    if (prefix === 0) prefix = 1;
+    if (suffix === 0) suffix = 1;
 
-  for (let i = 1; i < nums.length; i++) {
-    let curr = nums[i];
+    prefix *= nums[i];
+    suffix *= nums[n - 1 - i];
 
-    // If the current number is negative, it will flip the signs.
-    // Therefore, the max becomes the min and the min becomes the max.
-    if (curr < 0) {
-      let temp = maxSoFar;
-      maxSoFar = minSoFar;
-      minSoFar = temp;
-    }
-
-    // Calculate the maximum and minimum ending at the current index
-    maxSoFar = Math.max(curr, maxSoFar * curr);
-    minSoFar = Math.min(curr, minSoFar * curr);
-
-    // Update the global result with the highest product found so far
-    result = Math.max(result, maxSoFar);
+    max = Math.max(max, prefix, suffix);
   }
 
-  return result;
+  return max;
 }
 
 // Test cases
