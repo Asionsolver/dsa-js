@@ -136,6 +136,7 @@
 // import "./stack/leetcode/medium/nextGreaterElements";
 // import "./stack/leetcode/medium/subArrayRanges";
 // import "./stack/leetcode/medium/dailyTemperatures.ts";
+import "./stack/leetcode/medium/MinStack";
 // import "./stack/leetcode/hard/maximalRectangle";
 // import "./stack/leetcode/hard/totalStrength";
 // import "./stack/leetcode/hard/canSeePersonsCount";
@@ -373,7 +374,8 @@
 // import "./sliding-window/leetcode/medium/characterReplacement";
 // import "./sliding-window/leetcode/medium/longestBeautifulSubstring";
 // import "./sliding-window/leetcode/medium/numSubarrayProductLessThanK";
-import "./sliding-window/leetcode/medium/getAverages";
+// import "./sliding-window/leetcode/medium/getAverages";
+// import "./sliding-window/leetcode/medium/minSubArrayLen";
 // import "./sliding-window/leetcode/hard/maxPower";
 // import "./sliding-window/leetcode/hard/maxSumOfThreeSubarrays";
 // import "./sliding-window/leetcode/hard/maxStability";
