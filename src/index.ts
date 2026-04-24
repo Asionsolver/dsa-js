@@ -338,6 +338,7 @@
 // import "./string/leetcode/easy/checkOnesSegment";
 // import "./string/leetcode/easy/canBeEqual";
 // import "./string/leetcode/easy/closestTarget";
+import "./string/leetcode/easy/furthestDistanceFromOrigin";
 
 // ! String End
 /**********************************************/
@@ -517,7 +518,7 @@
 // import "./dp/leetcode/medium/champagneTower";
 // import "./dp/leetcode/medium/largest1BorderedSquare";
 // import "./dp/leetcode/medium/maxProductPath";
-import "./dp/leetcode/medium/maxProduct";
+// import "./dp/leetcode/medium/maxProduct";
 // ! Dynamic Programming end
 /**********************************************/
 
