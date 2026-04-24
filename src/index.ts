@@ -338,7 +338,7 @@
 // import "./string/leetcode/easy/checkOnesSegment";
 // import "./string/leetcode/easy/canBeEqual";
 // import "./string/leetcode/easy/closestTarget";
-import "./string/leetcode/easy/furthestDistanceFromOrigin";
+// import "./string/leetcode/easy/furthestDistanceFromOrigin";
 
 // ! String End
 /**********************************************/
@@ -611,4 +611,10 @@ import "./string/leetcode/easy/furthestDistanceFromOrigin";
 // ! Simulation Start
 // import "./simulation/leetcode/medium/Robot";
 // ! Simulation End
+/**********************************************/
+
+/**********************************************/
+// ! Queue Start
+import "./queue/leetcode/medium/maxResult";
+// ! Queue End
 /**********************************************/
