@@ -377,7 +377,7 @@
 // import "./sliding-window/leetcode/medium/numSubarrayProductLessThanK";
 // import "./sliding-window/leetcode/medium/getAverages";
 // import "./sliding-window/leetcode/medium/minSubArrayLen";
-import "./sliding-window/leetcode/medium/canReach";
+// import "./sliding-window/leetcode/medium/canReach";
 // import "./sliding-window/leetcode/hard/maxPower";
 // import "./sliding-window/leetcode/hard/maxSumOfThreeSubarrays";
 // import "./sliding-window/leetcode/hard/maxStability";
@@ -549,6 +549,7 @@ import "./sliding-window/leetcode/medium/canReach";
 // import "./greedy/leetcode/medium/partitionDisjoint";
 // import "./greedy/leetcode/medium/maxStrength";
 // import "./greedy/leetcode/medium/maxProduct";
+import "./greedy/leetcode/medium/jump";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // import "./greedy/leetcode/easy/maxDistance";
 // ! Greedy Algorithm end
