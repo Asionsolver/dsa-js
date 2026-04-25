@@ -152,8 +152,8 @@
 
 /**********************************************/
 // ! queue start
-
 // import "./queue/queue";
+// import "./queue/leetcode/medium/maxResult";
 
 // ! queue end
 /**********************************************/
@@ -549,7 +549,7 @@
 // import "./greedy/leetcode/medium/partitionDisjoint";
 // import "./greedy/leetcode/medium/maxStrength";
 // import "./greedy/leetcode/medium/maxProduct";
-import "./greedy/leetcode/medium/jump";
+// import "./greedy/leetcode/medium/jump";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // import "./greedy/leetcode/easy/maxDistance";
 // ! Greedy Algorithm end
@@ -569,6 +569,7 @@ import "./greedy/leetcode/medium/jump";
 // import "./binary-search/leetcode/hard/latestDayToCross";
 // import "./binary-search/leetcode/hard/swimInWater";
 // import "./binary-search/leetcode/hard/separateSquares";
+import "./binary-search/leetcode/hard/maxDistance";
 // ! Binary Search End
 /**********************************************/
 
@@ -613,10 +614,4 @@ import "./greedy/leetcode/medium/jump";
 // ! Simulation Start
 // import "./simulation/leetcode/medium/Robot";
 // ! Simulation End
-/**********************************************/
-
-/**********************************************/
-// ! Queue Start
-// import "./queue/leetcode/medium/maxResult";
-// ! Queue End
 /**********************************************/
