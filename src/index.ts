@@ -525,7 +525,8 @@
 // import "./dp/leetcode/medium/rob";
 // import "./dp/leetcode/medium/deleteAndEarn";
 // import "./dp/leetcode/medium/deleteAndEarn";
-import "./dp/leetcode/medium/minSideJumps";
+// import "./dp/leetcode/medium/minSideJumps";
+import "./dp/leetcode/medium/maximumJumps";
 // ! Dynamic Programming end
 /**********************************************/
 
