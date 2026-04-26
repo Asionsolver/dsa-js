@@ -232,6 +232,7 @@
 // import "./tree/leetcode/medium/lcaDeepestLeaves";
 // import "./tree/leetcode/medium/minimumHammingDistance";
 // import "./tree/leetcode/medium/rob";
+import "./tree/leetcode/medium/reachableNodes";
 // import "./tree/leetcode/easy/isBalanced";
 // import "./tree/leetcode/easy/sumRootToLeaf";
 // import "./tree/leetcode/easy/minDepth";
@@ -426,7 +427,7 @@
 // import "./graph/leetcode/medium/isBipartite";
 // import "./graph/leetcode/medium/findOrder";
 // import "./graph/leetcode/medium/containsCycle";
-import "./graph/leetcode/medium/minimumJumps";
+// import "./graph/leetcode/medium/minimumJumps";
 // import "./graph/leetcode/hard/findAllPeople";
 // import "./graph/leetcode/hard/minCost";
 // import "./graph/leetcode/hard/minimumCost";
