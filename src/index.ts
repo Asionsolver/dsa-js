@@ -426,6 +426,7 @@
 // import "./graph/leetcode/medium/isBipartite";
 // import "./graph/leetcode/medium/findOrder";
 // import "./graph/leetcode/medium/containsCycle";
+import "./graph/leetcode/medium/minimumJumps";
 // import "./graph/leetcode/hard/findAllPeople";
 // import "./graph/leetcode/hard/minCost";
 // import "./graph/leetcode/hard/minimumCost";
@@ -526,7 +527,7 @@
 // import "./dp/leetcode/medium/deleteAndEarn";
 // import "./dp/leetcode/medium/deleteAndEarn";
 // import "./dp/leetcode/medium/minSideJumps";
-import "./dp/leetcode/medium/maximumJumps";
+// import "./dp/leetcode/medium/maximumJumps";
 // ! Dynamic Programming end
 /**********************************************/
 
