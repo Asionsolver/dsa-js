@@ -232,7 +232,7 @@
 // import "./tree/leetcode/medium/lcaDeepestLeaves";
 // import "./tree/leetcode/medium/minimumHammingDistance";
 // import "./tree/leetcode/medium/rob";
-import "./tree/leetcode/medium/reachableNodes";
+// import "./tree/leetcode/medium/reachableNodes";
 // import "./tree/leetcode/easy/isBalanced";
 // import "./tree/leetcode/easy/sumRootToLeaf";
 // import "./tree/leetcode/easy/minDepth";
@@ -529,6 +529,7 @@ import "./tree/leetcode/medium/reachableNodes";
 // import "./dp/leetcode/medium/deleteAndEarn";
 // import "./dp/leetcode/medium/minSideJumps";
 // import "./dp/leetcode/medium/maximumJumps";
+import "./dp/leetcode/medium/countHousePlacements";
 // ! Dynamic Programming end
 /**********************************************/
 
