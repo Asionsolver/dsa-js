@@ -233,7 +233,8 @@
 // import "./tree/leetcode/medium/minimumHammingDistance";
 // import "./tree/leetcode/medium/rob";
 // import "./tree/leetcode/medium/reachableNodes";
-import "./tree/leetcode/medium/openLock";
+// import "./tree/leetcode/medium/openLock";
+import "./tree/leetcode/medium/hasValidPath";
 // import "./tree/leetcode/easy/isBalanced";
 // import "./tree/leetcode/easy/sumRootToLeaf";
 // import "./tree/leetcode/easy/minDepth";
