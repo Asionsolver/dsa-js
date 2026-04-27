@@ -513,7 +513,8 @@
 // import "./dp/leetcode/hard/maxPartitionsAfterOperations";
 // import "./dp/leetcode/hard/minimumDistance";
 // import "./dp/leetcode/hard/minimumTotalDistance";
-import "./dp/leetcode/hard/maximumStrength";
+// import "./dp/leetcode/hard/maximumStrength";
+import "./dp/leetcode/hard/maxValueTwo";
 // import "./dp/leetcode/medium/maximumProfit";
 // import "./dp/leetcode/medium/maximumAmount";
 // import "./dp/leetcode/medium/findMaxForm";
