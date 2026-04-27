@@ -209,7 +209,7 @@
 // import "./tree/leetcode/hard/minimumDiameterAfterMerge";
 // import "./tree/leetcode/hard/placedCoins";
 // import "./tree/leetcode/hard/collectTheCoins";
-import "./tree/leetcode/hard/longestSubsequenceRepeatedK";
+// import "./tree/leetcode/hard/longestSubsequenceRepeatedK";
 // import "./tree/leetcode/medium/maxLevelSum";
 // import "./tree/leetcode/medium/countHighestScoreNodes";
 // import "./tree/leetcode/medium/maxProduct";
@@ -386,6 +386,7 @@ import "./tree/leetcode/hard/longestSubsequenceRepeatedK";
 // import "./sliding-window/leetcode/hard/maxPower";
 // import "./sliding-window/leetcode/hard/maxSumOfThreeSubarrays";
 // import "./sliding-window/leetcode/hard/maxStability";
+import "./sliding-window/leetcode/hard/subarraysWithKDistinct";
 // import "./sliding-window/problem/smallestDistinctWindow";
 // ! Sliding Window End
 /**********************************************/
