@@ -387,7 +387,7 @@
 // import "./sliding-window/leetcode/hard/maxSumOfThreeSubarrays";
 // import "./sliding-window/leetcode/hard/maxStability";
 // import "./sliding-window/leetcode/hard/subarraysWithKDistinct";
-import "./sliding-window/leetcode/hard/minOperations";
+// import "./sliding-window/leetcode/hard/minOperations";
 // import "./sliding-window/problem/smallestDistinctWindow";
 // ! Sliding Window End
 /**********************************************/
@@ -492,6 +492,7 @@ import "./sliding-window/leetcode/hard/minOperations";
 // import "./math/leetcode/medium/minOperations";
 // import "./math/leetcode/medium/sumFourDivisors";
 // import "./math/leetcode/medium/largestSquareArea";
+import "./math/leetcode/medium/minOperationsTwo";
 // import "./math/leetcode/hard/minOperations";
 // ! Math end
 /**********************************************/
