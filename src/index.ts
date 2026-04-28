@@ -391,7 +391,7 @@
 // import "./sliding-window/leetcode/hard/maxSlidingWindow";
 // import "./sliding-window/leetcode/hard/minMoves";
 // import "./sliding-window/leetcode/hard/maxDifference";
-import "./sliding-window/leetcode/hard/findSubstring";
+// import "./sliding-window/leetcode/hard/findSubstring";
 // import "./sliding-window/problem/smallestDistinctWindow";
 // ! Sliding Window End
 /**********************************************/
@@ -522,6 +522,7 @@ import "./sliding-window/leetcode/hard/findSubstring";
 // import "./dp/leetcode/hard/minimumTotalDistance";
 // import "./dp/leetcode/hard/maximumStrength";
 // import "./dp/leetcode/hard/maxValueTwo";
+import "./dp/leetcode/hard/findIntegers";
 // import "./dp/leetcode/medium/maximumProfit";
 // import "./dp/leetcode/medium/maximumAmount";
 // import "./dp/leetcode/medium/findMaxForm";
