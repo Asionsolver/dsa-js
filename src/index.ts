@@ -388,7 +388,8 @@
 // import "./sliding-window/leetcode/hard/maxStability";
 // import "./sliding-window/leetcode/hard/subarraysWithKDistinct";
 // import "./sliding-window/leetcode/hard/minOperations";
-import "./sliding-window/leetcode/hard/maxSlidingWindow";
+// import "./sliding-window/leetcode/hard/maxSlidingWindow";
+import "./sliding-window/leetcode/hard/minMoves";
 // import "./sliding-window/problem/smallestDistinctWindow";
 // ! Sliding Window End
 /**********************************************/
