@@ -390,7 +390,7 @@
 // import "./sliding-window/leetcode/hard/minOperations";
 // import "./sliding-window/leetcode/hard/maxSlidingWindow";
 // import "./sliding-window/leetcode/hard/minMoves";
-import "./sliding-window/leetcode/hard/maxDifference";
+// import "./sliding-window/leetcode/hard/maxDifference";
 // import "./sliding-window/problem/smallestDistinctWindow";
 // ! Sliding Window End
 /**********************************************/
@@ -417,6 +417,7 @@ import "./sliding-window/leetcode/hard/maxDifference";
 // import "./heap/leetcode/hard/trapRainWater";
 // import "./heap/leetcode/hard/minimumCost";
 // import "./heap/leetcode/hard/scheduleCourse";
+import "./heap/leetcode/hard/minimumDifference";
 // ! Heap file end
 /**********************************************/
 
