@@ -499,7 +499,8 @@
 // import "./math/leetcode/medium/largestSquareArea";
 // import "./math/leetcode/medium/minOperationsTwo";
 // import "./math/leetcode/hard/minOperations";
-import "./math/leetcode/hard/stoneGameV";
+// import "./math/leetcode/hard/stoneGameV";
+import "./math/leetcode/hard/stoneGameIII";
 // ! Math end
 /**********************************************/
 
