@@ -500,7 +500,7 @@
 // import "./math/leetcode/medium/minOperationsTwo";
 // import "./math/leetcode/hard/minOperations";
 // import "./math/leetcode/hard/stoneGameV";
-import "./math/leetcode/hard/stoneGameIII";
+// import "./math/leetcode/hard/stoneGameIII";
 // ! Math end
 /**********************************************/
 
@@ -526,6 +526,7 @@ import "./math/leetcode/hard/stoneGameIII";
 // import "./dp/leetcode/hard/maxValueTwo";
 // import "./dp/leetcode/hard/findIntegers";
 // import "./dp/leetcode/hard/maximumScoreTwo";
+import "./dp/leetcode/hard/canCross";
 // import "./dp/leetcode/medium/maximumProfit";
 // import "./dp/leetcode/medium/maximumAmount";
 // import "./dp/leetcode/medium/findMaxForm";
