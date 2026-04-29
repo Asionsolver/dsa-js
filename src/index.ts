@@ -501,6 +501,7 @@
 // import "./math/leetcode/hard/minOperations";
 // import "./math/leetcode/hard/stoneGameV";
 // import "./math/leetcode/hard/stoneGameIII";
+import "./math/leetcode/hard/stoneGameVIII";
 // ! Math end
 /**********************************************/
 
