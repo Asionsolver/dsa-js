@@ -210,7 +210,7 @@
 // import "./tree/leetcode/hard/placedCoins";
 // import "./tree/leetcode/hard/collectTheCoins";
 // import "./tree/leetcode/hard/longestSubsequenceRepeatedK";
-import "./tree/leetcode/hard/minJumps";
+// import "./tree/leetcode/hard/minJumps";
 // import "./tree/leetcode/medium/maxLevelSum";
 // import "./tree/leetcode/medium/countHighestScoreNodes";
 // import "./tree/leetcode/medium/maxProduct";
@@ -529,6 +529,7 @@ import "./tree/leetcode/hard/minJumps";
 // import "./dp/leetcode/hard/findIntegers";
 // import "./dp/leetcode/hard/maximumScoreTwo";
 // import "./dp/leetcode/hard/canCross";
+import "./dp/leetcode/hard/maxJumps";
 // import "./dp/leetcode/medium/maximumProfit";
 // import "./dp/leetcode/medium/maximumAmount";
 // import "./dp/leetcode/medium/findMaxForm";
