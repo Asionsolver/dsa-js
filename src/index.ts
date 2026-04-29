@@ -499,6 +499,7 @@
 // import "./math/leetcode/medium/largestSquareArea";
 // import "./math/leetcode/medium/minOperationsTwo";
 // import "./math/leetcode/hard/minOperations";
+import "./math/leetcode/hard/stoneGameV";
 // ! Math end
 /**********************************************/
 
@@ -523,7 +524,7 @@
 // import "./dp/leetcode/hard/maximumStrength";
 // import "./dp/leetcode/hard/maxValueTwo";
 // import "./dp/leetcode/hard/findIntegers";
-import "./dp/leetcode/hard/maximumScoreTwo";
+// import "./dp/leetcode/hard/maximumScoreTwo";
 // import "./dp/leetcode/medium/maximumProfit";
 // import "./dp/leetcode/medium/maximumAmount";
 // import "./dp/leetcode/medium/findMaxForm";
