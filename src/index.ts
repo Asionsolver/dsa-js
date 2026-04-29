@@ -210,6 +210,7 @@
 // import "./tree/leetcode/hard/placedCoins";
 // import "./tree/leetcode/hard/collectTheCoins";
 // import "./tree/leetcode/hard/longestSubsequenceRepeatedK";
+import "./tree/leetcode/hard/minJumps";
 // import "./tree/leetcode/medium/maxLevelSum";
 // import "./tree/leetcode/medium/countHighestScoreNodes";
 // import "./tree/leetcode/medium/maxProduct";
@@ -501,7 +502,7 @@
 // import "./math/leetcode/hard/minOperations";
 // import "./math/leetcode/hard/stoneGameV";
 // import "./math/leetcode/hard/stoneGameIII";
-import "./math/leetcode/hard/stoneGameVIII";
+// import "./math/leetcode/hard/stoneGameVIII";
 // ! Math end
 /**********************************************/
 
