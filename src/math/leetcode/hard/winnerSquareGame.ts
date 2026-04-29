@@ -23,8 +23,6 @@ function winnerSquareGame(n: number): boolean {
   // dp[i] represents whether the current player can win with 'i' stones remaining
   const dp: boolean[] = new Array(n + 1).fill(false);
 
-  // Base case is inherently handled since dp[0] is initialized to false.
-
   for (let i = 1; i <= n; i++) {
     // Try all perfect squares less than or equal to the current number of stones 'i'
     for (let k = 1; k * k <= i; k++) {
