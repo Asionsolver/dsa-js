@@ -420,6 +420,7 @@
 // import "./heap/leetcode/hard/minimumCost";
 // import "./heap/leetcode/hard/scheduleCourse";
 // import "./heap/leetcode/hard/minimumDifference";
+import "./heap/leetcode/hard/maxSpending";
 // ! Heap file end
 /**********************************************/
 
