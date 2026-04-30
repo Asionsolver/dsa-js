@@ -393,6 +393,7 @@
 // import "./sliding-window/leetcode/hard/minMoves";
 // import "./sliding-window/leetcode/hard/maxDifference";
 // import "./sliding-window/leetcode/hard/findSubstring";
+import "./sliding-window/leetcode/hard/countSubarrays";
 // import "./sliding-window/problem/smallestDistinctWindow";
 // ! Sliding Window End
 /**********************************************/
@@ -468,7 +469,7 @@ import "./heap/leetcode/hard/maxSpending";
 // import "./bit-manipulation/leetcode/easy/minBitwiseArray";
 // import "./bit-manipulation/leetcode/hard/jobScheduling";
 // import "./bit-manipulation/leetcode/hard/minimumOneBitOperations";
-import "./bit-manipulation/leetcode/hard/getMaxFunctionValue";
+// import "./bit-manipulation/leetcode/hard/getMaxFunctionValue";
 // import "./bit-manipulation/leetcode/medium/minOperations";
 // import "./bit-manipulation/leetcode/medium/minBitwiseArray";
 // import "./bit-manipulation/leetcode/medium/numSteps";
