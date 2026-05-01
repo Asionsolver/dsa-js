@@ -272,6 +272,7 @@
 // import "./hash-table/leetcode/easy/findFinalValue";
 // import "./hash-table/leetcode/easy/repeatedNTimes";
 // import "./hash-table/leetcode/easy/minimumDistance";
+import "./hash-table/leetcode/easy/removeAnagrams";
 // import "./hash-table/leetcode/medium/maxSubarraySum";
 // import "./hash-table/leetcode/medium/countPalindromicSubsequence";
 // import "./hash-table/leetcode/medium/digArtifacts";
@@ -658,7 +659,7 @@
 
 /**********************************************/
 // ! Simulation Start
-import "./simulation/leetcode/easy/numWaterBottles";
+// import "./simulation/leetcode/easy/numWaterBottles";
 // import "./simulation/leetcode/medium/Robot";
 // ! Simulation End
 /**********************************************/
