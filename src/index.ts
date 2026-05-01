@@ -619,7 +619,7 @@
 
 /**********************************************/
 // ! Prefix Sum Start
-import "./prefix-sum/leetcode/easy/NumArray";
+// import "./prefix-sum/leetcode/easy/NumArray";
 // import "./prefix-sum/leetcode/medium/minTime";
 // import "./prefix-sum/leetcode/medium/maxSum";
 // import "./prefix-sum/leetcode/medium/matrixBlockSum";
@@ -658,6 +658,7 @@ import "./prefix-sum/leetcode/easy/NumArray";
 
 /**********************************************/
 // ! Simulation Start
+import "./simulation/leetcode/easy/numWaterBottles";
 // import "./simulation/leetcode/medium/Robot";
 // ! Simulation End
 /**********************************************/
