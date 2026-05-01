@@ -539,7 +539,7 @@
 // import "./dp/leetcode/hard/canCross";
 // import "./dp/leetcode/hard/maxJumps";
 // import "./dp/leetcode/hard/maximumScoreThree";
-import "./dp/leetcode/hard/waysToReachTarget";
+// import "./dp/leetcode/hard/waysToReachTarget";
 // import "./dp/leetcode/medium/maximumProfit";
 // import "./dp/leetcode/medium/maximumAmount";
 // import "./dp/leetcode/medium/findMaxForm";
@@ -619,6 +619,7 @@ import "./dp/leetcode/hard/waysToReachTarget";
 
 /**********************************************/
 // ! Prefix Sum Start
+import "./prefix-sum/leetcode/easy/NumArray";
 // import "./prefix-sum/leetcode/medium/minTime";
 // import "./prefix-sum/leetcode/medium/maxSum";
 // import "./prefix-sum/leetcode/medium/matrixBlockSum";
