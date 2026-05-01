@@ -396,7 +396,7 @@
 // import "./sliding-window/leetcode/hard/countSubarrays";
 // import "./sliding-window/leetcode/hard/validSubstringCount";
 // import "./sliding-window/leetcode/hard/maximumRobots";
-import "./sliding-window/leetcode/hard/smallestRange";
+// import "./sliding-window/leetcode/hard/smallestRange";
 // import "./sliding-window/problem/smallestDistinctWindow";
 // ! Sliding Window End
 /**********************************************/
@@ -424,7 +424,7 @@ import "./sliding-window/leetcode/hard/smallestRange";
 // import "./heap/leetcode/hard/minimumCost";
 // import "./heap/leetcode/hard/scheduleCourse";
 // import "./heap/leetcode/hard/minimumDifference";
-import "./heap/leetcode/hard/maxSpending";
+// import "./heap/leetcode/hard/maxSpending";
 // ! Heap file end
 /**********************************************/
 
@@ -506,6 +506,7 @@ import "./heap/leetcode/hard/maxSpending";
 // import "./math/leetcode/medium/sumFourDivisors";
 // import "./math/leetcode/medium/largestSquareArea";
 // import "./math/leetcode/medium/minOperationsTwo";
+// import "./math/leetcode/medium/maxRotateFunction";
 // import "./math/leetcode/hard/minOperations";
 // import "./math/leetcode/hard/stoneGameV";
 // import "./math/leetcode/hard/stoneGameIII";
@@ -538,6 +539,7 @@ import "./heap/leetcode/hard/maxSpending";
 // import "./dp/leetcode/hard/canCross";
 // import "./dp/leetcode/hard/maxJumps";
 // import "./dp/leetcode/hard/maximumScoreThree";
+import "./dp/leetcode/hard/waysToReachTarget";
 // import "./dp/leetcode/medium/maximumProfit";
 // import "./dp/leetcode/medium/maximumAmount";
 // import "./dp/leetcode/medium/findMaxForm";
