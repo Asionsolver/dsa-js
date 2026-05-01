@@ -53,7 +53,7 @@
 // import "./array/1D-array/leetcode/easy/countElements";
 // import "./array/1D-array/leetcode/easy/minimumCost";
 // import "./array/1D-array/leetcode/easy/getMinDistance";
-import "./array/1D-array/leetcode/easy/hasIncreasingSubarrays";
+// import "./array/1D-array/leetcode/easy/hasIncreasingSubarrays";
 // import "./array/1D-array/leetcode/medium/minimumSum";
 // import "./array/1D-array/leetcode/medium/maximizeSquareHoleArea";
 // import "./array/1D-array/leetcode/medium/findDifferentBinaryString";
@@ -661,6 +661,7 @@ import "./array/1D-array/leetcode/easy/hasIncreasingSubarrays";
 /**********************************************/
 // ! Simulation Start
 // import "./simulation/leetcode/easy/numWaterBottles";
+import "./simulation/leetcode/easy/numWaterBottles";
 // import "./simulation/leetcode/medium/Robot";
 // ! Simulation End
 /**********************************************/
