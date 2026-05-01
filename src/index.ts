@@ -53,6 +53,7 @@
 // import "./array/1D-array/leetcode/easy/countElements";
 // import "./array/1D-array/leetcode/easy/minimumCost";
 // import "./array/1D-array/leetcode/easy/getMinDistance";
+import "./array/1D-array/leetcode/easy/hasIncreasingSubarrays";
 // import "./array/1D-array/leetcode/medium/minimumSum";
 // import "./array/1D-array/leetcode/medium/maximizeSquareHoleArea";
 // import "./array/1D-array/leetcode/medium/findDifferentBinaryString";
@@ -272,7 +273,7 @@
 // import "./hash-table/leetcode/easy/findFinalValue";
 // import "./hash-table/leetcode/easy/repeatedNTimes";
 // import "./hash-table/leetcode/easy/minimumDistance";
-import "./hash-table/leetcode/easy/removeAnagrams";
+// import "./hash-table/leetcode/easy/removeAnagrams";
 // import "./hash-table/leetcode/medium/maxSubarraySum";
 // import "./hash-table/leetcode/medium/countPalindromicSubsequence";
 // import "./hash-table/leetcode/medium/digArtifacts";
