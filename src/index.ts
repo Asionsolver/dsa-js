@@ -347,7 +347,7 @@
 // import "./string/leetcode/easy/canBeEqual";
 // import "./string/leetcode/easy/closestTarget";
 // import "./string/leetcode/easy/furthestDistanceFromOrigin";
-import "./string/leetcode/easy/rotateString";
+// import "./string/leetcode/easy/rotateString";
 
 // ! String End
 /**********************************************/
@@ -511,6 +511,7 @@ import "./string/leetcode/easy/rotateString";
 // import "./math/leetcode/medium/minOperationsTwo";
 // import "./math/leetcode/medium/maxRotateFunction";
 // import "./math/leetcode/medium/rotatedDigits";
+import "./math/leetcode/medium/rotate";
 // import "./math/leetcode/hard/minOperations";
 // import "./math/leetcode/hard/stoneGameV";
 // import "./math/leetcode/hard/stoneGameIII";
