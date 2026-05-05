@@ -511,7 +511,7 @@
 // import "./math/leetcode/medium/minOperationsTwo";
 // import "./math/leetcode/medium/maxRotateFunction";
 // import "./math/leetcode/medium/rotatedDigits";
-import "./math/leetcode/medium/rotate";
+// import "./math/leetcode/medium/rotate";
 // import "./math/leetcode/hard/minOperations";
 // import "./math/leetcode/hard/stoneGameV";
 // import "./math/leetcode/hard/stoneGameIII";
