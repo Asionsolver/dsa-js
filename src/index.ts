@@ -93,6 +93,7 @@
 // import "./twoPointer/leetcode/medium/intervalIntersection";
 // import "./twoPointer/leetcode/medium/partitionLabels";
 // import "./twoPointer/leetcode/medium/maxDistance";
+import "./twoPointer/leetcode/medium/rotateTheBox";
 
 // ! two pointer file end
 /**********************************************/
