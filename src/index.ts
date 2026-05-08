@@ -239,6 +239,7 @@
 // import "./tree/leetcode/medium/reachableNodes";
 // import "./tree/leetcode/medium/openLock";
 // import "./tree/leetcode/medium/hasValidPath";
+import "./tree/leetcode/medium/minJumps";
 // import "./tree/leetcode/easy/isBalanced";
 // import "./tree/leetcode/easy/sumRootToLeaf";
 // import "./tree/leetcode/easy/minDepth";
@@ -568,7 +569,7 @@
 // import "./dp/leetcode/medium/maximumJumps";
 // import "./dp/leetcode/medium/countHousePlacements";
 // import "./dp/leetcode/medium/maxPathScore";
-import "./dp/leetcode/medium/maxValue";
+// import "./dp/leetcode/medium/maxValue";
 // ! Dynamic Programming end
 /**********************************************/
 
