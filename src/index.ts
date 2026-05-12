@@ -668,7 +668,7 @@
 // ! Simulation Start
 // import "./simulation/leetcode/easy/numWaterBottles";
 // import "./simulation/leetcode/easy/finalValueAfterOperations";
-import "./simulation/leetcode/easy/separateDigits";
+// import "./simulation/leetcode/easy/separateDigits";
 // import "./simulation/leetcode/medium/Robot";
 // import "./simulation/leetcode/medium/rotateGrid";
 // ! Simulation End
