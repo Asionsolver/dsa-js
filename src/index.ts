@@ -276,6 +276,7 @@
 // import "./hash-table/leetcode/easy/repeatedNTimes";
 // import "./hash-table/leetcode/easy/minimumDistance";
 // import "./hash-table/leetcode/easy/removeAnagrams";
+import "./hash-table/leetcode/easy/isGood";
 // import "./hash-table/leetcode/medium/maxSubarraySum";
 // import "./hash-table/leetcode/medium/countPalindromicSubsequence";
 // import "./hash-table/leetcode/medium/digArtifacts";
@@ -643,7 +644,7 @@
 // import "./prefix-sum/leetcode/medium/canPartitionGrid";
 // import "./prefix-sum/leetcode/medium/maximumSubarraySum";
 // import "./prefix-sum/leetcode/medium/checkSubarraySum";
-import "./prefix-sum/leetcode/medium/minMoves";
+// import "./prefix-sum/leetcode/medium/minMoves";
 // import "./prefix-sum/leetcode/hard/numberOfStableArrays";
 // import "./prefix-sum/leetcode/hard/canPartitionGrid";
 // import "./prefix-sum/leetcode/hard/possibleToStamp";
