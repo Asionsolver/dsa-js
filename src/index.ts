@@ -276,7 +276,7 @@
 // import "./hash-table/leetcode/easy/repeatedNTimes";
 // import "./hash-table/leetcode/easy/minimumDistance";
 // import "./hash-table/leetcode/easy/removeAnagrams";
-import "./hash-table/leetcode/easy/isGood";
+// import "./hash-table/leetcode/easy/isGood";
 // import "./hash-table/leetcode/medium/maxSubarraySum";
 // import "./hash-table/leetcode/medium/countPalindromicSubsequence";
 // import "./hash-table/leetcode/medium/digArtifacts";
@@ -616,6 +616,7 @@ import "./hash-table/leetcode/easy/isGood";
 // import "./binary-search/leetcode/medium/solveQueries";
 // import "./binary-search/leetcode/medium/findRightInterval";
 // import "./binary-search/leetcode/medium/minDays";
+import "./binary-search/leetcode/medium/findMin";
 // import "./binary-search/leetcode/easy/countNegatives";
 // import "./binary-search/leetcode/easy/nextGreatestLetter";
 // import "./binary-search/leetcode/hard/latestDayToCross";
