@@ -616,7 +616,7 @@
 // import "./binary-search/leetcode/medium/solveQueries";
 // import "./binary-search/leetcode/medium/findRightInterval";
 // import "./binary-search/leetcode/medium/minDays";
-import "./binary-search/leetcode/medium/findMin";
+// import "./binary-search/leetcode/medium/findMin";
 // import "./binary-search/leetcode/easy/countNegatives";
 // import "./binary-search/leetcode/easy/nextGreatestLetter";
 // import "./binary-search/leetcode/hard/latestDayToCross";
@@ -624,6 +624,7 @@ import "./binary-search/leetcode/medium/findMin";
 // import "./binary-search/leetcode/hard/separateSquares";
 // import "./binary-search/leetcode/hard/maxDistance";
 // import "./binary-search/leetcode/hard/SummaryRanges";
+import "./binary-search/leetcode/hard/findMin";
 // ! Binary Search End
 /**********************************************/
 
