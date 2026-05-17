@@ -139,6 +139,7 @@
 // import "./stack/leetcode/medium/subArrayRanges";
 // import "./stack/leetcode/medium/dailyTemperatures.ts";
 // import "./stack/leetcode/medium/MinStack";
+import "./stack/leetcode/medium/canReach";
 // import "./stack/leetcode/hard/maximalRectangle";
 // import "./stack/leetcode/hard/totalStrength";
 // import "./stack/leetcode/hard/canSeePersonsCount";
@@ -624,7 +625,7 @@
 // import "./binary-search/leetcode/hard/separateSquares";
 // import "./binary-search/leetcode/hard/maxDistance";
 // import "./binary-search/leetcode/hard/SummaryRanges";
-import "./binary-search/leetcode/hard/findMin";
+// import "./binary-search/leetcode/hard/findMin";
 // ! Binary Search End
 /**********************************************/
 
