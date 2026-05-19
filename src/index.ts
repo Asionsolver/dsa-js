@@ -89,6 +89,7 @@
 // import "./twoPointer/leetcode/hard/recoverArray";
 // import "./twoPointer/leetcode/easy/countBinarySubstrings";
 // import "./twoPointer/leetcode/easy/flipSubmatrix";
+import "./twoPointer/leetcode/easy/getCommon";
 // import "./twoPointer/leetcode/medium/nextGreaterElement";
 // import "./twoPointer/leetcode/medium/intervalIntersection";
 // import "./twoPointer/leetcode/medium/partitionLabels";
@@ -139,7 +140,7 @@
 // import "./stack/leetcode/medium/subArrayRanges";
 // import "./stack/leetcode/medium/dailyTemperatures.ts";
 // import "./stack/leetcode/medium/MinStack";
-import "./stack/leetcode/medium/canReach";
+// import "./stack/leetcode/medium/canReach";
 // import "./stack/leetcode/hard/maximalRectangle";
 // import "./stack/leetcode/hard/totalStrength";
 // import "./stack/leetcode/hard/canSeePersonsCount";
