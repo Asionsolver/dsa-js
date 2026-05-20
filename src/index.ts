@@ -89,7 +89,7 @@
 // import "./twoPointer/leetcode/hard/recoverArray";
 // import "./twoPointer/leetcode/easy/countBinarySubstrings";
 // import "./twoPointer/leetcode/easy/flipSubmatrix";
-import "./twoPointer/leetcode/easy/getCommon";
+// import "./twoPointer/leetcode/easy/getCommon";
 // import "./twoPointer/leetcode/medium/nextGreaterElement";
 // import "./twoPointer/leetcode/medium/intervalIntersection";
 // import "./twoPointer/leetcode/medium/partitionLabels";
@@ -490,6 +490,7 @@ import "./twoPointer/leetcode/easy/getCommon";
 // import "./bit-manipulation/leetcode/medium/smallestSubarrays";
 // import "./bit-manipulation/leetcode/medium/minOperationsTwo";
 // import "./bit-manipulation/leetcode/medium/minFlips";
+import "./bit-manipulation/leetcode/medium/findThePrefixCommonArray";
 // ! Bit Manipulation end
 /**********************************************/
 
