@@ -490,7 +490,7 @@
 // import "./bit-manipulation/leetcode/medium/smallestSubarrays";
 // import "./bit-manipulation/leetcode/medium/minOperationsTwo";
 // import "./bit-manipulation/leetcode/medium/minFlips";
-import "./bit-manipulation/leetcode/medium/findThePrefixCommonArray";
+// import "./bit-manipulation/leetcode/medium/findThePrefixCommonArray";
 // ! Bit Manipulation end
 /**********************************************/
 
@@ -661,6 +661,7 @@ import "./bit-manipulation/leetcode/medium/findThePrefixCommonArray";
 // ! Trie Start
 // import "./Trie/leetcode/medium/removeSubfolders";
 // import "./Trie/leetcode/medium/twoEditWords";
+import "./Trie/leetcode/medium/longestCommonPrefix";
 // ! Trie End
 /**********************************************/
 
