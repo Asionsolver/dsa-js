@@ -52,3 +52,16 @@ function search(nums: number[], target: number): number {
   // Target was not found
   return -1;
 }
+
+// Example usage:
+const nums1 = [4, 5, 6, 7, 0, 1, 2];
+const target1 = 0;
+console.log(search(nums1, target1)); // Output: 4
+
+const nums2 = [4, 5, 6, 7, 0, 1, 2];
+const target2 = 3;
+console.log(search(nums2, target2)); // Output: -1
+
+const nums3 = [1];
+const target3 = 0;
+console.log(search(nums3, target3)); // Output: -1
