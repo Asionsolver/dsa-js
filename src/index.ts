@@ -54,7 +54,7 @@
 // import "./array/1D-array/leetcode/easy/minimumCost";
 // import "./array/1D-array/leetcode/easy/getMinDistance";
 // import "./array/1D-array/leetcode/easy/hasIncreasingSubarrays";
-import "./array/1D-array/leetcode/easy/check";
+// import "./array/1D-array/leetcode/easy/check";
 // import "./array/1D-array/leetcode/medium/minimumSum";
 // import "./array/1D-array/leetcode/medium/maximizeSquareHoleArea";
 // import "./array/1D-array/leetcode/medium/findDifferentBinaryString";
