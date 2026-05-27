@@ -280,7 +280,7 @@
 // import "./hash-table/leetcode/easy/minimumDistance";
 // import "./hash-table/leetcode/easy/removeAnagrams";
 // import "./hash-table/leetcode/easy/isGood";
-import "./hash-table/leetcode/easy/numberOfSpecialChars";
+// import "./hash-table/leetcode/easy/numberOfSpecialChars";
 // import "./hash-table/leetcode/medium/maxSubarraySum";
 // import "./hash-table/leetcode/medium/countPalindromicSubsequence";
 // import "./hash-table/leetcode/medium/digArtifacts";
@@ -293,6 +293,7 @@ import "./hash-table/leetcode/easy/numberOfSpecialChars";
 // import "./hash-table/leetcode/medium/robotSim";
 // import "./hash-table/leetcode/medium/minimumDistance";
 // import "./hash-table/leetcode/medium/minMirrorPairDistance";
+import "./hash-table/leetcode/medium/numberOfSpecialChars";
 // import "./hash-table/leetcode/hard/countTrapezoidsTwo";
 // ! hash table end
 /**********************************************/
