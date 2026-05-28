@@ -293,7 +293,7 @@
 // import "./hash-table/leetcode/medium/robotSim";
 // import "./hash-table/leetcode/medium/minimumDistance";
 // import "./hash-table/leetcode/medium/minMirrorPairDistance";
-import "./hash-table/leetcode/medium/numberOfSpecialChars";
+// import "./hash-table/leetcode/medium/numberOfSpecialChars";
 // import "./hash-table/leetcode/hard/countTrapezoidsTwo";
 // ! hash table end
 /**********************************************/
@@ -666,6 +666,7 @@ import "./sliding-window/leetcode/medium/canReach";
 // import "./Trie/leetcode/medium/removeSubfolders";
 // import "./Trie/leetcode/medium/twoEditWords";
 // import "./Trie/leetcode/medium/longestCommonPrefix";
+import "./Trie/leetcode/hard/stringIndices";
 // ! Trie End
 /**********************************************/
 
