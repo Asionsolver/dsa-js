@@ -394,7 +394,7 @@
 // import "./sliding-window/leetcode/medium/numSubarrayProductLessThanK";
 // import "./sliding-window/leetcode/medium/getAverages";
 // import "./sliding-window/leetcode/medium/minSubArrayLen";
-import "./sliding-window/leetcode/medium/canReach";
+// import "./sliding-window/leetcode/medium/canReach";
 // import "./sliding-window/leetcode/hard/maxPower";
 // import "./sliding-window/leetcode/hard/maxSumOfThreeSubarrays";
 // import "./sliding-window/leetcode/hard/maxStability";
@@ -512,6 +512,7 @@ import "./sliding-window/leetcode/medium/canReach";
 // import "./math/leetcode/easy/areSimilar";
 // import "./math/leetcode/easy/minTimeToVisitAllPoints";
 // import "./math/leetcode/easy/mirrorDistance";
+import "./math/leetcode/easy/minElement";
 // import "./math/leetcode/medium/smallestRepunitDivByK";
 // import "./math/leetcode/medium/maxBottlesDrunk";
 // import "./math/leetcode/medium/minOperations";
