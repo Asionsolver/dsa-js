@@ -512,7 +512,7 @@
 // import "./math/leetcode/easy/areSimilar";
 // import "./math/leetcode/easy/minTimeToVisitAllPoints";
 // import "./math/leetcode/easy/mirrorDistance";
-import "./math/leetcode/easy/minElement";
+// import "./math/leetcode/easy/minElement  ";
 // import "./math/leetcode/medium/smallestRepunitDivByK";
 // import "./math/leetcode/medium/maxBottlesDrunk";
 // import "./math/leetcode/medium/minOperations";
