@@ -25,23 +25,68 @@ This is less than 23, so a collision would not destroy the last asteroid.
 const mass = 10;
 const asteroids = [3, 9, 19, 5, 21];
 
+// function asteroidsDestroyed(mass: number, asteroids: number[]): boolean {
+//   // Sort the asteroids in ascending order of their mass
+//   asteroids.sort((a, b) => a - b);
+
+//   let currentMass = mass;
+
+//   // Iterate through the sorted asteroids
+//   for (const asteroid of asteroids) {
+//     // If the current mass is strictly less than the asteroid, it gets destroyed
+//     if (currentMass < asteroid) {
+//       return false;
+//     }
+//     // Otherwise, destroy the asteroid and absorb its mass
+//     currentMass += asteroid;
+//   }
+
+//   // If we made it through all asteroids without returning false, we win
+//   return true;
+// }
+
+// The above solution is straightforward and works, but it has a time complexity of O(n log n) due to the sorting step. We can optimize it to O(n) by using a counting sort approach, since the mass of asteroids is limited by the maximum asteroid mass.
 function asteroidsDestroyed(mass: number, asteroids: number[]): boolean {
-  // Sort the asteroids in ascending order of their mass
-  asteroids.sort((a, b) => a - b);
-
   let currentMass = mass;
+  let maxAsteroid = 0;
 
-  // Iterate through the sorted asteroids
-  for (const asteroid of asteroids) {
-    // If the current mass is strictly less than the asteroid, it gets destroyed
-    if (currentMass < asteroid) {
-      return false;
+  // 1. First, let's find the largest asteroid.
+  for (let i = 0; i < asteroids.length; i++) {
+    if (asteroids[i] > maxAsteroid) {
+      maxAsteroid = asteroids[i];
     }
-    // Otherwise, destroy the asteroid and absorb its mass
-    currentMass += asteroid;
   }
 
-  // If we made it through all asteroids without returning false, we win
+  // If our current mass is equal to or greater than the largest asteroid at the start,
+  // then it can destroy everything by itself.
+  if (currentMass >= maxAsteroid) {
+    return true;
+  }
+
+  // 2. Count the frequency using TypedArray (it is much faster and saves memory)
+  const counts = new Uint32Array(maxAsteroid + 1);
+  for (let i = 0; i < asteroids.length; i++) {
+    counts[asteroids[i]]++;
+  }
+
+  // 3. Increase the mass by checking asteroids from small to large
+  for (let i = 1; i <= maxAsteroid; i++) {
+    if (counts[i] > 0) {
+      // If the big one is small, the planet will be destroyed
+      if (currentMass < i) {
+        return false;
+      }
+      // Add the mass (if there are multiple asteroids of the same weight, add them all at once)
+      currentMass += counts[i] * i;
+
+      // Optimization: If the mass exceeds the largest asteroid,
+      // then no further checks are needed.
+      if (currentMass >= maxAsteroid) {
+        return true;
+      }
+    }
+  }
+
   return true;
 }
 
