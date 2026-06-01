@@ -611,6 +611,7 @@
 // import "./greedy/leetcode/medium/jump";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // import "./greedy/leetcode/easy/maxDistance";
+import "./greedy/leetcode/easy/minimumCost";
 // ! Greedy Algorithm end
 /**********************************************/
 
@@ -667,7 +668,7 @@
 // import "./Trie/leetcode/medium/removeSubfolders";
 // import "./Trie/leetcode/medium/twoEditWords";
 // import "./Trie/leetcode/medium/longestCommonPrefix";
-import "./Trie/leetcode/hard/stringIndices";
+// import "./Trie/leetcode/hard/stringIndices";
 // ! Trie End
 /**********************************************/
 

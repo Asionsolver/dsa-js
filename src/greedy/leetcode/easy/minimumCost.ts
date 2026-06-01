@@ -1,0 +1,47 @@
+// 2144. Minimum Cost of Buying Candies With Discount
+
+/**
+Example 1:
+
+Input: cost = [1,2,3]
+Output: 5
+Explanation: We buy the candies with costs 2 and 3, and take the candy with cost 1 for free.
+The total cost of buying all candies is 2 + 3 = 5. This is the only way we can buy the candies.
+Note that we cannot buy candies with costs 1 and 3, and then take the candy with cost 2 for free.
+The cost of the free candy has to be less than or equal to the minimum cost of the purchased candies.
+Example 2:
+
+Input: cost = [6,5,7,9,2,2]
+Output: 23
+Explanation: The way in which we can get the minimum cost is described below:
+- Buy candies with costs 9 and 7
+- Take the candy with cost 6 for free
+- We buy candies with costs 5 and 2
+- Take the last remaining candy with cost 2 for free
+Hence, the minimum cost to buy all candies is 9 + 7 + 5 + 2 = 23.
+Example 3:
+
+Input: cost = [5,5]
+Output: 10
+Explanation: Since there are only 2 candies, we buy both of them. There is not a third candy we can take for free.
+Hence, the minimum cost to buy all candies is 5 + 5 = 10.
+
+*/
+
+function minimumCost(cost: number[]): number {
+  // Sort the candies in descending order of their costs
+  cost.sort((a, b) => b - a);
+
+  let totalCost = 0;
+
+  // Iterate through the sorted candies
+  for (let i = 0; i < cost.length; i++) {
+    // We pay for the 1st and 2nd candies in every group of 3.
+    // The 3rd candy (index 2, 5, 8...) is always free.
+    if (i % 3 !== 2) {
+      totalCost += cost[i];
+    }
+  }
+
+  return totalCost;
+}
