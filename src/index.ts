@@ -611,7 +611,7 @@
 // import "./greedy/leetcode/medium/jump";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // import "./greedy/leetcode/easy/maxDistance";
-import "./greedy/leetcode/easy/minimumCost";
+// import "./greedy/leetcode/easy/minimumCost";
 // ! Greedy Algorithm end
 /**********************************************/
 
