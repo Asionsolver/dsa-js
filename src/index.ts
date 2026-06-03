@@ -609,6 +609,7 @@
 // import "./greedy/leetcode/medium/maxStrength";
 // import "./greedy/leetcode/medium/maxProduct";
 // import "./greedy/leetcode/medium/jump";
+import "./greedy/leetcode/medium/earliestFinishTime";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // import "./greedy/leetcode/easy/maxDistance";
 // import "./greedy/leetcode/easy/minimumCost";
