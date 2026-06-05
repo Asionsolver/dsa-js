@@ -555,6 +555,7 @@
 // import "./dp/leetcode/hard/maxJumps";
 // import "./dp/leetcode/hard/maximumScoreThree";
 // import "./dp/leetcode/hard/waysToReachTarget";
+import "./dp/leetcode/hard/totalWaviness";
 // import "./dp/leetcode/medium/maximumProfit";
 // import "./dp/leetcode/medium/maximumAmount";
 // import "./dp/leetcode/medium/findMaxForm";
@@ -578,7 +579,7 @@
 // import "./dp/leetcode/medium/countHousePlacements";
 // import "./dp/leetcode/medium/maxPathScore";
 // import "./dp/leetcode/medium/maxValue";
-import "./dp/leetcode/medium/maxValue";
+// import "./dp/leetcode/medium/maxValue";
 // ! Dynamic Programming end
 /**********************************************/
 
