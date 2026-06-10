@@ -437,6 +437,7 @@
 // import "./heap/leetcode/hard/scheduleCourse";
 // import "./heap/leetcode/hard/minimumDifference";
 // import "./heap/leetcode/hard/maxSpending";
+import "./heap/leetcode/hard/maxTotalValue";
 // ! Heap file end
 /**********************************************/
 
@@ -613,7 +614,7 @@
 // import "./greedy/leetcode/medium/maxProduct";
 // import "./greedy/leetcode/medium/jump";
 // import "./greedy/leetcode/medium/earliestFinishTime";
-import "./greedy/leetcode/medium/maxTotalValue";
+// import "./greedy/leetcode/medium/maxTotalValue";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // import "./greedy/leetcode/easy/maxDistance";
 // import "./greedy/leetcode/easy/minimumCost";
