@@ -216,7 +216,7 @@
 // import "./tree/leetcode/hard/collectTheCoins";
 // import "./tree/leetcode/hard/longestSubsequenceRepeatedK";
 // import "./tree/leetcode/hard/minJumps";
-import "./tree/leetcode/hard/assignEdgeWeights";
+// import "./tree/leetcode/hard/assignEdgeWeights";
 // import "./tree/leetcode/medium/maxLevelSum";
 // import "./tree/leetcode/medium/countHighestScoreNodes";
 // import "./tree/leetcode/medium/maxProduct";
@@ -693,6 +693,7 @@ import "./tree/leetcode/hard/assignEdgeWeights";
 // import "./simulation/leetcode/easy/numWaterBottles";
 // import "./simulation/leetcode/easy/finalValueAfterOperations";
 // import "./simulation/leetcode/easy/separateDigits";
+import "./simulation/leetcode/easy/mapWordWeights";
 // import "./simulation/leetcode/medium/Robot";
 // import "./simulation/leetcode/medium/rotateGrid";
 // ! Simulation End
