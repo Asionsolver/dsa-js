@@ -40,19 +40,41 @@ class ListNode {
 }
 
 // 2. The Solution Function
+// function deleteMiddle(head: ListNode | null): ListNode | null {
+//   if (head === null || head.next === null) {
+//     return null;
+//   }
+
+//   let slow: ListNode = head;
+//   let fast: ListNode | null = head.next.next;
+
+//   while (fast !== null && fast.next !== null) {
+//     slow = slow.next!;
+//     fast = fast.next.next;
+//   }
+
+//   slow.next = slow.next!.next;
+
+//   return head;
+// }
+
+// 3. Optimized Solution (without using extra space for counting nodes)
 function deleteMiddle(head: ListNode | null): ListNode | null {
-  if (head === null || head.next === null) {
+  // if the list is empty or contains only one node
+  if (!head || !head.next) {
     return null;
   }
 
-  let slow: ListNode = head;
-  let fast: ListNode | null = head.next.next;
+  let slow = head;
+  let fast = head.next.next;
 
-  while (fast !== null && fast.next !== null) {
+  // Find the node just before the middle node through the loop
+  while (fast && fast.next) {
     slow = slow.next!;
     fast = fast.next.next;
   }
 
+  // Dropping the middle node
   slow.next = slow.next!.next;
 
   return head;
