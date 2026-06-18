@@ -187,6 +187,7 @@
 // import "./linkList/leetcode/medium/deleteNode";
 // import "./linkList/leetcode/medium/insertionSortList";
 // import "./linkList/leetcode/medium/removeNodes";
+// import "./linkList/leetcode/medium/addTwoNumbers";
 // import "./linkList/leetcode/hard/minimumPairRemoval";
 
 // !linked list end
@@ -526,6 +527,7 @@
 // import "./math/leetcode/medium/maxRotateFunction";
 // import "./math/leetcode/medium/rotatedDigits";
 // import "./math/leetcode/medium/rotate";
+import "./math/leetcode/medium/angleClock";
 // import "./math/leetcode/hard/minOperations";
 // import "./math/leetcode/hard/stoneGameV";
 // import "./math/leetcode/hard/stoneGameIII";
@@ -697,6 +699,6 @@
 // import "./simulation/leetcode/medium/Robot";
 // import "./simulation/leetcode/medium/rotateGrid";
 // import "./simulation/leetcode/medium/processStr";
-import "./simulation/leetcode/hard/processStr";
+// import "./simulation/leetcode/hard/processStr";
 // ! Simulation End
 /**********************************************/
