@@ -532,6 +532,7 @@
 // import "./math/leetcode/hard/stoneGameV";
 // import "./math/leetcode/hard/stoneGameIII";
 // import "./math/leetcode/hard/stoneGameVIII";
+import "./math/leetcode/hard/maxBuilding";
 // ! Math end
 /**********************************************/
 
@@ -644,7 +645,7 @@
 // import "./binary-search/leetcode/hard/maxDistance";
 // import "./binary-search/leetcode/hard/SummaryRanges";
 // import "./binary-search/leetcode/hard/findMin";
-import "./binary-search/leetcode/hard/findMedianSortedArrays";
+// import "./binary-search/leetcode/hard/findMedianSortedArrays";
 // ! Binary Search End
 /**********************************************/
 
