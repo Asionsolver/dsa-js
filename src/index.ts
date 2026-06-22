@@ -285,6 +285,7 @@
 // import "./hash-table/leetcode/easy/removeAnagrams";
 // import "./hash-table/leetcode/easy/isGood";
 // import "./hash-table/leetcode/easy/numberOfSpecialChars";
+import "./hash-table/leetcode/easy/maxNumberOfBalloons";
 // import "./hash-table/leetcode/medium/maxSubarraySum";
 // import "./hash-table/leetcode/medium/countPalindromicSubsequence";
 // import "./hash-table/leetcode/medium/digArtifacts";
@@ -620,7 +621,7 @@
 // import "./greedy/leetcode/medium/jump";
 // import "./greedy/leetcode/medium/earliestFinishTime";
 // import "./greedy/leetcode/medium/maxTotalValue";
-import "./greedy/leetcode/medium/maxIceCream";
+// import "./greedy/leetcode/medium/maxIceCream";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // import "./greedy/leetcode/easy/maxDistance";
 // import "./greedy/leetcode/easy/minimumCost";
