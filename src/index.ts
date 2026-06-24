@@ -564,7 +564,8 @@
 // import "./dp/leetcode/hard/maximumScoreThree";
 // import "./dp/leetcode/hard/waysToReachTarget";
 // import "./dp/leetcode/hard/totalWaviness";
-import "./dp/leetcode/hard/zigZagArrays";
+// import "./dp/leetcode/hard/zigZagArrays";
+import "./dp/leetcode/hard/zigZagArraysTwo";
 // import "./dp/leetcode/medium/maximumProfit";
 // import "./dp/leetcode/medium/maximumAmount";
 // import "./dp/leetcode/medium/findMaxForm";
