@@ -565,7 +565,7 @@
 // import "./dp/leetcode/hard/waysToReachTarget";
 // import "./dp/leetcode/hard/totalWaviness";
 // import "./dp/leetcode/hard/zigZagArrays";
-import "./dp/leetcode/hard/zigZagArraysTwo";
+// import "./dp/leetcode/hard/zigZagArraysTwo";
 // import "./dp/leetcode/medium/maximumProfit";
 // import "./dp/leetcode/medium/maximumAmount";
 // import "./dp/leetcode/medium/findMaxForm";
@@ -674,6 +674,7 @@ import "./dp/leetcode/hard/zigZagArraysTwo";
 // import "./prefix-sum/leetcode/medium/maximumSubarraySum";
 // import "./prefix-sum/leetcode/medium/checkSubarraySum";
 // import "./prefix-sum/leetcode/medium/minMoves";
+import "./prefix-sum/leetcode/medium/countMajoritySubarrays";
 // import "./prefix-sum/leetcode/hard/numberOfStableArrays";
 // import "./prefix-sum/leetcode/hard/canPartitionGrid";
 // import "./prefix-sum/leetcode/hard/possibleToStamp";
