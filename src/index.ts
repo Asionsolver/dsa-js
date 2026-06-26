@@ -674,11 +674,12 @@
 // import "./prefix-sum/leetcode/medium/maximumSubarraySum";
 // import "./prefix-sum/leetcode/medium/checkSubarraySum";
 // import "./prefix-sum/leetcode/medium/minMoves";
-import "./prefix-sum/leetcode/medium/countMajoritySubarrays";
+// import "./prefix-sum/leetcode/medium/countMajoritySubarrays";
 // import "./prefix-sum/leetcode/hard/numberOfStableArrays";
 // import "./prefix-sum/leetcode/hard/canPartitionGrid";
 // import "./prefix-sum/leetcode/hard/possibleToStamp";
 // import "./prefix-sum/leetcode/hard/maxFrequency";
+import "./prefix-sum/leetcode/hard/countMajoritySubarrays";
 // ! Prefix Sum End
 /**********************************************/
 
