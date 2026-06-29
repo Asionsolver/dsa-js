@@ -362,6 +362,7 @@
 // import "./string/leetcode/easy/closestTarget";
 // import "./string/leetcode/easy/furthestDistanceFromOrigin";
 // import "./string/leetcode/easy/rotateString";
+import "./string/leetcode/easy/numOfStrings";
 
 // ! String End
 /**********************************************/
@@ -625,7 +626,7 @@
 // import "./greedy/leetcode/medium/earliestFinishTime";
 // import "./greedy/leetcode/medium/maxTotalValue";
 // import "./greedy/leetcode/medium/maxIceCream";
-import "./greedy/leetcode/medium/maximumElementAfterDecrementingAndRearranging";
+// import "./greedy/leetcode/medium/maximumElementAfterDecrementingAndRearranging";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // import "./greedy/leetcode/easy/maxDistance";
 // import "./greedy/leetcode/easy/minimumCost";
