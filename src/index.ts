@@ -402,6 +402,7 @@ import "./string/leetcode/easy/numOfStrings";
 // import "./sliding-window/leetcode/medium/getAverages";
 // import "./sliding-window/leetcode/medium/minSubArrayLen";
 // import "./sliding-window/leetcode/medium/canReach";
+import "./sliding-window/leetcode/medium/numberOfSubstrings";
 // import "./sliding-window/leetcode/hard/maxPower";
 // import "./sliding-window/leetcode/hard/maxSumOfThreeSubarrays";
 // import "./sliding-window/leetcode/hard/maxStability";
