@@ -247,7 +247,8 @@
 // import "./tree/leetcode/medium/minJumps";
 // import "./tree/leetcode/medium/createBinaryTree";
 // import "./tree/leetcode/medium/assignEdgeWeights";
-import "./tree/leetcode/medium/maximumSafenessFactor";
+// import "./tree/leetcode/medium/maximumSafenessFactor";
+import "./tree/leetcode/medium/findSafeWalk";
 // import "./tree/leetcode/easy/isBalanced";
 // import "./tree/leetcode/easy/sumRootToLeaf";
 // import "./tree/leetcode/easy/minDepth";
