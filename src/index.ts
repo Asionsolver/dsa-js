@@ -466,6 +466,7 @@ import "./string/leetcode/easy/numOfStrings";
 // import "./graph/leetcode/medium/findOrder";
 // import "./graph/leetcode/medium/containsCycle";
 // import "./graph/leetcode/medium/minimumJumps";
+import "./graph/leetcode/medium/minScore";
 // import "./graph/leetcode/hard/findAllPeople";
 // import "./graph/leetcode/hard/minCost";
 // import "./graph/leetcode/hard/minimumCost";
@@ -656,7 +657,7 @@ import "./string/leetcode/easy/numOfStrings";
 // import "./binary-search/leetcode/hard/SummaryRanges";
 // import "./binary-search/leetcode/hard/findMin";
 // import "./binary-search/leetcode/hard/findMedianSortedArrays";
-import "./binary-search/leetcode/hard/findMaxPathScore";
+// import "./binary-search/leetcode/hard/findMaxPathScore";
 // ! Binary Search End
 /**********************************************/
 
