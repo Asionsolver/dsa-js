@@ -218,6 +218,7 @@
 // import "./tree/leetcode/hard/longestSubsequenceRepeatedK";
 // import "./tree/leetcode/hard/minJumps";
 // import "./tree/leetcode/hard/assignEdgeWeights";
+import "./tree/leetcode/hard/goodTriplets";
 // import "./tree/leetcode/medium/maxLevelSum";
 // import "./tree/leetcode/medium/countHighestScoreNodes";
 // import "./tree/leetcode/medium/maxProduct";
@@ -572,7 +573,7 @@
 // import "./dp/leetcode/hard/totalWaviness";
 // import "./dp/leetcode/hard/zigZagArrays";
 // import "./dp/leetcode/hard/zigZagArraysTwo";
-import "./dp/leetcode/hard/pathsWithMaxScore";
+// import "./dp/leetcode/hard/pathsWithMaxScore";
 // import "./dp/leetcode/medium/maximumProfit";
 // import "./dp/leetcode/medium/maximumAmount";
 // import "./dp/leetcode/medium/findMaxForm";
