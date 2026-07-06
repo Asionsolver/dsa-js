@@ -480,7 +480,7 @@
 // import "./graph/leetcode/hard/longestCycle";
 // import "./graph/leetcode/hard/friendRequests";
 // import "./graph/leetcode/hard/distanceLimitedPathsExist";
-import "./graph/leetcode/hard/numberOfGoodPaths";
+// import "./graph/leetcode/hard/numberOfGoodPaths";
 // ! Graph file end
 /**********************************************/
 
@@ -722,4 +722,11 @@ import "./graph/leetcode/hard/numberOfGoodPaths";
 // import "./simulation/leetcode/medium/processStr";
 // import "./simulation/leetcode/hard/processStr";
 // ! Simulation End
+/**********************************************/
+
+/**********************************************/
+// ! Sorting file start
+import "./sorting/leetcode/medium/removeCoveredIntervals";
+
+// ! Sorting file end
 /**********************************************/
