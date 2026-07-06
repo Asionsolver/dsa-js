@@ -609,6 +609,7 @@
 // import "./greedy/leetcode/hard/findTheString";
 // import "./greedy/leetcode/hard/generateString";
 // import "./greedy/leetcode/hard/earliestFullBloom";
+import "./greedy/leetcode/hard/earliestFullBloom";
 // import "./greedy/leetcode/medium/minDeletionSize";
 // import "./greedy/leetcode/medium/findOriginalArray";
 // import "./greedy/leetcode/medium/canReorderDoubled";
@@ -726,7 +727,7 @@
 
 /**********************************************/
 // ! Sorting file start
-import "./sorting/leetcode/medium/removeCoveredIntervals";
+// import "./sorting/leetcode/medium/removeCoveredIntervals";
 
 // ! Sorting file end
 /**********************************************/
