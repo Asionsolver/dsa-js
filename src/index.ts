@@ -479,7 +479,8 @@
 // import "./graph/leetcode/hard/magnificentSets";
 // import "./graph/leetcode/hard/longestCycle";
 // import "./graph/leetcode/hard/friendRequests";
-import "./graph/leetcode/hard/distanceLimitedPathsExist";
+// import "./graph/leetcode/hard/distanceLimitedPathsExist";
+import "./graph/leetcode/hard/numberOfGoodPaths";
 // ! Graph file end
 /**********************************************/
 
