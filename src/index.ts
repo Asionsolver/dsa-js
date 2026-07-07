@@ -527,7 +527,8 @@
 // import "./math/leetcode/easy/areSimilar";
 // import "./math/leetcode/easy/minTimeToVisitAllPoints";
 // import "./math/leetcode/easy/mirrorDistance";
-// import "./math/leetcode/easy/minElement  ";
+// import "./math/leetcode/easy/minElement";
+import "./math/leetcode/easy/sumAndMultiply";
 // import "./math/leetcode/medium/smallestRepunitDivByK";
 // import "./math/leetcode/medium/maxBottlesDrunk";
 // import "./math/leetcode/medium/minOperations";
@@ -609,7 +610,7 @@
 // import "./greedy/leetcode/hard/findTheString";
 // import "./greedy/leetcode/hard/generateString";
 // import "./greedy/leetcode/hard/earliestFullBloom";
-import "./greedy/leetcode/hard/earliestFullBloom";
+// import "./greedy/leetcode/hard/earliestFullBloom";
 // import "./greedy/leetcode/medium/minDeletionSize";
 // import "./greedy/leetcode/medium/findOriginalArray";
 // import "./greedy/leetcode/medium/canReorderDoubled";
