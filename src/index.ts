@@ -528,7 +528,7 @@
 // import "./math/leetcode/easy/minTimeToVisitAllPoints";
 // import "./math/leetcode/easy/mirrorDistance";
 // import "./math/leetcode/easy/minElement";
-import "./math/leetcode/easy/sumAndMultiply";
+// import "./math/leetcode/easy/sumAndMultiply";
 // import "./math/leetcode/medium/smallestRepunitDivByK";
 // import "./math/leetcode/medium/maxBottlesDrunk";
 // import "./math/leetcode/medium/minOperations";
@@ -577,6 +577,7 @@ import "./math/leetcode/easy/sumAndMultiply";
 // import "./dp/leetcode/hard/zigZagArrays";
 // import "./dp/leetcode/hard/zigZagArraysTwo";
 // import "./dp/leetcode/hard/pathsWithMaxScore";
+import "./dp/leetcode/hard/hasValidPath";
 // import "./dp/leetcode/medium/maximumProfit";
 // import "./dp/leetcode/medium/maximumAmount";
 // import "./dp/leetcode/medium/findMaxForm";
