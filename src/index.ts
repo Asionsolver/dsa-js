@@ -468,6 +468,7 @@
 // import "./graph/leetcode/medium/containsCycle";
 // import "./graph/leetcode/medium/minimumJumps";
 // import "./graph/leetcode/medium/minScore";
+import "./graph/leetcode/medium/pathExistenceQueries";
 // import "./graph/leetcode/hard/findAllPeople";
 // import "./graph/leetcode/hard/minCost";
 // import "./graph/leetcode/hard/minimumCost";
@@ -690,7 +691,7 @@
 // import "./prefix-sum/leetcode/medium/checkSubarraySum";
 // import "./prefix-sum/leetcode/medium/minMoves";
 // import "./prefix-sum/leetcode/medium/countMajoritySubarrays";
-import "./prefix-sum/leetcode/medium/sumAndMultiply";
+// import "./prefix-sum/leetcode/medium/sumAndMultiply";
 // import "./prefix-sum/leetcode/hard/numberOfStableArrays";
 // import "./prefix-sum/leetcode/hard/canPartitionGrid";
 // import "./prefix-sum/leetcode/hard/possibleToStamp";
