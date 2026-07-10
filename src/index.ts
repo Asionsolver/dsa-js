@@ -219,6 +219,7 @@
 // import "./tree/leetcode/hard/minJumps";
 // import "./tree/leetcode/hard/assignEdgeWeights";
 // import "./tree/leetcode/hard/goodTriplets";
+import "./tree/leetcode/hard/maxPathSum";
 // import "./tree/leetcode/medium/maxLevelSum";
 // import "./tree/leetcode/medium/countHighestScoreNodes";
 // import "./tree/leetcode/medium/maxProduct";
@@ -482,7 +483,7 @@
 // import "./graph/leetcode/hard/friendRequests";
 // import "./graph/leetcode/hard/distanceLimitedPathsExist";
 // import "./graph/leetcode/hard/numberOfGoodPaths";
-import "./graph/leetcode/hard/pathExistenceQueries";
+// import "./graph/leetcode/hard/pathExistenceQueries";
 // ! Graph file end
 /**********************************************/
 
