@@ -35,33 +35,65 @@ class _Node {
   }
 }
 
+// 1. BFS Approach
+// function cloneGraph(node: _Node | null): _Node | null {
+//   if (node === null) {
+//     return null;
+//   }
+
+//   const visited = new Map<_Node, _Node>();
+//   const queue: _Node[] = [node];
+
+//   // Clone the starting node and map it
+//   visited.set(node, new _Node(node.val));
+
+//   while (queue.length > 0) {
+//     const curr = queue.shift()!;
+
+//     for (const neighbor of curr.neighbors) {
+//       if (!visited.has(neighbor)) {
+//         // Clone the neighbor and map it
+//         visited.set(neighbor, new _Node(neighbor.val));
+//         // Add the original neighbor to the queue to process its connections later
+//         queue.push(neighbor);
+//       }
+//       // Link the cloned current node to the cloned neighbor
+//       visited.get(curr)!.neighbors.push(visited.get(neighbor)!);
+//     }
+//   }
+
+//   return visited.get(node) || null;
+// }
+
+// 2. DFS Approach
 function cloneGraph(node: _Node | null): _Node | null {
   if (node === null) {
     return null;
   }
 
+  // Map to keep track of cloned nodes: key is original node, value is cloned node
   const visited = new Map<_Node, _Node>();
-  const queue: _Node[] = [node];
 
-  // Clone the starting node and map it
-  visited.set(node, new _Node(node.val));
-
-  while (queue.length > 0) {
-    const curr = queue.shift()!;
-
-    for (const neighbor of curr.neighbors) {
-      if (!visited.has(neighbor)) {
-        // Clone the neighbor and map it
-        visited.set(neighbor, new _Node(neighbor.val));
-        // Add the original neighbor to the queue to process its connections later
-        queue.push(neighbor);
-      }
-      // Link the cloned current node to the cloned neighbor
-      visited.get(curr)!.neighbors.push(visited.get(neighbor)!);
+  function dfs(curr: _Node): _Node {
+    // If the node is already cloned, return the cloned instance
+    if (visited.has(curr)) {
+      return visited.get(curr)!;
     }
+
+    // Create a copy of the current node
+    const clone = new _Node(curr.val);
+    // Map the original node to its copy
+    visited.set(curr, clone);
+
+    // Recursively clone and populate the neighbors list
+    for (const neighbor of curr.neighbors) {
+      clone.neighbors.push(dfs(neighbor));
+    }
+
+    return clone;
   }
 
-  return visited.get(node) || null;
+  return dfs(node);
 }
 
 // 3. Helper: Build a graph from an adjacency list
