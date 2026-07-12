@@ -290,7 +290,7 @@
 // import "./hash-table/leetcode/easy/isGood";
 // import "./hash-table/leetcode/easy/numberOfSpecialChars";
 // import "./hash-table/leetcode/easy/maxNumberOfBalloons";
-import "./hash-table/leetcode/easy/arrayRankTransform";
+// import "./hash-table/leetcode/easy/arrayRankTransform";
 // import "./hash-table/leetcode/medium/maxSubarraySum";
 // import "./hash-table/leetcode/medium/countPalindromicSubsequence";
 // import "./hash-table/leetcode/medium/digArtifacts";
@@ -450,6 +450,7 @@ import "./hash-table/leetcode/easy/arrayRankTransform";
 // import "./heap/leetcode/hard/minimumDifference";
 // import "./heap/leetcode/hard/maxSpending";
 // import "./heap/leetcode/hard/maxTotalValue";
+import "./heap/leetcode/hard/MedianFinder";
 // ! Heap file end
 /**********************************************/
 
