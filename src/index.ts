@@ -537,7 +537,7 @@
 // import "./math/leetcode/easy/mirrorDistance";
 // import "./math/leetcode/easy/minElement";
 // import "./math/leetcode/easy/sumAndMultiply";
-import "./math/leetcode/easy/gcdOfOddEvenSums";
+// import "./math/leetcode/easy/gcdOfOddEvenSums";
 // import "./math/leetcode/medium/smallestRepunitDivByK";
 // import "./math/leetcode/medium/maxBottlesDrunk";
 // import "./math/leetcode/medium/minOperations";
@@ -736,6 +736,7 @@ import "./math/leetcode/easy/gcdOfOddEvenSums";
 // import "./simulation/leetcode/medium/Robot";
 // import "./simulation/leetcode/medium/rotateGrid";
 // import "./simulation/leetcode/medium/processStr";
+import "./simulation/leetcode/medium/gcdSum";
 // import "./simulation/leetcode/hard/processStr";
 // ! Simulation End
 /**********************************************/
