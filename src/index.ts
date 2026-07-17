@@ -706,6 +706,7 @@
 // import "./prefix-sum/leetcode/hard/possibleToStamp";
 // import "./prefix-sum/leetcode/hard/maxFrequency";
 // import "./prefix-sum/leetcode/hard/countMajoritySubarrays";
+import "./prefix-sum/leetcode/hard/gcdValues";
 // ! Prefix Sum End
 /**********************************************/
 
@@ -736,7 +737,7 @@
 // import "./simulation/leetcode/medium/Robot";
 // import "./simulation/leetcode/medium/rotateGrid";
 // import "./simulation/leetcode/medium/processStr";
-import "./simulation/leetcode/medium/gcdSum";
+// import "./simulation/leetcode/medium/gcdSum";
 // import "./simulation/leetcode/hard/processStr";
 // ! Simulation End
 /**********************************************/
