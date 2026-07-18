@@ -538,6 +538,7 @@
 // import "./math/leetcode/easy/minElement";
 // import "./math/leetcode/easy/sumAndMultiply";
 // import "./math/leetcode/easy/gcdOfOddEvenSums";
+import "./math/leetcode/easy/findGCD";
 // import "./math/leetcode/medium/smallestRepunitDivByK";
 // import "./math/leetcode/medium/maxBottlesDrunk";
 // import "./math/leetcode/medium/minOperations";
@@ -706,7 +707,7 @@
 // import "./prefix-sum/leetcode/hard/possibleToStamp";
 // import "./prefix-sum/leetcode/hard/maxFrequency";
 // import "./prefix-sum/leetcode/hard/countMajoritySubarrays";
-import "./prefix-sum/leetcode/hard/gcdValues";
+// import "./prefix-sum/leetcode/hard/gcdValues";
 // ! Prefix Sum End
 /**********************************************/
 
