@@ -143,6 +143,7 @@
 // import "./stack/leetcode/medium/dailyTemperatures.ts";
 // import "./stack/leetcode/medium/MinStack";
 // import "./stack/leetcode/medium/canReach";
+import "./stack/leetcode/medium/smallestSubsequence";
 // import "./stack/leetcode/hard/maximalRectangle";
 // import "./stack/leetcode/hard/totalStrength";
 // import "./stack/leetcode/hard/canSeePersonsCount";
@@ -538,7 +539,7 @@
 // import "./math/leetcode/easy/minElement";
 // import "./math/leetcode/easy/sumAndMultiply";
 // import "./math/leetcode/easy/gcdOfOddEvenSums";
-import "./math/leetcode/easy/findGCD";
+// import "./math/leetcode/easy/findGCD";
 // import "./math/leetcode/medium/smallestRepunitDivByK";
 // import "./math/leetcode/medium/maxBottlesDrunk";
 // import "./math/leetcode/medium/minOperations";
