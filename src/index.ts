@@ -650,6 +650,7 @@
 // import "./greedy/leetcode/medium/maxTotalValue";
 // import "./greedy/leetcode/medium/maxIceCream";
 // import "./greedy/leetcode/medium/maximumElementAfterDecrementingAndRearranging";
+import "./greedy/leetcode/medium/maxActiveSectionsAfterTrade";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // import "./greedy/leetcode/easy/maxDistance";
 // import "./greedy/leetcode/easy/minimumCost";
@@ -736,7 +737,7 @@
 // import "./simulation/leetcode/easy/finalValueAfterOperations";
 // import "./simulation/leetcode/easy/separateDigits";
 // import "./simulation/leetcode/easy/mapWordWeights";
-import "./simulation/leetcode/easy/shiftGrid";
+// import "./simulation/leetcode/easy/shiftGrid";
 // import "./simulation/leetcode/medium/Robot";
 // import "./simulation/leetcode/medium/rotateGrid";
 // import "./simulation/leetcode/medium/processStr";
