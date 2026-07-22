@@ -222,6 +222,7 @@
 // import "./tree/leetcode/hard/assignEdgeWeights";
 // import "./tree/leetcode/hard/goodTriplets";
 // import "./tree/leetcode/hard/maxPathSum";
+import "./tree/leetcode/hard/maxActiveSectionsAfterTrade";
 // import "./tree/leetcode/medium/maxLevelSum";
 // import "./tree/leetcode/medium/countHighestScoreNodes";
 // import "./tree/leetcode/medium/maxProduct";
@@ -650,7 +651,7 @@
 // import "./greedy/leetcode/medium/maxTotalValue";
 // import "./greedy/leetcode/medium/maxIceCream";
 // import "./greedy/leetcode/medium/maximumElementAfterDecrementingAndRearranging";
-import "./greedy/leetcode/medium/maxActiveSectionsAfterTrade";
+// import "./greedy/leetcode/medium/maxActiveSectionsAfterTrade";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // import "./greedy/leetcode/easy/maxDistance";
 // import "./greedy/leetcode/easy/minimumCost";
