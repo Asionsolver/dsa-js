@@ -519,7 +519,8 @@
 // import "./bit-manipulation/leetcode/medium/minOperationsTwo";
 // import "./bit-manipulation/leetcode/medium/minFlips";
 // import "./bit-manipulation/leetcode/medium/findThePrefixCommonArray";
-import "./bit-manipulation/leetcode/medium/uniqueXorTriplets";
+// import "./bit-manipulation/leetcode/medium/uniqueXorTriplets";
+import "./bit-manipulation/leetcode/medium/uniqueXorTripletsTwo";
 // ! Bit Manipulation end
 /**********************************************/
 
