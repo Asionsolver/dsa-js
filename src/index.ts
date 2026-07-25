@@ -520,7 +520,7 @@
 // import "./bit-manipulation/leetcode/medium/minFlips";
 // import "./bit-manipulation/leetcode/medium/findThePrefixCommonArray";
 // import "./bit-manipulation/leetcode/medium/uniqueXorTriplets";
-import "./bit-manipulation/leetcode/medium/uniqueXorTripletsTwo";
+// import "./bit-manipulation/leetcode/medium/uniqueXorTripletsTwo";
 // ! Bit Manipulation end
 /**********************************************/
 
@@ -543,6 +543,7 @@ import "./bit-manipulation/leetcode/medium/uniqueXorTripletsTwo";
 // import "./math/leetcode/easy/sumAndMultiply";
 // import "./math/leetcode/easy/gcdOfOddEvenSums";
 // import "./math/leetcode/easy/findGCD";
+import "./math/leetcode/easy/maxProduct";
 // import "./math/leetcode/medium/smallestRepunitDivByK";
 // import "./math/leetcode/medium/maxBottlesDrunk";
 // import "./math/leetcode/medium/minOperations";
