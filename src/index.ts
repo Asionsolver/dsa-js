@@ -543,7 +543,8 @@
 // import "./math/leetcode/easy/sumAndMultiply";
 // import "./math/leetcode/easy/gcdOfOddEvenSums";
 // import "./math/leetcode/easy/findGCD";
-import "./math/leetcode/easy/maxProduct";
+// import "./math/leetcode/easy/maxProduct";
+import "./math/leetcode/easy/maximumProduct";
 // import "./math/leetcode/medium/smallestRepunitDivByK";
 // import "./math/leetcode/medium/maxBottlesDrunk";
 // import "./math/leetcode/medium/minOperations";
