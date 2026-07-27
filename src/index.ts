@@ -442,6 +442,7 @@
 // import "./heap/maxHeaps";
 // import "./heap/leetcode/hard/findSomeTwo";
 // import "./heap/leetcode/easy/minimumPairRemoval";
+import "./heap/leetcode/easy/maxProduct";
 // import "./heap/leetcode/medium/minCost";
 // import "./heap/leetcode/medium/minGroups";
 // import "./heap/leetcode/medium/getOrder";
@@ -544,7 +545,7 @@
 // import "./math/leetcode/easy/gcdOfOddEvenSums";
 // import "./math/leetcode/easy/findGCD";
 // import "./math/leetcode/easy/maxProduct";
-import "./math/leetcode/easy/maximumProduct";
+// import "./math/leetcode/easy/maximumProduct";
 // import "./math/leetcode/medium/smallestRepunitDivByK";
 // import "./math/leetcode/medium/maxBottlesDrunk";
 // import "./math/leetcode/medium/minOperations";
