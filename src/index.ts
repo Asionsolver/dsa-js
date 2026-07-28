@@ -442,7 +442,7 @@
 // import "./heap/maxHeaps";
 // import "./heap/leetcode/hard/findSomeTwo";
 // import "./heap/leetcode/easy/minimumPairRemoval";
-import "./heap/leetcode/easy/maxProduct";
+// import "./heap/leetcode/easy/maxProduct";
 // import "./heap/leetcode/medium/minCost";
 // import "./heap/leetcode/medium/minGroups";
 // import "./heap/leetcode/medium/getOrder";
@@ -755,6 +755,7 @@ import "./heap/leetcode/easy/maxProduct";
 /**********************************************/
 // ! Sorting file start
 // import "./sorting/leetcode/medium/removeCoveredIntervals";
+import "./sorting/leetcode/medium/smallestPalindrome";
 
 // ! Sorting file end
 /**********************************************/
