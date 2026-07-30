@@ -630,7 +630,7 @@
 // import "./greedy/leetcode/hard/generateString";
 // import "./greedy/leetcode/hard/earliestFullBloom";
 // import "./greedy/leetcode/hard/earliestFullBloom";
-import "./greedy/leetcode/hard/smallestPalindrome";
+// import "./greedy/leetcode/hard/smallestPalindrome";
 // import "./greedy/leetcode/medium/minDeletionSize";
 // import "./greedy/leetcode/medium/findOriginalArray";
 // import "./greedy/leetcode/medium/canReorderDoubled";
@@ -661,6 +661,7 @@ import "./greedy/leetcode/hard/smallestPalindrome";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // import "./greedy/leetcode/easy/maxDistance";
 // import "./greedy/leetcode/easy/minimumCost";
+import "./greedy/leetcode/easy/minimumPushes";
 // ! Greedy Algorithm end
 /**********************************************/
 
