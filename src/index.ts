@@ -620,6 +620,7 @@
 // import "./dp/leetcode/medium/maxPathScore";
 // import "./dp/leetcode/medium/maxValue";
 // import "./dp/leetcode/medium/maxValue";
+import "./dp/leetcode/medium/predictTheWinner";
 // ! Dynamic Programming end
 /**********************************************/
 
@@ -658,7 +659,7 @@
 // import "./greedy/leetcode/medium/maxIceCream";
 // import "./greedy/leetcode/medium/maximumElementAfterDecrementingAndRearranging";
 // import "./greedy/leetcode/medium/maxActiveSectionsAfterTrade";
-import "./greedy/leetcode/medium/minimumPushes";
+// import "./greedy/leetcode/medium/minimumPushes";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // import "./greedy/leetcode/easy/maxDistance";
 // import "./greedy/leetcode/easy/minimumCost";
