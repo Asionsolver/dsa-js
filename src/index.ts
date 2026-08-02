@@ -620,7 +620,8 @@
 // import "./dp/leetcode/medium/maxPathScore";
 // import "./dp/leetcode/medium/maxValue";
 // import "./dp/leetcode/medium/maxValue";
-import "./dp/leetcode/medium/predictTheWinner";
+// import "./dp/leetcode/medium/predictTheWinner";
+import "./dp/leetcode/medium/stoneGame";
 // ! Dynamic Programming end
 /**********************************************/
 
