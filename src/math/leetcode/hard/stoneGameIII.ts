@@ -22,6 +22,50 @@ Explanation: Alice cannot win this game. She can end the game in a draw if she d
 
 */
 
+//  Top-Down Dynamic Programming (Recursion with Memoization).
+// function stoneGameIII(stoneValue: number[]): string {
+//   const n = stoneValue.length;
+//   // Initialize memoization array with -Infinity to indicate uncomputed states
+//   const memo = new Array(n).fill(Number.NEGATIVE_INFINITY);
+
+//   // dfs(i) returns the max relative score difference starting from index i
+//   function dfs(i: number): number {
+//     // Base case: If no stones are left, the score difference is 0
+//     if (i >= n) {
+//       return 0;
+//     }
+
+//     // If we have already calculated the answer for this index, return it
+//     if (memo[i] !== Number.NEGATIVE_INFINITY) {
+//       return memo[i];
+//     }
+
+//     let maxDiff = Number.NEGATIVE_INFINITY;
+//     let currentTake = 0;
+
+//     // Try taking 1, 2, or 3 stones
+//     for (let k = 0; k < 3; k++) {
+//       if (i + k < n) {
+//         currentTake += stoneValue[i + k];
+//         // The relative score is what we take MINUS the max difference the opponent can get from the remaining stones
+//         maxDiff = Math.max(maxDiff, currentTake - dfs(i + k + 1));
+//       }
+//     }
+
+//     // Cache the result before returning
+//     memo[i] = maxDiff;
+//     return maxDiff;
+//   }
+
+//   // Evaluate the game starting from the 0th index
+//   const aliceScoreDifference = dfs(0);
+
+//   if (aliceScoreDifference > 0) return "Alice";
+//   if (aliceScoreDifference < 0) return "Bob";
+//   return "Tie";
+// }
+
+// Best Approach: Dynamic Programming with Space Optimization
 function stoneGameIII(stoneValue: number[]): string {
   const n = stoneValue.length;
 
