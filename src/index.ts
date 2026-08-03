@@ -285,7 +285,7 @@
 // import "./hash-table/leetcode/countTrapezoids";
 // import "./hash-table/leetcode/countCoveredBuildings";
 // import "./hash-table/leetcode/validateCoupons";
-// import "./hash-table/leetcode/easy/twoSum";
+import "./hash-table/leetcode/easy/twoSum";
 // import "./hash-table/leetcode/easy/findFinalValue";
 // import "./hash-table/leetcode/easy/repeatedNTimes";
 // import "./hash-table/leetcode/easy/minimumDistance";
@@ -621,7 +621,7 @@
 // import "./dp/leetcode/medium/maxValue";
 // import "./dp/leetcode/medium/maxValue";
 // import "./dp/leetcode/medium/predictTheWinner";
-import "./dp/leetcode/medium/stoneGame";
+// import "./dp/leetcode/medium/stoneGame";
 // ! Dynamic Programming end
 /**********************************************/
 
