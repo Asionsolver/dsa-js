@@ -17,25 +17,42 @@ Output: [0,1]
 
  */
 
+// Approach: Brute Force
+
 function twoSum(nums: number[], target: number): number[] {
-  // Create a hash map to store the number and its corresponding index
-  const numMap = new Map<number, number>();
-
+  // Outer loop: Choosing the first number
   for (let i = 0; i < nums.length; i++) {
-    const complement = target - nums[i];
-
-    // If the complement exists in our map, we found our pair!
-    if (numMap.has(complement)) {
-      return [numMap.get(complement)!, i];
+    // Inner loop: Looking for the second number (from elements after i)
+    for (let j = i + 1; j < nums.length; j++) {
+      // If the sum of the two numbers equals the target
+      if (nums[i] + nums[j] === target) {
+        return [i, j]; // Return the indices of the two numbers
+      }
     }
-
-    // Otherwise, add the current number and index to the map
-    numMap.set(nums[i], i);
   }
-
-  // Fallback array in case no solution is found (per problem statement, a solution is guaranteed)
-  return [];
+  return []; // Return an empty array if no solution is found (though the problem states a solution is guaranteed)
 }
+
+// Good Approach: Using a hash map to store the numbers and their indices for quick lookup. This allows us to find the complement of each number in constant time.
+// function twoSum(nums: number[], target: number): number[] {
+//   // Create a hash map to store the number and its corresponding index
+//   const numMap = new Map<number, number>();
+
+//   for (let i = 0; i < nums.length; i++) {
+//     const complement = target - nums[i];
+
+//     // If the complement exists in our map, we found our pair!
+//     if (numMap.has(complement)) {
+//       return [numMap.get(complement)!, i];
+//     }
+
+//     // Otherwise, add the current number and index to the map
+//     numMap.set(nums[i], i);
+//   }
+
+//   // Fallback array in case no solution is found (per problem statement, a solution is guaranteed)
+//   return [];
+// }
 
 // Example usage:
 const nums1 = [2, 7, 11, 15];
