@@ -20,30 +20,31 @@ Input: nums = [1], k = 1
 Output: [1]
 */
 
+// Good Approach: Use a deque to store indices of elements in the current window. The deque will maintain the indices in decreasing order of their corresponding values in nums. The front of the deque will always have the index of the maximum element for the current window.
 function maxSlidingWindow(nums: number[], k: number): number[] {
-    const n = nums.length;
-    const result: number[] = new Array(n - k + 1);
-    const deque = new Int32Array(n);
-    let head = 0;
-    let tail = 0;
+  const n = nums.length;
+  const result: number[] = new Array(n - k + 1);
+  const deque = new Int32Array(n);
+  let head = 0;
+  let tail = 0;
 
-    for (let i = 0; i < n; i++) {
-        if (head < tail && deque[head] <= i - k) {
-            head++;
-        }
-
-        while (head < tail && nums[deque[tail - 1]] <= nums[i]) {
-            tail--;
-        }
-
-        deque[tail++] = i;
-
-        if (i >= k - 1) {
-            result[i - k + 1] = nums[deque[head]];
-        }
+  for (let i = 0; i < n; i++) {
+    if (head < tail && deque[head] <= i - k) {
+      head++;
     }
 
-    return result;
+    while (head < tail && nums[deque[tail - 1]] <= nums[i]) {
+      tail--;
+    }
+
+    deque[tail++] = i;
+
+    if (i >= k - 1) {
+      result[i - k + 1] = nums[deque[head]];
+    }
+  }
+
+  return result;
 }
 // Example usage:
 const nums = [1, 3, -1, -3, 5, 3, 6, 7];
