@@ -20,7 +20,7 @@ Notice that the answer must be a substring, "pwke" is a subsequence and not a su
 
 */
 
-// Brute Force Approach: O(n^3)
+// // Brute Force Approach: O(n^3)
 // function lengthOfLongestSubstring(s: string): number {
 //   let maxLength = 0;
 
@@ -39,11 +39,13 @@ Notice that the answer must be a substring, "pwke" is a subsequence and not a su
 // function allUnique(substring: string): boolean {
 //   const charSet = new Set<string>();
 //   for (const char of substring) {
+//     // console.log("Char: ", char);
 //     if (charSet.has(char)) {
 //       return false;
 //     }
 //     charSet.add(char);
 //   }
+//   // console.log("CharSet: ", charSet);
 //   return true;
 // }
 
@@ -81,6 +83,7 @@ const lengthOfLongestSubstring = function (s: string) {
   let length = 0;
   while (second < s.length) {
     // Repeating character remove
+    // console.log("s.charCodeAt: ", s.charCodeAt(second));
     while (count[s.charCodeAt(second)]) {
       count[s.charCodeAt(first)] = 0;
       first++;
