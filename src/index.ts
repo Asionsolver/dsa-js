@@ -378,7 +378,7 @@
 
 /**********************************************/
 // ! Sliding Window start
-import "./sliding-window/leetcode/medium/longestSubstring";
+// import "./sliding-window/leetcode/medium/longestSubstring";
 // import "./sliding-window/leetcode/hard/minWindowSubstring";
 // import "./sliding-window/leetcode/smallestSubsequence";
 // import "./sliding-window/leetcode/characterReplacement";
@@ -479,7 +479,7 @@ import "./sliding-window/leetcode/medium/longestSubstring";
 // import "./graph/leetcode/medium/pathExistenceQueries";
 // import "./graph/leetcode/medium/countCompleteComponents";
 // import "./graph/leetcode/medium/cloneGraph";
-import "./graph/leetcode/medium/remainingMethods";
+// import "./graph/leetcode/medium/remainingMethods";
 // import "./graph/leetcode/hard/findAllPeople";
 // import "./graph/leetcode/hard/minCost";
 // import "./graph/leetcode/hard/minimumCost";
@@ -548,6 +548,7 @@ import "./graph/leetcode/medium/remainingMethods";
 // import "./math/leetcode/easy/findGCD";
 // import "./math/leetcode/easy/maxProduct";
 // import "./math/leetcode/easy/maximumProduct";
+import "./math/leetcode/easy/smallestNumber";
 // import "./math/leetcode/medium/smallestRepunitDivByK";
 // import "./math/leetcode/medium/maxBottlesDrunk";
 // import "./math/leetcode/medium/minOperations";
