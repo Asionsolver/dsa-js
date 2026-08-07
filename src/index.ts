@@ -548,7 +548,7 @@
 // import "./math/leetcode/easy/findGCD";
 // import "./math/leetcode/easy/maxProduct";
 // import "./math/leetcode/easy/maximumProduct";
-import "./math/leetcode/easy/smallestNumber";
+// import "./math/leetcode/easy/smallestNumber";
 // import "./math/leetcode/medium/smallestRepunitDivByK";
 // import "./math/leetcode/medium/maxBottlesDrunk";
 // import "./math/leetcode/medium/minOperations";
@@ -636,6 +636,7 @@ import "./math/leetcode/easy/smallestNumber";
 // import "./greedy/leetcode/hard/earliestFullBloom";
 // import "./greedy/leetcode/hard/earliestFullBloom";
 // import "./greedy/leetcode/hard/smallestPalindrome";
+import "./greedy/leetcode/hard/smallestNumber";
 // import "./greedy/leetcode/medium/minDeletionSize";
 // import "./greedy/leetcode/medium/findOriginalArray";
 // import "./greedy/leetcode/medium/canReorderDoubled";
