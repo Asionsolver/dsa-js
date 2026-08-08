@@ -296,6 +296,7 @@
 // import "./hash-table/leetcode/easy/maxNumberOfBalloons";
 // import "./hash-table/leetcode/easy/arrayRankTransform";
 // import "./hash-table/leetcode/easy/findMissingElements";
+import "./hash-table/leetcode/easy/containsDuplicate";
 // import "./hash-table/leetcode/medium/maxSubarraySum";
 // import "./hash-table/leetcode/medium/countPalindromicSubsequence";
 // import "./hash-table/leetcode/medium/digArtifacts";
@@ -510,7 +511,7 @@
 // import "./bit-manipulation/leetcode/easy/hasAlternatingBits";
 // import "./bit-manipulation/leetcode/easy/sortByBits";
 // import "./bit-manipulation/leetcode/easy/minBitwiseArray";
-import "./bit-manipulation/leetcode/easy/countBits";
+// import "./bit-manipulation/leetcode/easy/countBits";
 // import "./bit-manipulation/leetcode/hard/jobScheduling";
 // import "./bit-manipulation/leetcode/hard/minimumOneBitOperations";
 // import "./bit-manipulation/leetcode/hard/getMaxFunctionValue";
