@@ -259,6 +259,7 @@
 // import "./tree/leetcode/easy/minDepth";
 // import "./tree/leetcode/easy/averageOfLevels";
 // import "./tree/leetcode/easy/isCousins";
+import "./tree/leetcode/easy/isSubtree";
 // ! tree end
 /**********************************************/
 
@@ -665,7 +666,7 @@
 // import "./greedy/leetcode/medium/maximumElementAfterDecrementingAndRearranging";
 // import "./greedy/leetcode/medium/maxActiveSectionsAfterTrade";
 // import "./greedy/leetcode/medium/minimumPushes";
-import "./greedy/leetcode/medium/validSequence";
+// import "./greedy/leetcode/medium/validSequence";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // import "./greedy/leetcode/easy/maxDistance";
 // import "./greedy/leetcode/easy/minimumCost";
