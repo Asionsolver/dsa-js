@@ -105,39 +105,69 @@ Output: 3
 // }
 
 // Method 1: "Set Deletion / Erase" trick (theoretically O(n) and interview-friendly)
+// function longestConsecutive(nums: number[]): number {
+//   const numSet = new Set<number>(nums);
+//   let longestStreak = 0;
+
+//   for (const num of numSet) {
+//     // Only work if the number is still in the set
+//     if (numSet.has(num)) {
+//       numSet.delete(num); // I deleted the first number
+
+//       let low = num - 1;
+//       let high = num + 1;
+
+//       // I'm looking for and deleting small numbers.
+//       while (numSet.has(low)) {
+//         numSet.delete(low);
+//         low--;
+//       }
+
+//       // I'm looking for and deleting large numbers.
+//       while (numSet.has(high)) {
+//         numSet.delete(high);
+//         high++;
+//       }
+
+//       // Calculating the length of the current sequence.
+//       const currentStreak = high - low - 1;
+//       if (currentStreak > longestStreak) {
+//         longestStreak = currentStreak;
+//       }
+//     }
+//   }
+
+//   return longestStreak;
+// }
+
+// Method 2: "Engine Native Sorting" trick (fastest in practical use)
 function longestConsecutive(nums: number[]): number {
-  const numSet = new Set<number>(nums);
-  let longestStreak = 0;
+  const len = nums.length;
+  if (len === 0) return 0;
 
-  for (const num of numSet) {
-    // Only work if the number is still in the set
-    if (numSet.has(num)) {
-      numSet.delete(num); // I deleted the first number
+  // Arranging the numbers from smallest to largest
+  nums.sort((a, b) => a - b);
 
-      let low = num - 1;
-      let high = num + 1;
+  let longestStreak = 1;
+  let currentStreak = 1;
 
-      // I'm looking for and deleting small numbers.
-      while (numSet.has(low)) {
-        numSet.delete(low);
-        low--;
-      }
-
-      // I'm looking for and deleting large numbers.
-      while (numSet.has(high)) {
-        numSet.delete(high);
-        high++;
-      }
-
-      // Calculating the length of the current sequence.
-      const currentStreak = high - low - 1;
-      if (currentStreak > longestStreak) {
-        longestStreak = currentStreak;
+  for (let i = 1; i < len; i++) {
+    // If two consecutive numbers are equal, skip them (e.g., [1, 2, 2, 3])
+    if (nums[i] !== nums[i - 1]) {
+      // If the current number is exactly one more than the previous number
+      if (nums[i] === nums[i - 1] + 1) {
+        currentStreak++;
+      } else {
+        // Sequence broken, update the maximum value and start a new sequence
+        if (currentStreak > longestStreak) {
+          longestStreak = currentStreak;
+        }
+        currentStreak = 1;
       }
     }
   }
 
-  return longestStreak;
+  return currentStreak > longestStreak ? currentStreak : longestStreak;
 }
 
 // Test cases
