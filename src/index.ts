@@ -92,7 +92,7 @@
 // import "./twoPointer/leetcode/easy/countBinarySubstrings";
 // import "./twoPointer/leetcode/easy/flipSubmatrix";
 // import "./twoPointer/leetcode/easy/getCommon";
-import "./twoPointer/leetcode/easy/isPalindrome";
+// import "./twoPointer/leetcode/easy/isPalindrome";
 // import "./twoPointer/leetcode/medium/nextGreaterElement";
 // import "./twoPointer/leetcode/medium/intervalIntersection";
 // import "./twoPointer/leetcode/medium/partitionLabels";
