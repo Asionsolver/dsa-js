@@ -367,6 +367,7 @@
 // import "./string/leetcode/medium/judgeCircle";
 // import "./string/leetcode/medium/haveConflict";
 // import "./string/leetcode/medium/merge";
+import "./string/leetcode/medium/Codec";
 // import "./string/leetcode/easy/minDeletionSize";
 // import "./string/leetcode/easy/minOperations";
 // import "./string/leetcode/easy/checkOnesSegment";
