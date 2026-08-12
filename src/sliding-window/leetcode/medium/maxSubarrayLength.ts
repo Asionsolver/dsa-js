@@ -21,7 +21,46 @@ Explanation: The longest possible good subarray is [5,5,5,5] since the value 5 o
 It can be shown that there are no good subarrays with length more than 4.
 */
 
-const maxSubarrayLength = function (nums: number[], k: number): number {
+// Approach: Sliding Window
+// const maxSubarrayLength = function (nums: number[], k: number): number {
+//   let maxLength = 0;
+//   let left = 0;
+
+//   // Map to keep track of frequencies of elements in the current window
+//   const freq = new Map<number, number>();
+
+//   for (let right = 0; right < nums.length; right++) {
+//     const val = nums[right];
+//     const count = (freq.get(val) ?? 0) + 1;
+//     freq.set(val, count);
+
+//     // If the frequency of the current element exceeds k, shrink the window
+//     // from the left until we remove one instance of this element.
+//     if (count > k) {
+//       while (nums[left] !== val) {
+//         const leftVal = nums[left];
+//         freq.set(leftVal, freq.get(leftVal)! - 1);
+//         left++;
+//       }
+//       // Once we hit the 'val' at the left pointer, remove it and step forward once more
+//       freq.set(val, k);
+//       left++;
+//     }
+
+//     // Calculate the valid window size and update maxLength if necessary
+//     const currentLength = right - left + 1;
+//     if (currentLength > maxLength) {
+//       maxLength = currentLength;
+//     }
+//   }
+
+//   return maxLength;
+// };
+
+// Example usage:
+
+// Approach: Sliding Window with Optimization
+function maxSubarrayLength(nums: number[], k: number): number {
   let maxLength = 0;
   let left = 0;
 
@@ -34,7 +73,6 @@ const maxSubarrayLength = function (nums: number[], k: number): number {
     freq.set(val, count);
 
     // If the frequency of the current element exceeds k, shrink the window
-    // from the left until we remove one instance of this element.
     if (count > k) {
       while (nums[left] !== val) {
         const leftVal = nums[left];
@@ -44,19 +82,19 @@ const maxSubarrayLength = function (nums: number[], k: number): number {
       // Once we hit the 'val' at the left pointer, remove it and step forward once more
       freq.set(val, k);
       left++;
-    }
-
-    // Calculate the valid window size and update maxLength if necessary
-    const currentLength = right - left + 1;
-    if (currentLength > maxLength) {
-      maxLength = currentLength;
+    } else {
+      // It is only possible to update maxLength if the window is not compressed.
+      // Because the length of the compressed window can never exceed the previous maxLength.
+      const currentLength = right - left + 1;
+      if (currentLength > maxLength) {
+        maxLength = currentLength;
+      }
     }
   }
 
   return maxLength;
-};
+}
 
-// Example usage:
 console.log(maxSubarrayLength([1, 2, 3, 1, 2, 3, 1, 2], 2)); // Output: 6
 console.log(maxSubarrayLength([1, 2, 1, 2, 1, 2, 1, 2], 1)); // Output: 2
 console.log(maxSubarrayLength([5, 5, 5, 5, 5, 5, 5], 4)); // Output: 4

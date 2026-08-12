@@ -275,7 +275,7 @@
 // import "./hash-table/leetcode/intersectionTwo";
 // import "./hash-table/leetcode/subarraySum";
 // import "./hash-table/leetcode/consecutiveSequence";
-// import "./hash-table/leetcode/groupAnagrams";
+// import "./hash-table/leetcode/medium/groupAnagrams";
 // import "./hash-table/leetcode/topFrequentElement";
 // import "./hash-table/leetcode/findSubArray";
 // import "./hash-table/leetcode/threeSum";
@@ -298,7 +298,7 @@
 // import "./hash-table/leetcode/easy/arrayRankTransform";
 // import "./hash-table/leetcode/easy/findMissingElements";
 // import "./hash-table/leetcode/easy/containsDuplicate";
-import "./hash-table/leetcode/easy/isAnagram";
+// import "./hash-table/leetcode/easy/isAnagram";
 // import "./hash-table/leetcode/medium/maxSubarraySum";
 // import "./hash-table/leetcode/medium/countPalindromicSubsequence";
 // import "./hash-table/leetcode/medium/digArtifacts";
