@@ -388,7 +388,7 @@
 // import "./sliding-window/leetcode/smallestSubsequence";
 // import "./sliding-window/leetcode/characterReplacement";
 // import "./sliding-window/leetcode/easy/minimumDifference";
-import "./sliding-window/leetcode/easy/maximumLengthSubstring";
+// import "./sliding-window/leetcode/easy/maximumLengthSubstring";
 // import "./sliding-window/leetcode/medium/maxProfit";
 // import "./sliding-window/leetcode/medium/maximizeWin";
 // import "./sliding-window/leetcode/medium/minRemoval";
@@ -531,6 +531,7 @@ import "./sliding-window/leetcode/easy/maximumLengthSubstring";
 // import "./bit-manipulation/leetcode/medium/findThePrefixCommonArray";
 // import "./bit-manipulation/leetcode/medium/uniqueXorTriplets";
 // import "./bit-manipulation/leetcode/medium/uniqueXorTripletsTwo";
+import "./bit-manipulation/leetcode/medium/longestSubsequence";
 // ! Bit Manipulation end
 /**********************************************/
 
