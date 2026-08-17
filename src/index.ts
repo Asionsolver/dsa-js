@@ -675,7 +675,7 @@
 // import "./greedy/leetcode/medium/maxActiveSectionsAfterTrade";
 // import "./greedy/leetcode/medium/minimumPushes";
 // import "./greedy/leetcode/medium/validSequence";
-import "./greedy/leetcode/medium/stoneGameIX";
+// import "./greedy/leetcode/medium/stoneGameIX";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // import "./greedy/leetcode/easy/maxDistance";
 // import "./greedy/leetcode/easy/minimumCost";

@@ -18,39 +18,128 @@ Input: stoneValue = [4]
 Output: 0
 
 */
+//  optimized Dynamic Programming approach
+// function stoneGameV(stoneValue: number[]): number {
+//   const n = stoneValue.length;
+//   if (n <= 1) return 0;
 
+//   // Prefix sums to query sum(i, j) in O(1) time.
+//   const prefixSum = new Int32Array(n + 1);
+//   for (let i = 0; i < n; i++) {
+//     prefixSum[i + 1] = prefixSum[i] + stoneValue[i];
+//   }
+
+//   // Use 1D typed arrays for optimal contiguous memory caching. (Simulating 2D arrays i.e., dp[i][j] -> dp[i * n + j])
+//   const dp = new Int32Array(n * n);
+//   const maxL = new Int32Array(n * n);
+//   const maxR = new Int32Array(n * n);
+
+//   // mid points array keeps track of the transition where Left Sum >= Right Sum
+//   const mid = new Int32Array(n);
+
+//   for (let i = 0; i < n; i++) {
+//     mid[i] = i;
+//     const idx = i * n + i;
+//     dp[idx] = 0;
+//     maxL[idx] = stoneValue[i];
+//     maxR[idx] = stoneValue[i];
+//   }
+
+//   for (let len = 2; len <= n; len++) {
+//     for (let i = 0; i <= n - len; i++) {
+//       const j = i + len - 1;
+
+//       // Advance the mid[i] pointer while 2 * sum(i, mid[i]) < sum(i, j)
+//       // It helps establish our boundary mathematically where splits transition
+//       while (
+//         2 * (prefixSum[mid[i] + 1] - prefixSum[i]) <
+//         prefixSum[j + 1] - prefixSum[i]
+//       ) {
+//         mid[i]++;
+//       }
+
+//       const m = mid[i];
+//       let max = 0;
+
+//       // For split values (k < m) where Left Sum < Right Sum => Bob throws Right
+//       if (m - 1 >= i) {
+//         const val = maxL[i * n + (m - 1)];
+//         if (val > max) max = val;
+//       }
+
+//       const sumL = prefixSum[m + 1] - prefixSum[i];
+//       const sumR = prefixSum[j + 1] - prefixSum[m + 1];
+
+//       // For split values (k >= m) where Left Sum >= Right Sum
+//       if (sumL === sumR) {
+//         const valL = maxL[i * n + m];
+//         if (valL > max) max = valL;
+
+//         if (m + 1 <= j) {
+//           const valR = maxR[(m + 1) * n + j];
+//           if (valR > max) max = valR;
+//         }
+//       } else {
+//         if (m + 1 <= j) {
+//           const valR = maxR[(m + 1) * n + j];
+//           if (valR > max) max = valR;
+//         }
+//       }
+
+//       const idx = i * n + j;
+//       dp[idx] = max;
+
+//       // Re-update our running DP state references for larger segment comparisons later
+//       const totalSum = prefixSum[j + 1] - prefixSum[i];
+
+//       const lPrev = maxL[i * n + (j - 1)];
+//       const lCur = max + totalSum;
+//       maxL[idx] = lPrev > lCur ? lPrev : lCur;
+
+//       const rPrev = maxR[(i + 1) * n + j];
+//       const rCur = max + totalSum;
+//       maxR[idx] = rPrev > rCur ? rPrev : rCur;
+//     }
+//   }
+
+//   return dp[n - 1]; // Answer at dp[0][n - 1]
+// }
+
+// Approach: 1D Array Compression (Half Matrix) and dp array is completely omitted
 function stoneGameV(stoneValue: number[]): number {
   const n = stoneValue.length;
   if (n <= 1) return 0;
 
-  // Prefix sums to query sum(i, j) in O(1) time.
+  // Prefix sum to find range sum in O(1) time
   const prefixSum = new Int32Array(n + 1);
   for (let i = 0; i < n; i++) {
     prefixSum[i + 1] = prefixSum[i] + stoneValue[i];
   }
 
-  // Use 1D typed arrays for optimal contiguous memory caching. (Simulating 2D arrays i.e., dp[i][j] -> dp[i * n + j])
-  const dp = new Int32Array(n * n);
-  const maxL = new Int32Array(n * n);
-  const maxR = new Int32Array(n * n);
-
-  // mid points array keeps track of the transition where Left Sum >= Right Sum
+  // To reduce memory, use N*(N+1)/2 size array (Upper Triangular Matrix) instead of N*N
+  const size = (n * (n + 1)) >> 1;
+  const maxL = new Int32Array(size);
+  const maxR = new Int32Array(size);
   const mid = new Int32Array(n);
 
+  // We are pre-calculating the rowOffset to map the 2D index (i, j) to 1D
+  const rowOffset = new Int32Array(n);
   for (let i = 0; i < n; i++) {
+    rowOffset[i] = i * n - ((i - 1) * i) / 2 - i;
+
     mid[i] = i;
-    const idx = i * n + i;
-    dp[idx] = 0;
+    const idx = rowOffset[i] + i;
     maxL[idx] = stoneValue[i];
     maxR[idx] = stoneValue[i];
   }
+
+  let ans = 0; // To store the final answer
 
   for (let len = 2; len <= n; len++) {
     for (let i = 0; i <= n - len; i++) {
       const j = i + len - 1;
 
-      // Advance the mid[i] pointer while 2 * sum(i, mid[i]) < sum(i, j)
-      // It helps establish our boundary mathematically where splits transition
+      // Updating the mid[i] pointer
       while (
         2 * (prefixSum[mid[i] + 1] - prefixSum[i]) <
         prefixSum[j + 1] - prefixSum[i]
@@ -61,48 +150,53 @@ function stoneGameV(stoneValue: number[]): number {
       const m = mid[i];
       let max = 0;
 
-      // For split values (k < m) where Left Sum < Right Sum => Bob throws Right
+      // Left Sum < Right Sum (Bob will discard the right side)
       if (m - 1 >= i) {
-        const val = maxL[i * n + (m - 1)];
+        const val = maxL[rowOffset[i] + (m - 1)];
         if (val > max) max = val;
       }
 
       const sumL = prefixSum[m + 1] - prefixSum[i];
       const sumR = prefixSum[j + 1] - prefixSum[m + 1];
 
-      // For split values (k >= m) where Left Sum >= Right Sum
+      // Left Sum == Right Sum (Alice will make the decision)
       if (sumL === sumR) {
-        const valL = maxL[i * n + m];
+        const valL = maxL[rowOffset[i] + m];
         if (valL > max) max = valL;
 
         if (m + 1 <= j) {
-          const valR = maxR[(m + 1) * n + j];
+          const valR = maxR[rowOffset[m + 1] + j];
           if (valR > max) max = valR;
         }
-      } else {
+      }
+      // Left Sum > Right Sum (Bob will discard the left side)
+      else {
         if (m + 1 <= j) {
-          const valR = maxR[(m + 1) * n + j];
+          const valR = maxR[rowOffset[m + 1] + j];
           if (valR > max) max = valR;
         }
       }
 
-      const idx = i * n + j;
-      dp[idx] = max;
+      // Left Sum > Right Sum (Bob will discard the left side)
+      if (len === n) {
+        ans = max;
+      }
 
-      // Re-update our running DP state references for larger segment comparisons later
+      // Keep maxL and maxR updated for the next large range calculation
+      const idx = rowOffset[i] + j;
       const totalSum = prefixSum[j + 1] - prefixSum[i];
 
-      const lPrev = maxL[i * n + (j - 1)];
+      const lPrev = maxL[rowOffset[i] + (j - 1)];
       const lCur = max + totalSum;
       maxL[idx] = lPrev > lCur ? lPrev : lCur;
 
-      const rPrev = maxR[(i + 1) * n + j];
+      const rPrev = maxR[rowOffset[i + 1] + j];
       const rCur = max + totalSum;
       maxR[idx] = rPrev > rCur ? rPrev : rCur;
     }
   }
 
-  return dp[n - 1]; // Answer at dp[0][n - 1]
+  return ans;
 }
 
 // Example usage:
