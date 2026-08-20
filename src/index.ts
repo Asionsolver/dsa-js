@@ -314,7 +314,7 @@
 // import "./hash-table/leetcode/medium/minMirrorPairDistance";
 // import "./hash-table/leetcode/medium/numberOfSpecialChars";
 // import "./hash-table/leetcode/medium/maximumLength";
-import "./hash-table/leetcode/medium/maxNumberOfFamilies";
+// import "./hash-table/leetcode/medium/maxNumberOfFamilies";
 // import "./hash-table/leetcode/hard/countTrapezoidsTwo";
 // ! hash table end
 /**********************************************/
@@ -767,6 +767,7 @@ import "./hash-table/leetcode/medium/maxNumberOfFamilies";
 // import "./simulation/leetcode/easy/separateDigits";
 // import "./simulation/leetcode/easy/mapWordWeights";
 // import "./simulation/leetcode/easy/shiftGrid";
+import "./simulation/leetcode/easy/resultArray";
 // import "./simulation/leetcode/medium/Robot";
 // import "./simulation/leetcode/medium/rotateGrid";
 // import "./simulation/leetcode/medium/processStr";
