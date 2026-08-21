@@ -706,6 +706,7 @@
 // import "./binary-search/leetcode/hard/findMin";
 // import "./binary-search/leetcode/hard/findMedianSortedArrays";
 // import "./binary-search/leetcode/hard/findMaxPathScore";
+import "./binary-search/leetcode/hard/findKthSmallest";
 // ! Binary Search End
 /**********************************************/
 
@@ -767,7 +768,7 @@
 // import "./simulation/leetcode/easy/separateDigits";
 // import "./simulation/leetcode/easy/mapWordWeights";
 // import "./simulation/leetcode/easy/shiftGrid";
-import "./simulation/leetcode/easy/resultArray";
+// import "./simulation/leetcode/easy/resultArray";
 // import "./simulation/leetcode/medium/Robot";
 // import "./simulation/leetcode/medium/rotateGrid";
 // import "./simulation/leetcode/medium/processStr";
