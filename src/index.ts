@@ -559,6 +559,7 @@
 // import "./math/leetcode/easy/maxProduct";
 // import "./math/leetcode/easy/maximumProduct";
 // import "./math/leetcode/easy/smallestNumber";
+import "./math/leetcode/easy/checkDivisibility";
 // import "./math/leetcode/medium/smallestRepunitDivByK";
 // import "./math/leetcode/medium/maxBottlesDrunk";
 // import "./math/leetcode/medium/minOperations";
@@ -706,7 +707,7 @@
 // import "./binary-search/leetcode/hard/findMin";
 // import "./binary-search/leetcode/hard/findMedianSortedArrays";
 // import "./binary-search/leetcode/hard/findMaxPathScore";
-import "./binary-search/leetcode/hard/findKthSmallest";
+// import "./binary-search/leetcode/hard/findKthSmallest";
 // ! Binary Search End
 /**********************************************/
 
