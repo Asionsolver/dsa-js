@@ -559,7 +559,7 @@
 // import "./math/leetcode/easy/maxProduct";
 // import "./math/leetcode/easy/maximumProduct";
 // import "./math/leetcode/easy/smallestNumber";
-import "./math/leetcode/easy/checkDivisibility";
+// import "./math/leetcode/easy/checkDivisibility";
 // import "./math/leetcode/medium/smallestRepunitDivByK";
 // import "./math/leetcode/medium/maxBottlesDrunk";
 // import "./math/leetcode/medium/minOperations";
@@ -784,4 +784,11 @@ import "./math/leetcode/easy/checkDivisibility";
 // import "./sorting/leetcode/medium/smallestPalindrome";
 
 // ! Sorting file end
+/**********************************************/
+
+/**********************************************/
+// ! Game Theory file start
+import "./game-theory/leetcode/medium/sumGame";
+
+// ! Game Theory file end
 /**********************************************/
