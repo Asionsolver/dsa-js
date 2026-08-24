@@ -29,30 +29,70 @@ Explanation:
 The difference between their scores is (-22) - 0 = -22.
 */
 
+// function stoneGameVIII(stones: number[]): number {
+//   const n = stones.length;
+//   let sum = 0;
+
+//   // Compute the total sum of the stones, which corresponds to the last prefix sum P[n-1]
+//   for (let i = 0; i < n; i++) {
+//     sum += stones[i];
+//   }
+
+//   // dp represents the maximum difference the current player can achieve
+//   // Base case: picking all the stones ending the game on the final index (x = n stones picked)
+//   let dp = sum;
+
+//   // Traverse backwards traversing options from n-2 down to 1
+//   // i >= 1 is used because a player must take at least 2 stones (x > 1 => index >= 1)
+//   for (let i = n - 2; i >= 1; i--) {
+//     // By decrementing by stones[i+1] sequentially, 'sum' smoothly scales back to P[i]
+//     sum -= stones[i + 1];
+
+//     // Choose between delaying the choice (dp) or taking the current prefix sum (sum - dp)
+//     dp = Math.max(dp, sum - dp);
+//   }
+
+//   return dp;
+// }
+
 function stoneGameVIII(stones: number[]): number {
   const n = stones.length;
-  let sum = 0;
 
-  // Compute the total sum of the stones, which corresponds to the last prefix sum P[n-1]
-  for (let i = 0; i < n; i++) {
-    sum += stones[i];
+  // Step 1: Calculate the Prefix Sums array
+
+  const prefixSums = new Array(n).fill(0);
+  prefixSums[0] = stones[0];
+  for (let i = 1; i < n; i++) {
+    prefixSums[i] = prefixSums[i - 1] + stones[i];
   }
 
-  // dp represents the maximum difference the current player can achieve
-  // Base case: picking all the stones ending the game on the final index (x = n stones picked)
-  let dp = sum;
+  // Step 2: Create a DP array to store max score differences
 
-  // Traverse backwards traversing options from n-2 down to 1
-  // i >= 1 is used because a player must take at least 2 stones (x > 1 => index >= 1)
+  const dp = new Array(n).fill(0);
+
+  // Base Case: If the player takes all remaining stones (index n-1)
+
+  dp[n - 1] = prefixSums[n - 1];
+
+  // Step 3: Fill the DP array backwards
+
   for (let i = n - 2; i >= 1; i--) {
-    // By decrementing by stones[i+1] sequentially, 'sum' smoothly scales back to P[i]
-    sum -= stones[i + 1];
+    // Option 1: Take the current prefix sum, opponent gets dp[i+1]
 
-    // Choose between delaying the choice (dp) or taking the current prefix sum (sum - dp)
-    dp = Math.max(dp, sum - dp);
+    const take = prefixSums[i] - dp[i + 1];
+
+    // Option 2: Skip this prefix sum, same as dp[i+1]
+
+    const skip = dp[i + 1];
+
+    // Maximize the current player's relative score
+
+    dp[i] = Math.max(take, skip);
   }
 
-  return dp;
+  // Alice must take at least 2 stones, which corresponds to index 1
+
+  return dp[1];
 }
 
 // Example usage:
