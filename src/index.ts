@@ -421,7 +421,7 @@
 // import "./sliding-window/leetcode/medium/minSubArrayLen";
 // import "./sliding-window/leetcode/medium/canReach";
 // import "./sliding-window/leetcode/medium/numberOfSubstrings";
-import "./sliding-window/leetcode/medium/shortestBeautifulSubstring";
+// import "./sliding-window/leetcode/medium/shortestBeautifulSubstring";
 // import "./sliding-window/leetcode/hard/maxPower";
 // import "./sliding-window/leetcode/hard/maxSumOfThreeSubarrays";
 // import "./sliding-window/leetcode/hard/maxStability";
@@ -681,6 +681,7 @@ import "./sliding-window/leetcode/medium/shortestBeautifulSubstring";
 // import "./greedy/leetcode/medium/minimumPushes";
 // import "./greedy/leetcode/medium/validSequence";
 // import "./greedy/leetcode/medium/stoneGameIX";
+import "./greedy/leetcode/medium/lexGreaterPermutation";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // import "./greedy/leetcode/easy/maxDistance";
 // import "./greedy/leetcode/easy/minimumCost";
