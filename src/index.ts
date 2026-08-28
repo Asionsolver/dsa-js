@@ -651,6 +651,7 @@
 // import "./greedy/leetcode/hard/earliestFullBloom";
 // import "./greedy/leetcode/hard/smallestPalindrome";
 // import "./greedy/leetcode/hard/smallestNumber";
+import "./greedy/leetcode/hard/smallestNumber";
 // import "./greedy/leetcode/medium/minDeletionSize";
 // import "./greedy/leetcode/medium/findOriginalArray";
 // import "./greedy/leetcode/medium/canReorderDoubled";
@@ -681,7 +682,7 @@
 // import "./greedy/leetcode/medium/minimumPushes";
 // import "./greedy/leetcode/medium/validSequence";
 // import "./greedy/leetcode/medium/stoneGameIX";
-import "./greedy/leetcode/medium/lexGreaterPermutation";
+// import "./greedy/leetcode/medium/lexGreaterPermutation";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // import "./greedy/leetcode/easy/maxDistance";
 // import "./greedy/leetcode/easy/minimumCost";
