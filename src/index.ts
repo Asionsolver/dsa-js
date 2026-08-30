@@ -683,6 +683,7 @@
 // import "./greedy/leetcode/medium/validSequence";
 // import "./greedy/leetcode/medium/stoneGameIX";
 // import "./greedy/leetcode/medium/lexGreaterPermutation";
+import "./greedy/leetcode/medium/minimumDeletions";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // import "./greedy/leetcode/easy/maxDistance";
 // import "./greedy/leetcode/easy/minimumCost";
@@ -786,7 +787,7 @@
 // ! Sorting file start
 // import "./sorting/leetcode/medium/removeCoveredIntervals";
 // import "./sorting/leetcode/medium/smallestPalindrome";
-import "./sorting/leetcode/medium/lexicographicallySmallestArray";
+// import "./sorting/leetcode/medium/lexicographicallySmallestArray";
 
 // ! Sorting file end
 /**********************************************/
