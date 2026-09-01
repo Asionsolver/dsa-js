@@ -191,7 +191,7 @@
 // import "./linkList/leetcode/medium/insertionSortList";
 // import "./linkList/leetcode/medium/removeNodes";
 // import "./linkList/leetcode/medium/addTwoNumbers";
-import "./linkList/leetcode/medium/nodesBetweenCriticalPoints";
+// import "./linkList/leetcode/medium/nodesBetweenCriticalPoints";
 // import "./linkList/leetcode/hard/minimumPairRemoval";
 
 // !linked list end
@@ -537,6 +537,7 @@ import "./linkList/leetcode/medium/nodesBetweenCriticalPoints";
 // import "./bit-manipulation/leetcode/medium/uniqueXorTriplets";
 // import "./bit-manipulation/leetcode/medium/uniqueXorTripletsTwo";
 // import "./bit-manipulation/leetcode/medium/longestSubsequence";
+import "./bit-manipulation/leetcode/medium/minMoves";
 // ! Bit Manipulation end
 /**********************************************/
 
