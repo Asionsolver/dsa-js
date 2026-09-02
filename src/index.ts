@@ -537,7 +537,7 @@
 // import "./bit-manipulation/leetcode/medium/uniqueXorTriplets";
 // import "./bit-manipulation/leetcode/medium/uniqueXorTripletsTwo";
 // import "./bit-manipulation/leetcode/medium/longestSubsequence";
-import "./bit-manipulation/leetcode/medium/minMoves";
+// import "./bit-manipulation/leetcode/medium/minMoves";
 // ! Bit Manipulation end
 /**********************************************/
 
@@ -564,6 +564,7 @@ import "./bit-manipulation/leetcode/medium/minMoves";
 // import "./math/leetcode/easy/maximumProduct";
 // import "./math/leetcode/easy/smallestNumber";
 // import "./math/leetcode/easy/checkDivisibility";
+import "./math/leetcode/easy/uniformArray";
 // import "./math/leetcode/medium/smallestRepunitDivByK";
 // import "./math/leetcode/medium/maxBottlesDrunk";
 // import "./math/leetcode/medium/minOperations";
