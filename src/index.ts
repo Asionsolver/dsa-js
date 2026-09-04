@@ -575,7 +575,7 @@
 // import "./math/leetcode/medium/rotatedDigits";
 // import "./math/leetcode/medium/rotate";
 // import "./math/leetcode/medium/angleClock";
-import "./math/leetcode/medium/uniformArray";
+// import "./math/leetcode/medium/uniformArray";
 // import "./math/leetcode/hard/minOperations";
 // import "./math/leetcode/hard/stoneGameV";
 // import "./math/leetcode/hard/stoneGameIII";
