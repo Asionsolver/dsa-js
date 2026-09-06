@@ -66,37 +66,63 @@ s and t consist of English letters.
 
 //  Approach 1: 2D Dynamic Programming (Easy to understand)
 
+// function numDistinct(s: string, t: string): number {
+//   const m = s.length;
+//   const n = t.length;
+
+//   // If target string is longer than source string, it's impossible.
+//   if (m < n) return 0;
+
+//   // dp[i][j] stores the count of distinct subsequences of s[0...i-1] equals t[0...j-1]
+//   const dp: number[][] = Array.from({ length: m + 1 }, () =>
+//     Array(n + 1).fill(0),
+//   );
+
+//   // Base case: An empty t can always be formed by an empty subsequence (1 way).
+//   for (let i = 0; i <= m; i++) {
+//     dp[i][0] = 1;
+//   }
+
+//   // Fill the DP table.
+//   for (let i = 1; i <= m; i++) {
+//     for (let j = 1; j <= n; j++) {
+//       if (s[i - 1] === t[j - 1]) {
+//         // If characters match, take sum of using s[i-1] and skipping s[i-1].
+//         dp[i][j] = dp[i - 1][j - 1] + dp[i - 1][j];
+//       } else {
+//         // If characters don't match, we must skip s[i-1].
+//         dp[i][j] = dp[i - 1][j];
+//       }
+//     }
+//   }
+
+//   return dp[m][n];
+// }
+
+// Approach 2: 1D Dynamic Programming (Space Optimized)
 function numDistinct(s: string, t: string): number {
-  const m = s.length;
-  const n = t.length;
+    const m = s.length;
+    const n = t.length;
 
-  // If target string is longer than source string, it's impossible.
-  if (m < n) return 0;
+    if (m < n) return 0;
 
-  // dp[i][j] stores the count of distinct subsequences of s[0...i-1] equals t[0...j-1]
-  const dp: number[][] = Array.from({ length: m + 1 }, () =>
-    Array(n + 1).fill(0),
-  );
+    // dp[j] stores number of distinct subsequences of current prefix matching t[0...j-1]
+    const dp: number[] = new Array(n + 1).fill(0);
 
-  // Base case: An empty t can always be formed by an empty subsequence (1 way).
-  for (let i = 0; i <= m; i++) {
-    dp[i][0] = 1;
-  }
+    // Base case: An empty target string t has 1 match.
+    dp[0] = 1;
 
-  // Fill the DP table.
-  for (let i = 1; i <= m; i++) {
-    for (let j = 1; j <= n; j++) {
-      if (s[i - 1] === t[j - 1]) {
-        // If characters match, take sum of using s[i-1] and skipping s[i-1].
-        dp[i][j] = dp[i - 1][j - 1] + dp[i - 1][j];
-      } else {
-        // If characters don't match, we must skip s[i-1].
-        dp[i][j] = dp[i - 1][j];
-      }
+    for (let i = 1; i <= m; i++) {
+        // Traverse backwards to use values from the previous row without overwriting them.
+        for (let j = n; j >= 1; j--) {
+            if (s[i - 1] === t[j - 1]) {
+                // dp[j] = (using current match: dp[j-1]) + (skipping current char: dp[j])
+                dp[j] = dp[j] + dp[j - 1];
+            }
+        }
     }
-  }
 
-  return dp[m][n];
+    return dp[n];
 }
 // Example usage:
 const s1 = "rabbbit";
