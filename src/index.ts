@@ -373,6 +373,7 @@
 // import "./string/leetcode/medium/haveConflict";
 // import "./string/leetcode/medium/merge";
 // import "./string/leetcode/medium/Codec";
+import "./string/leetcode/medium/convert";
 // import "./string/leetcode/easy/minDeletionSize";
 // import "./string/leetcode/easy/minOperations";
 // import "./string/leetcode/easy/checkOnesSegment";
@@ -618,6 +619,7 @@
 // import "./dp/leetcode/hard/hasValidPath";
 // import "./dp/leetcode/hard/subsequencePairCount";
 // import "./dp/leetcode/hard/numDistinct";
+// import "./dp/leetcode/hard/distinctSubseqII";
 // import "./dp/leetcode/medium/maximumProfit";
 // import "./dp/leetcode/medium/maximumAmount";
 // import "./dp/leetcode/medium/findMaxForm";
