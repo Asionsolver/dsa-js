@@ -41,7 +41,7 @@ s consists of English letters (lower-case and upper-case), ',' and '.'.
 1 <= numRows <= 1000
 */
 
-// Throw TLE
+// Not optimized
 // function convert(s: string, numRows: number): string {
 //     // If numRows is 1 or string length is smaller than numRows, return original string.
 //     if (numRows === 1 || s.length <= numRows) {
