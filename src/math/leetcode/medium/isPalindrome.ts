@@ -32,29 +32,57 @@ Constraints:
 Follow up: Could you solve it without converting the integer to a string?
 */
 // Brute force approach: Convert the integer to a string and check if it reads the same forwards and backwards.
+// function isPalindrome(x: number): boolean {
+//     // Negative numbers are not palindromes.
+//     if (x < 0) {
+//         return false;
+//     }
+
+//     // Convert the integer into a string.
+//     const str = x.toString();
+
+//     let left = 0;
+//     let right = str.length - 1;
+
+//     // Compare characters from both ends towards the center.
+//     while (left < right) {
+//         if (str[left] !== str[right]) {
+//             return false;
+//         }
+//         left++;
+//         right--;
+//     }
+
+//     // If all corresponding characters match, it is a palindrome.
+//     return true;
+// };
+
+
+// Optimized approach: Reverse half of the number and compare it with the other half.
 function isPalindrome(x: number): boolean {
-    // Negative numbers are not palindromes.
-    if (x < 0) {
+    // Negative numbers and numbers ending with 0 (except 0 itself) cannot be palindromes.
+
+    if (x < 0 || (x % 10 === 0 && x !== 0)) {
         return false;
     }
 
-    // Convert the integer into a string.
-    const str = x.toString();
+    let reversedHalf = 0;
 
-    let left = 0;
-    let right = str.length - 1;
+    // Process digits until we have reversed the second half of the number.
 
-    // Compare characters from both ends towards the center.
-    while (left < right) {
-        if (str[left] !== str[right]) {
-            return false;
-        }
-        left++;
-        right--;
+    while (x > reversedHalf) {
+        // Extract the last digit and append it to reversedHalf.
+
+        reversedHalf = (reversedHalf * 10) + (x % 10);
+
+        // Remove the last digit from x.
+
+        x = Math.floor(x / 10);
     }
 
-    // If all corresponding characters match, it is a palindrome.
-    return true;
+    // For even length numbers: x === reversedHalf
+    // For odd length numbers: x === Math.floor(reversedHalf / 10) to discard the middle digit.
+    return x === reversedHalf || x === Math.floor(reversedHalf / 10);
 };
 
 // Example usage:
