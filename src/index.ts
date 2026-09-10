@@ -256,6 +256,7 @@
 // import "./tree/leetcode/medium/assignEdgeWeights";
 // import "./tree/leetcode/medium/maximumSafenessFactor";
 // import "./tree/leetcode/medium/findSafeWalk";
+import "./tree/leetcode/medium/averageOfSubtree";
 // import "./tree/leetcode/easy/isBalanced";
 // import "./tree/leetcode/easy/sumRootToLeaf";
 // import "./tree/leetcode/easy/minDepth";
@@ -581,7 +582,7 @@
 // import "./math/leetcode/medium/divide";
 // import "./math/leetcode/medium/reverse";
 // import "./math/leetcode/medium/countCommas";
-import "./math/leetcode/medium/isPalindrome";
+// import "./math/leetcode/medium/isPalindrome";
 // import "./math/leetcode/hard/minOperations";
 // import "./math/leetcode/hard/stoneGameV";
 // import "./math/leetcode/hard/stoneGameIII";
