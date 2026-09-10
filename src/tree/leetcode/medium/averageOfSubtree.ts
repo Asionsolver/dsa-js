@@ -49,41 +49,78 @@ class TreeNode {
 }
 
 // Brute Force
+// function averageOfSubtree(root: TreeNode | null): number {
+//   let matchingNodesCount = 0;
+
+//   // Helper function to calculate sum and count for a given node's subtree.
+//   function getSubtreeStats(node: TreeNode | null): [number, number] {
+//     if (node === null) {
+//       return [0, 0];
+//     }
+
+//     const [leftSum, leftCount] = getSubtreeStats(node.left);
+//     const [rightSum, rightCount] = getSubtreeStats(node.right);
+
+//     const totalSum = node.val + leftSum + rightSum;
+//     const totalCount = 1 + leftCount + rightCount;
+
+//     return [totalSum, totalCount];
+//   }
+
+//   // Traverse every node in the tree.
+//   function traverse(node: TreeNode | null): void {
+//     if (node === null) return;
+
+//     // Calculate sum and count repeatedly for each node.
+//     const [sum, count] = getSubtreeStats(node);
+
+//     if (Math.floor(sum / count) === node.val) {
+//       matchingNodesCount++;
+//     }
+
+//     // Visit left and right children.
+//     traverse(node.left);
+//     traverse(node.right);
+//   }
+
+//   traverse(root);
+//   return matchingNodesCount;
+// }
+
+// Optimized
+
 function averageOfSubtree(root: TreeNode | null): number {
   let matchingNodesCount = 0;
 
-  // Helper function to calculate sum and count for a given node's subtree.
-  function getSubtreeStats(node: TreeNode | null): [number, number] {
+  // Helper function that returns [sum, count] of the subtree rooted at current node.
+  function postOrderDfs(node: TreeNode | null): [number, number] {
+    // Base case: null node contributes 0 sum and 0 count.
     if (node === null) {
       return [0, 0];
     }
 
-    const [leftSum, leftCount] = getSubtreeStats(node.left);
-    const [rightSum, rightCount] = getSubtreeStats(node.right);
+    // Recursively compute the sum and count of the left subtree.
+    const [leftSum, leftCount] = postOrderDfs(node.left);
 
-    const totalSum = node.val + leftSum + rightSum;
-    const totalCount = 1 + leftCount + rightCount;
+    // Recursively compute the sum and count of the right subtree.
+    const [rightSum, rightCount] = postOrderDfs(node.right);
 
-    return [totalSum, totalCount];
-  }
+    // Aggregate results for the current node.
+    const currentSum = node.val + leftSum + rightSum;
+    const currentCount = 1 + leftCount + rightCount;
 
-  // Traverse every node in the tree.
-  function traverse(node: TreeNode | null): void {
-    if (node === null) return;
-
-    // Calculate sum and count repeatedly for each node.
-    const [sum, count] = getSubtreeStats(node);
-
-    if (Math.floor(sum / count) === node.val) {
+    // Check if the current node value matches the rounded-down average.
+    if (Math.floor(currentSum / currentCount) === node.val) {
       matchingNodesCount++;
     }
 
-    // Visit left and right children.
-    traverse(node.left);
-    traverse(node.right);
+    // Return the accumulated sum and count to the parent node.
+    return [currentSum, currentCount];
   }
 
-  traverse(root);
+  // Start post-order DFS traversal from the root.
+  postOrderDfs(root);
+
   return matchingNodesCount;
 }
 
@@ -98,3 +135,4 @@ console.log(averageOfSubtree(root)); // Output: 5
 
 const singleNodeRoot = new TreeNode(1);
 console.log(averageOfSubtree(singleNodeRoot)); // Output: 1
+// বর্তমান node-কে root ধরে তার subtree-র [sum, count] রিটার্ন করার helper function.
