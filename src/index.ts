@@ -192,6 +192,7 @@
 // import "./linkList/leetcode/medium/removeNodes";
 // import "./linkList/leetcode/medium/addTwoNumbers";
 // import "./linkList/leetcode/medium/nodesBetweenCriticalPoints";
+import "./linkList/leetcode/medium/swapPairs";
 // import "./linkList/leetcode/hard/minimumPairRemoval";
 
 // !linked list end
