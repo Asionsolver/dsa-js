@@ -41,48 +41,86 @@ img2[i][j] is either 0 or 1.
 */
 
 // Brute Force Approach
+// function largestOverlap(img1: number[][], img2: number[][]): number {
+//   const n = img1.length;
+//   const points1: [number, number][] = [];
+//   const points2: [number, number][] = [];
+
+//   // Collect coordinates of all 1s from both images.
+//   for (let r = 0; r < n; r++) {
+//     for (let c = 0; c < n; c++) {
+//       if (img1[r][c] === 1) {
+//         points1.push([r, c]);
+//       }
+//       if (img2[r][c] === 1) {
+//         points2.push([r, c]);
+//       }
+//     }
+//   }
+
+//   // Map to count occurrences of each shift vector (dr, dc).
+//   const shiftCounts = new Map<string, number>();
+//   let maxOverlap = 0;
+
+//   // Calculate displacement vector between every pair of 1s.
+//   for (const [r1, c1] of points1) {
+//     for (const [r2, c2] of points2) {
+//       const dr = r2 - r1;
+//       const dc = c2 - c1;
+//       const key = `${dr},${dc}`;
+
+//       // Increment frequency count for this specific shift.
+//       const count = (shiftCounts.get(key) || 0) + 1;
+//       shiftCounts.set(key, count);
+
+//       // Keep track of the maximum overlap found.
+//       if (count > maxOverlap) {
+//         maxOverlap = count;
+//       }
+//     }
+//   }
+
+//   return maxOverlap;
+// }
+
+// Optimized Approach
 function largestOverlap(img1: number[][], img2: number[][]): number {
   const n = img1.length;
-  const points1: [number, number][] = [];
-  const points2: [number, number][] = [];
-
-  // Collect coordinates of all 1s from both images.
-  for (let r = 0; r < n; r++) {
-    for (let c = 0; c < n; c++) {
-      if (img1[r][c] === 1) {
-        points1.push([r, c]);
-      }
-      if (img2[r][c] === 1) {
-        points2.push([r, c]);
-      }
-    }
-  }
-
-  // Map to count occurrences of each shift vector (dr, dc).
-  const shiftCounts = new Map<string, number>();
   let maxOverlap = 0;
 
-  // Calculate displacement vector between every pair of 1s.
-  for (const [r1, c1] of points1) {
-    for (const [r2, c2] of points2) {
-      const dr = r2 - r1;
-      const dc = c2 - c1;
-      const key = `${dr},${dc}`;
+  // Try all possible row shifts from -(n - 1) to (n - 1).
+  for (let dr = -(n - 1); dr < n; dr++) {
+    // Try all possible column shifts from -(n - 1) to (n - 1).
+    for (let dc = -(n - 1); dc < n; dc++) {
+      let currentOverlap = 0;
 
-      // Increment frequency count for this specific shift.
-      const count = (shiftCounts.get(key) || 0) + 1;
-      shiftCounts.set(key, count);
+      // Iterate through every cell in img1.
+      for (let r = 0; r < n; r++) {
+        for (let c = 0; c < n; c++) {
+          const targetR = r + dr;
+          const targetC = c + dc;
 
-      // Keep track of the maximum overlap found.
-      if (count > maxOverlap) {
-        maxOverlap = count;
+          // Check if the translated coordinate is within bounds and both cells contain 1.
+          if (
+            targetR >= 0 &&
+            targetR < n &&
+            targetC >= 0 &&
+            targetC < n &&
+            img1[r][c] === 1 &&
+            img2[targetR][targetC] === 1
+          ) {
+            currentOverlap++;
+          }
+        }
       }
+
+      // Update the maximum overlap found so far.
+      maxOverlap = Math.max(maxOverlap, currentOverlap);
     }
   }
 
   return maxOverlap;
 }
-
 // Example usage:
 const img1 = [
   [1, 1, 0],
