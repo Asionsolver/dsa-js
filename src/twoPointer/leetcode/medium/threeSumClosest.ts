@@ -35,22 +35,65 @@ Constraints:
 */
 
 // Brute Force Approach
+// function threeSumClosest(nums: number[], target: number): number {
+//   const n = nums.length;
+
+//   // Initialize closestSum with the sum of the first three elements.
+//   let closestSum = nums[0] + nums[1] + nums[2];
+
+//   // Iterate through all possible triplets using three nested loops.
+//   for (let i = 0; i < n - 2; i++) {
+//     for (let j = i + 1; j < n - 1; j++) {
+//       for (let k = j + 1; k < n; k++) {
+//         const currentSum = nums[i] + nums[j] + nums[k];
+
+//         // Update closestSum if currentSum is closer to target.
+//         if (Math.abs(target - currentSum) < Math.abs(target - closestSum)) {
+//           closestSum = currentSum;
+//         }
+//       }
+//     }
+//   }
+
+//   return closestSum;
+// }
+
+// Optimized Approach using Two Pointers
 function threeSumClosest(nums: number[], target: number): number {
+  // Sort the array in ascending order to enable the Two Pointers technique.
+  nums.sort((a, b) => a - b);
+
   const n = nums.length;
 
-  // Initialize closestSum with the sum of the first three elements.
+  // Initialize closestSum with the sum of the first triplet.
   let closestSum = nums[0] + nums[1] + nums[2];
 
-  // Iterate through all possible triplets using three nested loops.
+  // Iterate through the array, fixing the first element at index i.
   for (let i = 0; i < n - 2; i++) {
-    for (let j = i + 1; j < n - 1; j++) {
-      for (let k = j + 1; k < n; k++) {
-        const currentSum = nums[i] + nums[j] + nums[k];
+    let left = i + 1;
+    let right = n - 1;
 
-        // Update closestSum if currentSum is closer to target.
-        if (Math.abs(target - currentSum) < Math.abs(target - closestSum)) {
-          closestSum = currentSum;
-        }
+    // Use two pointers to find the best pair for the fixed element.
+    while (left < right) {
+      const currentSum = nums[i] + nums[left] + nums[right];
+
+      // If an exact match is found, return immediately.
+      if (currentSum === target) {
+        return currentSum;
+      }
+
+      // Update closestSum if currentSum is closer to target.
+      if (Math.abs(target - currentSum) < Math.abs(target - closestSum)) {
+        closestSum = currentSum;
+      }
+
+      // Adjust pointers based on comparison with target.
+      if (currentSum < target) {
+        // Sum is too small, move left pointer to the right to increase sum.
+        left++;
+      } else {
+        // Sum is too large, move right pointer to the left to decrease sum.
+        right--;
       }
     }
   }
