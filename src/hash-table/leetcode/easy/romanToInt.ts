@@ -49,39 +49,70 @@ It is guaranteed that s is a valid roman numeral in the range [1, 3999].
 
 // Brute Force Approach
 
+// function romanToInt(s: string): number {
+//   // Map containing both single and two-character values.
+//   const romanMap: Record<string, number> = {
+//     I: 1,
+//     IV: 4,
+//     V: 5,
+//     IX: 9,
+//     X: 10,
+//     XL: 40,
+//     L: 50,
+//     XC: 90,
+//     C: 100,
+//     CD: 400,
+//     D: 500,
+//     CM: 900,
+//     M: 1000,
+//   };
+
+//   let total = 0;
+//   let i = 0;
+
+//   // Traverse the string checking substrings.
+//   while (i < s.length) {
+//     // Check if two-character substring exists in map.
+//     if (i + 1 < s.length && romanMap[s.substring(i, i + 2)] !== undefined) {
+//       total += romanMap[s.substring(i, i + 2)];
+//       // Skip 2 characters.
+//       i += 2;
+//     } else {
+//       // Add single character value.
+//       total += romanMap[s[i]];
+//       // Move 1 step forward.
+//       i += 1;
+//     }
+//   }
+
+//   return total;
+// }
+
 function romanToInt(s: string): number {
-  // Map containing both single and two-character values.
-  const romanMap: Record<string, number> = {
+  // Map storing values of single Roman numerals.
+  const romanValues: Record<string, number> = {
     I: 1,
-    IV: 4,
     V: 5,
-    IX: 9,
     X: 10,
-    XL: 40,
     L: 50,
-    XC: 90,
     C: 100,
-    CD: 400,
     D: 500,
-    CM: 900,
     M: 1000,
   };
 
   let total = 0;
-  let i = 0;
 
-  // Traverse the string checking substrings.
-  while (i < s.length) {
-    // Check if two-character substring exists in map.
-    if (i + 1 < s.length && romanMap[s.substring(i, i + 2)] !== undefined) {
-      total += romanMap[s.substring(i, i + 2)];
-      // Skip 2 characters.
-      i += 2;
+  // Traverse through the string characters.
+  for (let i = 0; i < s.length; i++) {
+    const currentVal = romanValues[s[i]];
+    const nextVal = romanValues[s[i + 1]];
+
+    // If current value is less than the next value, subtract it.
+    if (nextVal !== undefined && currentVal < nextVal) {
+      total -= currentVal;
     } else {
-      // Add single character value.
-      total += romanMap[s[i]];
-      // Move 1 step forward.
-      i += 1;
+      // Otherwise, add the current value to total.
+      total += currentVal;
     }
   }
 
