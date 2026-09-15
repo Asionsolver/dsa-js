@@ -46,43 +46,94 @@ class ListNode {
 }
 
 // Brute Force Approach: Using an Array to Store Nodes
+// function reverseKGroup(head: ListNode | null, k: number): ListNode | null {
+//   if (!head || k <= 1) {
+//     return head;
+//   }
+
+//   // Collect all nodes into an array.
+//   const nodes: ListNode[] = [];
+//   let curr: ListNode | null = head;
+//   while (curr !== null) {
+//     nodes.push(curr);
+//     curr = curr.next;
+//   }
+
+//   const n = nodes.length;
+
+//   // Reverse each group of size k in the array.
+//   for (let i = 0; i + k <= n; i += k) {
+//     let left = i;
+//     let right = i + k - 1;
+//     while (left < right) {
+//       const temp = nodes[left];
+//       nodes[left] = nodes[right];
+//       nodes[right] = temp;
+//       left++;
+//       right--;
+//     }
+//   }
+
+//   // Re-link the nodes according to the new order.
+//   for (let i = 0; i < n - 1; i++) {
+//     nodes[i].next = nodes[i + 1];
+//   }
+//   nodes[n - 1].next = null;
+
+//   return nodes[0];
+// }
+
+// Optimized Approach: In-Place Reversal of Nodes in k-Group
 function reverseKGroup(head: ListNode | null, k: number): ListNode | null {
   if (!head || k <= 1) {
     return head;
   }
 
-  // Collect all nodes into an array.
-  const nodes: ListNode[] = [];
-  let curr: ListNode | null = head;
-  while (curr !== null) {
-    nodes.push(curr);
-    curr = curr.next;
-  }
+  // Create a dummy node to simplify edge cases at the head.
+  const dummy = new ListNode(0, head);
+  let prevGroupEnd: ListNode = dummy;
 
-  const n = nodes.length;
-
-  // Reverse each group of size k in the array.
-  for (let i = 0; i + k <= n; i += k) {
-    let left = i;
-    let right = i + k - 1;
-    while (left < right) {
-      const temp = nodes[left];
-      nodes[left] = nodes[right];
-      nodes[right] = temp;
-      left++;
-      right--;
+  while (true) {
+    // Find the k-th node of the current group.
+    const kthNode = getKthNode(prevGroupEnd, k);
+    if (!kthNode) {
+      break;
     }
+
+    // Identify boundary nodes for reconnection.
+    const nextGroupStart = kthNode.next;
+    const currGroupStart = prevGroupEnd.next!;
+
+    // Reverse the nodes in the current group.
+    let prev: ListNode | null = nextGroupStart;
+    let curr: ListNode | null = currGroupStart;
+
+    while (curr !== nextGroupStart) {
+      const tempNext: ListNode | null = curr!.next;
+      curr!.next = prev;
+      prev = curr;
+      curr = tempNext;
+    }
+
+    // Connect previous group's end to the newly reversed group's head.
+    prevGroupEnd.next = kthNode;
+
+    // Move prevGroupEnd forward for the next iteration.
+    prevGroupEnd = currGroupStart;
   }
 
-  // Re-link the nodes according to the new order.
-  for (let i = 0; i < n - 1; i++) {
-    nodes[i].next = nodes[i + 1];
-  }
-  nodes[n - 1].next = null;
-
-  return nodes[0];
+  return dummy.next;
 }
 
+// Helper function to find the k-th node from a starting node.
+function getKthNode(start: ListNode, k: number): ListNode | null {
+  let curr: ListNode | null = start;
+  while (curr !== null && k > 0) {
+    curr = curr.next;
+    k--;
+  }
+  return curr;
+}
 // Example usage:
 const head = new ListNode(
   1,
