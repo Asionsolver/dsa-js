@@ -89,6 +89,7 @@
 // ! two pointer start
 // import "./twoPointer/leetcode/isSubsequence";
 // import "./twoPointer/leetcode/hard/recoverArray";
+import "./twoPointer/leetcode/hard/maxPalindromes";
 // import "./twoPointer/leetcode/easy/countBinarySubstrings";
 // import "./twoPointer/leetcode/easy/flipSubmatrix";
 // import "./twoPointer/leetcode/easy/getCommon";
@@ -572,7 +573,7 @@
 // import "./math/leetcode/easy/checkDivisibility";
 // import "./math/leetcode/easy/uniformArray";
 // import "./math/leetcode/easy/countCommas";
-import "./math/leetcode/easy/isRectangleOverlap";
+// import "./math/leetcode/easy/isRectangleOverlap";
 // import "./math/leetcode/medium/smallestRepunitDivByK";
 // import "./math/leetcode/medium/maxBottlesDrunk";
 // import "./math/leetcode/medium/minOperations";
