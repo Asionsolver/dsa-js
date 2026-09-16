@@ -197,7 +197,7 @@
 // import "./linkList/leetcode/medium/swapPairs";
 // import "./linkList/leetcode/hard/mergeKSortedList";
 // import "./linkList/leetcode/hard/minimumPairRemoval";
-import "./linkList/leetcode/hard/reverseKGroup";
+// import "./linkList/leetcode/hard/reverseKGroup";
 
 // !linked list end
 /**********************************************/
@@ -819,4 +819,11 @@ import "./linkList/leetcode/hard/reverseKGroup";
 // import "./game-theory/leetcode/medium/sumGame";
 
 // ! Game Theory file end
+/**********************************************/
+
+/**********************************************/
+// ! KMP Algorithm file start
+import "./algorithm/leetcode/KMP/strStr";
+
+// ! KMP Algorithm file end
 /**********************************************/
