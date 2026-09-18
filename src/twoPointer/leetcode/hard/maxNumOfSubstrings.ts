@@ -179,3 +179,10 @@ function maxNumOfSubstrings(s: string): string[] {
 
   return result;
 }
+
+// Example usage:
+const s1 = "adefaddaccc";
+console.log(maxNumOfSubstrings(s1)); // Output: ["e", "f", "ccc"]
+
+const s2 = "abbaccd";
+console.log(maxNumOfSubstrings(s2)); // Output: ["d", "bb", "cc"]
