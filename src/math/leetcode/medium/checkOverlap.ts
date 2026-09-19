@@ -35,6 +35,34 @@ Constraints:
 */
 
 // Brute force solution
+// function checkOverlap(
+//   radius: number,
+//   xCenter: number,
+//   yCenter: number,
+//   x1: number,
+//   y1: number,
+//   x2: number,
+//   y2: number,
+// ): boolean {
+//   const radiusSquared = radius * radius;
+
+//   // Check all integer points inside the rectangle boundary.
+//   for (let x = x1; x <= x2; x++) {
+//     for (let y = y1; y <= y2; y++) {
+//       const dx = x - xCenter;
+//       const dy = y - yCenter;
+
+//       // If any point is within or on the circle boundary, they overlap.
+//       if (dx * dx + dy * dy <= radiusSquared) {
+//         return true;
+//       }
+//     }
+//   }
+
+//   return false;
+// }
+
+// Optimized solution
 function checkOverlap(
   radius: number,
   xCenter: number,
@@ -44,20 +72,47 @@ function checkOverlap(
   x2: number,
   y2: number,
 ): boolean {
-  const radiusSquared = radius * radius;
+  // Find the closest X-coordinate on the rectangle to the circle center.
+  const nearestX = Math.max(x1, Math.min(xCenter, x2));
 
-  // Check all integer points inside the rectangle boundary.
-  for (let x = x1; x <= x2; x++) {
-    for (let y = y1; y <= y2; y++) {
-      const dx = x - xCenter;
-      const dy = y - yCenter;
+  // Find the closest Y-coordinate on the rectangle to the circle center.
+  const nearestY = Math.max(y1, Math.min(yCenter, y2));
 
-      // If any point is within or on the circle boundary, they overlap.
-      if (dx * dx + dy * dy <= radiusSquared) {
-        return true;
-      }
-    }
-  }
+  // Calculate distance between circle center and the closest point.
+  const distX = xCenter - nearestX;
+  const distY = yCenter - nearestY;
 
-  return false;
+  // Check if the squared distance is less than or equal to squared radius.
+  return distX * distX + distY * distY <= radius * radius;
 }
+
+// Example usage:
+const radius = 1;
+const xCenter = 0;
+const yCenter = 0;
+const x1 = 1;
+const y1 = -1;
+const x2 = 3;
+const y2 = 1;
+
+console.log(checkOverlap(radius, xCenter, yCenter, x1, y1, x2, y2)); // Output: true
+
+const radius2 = 1;
+const xCenter2 = 1;
+const yCenter2 = 1;
+const x12 = 1;
+const y12 = -3;
+const x22 = 2;
+const y22 = -1;
+
+console.log(checkOverlap(radius2, xCenter2, yCenter2, x12, y12, x22, y22)); // Output: false
+
+const radius3 = 1;
+const xCenter3 = 0;
+const yCenter3 = 0;
+const x13 = -1;
+const y13 = 0;
+const x23 = 0;
+const y23 = 1;
+
+console.log(checkOverlap(radius3, xCenter3, yCenter3, x13, y13, x23, y23)); // Output: true
