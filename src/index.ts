@@ -592,7 +592,7 @@
 // import "./math/leetcode/medium/reverse";
 // import "./math/leetcode/medium/countCommas";
 // import "./math/leetcode/medium/isPalindrome";
-import "./math/leetcode/medium/checkOverlap";
+// import "./math/leetcode/medium/checkOverlap";
 // import "./math/leetcode/hard/minOperations";
 // import "./math/leetcode/hard/stoneGameV";
 // import "./math/leetcode/hard/stoneGameIII";
@@ -800,6 +800,7 @@ import "./math/leetcode/medium/checkOverlap";
 // import "./simulation/leetcode/easy/mapWordWeights";
 // import "./simulation/leetcode/easy/shiftGrid";
 // import "./simulation/leetcode/easy/resultArray";
+import "./simulation/leetcode/easy/reverseDegree";
 // import "./simulation/leetcode/medium/Robot";
 // import "./simulation/leetcode/medium/rotateGrid";
 // import "./simulation/leetcode/medium/processStr";
