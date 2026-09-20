@@ -49,27 +49,50 @@ s contains only lowercase English letters.
 */
 
 // Brute force solution with O(n) time complexity and O(1) space complexity.
+// function reverseDegree(s: string): number {
+//   // Accumulator for the total reverse degree.
+//   let totalDegree = 0;
+
+//   // ASCII code for lowercase 'a' is 97.
+//   const aCharCode = "a".charCodeAt(0);
+
+//   for (let i = 0; i < s.length; i++) {
+//     // Calculate the reversed alphabet weight in O(1) time using ASCII arithmetic.
+//     const alphabetWeight = 26 - (s.charCodeAt(i) - aCharCode);
+
+//     // String index is 1-based as per problem description.
+//     const stringPosition = i + 1;
+
+//     // Multiply the reversed alphabet weight with the string position and accumulate.
+//     totalDegree += alphabetWeight * stringPosition;
+//   }
+
+//   return totalDegree;
+// }
+
+// Optimized solution with O(n) time complexity and O(1) space complexity.
 function reverseDegree(s: string): number {
-  // Accumulator for the total reverse degree.
+  // Define the reversed alphabet string to look up character positions.
+  const reversedAlphabet = "zyxwvutsrqponmlkjihgfedcba";
+
+  // Variable to store the cumulative reverse degree sum.
   let totalDegree = 0;
 
-  // ASCII code for lowercase 'a' is 97.
-  const aCharCode = "a".charCodeAt(0);
-
   for (let i = 0; i < s.length; i++) {
-    // Calculate the reversed alphabet weight in O(1) time using ASCII arithmetic.
-    const alphabetWeight = 26 - (s.charCodeAt(i) - aCharCode);
+    const char = s[i];
 
-    // String index is 1-based as per problem description.
+    // Search the character's 1-indexed position in the reversed alphabet.
+    const alphabetWeight = reversedAlphabet.indexOf(char) + 1;
+
+    // Current 1-indexed position in the string.
     const stringPosition = i + 1;
 
-    // Multiply the reversed alphabet weight with the string position and accumulate.
+    // Add the product of both positions to the total sum.
     totalDegree += alphabetWeight * stringPosition;
   }
 
   return totalDegree;
 }
-
 // Example usage:
 console.log(reverseDegree("abc")); // Output: 148
 console.log(reverseDegree("zaza")); // Output: 160
