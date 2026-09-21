@@ -663,6 +663,7 @@
 // import "./dp/leetcode/medium/predictTheWinner";
 // import "./dp/leetcode/medium/stoneGame";
 // import "./dp/leetcode/medium/stoneGameII";
+import "./dp/leetcode/medium/resultArray";
 // ! Dynamic Programming end
 /**********************************************/
 
@@ -800,7 +801,7 @@
 // import "./simulation/leetcode/easy/mapWordWeights";
 // import "./simulation/leetcode/easy/shiftGrid";
 // import "./simulation/leetcode/easy/resultArray";
-import "./simulation/leetcode/easy/reverseDegree";
+// import "./simulation/leetcode/easy/reverseDegree";
 // import "./simulation/leetcode/medium/Robot";
 // import "./simulation/leetcode/medium/rotateGrid";
 // import "./simulation/leetcode/medium/processStr";
