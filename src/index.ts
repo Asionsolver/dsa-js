@@ -231,6 +231,7 @@
 // import "./tree/leetcode/hard/goodTriplets";
 // import "./tree/leetcode/hard/maxPathSum";
 // import "./tree/leetcode/hard/maxActiveSectionsAfterTrade";
+import "./tree/leetcode/hard/resultArray";
 // import "./tree/leetcode/medium/maxLevelSum";
 // import "./tree/leetcode/medium/countHighestScoreNodes";
 // import "./tree/leetcode/medium/maxProduct";
@@ -663,7 +664,7 @@
 // import "./dp/leetcode/medium/predictTheWinner";
 // import "./dp/leetcode/medium/stoneGame";
 // import "./dp/leetcode/medium/stoneGameII";
-import "./dp/leetcode/medium/resultArray";
+// import "./dp/leetcode/medium/resultArray";
 // ! Dynamic Programming end
 /**********************************************/
 
