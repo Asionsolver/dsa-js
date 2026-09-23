@@ -231,7 +231,7 @@
 // import "./tree/leetcode/hard/goodTriplets";
 // import "./tree/leetcode/hard/maxPathSum";
 // import "./tree/leetcode/hard/maxActiveSectionsAfterTrade";
-import "./tree/leetcode/hard/resultArray";
+// import "./tree/leetcode/hard/resultArray";
 // import "./tree/leetcode/medium/maxLevelSum";
 // import "./tree/leetcode/medium/countHighestScoreNodes";
 // import "./tree/leetcode/medium/maxProduct";
@@ -434,6 +434,7 @@ import "./tree/leetcode/hard/resultArray";
 // import "./sliding-window/leetcode/medium/canReach";
 // import "./sliding-window/leetcode/medium/numberOfSubstrings";
 // import "./sliding-window/leetcode/medium/shortestBeautifulSubstring";
+import "./sliding-window/leetcode/medium/minOperations";
 // import "./sliding-window/leetcode/hard/maxPower";
 // import "./sliding-window/leetcode/hard/maxSumOfThreeSubarrays";
 // import "./sliding-window/leetcode/hard/maxStability";
