@@ -51,6 +51,35 @@ Constraints:
 */
 
 // Brute Force Approach
+// function smallestIndex(nums: number[]): number {
+//   // Helper function to calculate sum of digits using arithmetic operations.
+//   function getDigitSum(n: number): number {
+//     let sum = 0;
+//     while (n > 0) {
+//       // Add the last digit to sum.
+//       sum += n % 10;
+//       // Remove the last digit from n.
+//       n = Math.floor(n / 10);
+//     }
+//     return sum;
+//   }
+
+//   // Since max value of nums[i] is 1000, max possible digit sum is 27 (for 999).
+//   // Therefore, index i can never be equal to digit sum if i > 27.
+//   const maxCheckLimit = Math.min(nums.length, 28);
+
+//   for (let i = 0; i < maxCheckLimit; i++) {
+//     // Return the first index that matches the condition.
+//     if (getDigitSum(nums[i]) === i) {
+//       return i;
+//     }
+//   }
+
+//   // No valid index found.
+//   return -1;
+// }
+
+// Optimize Approach
 function smallestIndex(nums: number[]): number {
   // Iterate through every index from left to right.
   for (let i = 0; i < nums.length; i++) {
@@ -72,7 +101,6 @@ function smallestIndex(nums: number[]): number {
   // Return -1 if no such index satisfies the condition.
   return -1;
 }
-
 // Example usage:
 console.log(smallestIndex([1, 3, 2])); // Output: 2
 console.log(smallestIndex([1, 10, 11])); // Output: 1
