@@ -579,6 +579,7 @@
 // import "./math/leetcode/easy/uniformArray";
 // import "./math/leetcode/easy/countCommas";
 // import "./math/leetcode/easy/isRectangleOverlap";
+import "./math/leetcode/easy/smallestIndex";
 // import "./math/leetcode/medium/smallestRepunitDivByK";
 // import "./math/leetcode/medium/maxBottlesDrunk";
 // import "./math/leetcode/medium/minOperations";
