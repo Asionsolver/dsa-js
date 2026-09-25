@@ -43,46 +43,130 @@ The given expression represents a set of words based on the grammar given in the
 */
 
 // Brute Force Approach
+// function braceExpansionII(expression: string): string[] {
+//   // Queue to hold intermediate strings during expansion.
+//   const queue: string[] = [expression];
+
+//   // Set to avoid processing identical intermediate expressions.
+//   const seen = new Set<string>([expression]);
+
+//   // Set to collect the final evaluated words.
+//   const resultSet = new Set<string>();
+
+//   while (queue.length > 0) {
+//     const current = queue.shift()!;
+
+//     // Find the first closing brace.
+//     const right = current.indexOf("}");
+
+//     // If no closing brace is found, this string is fully expanded.
+//     if (right === -1) {
+//       resultSet.add(current);
+//       continue;
+//     }
+
+//     // Find the nearest opening brace before this closing brace.
+//     const left = current.lastIndexOf("{", right);
+
+//     // Extract the prefix, suffix, and the inner comma-separated choices.
+//     const prefix = current.substring(0, left);
+//     const suffix = current.substring(right + 1);
+//     const choices = current.substring(left + 1, right).split(",");
+
+//     for (const choice of choices) {
+//       const nextExpression = prefix + choice + suffix;
+//       if (!seen.has(nextExpression)) {
+//         seen.add(nextExpression);
+//         queue.push(nextExpression);
+//       }
+//     }
+//   }
+
+//   // Return the distinct words sorted lexicographically.
+//   return Array.from(resultSet).sort();
+// }
+
+// Optimized Approach
 function braceExpansionII(expression: string): string[] {
-  // Queue to hold intermediate strings during expansion.
-  const queue: string[] = [expression];
+  let index = 0;
 
-  // Set to avoid processing identical intermediate expressions.
-  const seen = new Set<string>([expression]);
-
-  // Set to collect the final evaluated words.
-  const resultSet = new Set<string>();
-
-  while (queue.length > 0) {
-    const current = queue.shift()!;
-
-    // Find the first closing brace.
-    const right = current.indexOf("}");
-
-    // If no closing brace is found, this string is fully expanded.
-    if (right === -1) {
-      resultSet.add(current);
-      continue;
-    }
-
-    // Find the nearest opening brace before this closing brace.
-    const left = current.lastIndexOf("{", right);
-
-    // Extract the prefix, suffix, and the inner comma-separated choices.
-    const prefix = current.substring(0, left);
-    const suffix = current.substring(right + 1);
-    const choices = current.substring(left + 1, right).split(",");
-
-    for (const choice of choices) {
-      const nextExpression = prefix + choice + suffix;
-      if (!seen.has(nextExpression)) {
-        seen.add(nextExpression);
-        queue.push(nextExpression);
+  // Helper function to calculate the Cartesian product of two sets of strings.
+  function cartesianProduct(setA: Set<string>, setB: Set<string>): Set<string> {
+    const product = new Set<string>();
+    for (const wordA of setA) {
+      for (const wordB of setB) {
+        product.add(wordA + wordB);
       }
+    }
+    return product;
+  }
+
+  // Factor represents either a base word or a braced sub-expression.
+  function parseFactor(): Set<string> {
+    if (expression[index] === "{") {
+      // Skip the opening brace '{'.
+      index++;
+      const subResult = parseExpr();
+      // Skip the closing brace '}'.
+      index++;
+      return subResult;
+    } else {
+      // Read consecutive lowercase letters.
+      let word = "";
+      while (
+        index < expression.length &&
+        expression[index] >= "a" &&
+        expression[index] <= "z"
+      ) {
+        word += expression[index];
+        index++;
+      }
+      return new Set<string>([word]);
     }
   }
 
-  // Return the distinct words sorted lexicographically.
+  // Term represents adjacent factors concatenated together (Cartesian Product).
+  function parseTerm(): Set<string> {
+    // Identity element for concatenation is a set with an empty string.
+    let termResult = new Set<string>([""]);
+
+    while (
+      index < expression.length &&
+      expression[index] !== "}" &&
+      expression[index] !== ","
+    ) {
+      const nextFactor = parseFactor();
+      termResult = cartesianProduct(termResult, nextFactor);
+    }
+
+    return termResult;
+  }
+
+  // Expression represents comma-separated terms combined via Union.
+  function parseExpr(): Set<string> {
+    const exprResult = new Set<string>();
+
+    while (index < expression.length && expression[index] !== "}") {
+      const currentTerm = parseTerm();
+
+      // Perform union with the accumulated expression result.
+      for (const word of currentTerm) {
+        exprResult.add(word);
+      }
+
+      // Skip the comma to move to the next term in the union.
+      if (index < expression.length && expression[index] === ",") {
+        index++;
+      }
+    }
+
+    return exprResult;
+  }
+
+  // Parse the entire expression starting from index 0.
+  const resultSet = parseExpr();
+
+  // Return the sorted distinct words as an array.
   return Array.from(resultSet).sort();
 }
 
