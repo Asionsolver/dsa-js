@@ -148,6 +148,7 @@
 // import "./stack/leetcode/medium/MinStack";
 // import "./stack/leetcode/medium/canReach";
 // import "./stack/leetcode/medium/smallestSubsequence";
+import "./stack/leetcode/medium/longestValidParentheses";
 // import "./stack/leetcode/hard/maximalRectangle";
 // import "./stack/leetcode/hard/totalStrength";
 // import "./stack/leetcode/hard/canSeePersonsCount";
@@ -327,7 +328,7 @@
 // import "./hash-table/leetcode/medium/maximumLength";
 // import "./hash-table/leetcode/medium/maxNumberOfFamilies";
 // import "./hash-table/leetcode/medium/largestOverlap";
-import "./hash-table/leetcode/medium/evaluate";
+// import "./hash-table/leetcode/medium/evaluate";
 // import "./hash-table/leetcode/hard/countTrapezoidsTwo";
 // import "./hash-table/leetcode/hard/braceExpansionII";
 // ! hash table end
