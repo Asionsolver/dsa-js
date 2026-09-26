@@ -327,8 +327,9 @@
 // import "./hash-table/leetcode/medium/maximumLength";
 // import "./hash-table/leetcode/medium/maxNumberOfFamilies";
 // import "./hash-table/leetcode/medium/largestOverlap";
+import "./hash-table/leetcode/medium/evaluate";
 // import "./hash-table/leetcode/hard/countTrapezoidsTwo";
-import "./hash-table/leetcode/hard/braceExpansionII";
+// import "./hash-table/leetcode/hard/braceExpansionII";
 // ! hash table end
 /**********************************************/
 
