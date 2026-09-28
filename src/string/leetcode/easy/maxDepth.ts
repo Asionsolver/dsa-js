@@ -43,32 +43,59 @@ It is guaranteed that parentheses expression s is a VPS.
 */
 
 // Brute force approach: Traverse the string and keep track of the current depth of parentheses. Update the maximum depth whenever a new maximum is found.
+// function maxDepth(s: string): number {
+//   // Variable to track the maximum depth observed so far.
+//   let maxDepth = 0;
+
+//   // Variable to track the depth at the current character.
+//   let currentDepth = 0;
+
+//   // Traverse each character in the string.
+//   for (let i = 0; i < s.length; i++) {
+//     const char = s[i];
+
+//     if (char === "(") {
+//       // An opening parenthesis increases the current nesting depth.
+//       currentDepth++;
+
+//       // Update maxDepth if currentDepth exceeds the previous maximum.
+//       if (currentDepth > maxDepth) {
+//         maxDepth = currentDepth;
+//       }
+//     } else if (char === ")") {
+//       // A closing parenthesis decreases the current nesting depth.
+//       currentDepth--;
+//     }
+//   }
+
+//   // Return the maximum nesting depth found.
+//   return maxDepth;
+// }
+
+// Optimized approach: Use a stack to keep track of the current depth of parentheses. Update the maximum depth whenever a new maximum is found.
 function maxDepth(s: string): number {
-  // Variable to track the maximum depth observed so far.
+  // Stack to keep track of open parentheses.
+  const stack: string[] = [];
+
+  // Variable to track the maximum nesting depth.
   let maxDepth = 0;
 
-  // Variable to track the depth at the current character.
-  let currentDepth = 0;
-
-  // Traverse each character in the string.
   for (let i = 0; i < s.length; i++) {
     const char = s[i];
 
     if (char === "(") {
-      // An opening parenthesis increases the current nesting depth.
-      currentDepth++;
+      // Push open parenthesis into the stack.
+      stack.push(char);
 
-      // Update maxDepth if currentDepth exceeds the previous maximum.
-      if (currentDepth > maxDepth) {
-        maxDepth = currentDepth;
-      }
+      // Update maximum depth with current stack size.
+      maxDepth = Math.max(maxDepth, stack.length);
     } else if (char === ")") {
-      // A closing parenthesis decreases the current nesting depth.
-      currentDepth--;
+      // Pop from stack when a closing parenthesis is encountered.
+      stack.pop();
     }
+    // Digits and operators are completely ignored.
   }
 
-  // Return the maximum nesting depth found.
   return maxDepth;
 }
 
