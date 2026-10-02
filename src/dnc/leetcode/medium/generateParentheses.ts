@@ -26,46 +26,121 @@ Constraints:
 
 // Brute Force Approach
 // Process: Generate all combinations of parentheses and check if they are valid.
+// function generateParenthesis(n: number): string[] {
+//   const result: string[] = [];
+
+//   // Helper function to check if a sequence of parentheses is valid.
+//   function isValid(str: string): boolean {
+//     let balance = 0;
+//     for (const char of str) {
+//       if (char === "(") {
+//         balance++;
+//       } else {
+//         balance--;
+//       }
+//       // If balance drops below 0, there are more ')' than '('.
+//       if (balance < 0) {
+//         return false;
+//       }
+//     }
+//     return balance === 0;
+//   }
+
+//   // Generate all 2^(2n) combinations recursively.
+//   function generateAll(current: string): void {
+//     // Base case: string reached the required length of 2n.
+//     if (current.length === 2 * n) {
+//       if (isValid(current)) {
+//         result.push(current);
+//       }
+//       return;
+//     }
+
+//     // Try adding an opening parenthesis.
+//     generateAll(current + "(");
+
+//     // Try adding a closing parenthesis.
+//     generateAll(current + ")");
+//   }
+
+//   generateAll("");
+//   return result;
+// }
+
+// Good Approachtring[] {
+//   const result: string[] = [];
+
+//   // Helper function to check if a sequence of parentheses is valid.
+//   function isValid(str: string): boolean {
+//     let balance = 0;
+//     for (const char of str) {
+//       if (char === "(") {
+//         balance++;
+//       } else {
+//         balance--;
+//       }
+//       // If balance drops below 0, there are more ')' than '('.
+//       if (balance < 0) {
+//         return false;
+//       }
+//     }
+//     return balance === 0;
+//   }
+
+//   // Generate all 2^(2n) combinations recursively.
+//   function generateAll(current: string): void {
+//     // Base case: string reached the required length of 2n.
+//     if (current.length === 2 * n) {
+//       if (isValid(current)) {
+//         result.push(current);
+//       }
+//       return;
+//     }
+
+//     // Try adding an opening parenthesis.
+//     generateAll(current + "(");
+
+//     // Try adding a closing parenthesis.
+//     generateAll(current + ")");
+//   }
+
+//   generateAll("");
+//   return result;
+// }
+// Process: Backtracking & Recursion
 function generateParenthesis(n: number): string[] {
   const result: string[] = [];
 
-  // Helper function to check if a sequence of parentheses is valid.
-  function isValid(str: string): boolean {
-    let balance = 0;
-    for (const char of str) {
-      if (char === "(") {
-        balance++;
-      } else {
-        balance--;
-      }
-      // If balance drops below 0, there are more ')' than '('.
-      if (balance < 0) {
-        return false;
-      }
-    }
-    return balance === 0;
-  }
-
-  // Generate all 2^(2n) combinations recursively.
-  function generateAll(current: string): void {
-    // Base case: string reached the required length of 2n.
-    if (current.length === 2 * n) {
-      if (isValid(current)) {
-        result.push(current);
-      }
+  // Helper function to build valid parentheses combinations using backtracking.
+  function backtrack(
+    currentStr: string,
+    openCount: number,
+    closeCount: number,
+  ): void {
+    // Base case: if the string length reaches 2 * n, a valid combination is formed.
+    if (currentStr.length === 2 * n) {
+      result.push(currentStr);
       return;
     }
 
-    // Try adding an opening parenthesis.
-    generateAll(current + "(");
+    // We can add '(' if we haven't used all n opening brackets yet.
+    if (openCount < n) {
+      backtrack(currentStr + "(", openCount + 1, closeCount);
+    }
 
-    // Try adding a closing parenthesis.
-    generateAll(current + ")");
+    // We can add ')' only if the number of closing brackets is less than opening brackets.
+    if (closeCount < openCount) {
+      backtrack(currentStr + ")", openCount, closeCount + 1);
+    }
   }
 
-  generateAll("");
+  // Start backtracking with an empty string and 0 counts.
+  backtrack("", 0, 0);
+
   return result;
 }
+
+// Better Approach
 // Process: Backtracking
 // const solve = function (
 //   ans: string[],
