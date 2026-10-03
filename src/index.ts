@@ -148,7 +148,7 @@
 // import "./stack/leetcode/medium/MinStack";
 // import "./stack/leetcode/medium/canReach";
 // import "./stack/leetcode/medium/smallestSubsequence";
-// import "./stack/leetcode/medium/longestValidParentheses";
+import "./stack/leetcode/medium/longestValidParentheses";
 // import "./stack/leetcode/medium/reverseParenthesesBruteForce";
 // import "./stack/leetcode/medium/maxDepthAfterSplit";
 // import "./stack/leetcode/hard/maximalRectangle";
@@ -359,7 +359,7 @@
 // import "./dnc/leetcode/medium/findKthLargest";
 // import "./dnc/leetcode/medium/xorAfterQueries";
 // import "./dnc/leetcode/medium/longestSubstring";
-import "./dnc/leetcode/medium/generateParentheses";
+// import "./dnc/leetcode/medium/generateParentheses";
 // import "./dnc/leetcode/easy/reverseBits";
 // import "./dnc/leetcode/easy/readBinaryWatch";F
 // import "./dnc/problem/ratInMaze";

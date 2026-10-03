@@ -67,31 +67,80 @@ s[i] is '(', or ')'.
 // }
 
 // Optimized Approach: Using Stack
+// function longestValidParentheses(s: string): number {
+//   let maxLength = 0;
+
+//   // Stack to store indices of characters.
+//   const stack: number[] = [];
+
+//   // Push -1 as the initial base boundary.
+//   stack.push(-1);
+
+//   for (let i = 0; i < s.length; i++) {
+//     if (s[i] === "(") {
+//       // Push index of '(' onto the stack.
+//       stack.push(i);
+//     } else {
+//       // Pop the previous opening bracket or boundary index.
+//       stack.pop();
+
+//       if (stack.length === 0) {
+//         // If stack is empty, this ')' becomes the new base boundary.
+//         stack.push(i);
+//       } else {
+//         // Calculate the length of the current valid substring.
+//         const currentLength = i - stack[stack.length - 1];
+//         maxLength = Math.max(maxLength, currentLength);
+//       }
+//     }
+//   }
+
+//   return maxLength;
+// }
+
+// Optimized Approach: Two Pass Scan
 function longestValidParentheses(s: string): number {
   let maxLength = 0;
+  let left = 0;
+  let right = 0;
 
-  // Stack to store indices of characters.
-  const stack: number[] = [];
-
-  // Push -1 as the initial base boundary.
-  stack.push(-1);
-
+  // First Pass: Scan from Left to Right.
   for (let i = 0; i < s.length; i++) {
     if (s[i] === "(") {
-      // Push index of '(' onto the stack.
-      stack.push(i);
+      left++;
     } else {
-      // Pop the previous opening bracket or boundary index.
-      stack.pop();
+      right++;
+    }
 
-      if (stack.length === 0) {
-        // If stack is empty, this ')' becomes the new base boundary.
-        stack.push(i);
-      } else {
-        // Calculate the length of the current valid substring.
-        const currentLength = i - stack[stack.length - 1];
-        maxLength = Math.max(maxLength, currentLength);
-      }
+    // When opening and closing brackets match, update maxLength.
+    if (left === right) {
+      maxLength = Math.max(maxLength, 2 * right);
+    } else if (right > left) {
+      // More closing brackets invalidate the sequence, reset counters.
+      left = 0;
+      right = 0;
+    }
+  }
+
+  // Reset counters for the second pass.
+  left = 0;
+  right = 0;
+
+  // Second Pass: Scan from Right to Left to handle excess '(' cases.
+  for (let i = s.length - 1; i >= 0; i--) {
+    if (s[i] === "(") {
+      left++;
+    } else {
+      right++;
+    }
+
+    // When opening and closing brackets match, update maxLength.
+    if (left === right) {
+      maxLength = Math.max(maxLength, 2 * left);
+    } else if (left > right) {
+      // More opening brackets invalidate the sequence from right, reset counters.
+      left = 0;
+      right = 0;
     }
   }
 
