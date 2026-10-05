@@ -331,6 +331,7 @@
 // import "./hash-table/leetcode/medium/maxNumberOfFamilies";
 // import "./hash-table/leetcode/medium/largestOverlap";
 // import "./hash-table/leetcode/medium/evaluate";
+import "./hash-table/leetcode/medium/isValidSudoku";
 // import "./hash-table/leetcode/hard/countTrapezoidsTwo";
 // import "./hash-table/leetcode/hard/braceExpansionII";
 // ! hash table end
@@ -718,7 +719,7 @@
 // import "./greedy/leetcode/medium/stoneGameIX";
 // import "./greedy/leetcode/medium/lexGreaterPermutation";
 // import "./greedy/leetcode/medium/minimumDeletions";
-import "./greedy/leetcode/medium/checkValidString";
+// import "./greedy/leetcode/medium/checkValidString";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // import "./greedy/leetcode/easy/maxDistance";
 // import "./greedy/leetcode/easy/minimumCost";
