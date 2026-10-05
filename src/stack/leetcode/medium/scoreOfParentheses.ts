@@ -69,30 +69,50 @@ s is a balanced parentheses string.
 // }
 
 // Optimized Approach: Stack
+// function scoreOfParentheses(s: string): number {
+//   // Stack to keep track of scores at each depth level.
+//   const stack: number[] = [0];
+
+//   for (let i = 0; i < s.length; i++) {
+//     const char = s[i];
+
+//     if (char === "(") {
+//       // A new nested scope starts; push 0 to accumulate score inside it.
+//       stack.push(0);
+//     } else {
+//       // Scope ends; pop the score accumulated inside this layer.
+//       const innerScore = stack.pop()!;
+
+//       // If innerScore is 0, it was a "()", so score is 1. Otherwise, double the inner score.
+//       const currentScore = Math.max(2 * innerScore, 1);
+
+//       // Add the current score to the enclosing parent level.
+//       stack[stack.length - 1] += currentScore;
+//     }
+//   }
+
+//   // The final accumulated score at the base level.
+//   return stack[0];
+// }
+
+// Optimized Approach: Depth Counting
 function scoreOfParentheses(s: string): number {
-  // Stack to keep track of scores at each depth level.
-  const stack: number[] = [0];
+  let score = 0;
+  let depth = 0;
 
   for (let i = 0; i < s.length; i++) {
-    const char = s[i];
-
-    if (char === "(") {
-      // A new nested scope starts; push 0 to accumulate score inside it.
-      stack.push(0);
+    if (s[i] === "(") {
+      depth++;
     } else {
-      // Scope ends; pop the score accumulated inside this layer.
-      const innerScore = stack.pop()!;
-
-      // If innerScore is 0, it was a "()", so score is 1. Otherwise, double the inner score.
-      const currentScore = Math.max(2 * innerScore, 1);
-
-      // Add the current score to the enclosing parent level.
-      stack[stack.length - 1] += currentScore;
+      depth--;
+      // If it is an immediate "()", add 2^depth to total score.
+      if (s[i - 1] === "(") {
+        score += 1 << depth;
+      }
     }
   }
 
-  // The final accumulated score at the base level.
-  return stack[0];
+  return score;
 }
 // Example usage:
 const s1 = "()";
