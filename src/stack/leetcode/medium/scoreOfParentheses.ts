@@ -34,40 +34,66 @@ s is a balanced parentheses string.
 */
 
 // Brute Force Approach: Recursion
+// function scoreOfParentheses(s: string): number {
+//   // Base case: if the string is just "()", score is 1.
+//   if (s === "()") {
+//     return 1;
+//   }
+
+//   let balance = 0;
+
+//   // Scan through the string to find the first balanced partition.
+//   for (let i = 0; i < s.length; i++) {
+//     if (s[i] === "(") {
+//       balance++;
+//     } else {
+//       balance--;
+//     }
+
+//     // When balance hits 0, we found a balanced component.
+//     if (balance === 0) {
+//       // Case 1: The entire string is enclosed by an outer pair like (A).
+//       if (i === s.length - 1) {
+//         const innerSubstring = s.substring(1, s.length - 1);
+//         return 2 * scoreOfParentheses(innerSubstring);
+//       }
+
+//       // Case 2: The string is composed of two balanced parts A and B.
+//       const leftPart = s.substring(0, i + 1);
+//       const rightPart = s.substring(i + 1);
+//       return scoreOfParentheses(leftPart) + scoreOfParentheses(rightPart);
+//     }
+//   }
+
+//   return 0;
+// }
+
+// Optimized Approach: Stack
 function scoreOfParentheses(s: string): number {
-  // Base case: if the string is just "()", score is 1.
-  if (s === "()") {
-    return 1;
-  }
+  // Stack to keep track of scores at each depth level.
+  const stack: number[] = [0];
 
-  let balance = 0;
-
-  // Scan through the string to find the first balanced partition.
   for (let i = 0; i < s.length; i++) {
-    if (s[i] === "(") {
-      balance++;
+    const char = s[i];
+
+    if (char === "(") {
+      // A new nested scope starts; push 0 to accumulate score inside it.
+      stack.push(0);
     } else {
-      balance--;
-    }
+      // Scope ends; pop the score accumulated inside this layer.
+      const innerScore = stack.pop()!;
 
-    // When balance hits 0, we found a balanced component.
-    if (balance === 0) {
-      // Case 1: The entire string is enclosed by an outer pair like (A).
-      if (i === s.length - 1) {
-        const innerSubstring = s.substring(1, s.length - 1);
-        return 2 * scoreOfParentheses(innerSubstring);
-      }
+      // If innerScore is 0, it was a "()", so score is 1. Otherwise, double the inner score.
+      const currentScore = Math.max(2 * innerScore, 1);
 
-      // Case 2: The string is composed of two balanced parts A and B.
-      const leftPart = s.substring(0, i + 1);
-      const rightPart = s.substring(i + 1);
-      return scoreOfParentheses(leftPart) + scoreOfParentheses(rightPart);
+      // Add the current score to the enclosing parent level.
+      stack[stack.length - 1] += currentScore;
     }
   }
 
-  return 0;
+  // The final accumulated score at the base level.
+  return stack[0];
 }
-
 // Example usage:
 const s1 = "()";
 console.log(scoreOfParentheses(s1)); // Output: 1
