@@ -33,19 +33,49 @@ s[i] is either '(' or ')'.
 */
 
 // Brute Force Approach
-function minAddToMakeValid(s: string): number {
-  let currentString = s;
+// function minAddToMakeValid(s: string): number {
+//   let currentString = s;
 
-  // Continue removing "()" pairs as long as they exist in the string.
-  while (currentString.includes("()")) {
-    // Replace all adjacent matching pairs found in this pass.
-    currentString = currentString.replaceAll("()", "");
+//   // Continue removing "()" pairs as long as they exist in the string.
+//   while (currentString.includes("()")) {
+//     // Replace all adjacent matching pairs found in this pass.
+//     currentString = currentString.replaceAll("()", "");
+//   }
+
+//   // The length of the remaining string represents the unmatched parentheses.
+//   return currentString.length;
+// }
+
+// Optimized Approach
+function minAddToMakeValid(s: string): number {
+  // Tracks currently unmatched opening brackets '('.
+  let openCount: number = 0;
+
+  // Tracks closing brackets ')' that lack a preceding '('.
+  let insertionsNeeded: number = 0;
+
+  // Iterate through each character of the string.
+  for (let i = 0; i < s.length; i++) {
+    const char = s[i];
+
+    if (char === "(") {
+      // Found an opening bracket; it awaits a matching closing bracket.
+      openCount++;
+    } else {
+      // Current character is ')'.
+      if (openCount > 0) {
+        // Matches with a previously unmatched opening bracket.
+        openCount--;
+      } else {
+        // No available '(' to match; an opening bracket must be inserted.
+        insertionsNeeded++;
+      }
+    }
   }
 
-  // The length of the remaining string represents the unmatched parentheses.
-  return currentString.length;
+  // Total moves = missing opening brackets + missing closing brackets.
+  return insertionsNeeded + openCount;
 }
-
 // eXample usage:
 const input1 = "())";
 console.log(minAddToMakeValid(input1)); // Output: 1
