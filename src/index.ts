@@ -152,7 +152,7 @@
 // import "./stack/leetcode/medium/reverseParenthesesBruteForce";
 // import "./stack/leetcode/medium/maxDepthAfterSplit";
 // import "./stack/leetcode/medium/scoreOfParentheses";
-import "./stack/leetcode/medium/minAddToMakeValid";
+// import "./stack/leetcode/medium/minAddToMakeValid";
 // import "./stack/leetcode/hard/maximalRectangle";
 // import "./stack/leetcode/hard/totalStrength";
 // import "./stack/leetcode/hard/canSeePersonsCount";
