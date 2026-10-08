@@ -1,4 +1,4 @@
-//
+//  1021. Remove Outermost Parentheses
 
 /**
 A valid parentheses string is either empty "", "(" + A + ")", or A + B, where A and B are valid parentheses strings, and + represents string concatenation.
@@ -46,6 +46,40 @@ s[i] is either '(' or ')'.
 s is a valid parentheses string.
 */
 
+// Brute Force Approach
+// function removeOuterParentheses(s: string): string {
+//     // Array to collect valid characters efficiently.
+//     const result: string[] = [];
+
+//     // Tracks the current nesting depth of parentheses.
+//     let depth = 0;
+
+//     for (let i = 0; i < s.length; i++) {
+//         const char = s[i];
+
+//         if (char === '(') {
+//             // If depth is greater than 0, it is not an outermost parenthesis.
+//             if (depth > 0) {
+//                 result.push(char);
+//             }
+//             // Increase depth for opening parenthesis.
+//             depth++;
+//         } else {
+//             // Decrease depth first for closing parenthesis.
+//             depth--;
+
+//             // If depth is still greater than 0, it is not an outermost closing parenthesis.
+//             if (depth > 0) {
+//                 result.push(char);
+//             }
+//         }
+//     }
+
+//     // Join all inner characters into the final string.
+//     return result.join('');
+// }
+
+// Optimized Approach
 function removeOuterParentheses(s: string): string {
   let result = "";
   let balance = 0;
