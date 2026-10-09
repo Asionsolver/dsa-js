@@ -138,7 +138,7 @@
 // import "./stack/leetcode/countCollisions";
 // import "./stack/leetcode/medium/minOperations";
 // import "./stack/leetcode/easy/nextGreaterElement";
-import "./stack/leetcode/easy/removeOuterParentheses";
+// import "./stack/leetcode/easy/removeOuterParentheses";
 // import "./stack/leetcode/medium/asteroidCollision";
 // import "./stack/leetcode/medium/separateSquares";
 // import "./stack/leetcode/medium/StockSpanner";
@@ -154,6 +154,7 @@ import "./stack/leetcode/easy/removeOuterParentheses";
 // import "./stack/leetcode/medium/maxDepthAfterSplit";
 // import "./stack/leetcode/medium/scoreOfParentheses";
 // import "./stack/leetcode/medium/minAddToMakeValid";
+import "./stack/leetcode/medium/minInsertions";
 // import "./stack/leetcode/hard/maximalRectangle";
 // import "./stack/leetcode/hard/totalStrength";
 // import "./stack/leetcode/hard/canSeePersonsCount";
