@@ -154,7 +154,7 @@
 // import "./stack/leetcode/medium/maxDepthAfterSplit";
 // import "./stack/leetcode/medium/scoreOfParentheses";
 // import "./stack/leetcode/medium/minAddToMakeValid";
-import "./stack/leetcode/medium/minInsertions";
+// import "./stack/leetcode/medium/minInsertions";
 // import "./stack/leetcode/hard/maximalRectangle";
 // import "./stack/leetcode/hard/totalStrength";
 // import "./stack/leetcode/hard/canSeePersonsCount";
@@ -724,6 +724,7 @@ import "./stack/leetcode/medium/minInsertions";
 // import "./greedy/leetcode/medium/lexGreaterPermutation";
 // import "./greedy/leetcode/medium/minimumDeletions";
 // import "./greedy/leetcode/medium/checkValidString";
+import "./greedy/leetcode/medium/minSumSquareDiff";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // import "./greedy/leetcode/easy/maxDistance";
 // import "./greedy/leetcode/easy/minimumCost";
