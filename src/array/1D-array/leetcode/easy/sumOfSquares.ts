@@ -32,16 +32,40 @@ Constraints:
 */
 
 // Brute Force Approach
+// function sumOfSquares(nums: number[]): number {
+//   const n = nums.length;
+//   let totalSum = 0;
+
+//   // Iterate through all 1-based indices from 1 to n.
+//   for (let i = 1; i <= n; i++) {
+//     // Check if i divides n completely.
+//     if (n % i === 0) {
+//       // Add the square of the special element to the sum.
+//       totalSum += nums[i - 1] * nums[i - 1];
+//     }
+//   }
+
+//   return totalSum;
+// }
+
+// Optimized Approach
 function sumOfSquares(nums: number[]): number {
   const n = nums.length;
   let totalSum = 0;
 
-  // Iterate through all 1-based indices from 1 to n.
-  for (let i = 1; i <= n; i++) {
-    // Check if i divides n completely.
+  // Check divisors only up to the square root of n.
+  for (let i = 1; i * i <= n; i++) {
+    // If i is a divisor of n.
     if (n % i === 0) {
-      // Add the square of the special element to the sum.
+      // Add square of the element at 1-based index i.
       totalSum += nums[i - 1] * nums[i - 1];
+
+      const pairedDivisor = Math.floor(n / i);
+
+      // Add the paired divisor's element if it's distinct from i.
+      if (pairedDivisor !== i) {
+        totalSum += nums[pairedDivisor - 1] * nums[pairedDivisor - 1];
+      }
     }
   }
 
