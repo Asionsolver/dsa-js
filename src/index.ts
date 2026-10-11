@@ -55,6 +55,7 @@
 // import "./array/1D-array/leetcode/easy/getMinDistance";
 // import "./array/1D-array/leetcode/easy/hasIncreasingSubarrays";
 // import "./array/1D-array/leetcode/easy/check";
+import "./array/1D-array/leetcode/easy/sumOfSquares";
 // import "./array/1D-array/leetcode/medium/minimumSum";
 // import "./array/1D-array/leetcode/medium/maximizeSquareHoleArea";
 // import "./array/1D-array/leetcode/medium/findDifferentBinaryString";
@@ -724,7 +725,7 @@
 // import "./greedy/leetcode/medium/lexGreaterPermutation";
 // import "./greedy/leetcode/medium/minimumDeletions";
 // import "./greedy/leetcode/medium/checkValidString";
-import "./greedy/leetcode/medium/minSumSquareDiff";
+// import "./greedy/leetcode/medium/minSumSquareDiff";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // import "./greedy/leetcode/easy/maxDistance";
 // import "./greedy/leetcode/easy/minimumCost";
