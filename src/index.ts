@@ -691,7 +691,7 @@
 // import "./greedy/leetcode/hard/earliestFullBloom";
 // import "./greedy/leetcode/hard/smallestPalindrome";
 // import "./greedy/leetcode/hard/smallestNumber";
-import "./greedy/leetcode/hard/maxSum";
+// import "./greedy/leetcode/hard/maxSum";
 // import "./greedy/leetcode/hard/smallestNumber";
 // import "./greedy/leetcode/medium/minDeletionSize";
 // import "./greedy/leetcode/medium/findOriginalArray";
@@ -727,6 +727,7 @@ import "./greedy/leetcode/hard/maxSum";
 // import "./greedy/leetcode/medium/minimumDeletions";
 // import "./greedy/leetcode/medium/checkValidString";
 // import "./greedy/leetcode/medium/minSumSquareDiff";
+import "./greedy/leetcode/medium/maxAlternatingSum";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // import "./greedy/leetcode/easy/maxDistance";
 // import "./greedy/leetcode/easy/minimumCost";
