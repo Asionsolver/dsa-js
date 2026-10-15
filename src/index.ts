@@ -319,6 +319,7 @@
 // import "./hash-table/leetcode/easy/largestInteger";
 // import "./hash-table/leetcode/easy/missingMultiple";
 // import "./hash-table/leetcode/easy/romanToInt";
+import "./hash-table/leetcode/easy/sumCounts";
 // import "./hash-table/leetcode/medium/maxSubarraySum";
 // import "./hash-table/leetcode/medium/countPalindromicSubsequence";
 // import "./hash-table/leetcode/medium/digArtifacts";
@@ -728,7 +729,7 @@
 // import "./greedy/leetcode/medium/checkValidString";
 // import "./greedy/leetcode/medium/minSumSquareDiff";
 // import "./greedy/leetcode/medium/maxAlternatingSum";
-import "./greedy/leetcode/medium/maxSumOfSquares";
+// import "./greedy/leetcode/medium/maxSumOfSquares";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // import "./greedy/leetcode/easy/maxDistance";
 // import "./greedy/leetcode/easy/minimumCost";
