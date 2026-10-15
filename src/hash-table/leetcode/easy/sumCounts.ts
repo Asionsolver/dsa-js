@@ -46,30 +46,57 @@ Constraints:
 */
 
 // Brute-force approach to calculate the sum of squares of distinct counts of all subarrays.
+// function sumCounts(nums: number[]): number {
+//   const n = nums.length;
+//   let totalSum = 0;
+
+//   // Outer loop fixes the starting boundary of the subarray.
+//   for (let i = 0; i < n; i++) {
+//     // Middle loop fixes the ending boundary of the subarray.
+//     for (let j = i; j < n; j++) {
+//       const distinctSet = new Set<number>();
+
+//       // Innermost loop collects all elements from i to j to find distinct count.
+//       for (let k = i; k <= j; k++) {
+//         distinctSet.add(nums[k]);
+//       }
+
+//       const distinctCount = distinctSet.size;
+
+//       // Add the square of distinct count to the total sum.
+//       totalSum += distinctCount * distinctCount;
+//     }
+//   }
+
+//   return totalSum;
+// }
+
+
+// Optimized approach
 function sumCounts(nums: number[]): number {
-  const n = nums.length;
-  let totalSum = 0;
+    const n = nums.length;
+    let totalSum = 0;
 
-  // Outer loop fixes the starting boundary of the subarray.
-  for (let i = 0; i < n; i++) {
-    // Middle loop fixes the ending boundary of the subarray.
-    for (let j = i; j < n; j++) {
-      const distinctSet = new Set<number>();
+    // Outer loop fixes the starting point of the subarray.
+    for (let i = 0; i < n; i++) {
+        // Maintain a Set to incrementally track unique elements starting from index i.
+        const distinctSet = new Set<number>();
 
-      // Innermost loop collects all elements from i to j to find distinct count.
-      for (let k = i; k <= j; k++) {
-        distinctSet.add(nums[k]);
-      }
+        // Inner loop expands the subarray to the right by index j.
+        for (let j = i; j < n; j++) {
+            // Add current element into the Set; duplicates are automatically handled.
+            distinctSet.add(nums[j]);
 
-      const distinctCount = distinctSet.size;
+            // The size of the Set represents the distinct count of nums[i..j].
+            const distinctCount = distinctSet.size;
 
-      // Add the square of distinct count to the total sum.
-      totalSum += distinctCount * distinctCount;
+            // Add the square of distinct count to the total sum.
+            totalSum += distinctCount * distinctCount;
+        }
     }
-  }
 
-  return totalSum;
-}
+    return totalSum;
+};
 
 // Example usage:
 console.log(sumCounts([1, 2, 1])); // Output: 15
