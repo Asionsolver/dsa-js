@@ -240,6 +240,7 @@
 // import "./tree/leetcode/hard/maxPathSum";
 // import "./tree/leetcode/hard/maxActiveSectionsAfterTrade";
 // import "./tree/leetcode/hard/resultArray";
+import "./tree/leetcode/hard/sumCounts";
 // import "./tree/leetcode/medium/maxLevelSum";
 // import "./tree/leetcode/medium/countHighestScoreNodes";
 // import "./tree/leetcode/medium/maxProduct";
@@ -319,7 +320,7 @@
 // import "./hash-table/leetcode/easy/largestInteger";
 // import "./hash-table/leetcode/easy/missingMultiple";
 // import "./hash-table/leetcode/easy/romanToInt";
-import "./hash-table/leetcode/easy/sumCounts";
+// import "./hash-table/leetcode/easy/sumCounts";
 // import "./hash-table/leetcode/medium/maxSubarraySum";
 // import "./hash-table/leetcode/medium/countPalindromicSubsequence";
 // import "./hash-table/leetcode/medium/digArtifacts";
