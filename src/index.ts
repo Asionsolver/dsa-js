@@ -240,7 +240,7 @@
 // import "./tree/leetcode/hard/maxPathSum";
 // import "./tree/leetcode/hard/maxActiveSectionsAfterTrade";
 // import "./tree/leetcode/hard/resultArray";
-import "./tree/leetcode/hard/sumCounts";
+// import "./tree/leetcode/hard/sumCounts";
 // import "./tree/leetcode/medium/maxLevelSum";
 // import "./tree/leetcode/medium/countHighestScoreNodes";
 // import "./tree/leetcode/medium/maxProduct";
@@ -517,6 +517,7 @@ import "./tree/leetcode/hard/sumCounts";
 // import "./graph/leetcode/medium/countCompleteComponents";
 // import "./graph/leetcode/medium/cloneGraph";
 // import "./graph/leetcode/medium/remainingMethods";
+import "./graph/leetcode/medium/minSwaps";
 // import "./graph/leetcode/hard/findAllPeople";
 // import "./graph/leetcode/hard/minCost";
 // import "./graph/leetcode/hard/minimumCost";
