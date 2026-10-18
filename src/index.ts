@@ -357,6 +357,7 @@
 // import "./dnc/leetcode/hard/numSquarefulPerms";
 // import "./dnc/leetcode/hard/makeLargestSpecial";
 // import "./dnc/leetcode/hard/xorAfterQueries";
+import "./dnc/leetcode/hard/numOfWays";
 // import "./dnc/leetcode/medium/pyramidTransition";
 // import "./dnc/leetcode/medium/nextBeautifulNumber";
 // import "./dnc/leetcode/medium/longestBalanced";
@@ -517,7 +518,7 @@
 // import "./graph/leetcode/medium/countCompleteComponents";
 // import "./graph/leetcode/medium/cloneGraph";
 // import "./graph/leetcode/medium/remainingMethods";
-import "./graph/leetcode/medium/minSwaps";
+// import "./graph/leetcode/medium/minSwaps";
 // import "./graph/leetcode/hard/findAllPeople";
 // import "./graph/leetcode/hard/minCost";
 // import "./graph/leetcode/hard/minimumCost";
