@@ -39,23 +39,49 @@ Constraints:
 */
 
 // Brute force approach: Sort the array and find the indices of the target element.
+// function targetIndices(nums: number[], target: number): number[] {
+//   // Sort the array in non-decreasing order.
+//   nums.sort((a, b) => a - b);
+
+//   const result: number[] = [];
+
+//   // Traverse the sorted array to find all occurrences of the target.
+//   for (let i = 0; i < nums.length; i++) {
+//     // If the current element matches the target, store the index.
+//     if (nums[i] === target) {
+//       result.push(i);
+//     }
+//   }
+
+//   return result;
+// }
+
+// Optimized approach: Count the number of elements less than the target and the number of occurrences of the target.
 function targetIndices(nums: number[], target: number): number[] {
-  // Sort the array in non-decreasing order.
-  nums.sort((a, b) => a - b);
+  let lessThanCount = 0;
+  let targetCount = 0;
+
+  // Count numbers strictly smaller than target and numbers equal to target.
+  for (const num of nums) {
+    if (num < target) {
+      // Found an element smaller than target.
+      lessThanCount++;
+    } else if (num === target) {
+      // Found an element equal to target.
+      targetCount++;
+    }
+  }
 
   const result: number[] = [];
 
-  // Traverse the sorted array to find all occurrences of the target.
-  for (let i = 0; i < nums.length; i++) {
-    // If the current element matches the target, store the index.
-    if (nums[i] === target) {
-      result.push(i);
-    }
+  // The target indices will start at lessThanCount and continue for targetCount times.
+  for (let i = 0; i < targetCount; i++) {
+    // Push the calculated sorted index.
+    result.push(lessThanCount + i);
   }
 
   return result;
 }
-
 // Example usage:
 const nums1 = [1, 2, 5, 2, 3];
 const target1 = 2;
