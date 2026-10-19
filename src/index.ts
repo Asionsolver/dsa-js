@@ -357,7 +357,7 @@
 // import "./dnc/leetcode/hard/numSquarefulPerms";
 // import "./dnc/leetcode/hard/makeLargestSpecial";
 // import "./dnc/leetcode/hard/xorAfterQueries";
-import "./dnc/leetcode/hard/numOfWays";
+// import "./dnc/leetcode/hard/numOfWays";
 // import "./dnc/leetcode/medium/pyramidTransition";
 // import "./dnc/leetcode/medium/nextBeautifulNumber";
 // import "./dnc/leetcode/medium/longestBalanced";
@@ -837,6 +837,7 @@ import "./dnc/leetcode/hard/numOfWays";
 
 /**********************************************/
 // ! Sorting file start
+import "./sorting/leetcode/easy/targetIndices";
 // import "./sorting/leetcode/medium/removeCoveredIntervals";
 // import "./sorting/leetcode/medium/smallestPalindrome";
 // import "./sorting/leetcode/medium/lexicographicallySmallestArray";
