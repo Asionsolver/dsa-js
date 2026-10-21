@@ -841,7 +841,7 @@
 // import "./sorting/leetcode/medium/removeCoveredIntervals";
 // import "./sorting/leetcode/medium/smallestPalindrome";
 // import "./sorting/leetcode/medium/lexicographicallySmallestArray";
-import "./sorting/leetcode/hard/sortableIntegers";
+// import "./sorting/leetcode/hard/sortableIntegers";
 
 // ! Sorting file end
 /**********************************************/
