@@ -62,6 +62,7 @@
 // import "./array/1D-array/leetcode/medium/sumOfBeauties";
 // import "./array/1D-array/leetcode/medium/maximumTripletValue";
 // import "./array/1D-array/leetcode/medium/sequentialDigits";
+import "./array/1D-array/leetcode/medium/minOperations";
 // 2D Array
 // import "./array/2d-array/basic";
 // import "./array/2d-array/problem/2DPrefixSum";
