@@ -62,7 +62,7 @@
 // import "./array/1D-array/leetcode/medium/sumOfBeauties";
 // import "./array/1D-array/leetcode/medium/maximumTripletValue";
 // import "./array/1D-array/leetcode/medium/sequentialDigits";
-import "./array/1D-array/leetcode/medium/minOperations";
+// import "./array/1D-array/leetcode/medium/minOperations";
 // 2D Array
 // import "./array/2d-array/basic";
 // import "./array/2d-array/problem/2DPrefixSum";
@@ -567,6 +567,7 @@ import "./array/1D-array/leetcode/medium/minOperations";
 // import "./bit-manipulation/leetcode/medium/uniqueXorTripletsTwo";
 // import "./bit-manipulation/leetcode/medium/longestSubsequence";
 // import "./bit-manipulation/leetcode/medium/minMoves";
+import "./bit-manipulation/leetcode/medium/sortPermutation";
 // ! Bit Manipulation end
 /**********************************************/
 
