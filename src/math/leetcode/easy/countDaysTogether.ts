@@ -35,6 +35,50 @@ The given dates are valid dates of a non-leap year.
 */
 
 // Brute Force Approach
+// function countDaysTogether(
+//   arriveAlice: string,
+//   leaveAlice: string,
+//   arriveBob: string,
+//   leaveBob: string,
+// ): number {
+//   const daysInMonths = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+//   // Helper function to convert "MM-DD" into day of the year (1 - 365).
+//   function dateToDayOfYear(dateStr: string): number {
+//     const month = parseInt(dateStr.substring(0, 2), 10);
+//     const day = parseInt(dateStr.substring(3, 5), 10);
+
+//     let totalDays = 0;
+//     // Sum days of all preceding months.
+//     for (let m = 0; m < month - 1; m++) {
+//       totalDays += daysInMonths[m];
+//     }
+//     return totalDays + day;
+//   }
+
+//   const aliceStart = dateToDayOfYear(arriveAlice);
+//   const aliceEnd = dateToDayOfYear(leaveAlice);
+//   const bobStart = dateToDayOfYear(arriveBob);
+//   const bobEnd = dateToDayOfYear(leaveBob);
+
+//   // Store all days Alice was present.
+//   const aliceDays = new Set<number>();
+//   for (let day = aliceStart; day <= aliceEnd; day++) {
+//     aliceDays.add(day);
+//   }
+
+//   let sharedDays = 0;
+//   // Check which of Bob's days overlap with Alice's.
+//   for (let day = bobStart; day <= bobEnd; day++) {
+//     if (aliceDays.has(day)) {
+//       sharedDays++;
+//     }
+//   }
+
+//   return sharedDays;
+// }
+
+// Optimized Approach
 function countDaysTogether(
   arriveAlice: string,
   leaveAlice: string,
@@ -43,41 +87,35 @@ function countDaysTogether(
 ): number {
   const daysInMonths = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
-  // Helper function to convert "MM-DD" into day of the year (1 - 365).
+  // Helper function to map a "MM-DD" string to an integer from 1 to 365.
   function dateToDayOfYear(dateStr: string): number {
     const month = parseInt(dateStr.substring(0, 2), 10);
     const day = parseInt(dateStr.substring(3, 5), 10);
 
-    let totalDays = 0;
-    // Sum days of all preceding months.
-    for (let m = 0; m < month - 1; m++) {
-      totalDays += daysInMonths[m];
+    let dayOfYear = 0;
+    // Accumulate the days of previous months.
+    for (let i = 0; i < month - 1; i++) {
+      dayOfYear += daysInMonths[i];
     }
-    return totalDays + day;
+
+    return dayOfYear + day;
   }
 
-  const aliceStart = dateToDayOfYear(arriveAlice);
-  const aliceEnd = dateToDayOfYear(leaveAlice);
-  const bobStart = dateToDayOfYear(arriveBob);
-  const bobEnd = dateToDayOfYear(leaveBob);
+  // Convert all arrival and departure dates to Day of Year.
+  const aliceArrival = dateToDayOfYear(arriveAlice);
+  const aliceDeparture = dateToDayOfYear(leaveAlice);
+  const bobArrival = dateToDayOfYear(arriveBob);
+  const bobDeparture = dateToDayOfYear(leaveBob);
 
-  // Store all days Alice was present.
-  const aliceDays = new Set<number>();
-  for (let day = aliceStart; day <= aliceEnd; day++) {
-    aliceDays.add(day);
-  }
+  // Overlap starts on the later of the two arrival days.
+  const overlapStart = Math.max(aliceArrival, bobArrival);
 
-  let sharedDays = 0;
-  // Check which of Bob's days overlap with Alice's.
-  for (let day = bobStart; day <= bobEnd; day++) {
-    if (aliceDays.has(day)) {
-      sharedDays++;
-    }
-  }
+  // Overlap ends on the earlier of the two departure days.
+  const overlapEnd = Math.min(aliceDeparture, bobDeparture);
 
-  return sharedDays;
+  // If overlapStart is beyond overlapEnd, there is no overlap at all.
+  return Math.max(0, overlapEnd - overlapStart + 1);
 }
-
 // Example usage:
 console.log(countDaysTogether("08-15", "08-18", "08-16", "08-19")); // Output: 3
 console.log(countDaysTogether("10-01", "10-31", "11-01", "12-31")); // Output: 0
