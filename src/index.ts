@@ -567,7 +567,7 @@
 // import "./bit-manipulation/leetcode/medium/uniqueXorTripletsTwo";
 // import "./bit-manipulation/leetcode/medium/longestSubsequence";
 // import "./bit-manipulation/leetcode/medium/minMoves";
-import "./bit-manipulation/leetcode/medium/sortPermutation";
+// import "./bit-manipulation/leetcode/medium/sortPermutation";
 // ! Bit Manipulation end
 /**********************************************/
 
@@ -598,6 +598,7 @@ import "./bit-manipulation/leetcode/medium/sortPermutation";
 // import "./math/leetcode/easy/countCommas";
 // import "./math/leetcode/easy/isRectangleOverlap";
 // import "./math/leetcode/easy/smallestIndex";
+import "./math/leetcode/easy/countDaysTogether";
 // import "./math/leetcode/medium/smallestRepunitDivByK";
 // import "./math/leetcode/medium/maxBottlesDrunk";
 // import "./math/leetcode/medium/minOperations";
