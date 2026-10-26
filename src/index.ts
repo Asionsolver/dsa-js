@@ -274,7 +274,7 @@
 // import "./tree/leetcode/medium/maximumSafenessFactor";
 // import "./tree/leetcode/medium/findSafeWalk";
 // import "./tree/leetcode/medium/averageOfSubtree";
-import "./tree/leetcode/medium/closedIsland";
+// import "./tree/leetcode/medium/closedIsland";
 // import "./tree/leetcode/easy/isBalanced";
 // import "./tree/leetcode/easy/sumRootToLeaf";
 // import "./tree/leetcode/easy/minDepth";
@@ -521,6 +521,7 @@ import "./tree/leetcode/medium/closedIsland";
 // import "./graph/leetcode/medium/cloneGraph";
 // import "./graph/leetcode/medium/remainingMethods";
 // import "./graph/leetcode/medium/minSwaps";
+import "./graph/leetcode/medium/countIslands";
 // import "./graph/leetcode/hard/findAllPeople";
 // import "./graph/leetcode/hard/minCost";
 // import "./graph/leetcode/hard/minimumCost";
