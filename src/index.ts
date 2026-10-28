@@ -56,7 +56,7 @@
 // import "./array/1D-array/leetcode/easy/hasIncreasingSubarrays";
 // import "./array/1D-array/leetcode/easy/check";
 // import "./array/1D-array/leetcode/easy/sumOfSquares";
-import "./array/1D-array/leetcode/easy/createGrid";
+// import "./array/1D-array/leetcode/easy/createGrid";
 // import "./array/1D-array/leetcode/medium/minimumSum";
 // import "./array/1D-array/leetcode/medium/maximizeSquareHoleArea";
 // import "./array/1D-array/leetcode/medium/findDifferentBinaryString";
@@ -571,6 +571,7 @@ import "./array/1D-array/leetcode/easy/createGrid";
 // import "./bit-manipulation/leetcode/medium/longestSubsequence";
 // import "./bit-manipulation/leetcode/medium/minMoves";
 // import "./bit-manipulation/leetcode/medium/sortPermutation";
+import "./bit-manipulation/leetcode/medium/minCost";
 // ! Bit Manipulation end
 /**********************************************/
 
