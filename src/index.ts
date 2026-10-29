@@ -556,6 +556,7 @@
 // import "./bit-manipulation/leetcode/hard/jobScheduling";
 // import "./bit-manipulation/leetcode/hard/minimumOneBitOperations";
 // import "./bit-manipulation/leetcode/hard/getMaxFunctionValue";
+import "./bit-manipulation/leetcode/hard/palindromePath";
 // import "./bit-manipulation/leetcode/medium/minOperations";
 // import "./bit-manipulation/leetcode/medium/minBitwiseArray";
 // import "./bit-manipulation/leetcode/medium/numSteps";
@@ -571,7 +572,7 @@
 // import "./bit-manipulation/leetcode/medium/longestSubsequence";
 // import "./bit-manipulation/leetcode/medium/minMoves";
 // import "./bit-manipulation/leetcode/medium/sortPermutation";
-import "./bit-manipulation/leetcode/medium/minCost";
+// import "./bit-manipulation/leetcode/medium/minCost";
 // ! Bit Manipulation end
 /**********************************************/
 
