@@ -488,6 +488,7 @@
 // import "./heap/leetcode/medium/minCost";
 // import "./heap/leetcode/medium/minGroups";
 // import "./heap/leetcode/medium/getOrder";
+import "./heap/leetcode/medium/shortestPath";
 // import "./heap/leetcode/hard/mostBooked";
 // import "./heap/leetcode/hard/busiestServers";
 // import "./heap/leetcode/hard/trapRainWater";
@@ -556,7 +557,7 @@
 // import "./bit-manipulation/leetcode/hard/jobScheduling";
 // import "./bit-manipulation/leetcode/hard/minimumOneBitOperations";
 // import "./bit-manipulation/leetcode/hard/getMaxFunctionValue";
-import "./bit-manipulation/leetcode/hard/palindromePath";
+// import "./bit-manipulation/leetcode/hard/palindromePath";
 // import "./bit-manipulation/leetcode/medium/minOperations";
 // import "./bit-manipulation/leetcode/medium/minBitwiseArray";
 // import "./bit-manipulation/leetcode/medium/numSteps";
