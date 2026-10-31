@@ -488,7 +488,7 @@
 // import "./heap/leetcode/medium/minCost";
 // import "./heap/leetcode/medium/minGroups";
 // import "./heap/leetcode/medium/getOrder";
-import "./heap/leetcode/medium/shortestPath";
+// import "./heap/leetcode/medium/shortestPath";
 // import "./heap/leetcode/hard/mostBooked";
 // import "./heap/leetcode/hard/busiestServers";
 // import "./heap/leetcode/hard/trapRainWater";
@@ -692,6 +692,7 @@ import "./heap/leetcode/medium/shortestPath";
 // import "./dp/leetcode/medium/stoneGame";
 // import "./dp/leetcode/medium/stoneGameII";
 // import "./dp/leetcode/medium/resultArray";
+import "./dp/leetcode/medium/uniquePaths";
 // ! Dynamic Programming end
 /**********************************************/
 
