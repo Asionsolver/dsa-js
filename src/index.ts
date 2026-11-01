@@ -621,6 +621,7 @@
 // import "./math/leetcode/medium/countCommas";
 // import "./math/leetcode/medium/isPalindrome";
 // import "./math/leetcode/medium/checkOverlap";
+import "./math/leetcode/medium/minMoves";
 // import "./math/leetcode/hard/minOperations";
 // import "./math/leetcode/hard/stoneGameV";
 // import "./math/leetcode/hard/stoneGameIII";
@@ -692,7 +693,7 @@
 // import "./dp/leetcode/medium/stoneGame";
 // import "./dp/leetcode/medium/stoneGameII";
 // import "./dp/leetcode/medium/resultArray";
-import "./dp/leetcode/medium/uniquePaths";
+// import "./dp/leetcode/medium/uniquePaths";
 // ! Dynamic Programming end
 /**********************************************/
 
