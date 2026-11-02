@@ -621,7 +621,8 @@
 // import "./math/leetcode/medium/countCommas";
 // import "./math/leetcode/medium/isPalindrome";
 // import "./math/leetcode/medium/checkOverlap";
-import "./math/leetcode/medium/minMoves";
+// import "./math/leetcode/medium/minMoves";
+import "./math/leetcode/medium/minMoves2";
 // import "./math/leetcode/hard/minOperations";
 // import "./math/leetcode/hard/stoneGameV";
 // import "./math/leetcode/hard/stoneGameIII";
