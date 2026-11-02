@@ -32,24 +32,45 @@ n == nums.length
 */
 
 // Brute Force Approach
+// function minMoves2(nums: number[]): number {
+//   let minMoves = Infinity;
+
+//   // Try every number in the array as the target.
+//   for (let i = 0; i < nums.length; i++) {
+//     const target = nums[i];
+//     let currentMoves = 0;
+
+//     // Calculate the total moves needed to make all elements equal to target.
+//     for (let j = 0; j < nums.length; j++) {
+//       currentMoves += Math.abs(nums[j] - target);
+//     }
+
+//     // Keep track of the minimum moves found so far.
+//     minMoves = Math.min(minMoves, currentMoves);
+//   }
+
+//   return minMoves;
+// }
+
+// Optimized Approach
 function minMoves2(nums: number[]): number {
-  let minMoves = Infinity;
+  // Sort the array in ascending order to easily pair symmetric elements.
+  nums.sort((a, b) => a - b);
 
-  // Try every number in the array as the target.
-  for (let i = 0; i < nums.length; i++) {
-    const target = nums[i];
-    let currentMoves = 0;
+  let left = 0;
+  let right = nums.length - 1;
+  let totalMoves = 0;
 
-    // Calculate the total moves needed to make all elements equal to target.
-    for (let j = 0; j < nums.length; j++) {
-      currentMoves += Math.abs(nums[j] - target);
-    }
+  // Use two pointers to calculate the distance between matched outer pairs.
+  while (left < right) {
+    // Distance between nums[left] and nums[right] when target is between them.
+    totalMoves += nums[right] - nums[left];
 
-    // Keep track of the minimum moves found so far.
-    minMoves = Math.min(minMoves, currentMoves);
+    left++;
+    right--;
   }
 
-  return minMoves;
+  return totalMoves;
 }
 
 // Example usage:
