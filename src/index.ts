@@ -605,6 +605,7 @@
 // import "./math/leetcode/easy/isRectangleOverlap";
 // import "./math/leetcode/easy/smallestIndex";
 // import "./math/leetcode/easy/countDaysTogether";
+import "./math/leetcode/easy/minMoves";
 // import "./math/leetcode/medium/smallestRepunitDivByK";
 // import "./math/leetcode/medium/maxBottlesDrunk";
 // import "./math/leetcode/medium/minOperations";
@@ -622,7 +623,7 @@
 // import "./math/leetcode/medium/isPalindrome";
 // import "./math/leetcode/medium/checkOverlap";
 // import "./math/leetcode/medium/minMoves";
-import "./math/leetcode/medium/minMoves2";
+// import "./math/leetcode/medium/minMoves2";
 // import "./math/leetcode/hard/minOperations";
 // import "./math/leetcode/hard/stoneGameV";
 // import "./math/leetcode/hard/stoneGameIII";
