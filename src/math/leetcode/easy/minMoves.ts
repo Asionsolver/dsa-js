@@ -49,6 +49,36 @@ Constraints:
 */
 
 // Brute force approach: Increment the smaller elements until all elements are equal to the maximum element in the array. Count the number of moves required to achieve this.
+// function minMoves(nums: number[]): number {
+//   // Find the maximum value in the array.
+//   let maxVal = nums[0];
+//   for (let i = 1; i < nums.length; i++) {
+//     if (nums[i] > maxVal) {
+//       maxVal = nums[i];
+//     }
+//   }
+
+//   let moves = 0;
+//   let allEqual = false;
+
+//   // Simulate increasing elements one by one until all reach maxVal.
+//   while (!allEqual) {
+//     allEqual = true;
+//     for (let i = 0; i < nums.length; i++) {
+//       if (nums[i] < maxVal) {
+//         // Increase the smaller element by 1.
+//         nums[i]++;
+//         moves++;
+//         allEqual = false;
+//         break; // Increment one element per iteration
+//       }
+//     }
+//   }
+
+//   return moves;
+// }
+
+// Optimized approach: Instead of incrementing elements one by one, we can calculate the total moves required by finding the difference between the maximum value and each element in the array. The sum of these differences will give us the minimum total moves required to make all elements equal.
 function minMoves(nums: number[]): number {
   // Find the maximum value in the array.
   let maxVal = nums[0];
@@ -58,24 +88,14 @@ function minMoves(nums: number[]): number {
     }
   }
 
-  let moves = 0;
-  let allEqual = false;
+  let totalMoves = 0;
 
-  // Simulate increasing elements one by one until all reach maxVal.
-  while (!allEqual) {
-    allEqual = true;
-    for (let i = 0; i < nums.length; i++) {
-      if (nums[i] < maxVal) {
-        // Increase the smaller element by 1.
-        nums[i]++;
-        moves++;
-        allEqual = false;
-        break; // Increment one element per iteration
-      }
-    }
+  // Add the difference between maxVal and each element.
+  for (let i = 0; i < nums.length; i++) {
+    totalMoves += maxVal - nums[i];
   }
 
-  return moves;
+  return totalMoves;
 }
 
 // Example usage:
