@@ -44,36 +44,85 @@ Constraints:
 -1000 <= arr1[i], arr2[j] <= 1000
 0 <= d <= 100
 */
+// Brute Force Approach
+// function findTheDistanceValue(
+//   arr1: number[],
+//   arr2: number[],
+//   d: number,
+// ): number {
+//   let distanceValue = 0;
 
+//   // Iterate through each element in arr1.
+//   for (let i = 0; i < arr1.length; i++) {
+//     let hasCloseElement = false;
+
+//     // Compare arr1[i] with every element in arr2.
+//     for (let j = 0; j < arr2.length; j++) {
+//       // Check if the absolute difference is within threshold d.
+//       if (Math.abs(arr1[i] - arr2[j]) <= d) {
+//         hasCloseElement = true;
+//         break; // Stop early because condition is violated.
+//       }
+//     }
+
+//     // If no close element was found, arr1[i] is valid.
+//     if (!hasCloseElement) {
+//       distanceValue++;
+//     }
+//   }
+
+//   return distanceValue;
+// }
+
+// Optimize Approach: Binary Search (Lower Bound Pattern)
 function findTheDistanceValue(
   arr1: number[],
   arr2: number[],
   d: number,
 ): number {
+  // Sort arr2 in ascending order to enable binary search.
+  arr2.sort((a, b) => a - b);
+
   let distanceValue = 0;
 
-  // Iterate through each element in arr1.
-  for (let i = 0; i < arr1.length; i++) {
-    let hasCloseElement = false;
+  // Helper function: Binary search to check if any element exists in [target - d, target + d].
+  const hasElementInRange = (target: number): boolean => {
+    let left = 0;
+    let right = arr2.length - 1;
+    const lowBound = target - d;
+    const highBound = target + d;
 
-    // Compare arr1[i] with every element in arr2.
-    for (let j = 0; j < arr2.length; j++) {
-      // Check if the absolute difference is within threshold d.
-      if (Math.abs(arr1[i] - arr2[j]) <= d) {
-        hasCloseElement = true;
-        break; // Stop early because condition is violated.
+    while (left <= right) {
+      const mid = Math.floor(left + (right - left) / 2);
+
+      // If the element is within [target - d, target + d], violation found.
+      if (arr2[mid] >= lowBound && arr2[mid] <= highBound) {
+        return true;
+      }
+
+      // If arr2[mid] is smaller than the range, search in the right half.
+      if (arr2[mid] < lowBound) {
+        left = mid + 1;
+      } else {
+        // If arr2[mid] is larger than the range, search in the left half.
+        right = mid - 1;
       }
     }
 
-    // If no close element was found, arr1[i] is valid.
-    if (!hasCloseElement) {
+    // No element found in the given range.
+    return false;
+  };
+
+  // Check each element in arr1.
+  for (const num of arr1) {
+    // If no element in arr2 falls within the invalid range, count this element.
+    if (!hasElementInRange(num)) {
       distanceValue++;
     }
   }
 
   return distanceValue;
 }
-
 // Example Uses
 console.log(findTheDistanceValue([4, 5, 8], [10, 9, 1, 8], 2)); // Output: 2
 console.log(findTheDistanceValue([1, 4, 2, 3], [-4, -3, 6, 10, 20, 30], 3)); // Output: 2
