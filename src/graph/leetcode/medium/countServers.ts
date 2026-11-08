@@ -42,38 +42,74 @@ grid[i][j] == 0 or 1
 */
 
 // Brute Force Approach
+// function countServers(grid: number[][]): number {
+//   const m = grid.length;
+//   const n = grid[0].length;
+//   let communicatingServers = 0;
+
+//   // Traverse each cell of the matrix.
+//   for (let i = 0; i < m; i++) {
+//     for (let j = 0; j < n; j++) {
+//       // If there is a server at (i, j), check if it can communicate.
+//       if (grid[i][j] === 1) {
+//         let canCommunicate = false;
+
+//         // Check the same row for another server.
+//         for (let c = 0; c < n; c++) {
+//           if (c !== j && grid[i][c] === 1) {
+//             canCommunicate = true;
+//             break;
+//           }
+//         }
+
+//         // If not found in the row, check the same column.
+//         if (!canCommunicate) {
+//           for (let r = 0; r < m; r++) {
+//             if (r !== i && grid[r][j] === 1) {
+//               canCommunicate = true;
+//               break;
+//             }
+//           }
+//         }
+
+//         // If it can communicate, increment our count.
+//         if (canCommunicate) {
+//           communicatingServers++;
+//         }
+//       }
+//     }
+//   }
+
+//   return communicatingServers;
+// }
+
+// Optimized Approach
 function countServers(grid: number[][]): number {
   const m = grid.length;
   const n = grid[0].length;
-  let communicatingServers = 0;
 
-  // Traverse each cell of the matrix.
+  // Track the total number of servers in each row and column.
+  const rowCount = new Array<number>(m).fill(0);
+  const colCount = new Array<number>(n).fill(0);
+
+  // First Pass: Count servers for each row and column.
   for (let i = 0; i < m; i++) {
     for (let j = 0; j < n; j++) {
-      // If there is a server at (i, j), check if it can communicate.
       if (grid[i][j] === 1) {
-        let canCommunicate = false;
+        rowCount[i]++;
+        colCount[j]++;
+      }
+    }
+  }
 
-        // Check the same row for another server.
-        for (let c = 0; c < n; c++) {
-          if (c !== j && grid[i][c] === 1) {
-            canCommunicate = true;
-            break;
-          }
-        }
+  let communicatingServers = 0;
 
-        // If not found in the row, check the same column.
-        if (!canCommunicate) {
-          for (let r = 0; r < m; r++) {
-            if (r !== i && grid[r][j] === 1) {
-              canCommunicate = true;
-              break;
-            }
-          }
-        }
-
-        // If it can communicate, increment our count.
-        if (canCommunicate) {
+  // Second Pass: Count servers that share a row or column with at least one other server.
+  for (let i = 0; i < m; i++) {
+    for (let j = 0; j < n; j++) {
+      if (grid[i][j] === 1) {
+        // If row has more than 1 server OR column has more than 1 server, it communicates.
+        if (rowCount[i] > 1 || colCount[j] > 1) {
           communicatingServers++;
         }
       }
@@ -82,7 +118,6 @@ function countServers(grid: number[][]): number {
 
   return communicatingServers;
 }
-
 // Example usage:
 const grid1 = [
   [1, 0],
