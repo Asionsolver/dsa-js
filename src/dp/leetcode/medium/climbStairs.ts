@@ -96,33 +96,55 @@ Constraints:
 // }
 
 // Optimized Approach: Dynamic Programming (1D Bottom-Up DP)
-function climbStairs(n: number, costs: number[]): number {
-  // dp[i] stores the minimum cost to reach step i.
-  const dp = new Array<number>(n + 1).fill(Infinity);
+// function climbStairs(n: number, costs: number[]): number {
+//   // dp[i] stores the minimum cost to reach step i.
+//   const dp = new Array<number>(n + 1).fill(Infinity);
 
-  // The starting step 0 has a base cost of 0.
-  dp[0] = 0;
+//   // The starting step 0 has a base cost of 0.
+//   dp[0] = 0;
+
+//   for (let i = 1; i <= n; i++) {
+//     // Option 1: Jump from step i - 1 (penalty 1^2 = 1).
+//     let minPrevCost = dp[i - 1] + 1;
+
+//     // Option 2: Jump from step i - 2 (penalty 2^2 = 4).
+//     if (i >= 2) {
+//       minPrevCost = Math.min(minPrevCost, dp[i - 2] + 4);
+//     }
+
+//     // Option 3: Jump from step i - 3 (penalty 3^2 = 9).
+//     if (i >= 3) {
+//       minPrevCost = Math.min(minPrevCost, dp[i - 3] + 9);
+//     }
+
+//     // Add the fixed cost of step i (costs is 0-indexed in TypeScript).
+//     dp[i] = costs[i - 1] + minPrevCost;
+//   }
+
+//   // Return the minimum cost to reach step n.
+//   return dp[n];
+// }
+
+// Optimized Approach: Dynamic Programming (Space-Optimized)
+function climbStairs(n: number, costs: number[]): number {
+  // prev0 represents dp[i-3], prev1 represents dp[i-2], prev2 represents dp[i-1].
+  let prev2 = 0; // dp[0]
+  let prev1 = Infinity; // dp[-1] (invalid)
+  let prev0 = Infinity; // dp[-2] (invalid)
 
   for (let i = 1; i <= n; i++) {
-    // Option 1: Jump from step i - 1 (penalty 1^2 = 1).
-    let minPrevCost = dp[i - 1] + 1;
+    // Calculate the minimum previous cost among the 3 jump possibilities.
+    const minPrevCost = Math.min(prev2 + 1, prev1 + 4, prev0 + 9);
+    const currentCost = costs[i - 1] + minPrevCost;
 
-    // Option 2: Jump from step i - 2 (penalty 2^2 = 4).
-    if (i >= 2) {
-      minPrevCost = Math.min(minPrevCost, dp[i - 2] + 4);
-    }
-
-    // Option 3: Jump from step i - 3 (penalty 3^2 = 9).
-    if (i >= 3) {
-      minPrevCost = Math.min(minPrevCost, dp[i - 3] + 9);
-    }
-
-    // Add the fixed cost of step i (costs is 0-indexed in TypeScript).
-    dp[i] = costs[i - 1] + minPrevCost;
+    // Shift variables forward for the next step.
+    prev0 = prev1;
+    prev1 = prev2;
+    prev2 = currentCost;
   }
 
-  // Return the minimum cost to reach step n.
-  return dp[n];
+  // prev2 now holds the result for step n.
+  return prev2;
 }
 
 // Example usage:
