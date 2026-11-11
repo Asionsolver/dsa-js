@@ -700,7 +700,7 @@ import "./graph/leetcode/medium/countServers";
 // import "./dp/leetcode/medium/resultArray";
 // import "./dp/leetcode/medium/uniquePaths";
 // import "./dp/leetcode/medium/minOperations";
-import "./dp/leetcode/medium/climbStairs";
+// import "./dp/leetcode/medium/climbStairs";
 // ! Dynamic Programming end
 /**********************************************/
 
@@ -751,6 +751,7 @@ import "./dp/leetcode/medium/climbStairs";
 // import "./greedy/leetcode/medium/minSumSquareDiff";
 // import "./greedy/leetcode/medium/maxAlternatingSum";
 // import "./greedy/leetcode/medium/maxSumOfSquares";
+import "./greedy/leetcode/medium/minimumCost";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // import "./greedy/leetcode/easy/maxDistance";
 // import "./greedy/leetcode/easy/minimumCost";
