@@ -55,36 +55,72 @@ Constraints:
 1 <= nums[i] <= 50
 */
 
-function longestMonotonicSubarray(nums: number[]): number {
-  const n = nums.length;
-  if (n <= 1) return n;
+// Brute Force Approach: O(n^2) time complexity, O(1) space complexity
+// function longestMonotonicSubarray(nums: number[]): number {
+//   const n = nums.length;
+//   if (n <= 1) return n;
 
+//   let maxLength = 1;
+
+//   // Check all subarrays starting from index i.
+//   for (let i = 0; i < n; i++) {
+//     // 1. Check strictly increasing subarray starting from i.
+//     let incLen = 1;
+//     for (let j = i; j < n - 1; j++) {
+//       if (nums[j] < nums[j + 1]) {
+//         incLen++;
+//       } else {
+//         break;
+//       }
+//     }
+
+//     // 2. Check strictly decreasing subarray starting from i.
+//     let decLen = 1;
+//     for (let j = i; j < n - 1; j++) {
+//       if (nums[j] > nums[j + 1]) {
+//         decLen++;
+//       } else {
+//         break;
+//       }
+//     }
+
+//     // Update the maximum length found so far.
+//     maxLength = Math.max(maxLength, incLen, decLen);
+//   }
+
+//   return maxLength;
+// }
+
+// Optimized Approach: O(n) time complexity, O(1) space complexity
+function longestMonotonicSubarray(nums: number[]): number {
+  // If the array has 0 or 1 element, return its length.
+  if (nums.length <= 1) {
+    return nums.length;
+  }
+
+  // Track current streaks and the maximum streak found so far.
+  let incLength = 1;
+  let decLength = 1;
   let maxLength = 1;
 
-  // Check all subarrays starting from index i.
-  for (let i = 0; i < n; i++) {
-    // 1. Check strictly increasing subarray starting from i.
-    let incLen = 1;
-    for (let j = i; j < n - 1; j++) {
-      if (nums[j] < nums[j + 1]) {
-        incLen++;
-      } else {
-        break;
-      }
+  // Traverse the array starting from the second element.
+  for (let i = 1; i < nums.length; i++) {
+    if (nums[i] > nums[i - 1]) {
+      // Increasing condition met: extend increasing streak, reset decreasing.
+      incLength++;
+      decLength = 1;
+    } else if (nums[i] < nums[i - 1]) {
+      // Decreasing condition met: extend decreasing streak, reset increasing.
+      decLength++;
+      incLength = 1;
+    } else {
+      // Equal elements: both strictly increasing and decreasing streaks break.
+      incLength = 1;
+      decLength = 1;
     }
 
-    // 2. Check strictly decreasing subarray starting from i.
-    let decLen = 1;
-    for (let j = i; j < n - 1; j++) {
-      if (nums[j] > nums[j + 1]) {
-        decLen++;
-      } else {
-        break;
-      }
-    }
-
-    // Update the maximum length found so far.
-    maxLength = Math.max(maxLength, incLen, decLen);
+    // Update the maximum length achieved.
+    maxLength = Math.max(maxLength, incLength, decLength);
   }
 
   return maxLength;
