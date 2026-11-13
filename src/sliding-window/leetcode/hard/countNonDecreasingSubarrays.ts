@@ -137,3 +137,6 @@ function countNonDecreasingSubarrays(nums: number[], k: number): number {
 }
 
 // Example usage:
+console.log(countNonDecreasingSubarrays([1, 2, 3], 1)); // Output: 6
+console.log(countNonDecreasingSubarrays([1, 2, 3], 2)); // Output: 6
+console.log(countNonDecreasingSubarrays([1, 2, 3], 3)); // Output: 6
