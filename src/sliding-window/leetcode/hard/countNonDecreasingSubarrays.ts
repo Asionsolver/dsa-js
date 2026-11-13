@@ -45,3 +45,95 @@ Constraints:
 1 <= nums[i] <= 109
 1 <= k <= 109
 */
+
+// Brute Force Approach: O(n^3) time complexity, O(1) space complexity
+
+// function countNonDecreasingSubarrays(nums: number[], k: number): number {
+//   const n = nums.length;
+//   let validCount = 0;
+
+//   // Iterate over all possible starting indices of subarrays.
+//   for (let l = 0; l < n; l++) {
+//     // Iterate over all possible ending indices for the fixed start.
+//     for (let r = l; r < n; r++) {
+//       let cost = 0;
+//       let runningMax = nums[l];
+
+//       // Calculate the minimum operations needed to make nums[l..r] non-decreasing.
+//       for (let i = l; i <= r; i++) {
+//         if (nums[i] < runningMax) {
+//           cost += runningMax - nums[i];
+//         } else {
+//           runningMax = nums[i];
+//         }
+//       }
+
+//       // If the required operations are within k, count this subarray.
+//       if (cost <= k) {
+//         validCount++;
+//       }
+//     }
+//   }
+
+//   return validCount;
+// }
+
+// Optimized Approach: O(n) time complexity, O(n) space complexity
+
+function countNonDecreasingSubarrays(nums: number[], k: number): number {
+  const n = nums.length;
+
+  // Store monotonic blocks of running maximums in reverse order:
+  // the end of the arrays represents the left side (front) of the window,
+  // and `head` points to the right side (back) of the window.
+  const blockVals: number[] = [];
+  const blockCounts: number[] = [];
+  let head = 0;
+
+  let r = n - 1;
+  let cost = 0;
+  let validCount = 0;
+
+  // Traverse from right to left so adding nums[l] only merges smaller blocks at the left.
+  for (let l = n - 1; l >= 0; l--) {
+    let currentCount = 1;
+
+    // Merge all blocks at the left whose running maximum is <= nums[l].
+    while (
+      blockVals.length > head &&
+      blockVals[blockVals.length - 1] <= nums[l]
+    ) {
+      const prevVal = blockVals.pop()!;
+      const prevCount = blockCounts.pop()!;
+
+      // Increase cost because those elements' running max rises from prevVal to nums[l].
+      cost += (nums[l] - prevVal) * prevCount;
+      currentCount += prevCount;
+    }
+
+    // Push the new merged block for nums[l] to the front (array end).
+    blockVals.push(nums[l]);
+    blockCounts.push(currentCount);
+
+    // Shrink the window from the right if total operations exceed k.
+    while (cost > k) {
+      // The running max for nums[r] is always the value of the rightmost block.
+      cost -= blockVals[head] - nums[r];
+      blockCounts[head]--;
+
+      // Move head forward if the rightmost block becomes empty.
+      if (blockCounts[head] === 0) {
+        head++;
+      }
+
+      r--;
+    }
+
+    // All subarrays starting at l and ending anywhere in [l, r] are valid.
+    validCount += r - l + 1;
+  }
+
+  return validCount;
+}
+
+// Example usage:
