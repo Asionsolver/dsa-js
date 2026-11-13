@@ -57,7 +57,7 @@
 // import "./array/1D-array/leetcode/easy/check";
 // import "./array/1D-array/leetcode/easy/sumOfSquares";
 // import "./array/1D-array/leetcode/easy/createGrid";
-import "./array/1D-array/leetcode/easy/longestMonotonicSubarray";
+// import "./array/1D-array/leetcode/easy/longestMonotonicSubarray";
 // import "./array/1D-array/leetcode/medium/minimumSum";
 // import "./array/1D-array/leetcode/medium/maximizeSquareHoleArea";
 // import "./array/1D-array/leetcode/medium/findDifferentBinaryString";
