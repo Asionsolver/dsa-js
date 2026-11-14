@@ -55,33 +55,67 @@ Constraints:
 -1000 <= nums[i] <= 1000
 */
 
-//
+// Brute-force approach to find the minimum positive sum subarray of length between l and r.
+// function minimumSumSubarray(nums: number[], l: number, r: number): number {
+//   const n = nums.length;
+//   let minPositiveSum = Infinity;
+
+//   // Iterate over every possible starting index of the subarray.
+//   for (let start = 0; start < n; start++) {
+//     // Iterate over every valid ending index so that length is between l and r.
+//     for (let end = start + l - 1; end < Math.min(n, start + r); end++) {
+//       let currentSum = 0;
+
+//       // Recalculate the sum of the subarray from start to end from scratch.
+//       for (let i = start; i <= end; i++) {
+//         currentSum += nums[i];
+//       }
+
+//       // Update the answer only if the subarray sum is strictly greater than 0.
+//       if (currentSum > 0) {
+//         minPositiveSum = Math.min(minPositiveSum, currentSum);
+//       }
+//     }
+//   }
+
+//   // Return -1 if no subarray with a strictly positive sum was found.
+//   return minPositiveSum === Infinity ? -1 : minPositiveSum;
+// }
+
+// Optimized approach using a sliding window technique to find the minimum positive sum subarray of length between l and r.
 function minimumSumSubarray(nums: number[], l: number, r: number): number {
   const n = nums.length;
   let minPositiveSum = Infinity;
 
-  // Iterate over every possible starting index of the subarray.
-  for (let start = 0; start < n; start++) {
-    // Iterate over every valid ending index so that length is between l and r.
-    for (let end = start + l - 1; end < Math.min(n, start + r); end++) {
-      let currentSum = 0;
+  // Test every valid subarray length from l to r using a fixed-size sliding window.
+  for (let windowSize = l; windowSize <= r; windowSize++) {
+    let windowSum = 0;
 
-      // Recalculate the sum of the subarray from start to end from scratch.
-      for (let i = start; i <= end; i++) {
-        currentSum += nums[i];
-      }
+    // Compute the sum of the very first window of length windowSize.
+    for (let i = 0; i < windowSize; i++) {
+      windowSum += nums[i];
+    }
 
-      // Update the answer only if the subarray sum is strictly greater than 0.
-      if (currentSum > 0) {
-        minPositiveSum = Math.min(minPositiveSum, currentSum);
+    // Update the minimum positive sum if the first window's sum is greater than 0.
+    if (windowSum > 0) {
+      minPositiveSum = Math.min(minPositiveSum, windowSum);
+    }
+
+    // Slide the window one step to the right across the remaining elements.
+    for (let right = windowSize; right < n; right++) {
+      // Add the incoming element on the right and subtract the outgoing element on the left.
+      windowSum += nums[right] - nums[right - windowSize];
+
+      // Update the minimum positive sum only when the current window sum is strictly positive.
+      if (windowSum > 0) {
+        minPositiveSum = Math.min(minPositiveSum, windowSum);
       }
     }
   }
 
-  // Return -1 if no subarray with a strictly positive sum was found.
+  // Return -1 if no valid subarray had a positive sum; otherwise return the minimum sum found.
   return minPositiveSum === Infinity ? -1 : minPositiveSum;
 }
-
 // Example Usages
 const nums1 = [3, -2, 1, 4];
 const l1 = 2;
