@@ -44,32 +44,61 @@ s consists of digits only.
 */
 
 // Brute Force Approach: Simulate the process of dividing the string into groups, calculating the digit sums, and merging them until the length of the string is less than or equal to k.
+// function digitSum(s: string, k: number): string {
+//   // Keep simulating rounds while the string length is greater than k.
+//   while (s.length > k) {
+//     const groups: string[] = [];
+
+//     // Slice the string into consecutive substrings of size k.
+//     for (let i = 0; i < s.length; i += k) {
+//       groups.push(s.slice(i, i + k));
+//     }
+
+//     let nextString = "";
+
+//     // Iterate over each group to calculate its digit sum and concatenate.
+//     for (const group of groups) {
+//       let sum = 0;
+
+//       for (const ch of group) {
+//         // Convert the character to a number and add it to the group sum.
+//         sum += Number(ch);
+//       }
+
+//       // Append the string form of the sum to build the next round's string.
+//       nextString += String(sum);
+//     }
+
+//     s = nextString;
+//   }
+
+//   return s;
+// }
+
+// Optimized Approach: Instead of slicing the string into substrings, we can traverse the string in steps of k and calculate the digit sums directly, which reduces memory usage and improves performance.
 function digitSum(s: string, k: number): string {
-  // Keep simulating rounds while the string length is greater than k.
+  // Repeat rounds until the string length becomes less than or equal to k.
   while (s.length > k) {
-    const groups: string[] = [];
+    const nextParts: string[] = [];
 
-    // Slice the string into consecutive substrings of size k.
+    // Traverse the string in steps of k without slicing into intermediate substrings.
     for (let i = 0; i < s.length; i += k) {
-      groups.push(s.slice(i, i + k));
-    }
+      let groupSum = 0;
 
-    let nextString = "";
+      // Determine the end boundary so the last smaller group does not go out of bounds.
+      const end = Math.min(i + k, s.length);
 
-    // Iterate over each group to calculate its digit sum and concatenate.
-    for (const group of groups) {
-      let sum = 0;
-
-      for (const ch of group) {
-        // Convert the character to a number and add it to the group sum.
-        sum += Number(ch);
+      for (let j = i; j < end; j++) {
+        // Convert digit character to number directly using ASCII code ('0' = 48).
+        groupSum += s.charCodeAt(j) - 48;
       }
 
-      // Append the string form of the sum to build the next round's string.
-      nextString += String(sum);
+      // Store each group's sum string in an array for a single join at the end of the round.
+      nextParts.push(groupSum.toString());
     }
 
-    s = nextString;
+    // Merge all group sums once per round to form the new string.
+    s = nextParts.join("");
   }
 
   return s;
