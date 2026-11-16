@@ -812,7 +812,7 @@
 // import "./prefix-sum/leetcode/medium/countMajoritySubarrays";
 // import "./prefix-sum/leetcode/medium/sumAndMultiply";
 // import "./prefix-sum/leetcode/medium/numberOfSets";
-import "./prefix-sum/leetcode/medium/numOfSubarrays";
+// import "./prefix-sum/leetcode/medium/numOfSubarrays";
 // import "./prefix-sum/leetcode/hard/numberOfStableArrays";
 // import "./prefix-sum/leetcode/hard/canPartitionGrid";
 // import "./prefix-sum/leetcode/hard/possibleToStamp";
@@ -850,6 +850,7 @@ import "./prefix-sum/leetcode/medium/numOfSubarrays";
 // import "./simulation/leetcode/easy/shiftGrid";
 // import "./simulation/leetcode/easy/resultArray";
 // import "./simulation/leetcode/easy/reverseDegree";
+import "./simulation/leetcode/easy/digitSum";
 // import "./simulation/leetcode/medium/Robot";
 // import "./simulation/leetcode/medium/rotateGrid";
 // import "./simulation/leetcode/medium/processStr";
