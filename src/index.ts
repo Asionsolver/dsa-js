@@ -672,6 +672,7 @@
 // import "./dp/leetcode/hard/numDistinct";
 // import "./dp/leetcode/hard/distinctSubseqII";
 // import "./dp/leetcode/hard/isMatch";
+import "./dp/leetcode/hard/minimumChanges";
 // import "./dp/leetcode/medium/maximumProfit";
 // import "./dp/leetcode/medium/maximumAmount";
 // import "./dp/leetcode/medium/findMaxForm";
@@ -850,7 +851,7 @@
 // import "./simulation/leetcode/easy/shiftGrid";
 // import "./simulation/leetcode/easy/resultArray";
 // import "./simulation/leetcode/easy/reverseDegree";
-import "./simulation/leetcode/easy/digitSum";
+// import "./simulation/leetcode/easy/digitSum";
 // import "./simulation/leetcode/medium/Robot";
 // import "./simulation/leetcode/medium/rotateGrid";
 // import "./simulation/leetcode/medium/processStr";
