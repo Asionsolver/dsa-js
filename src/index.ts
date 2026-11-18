@@ -672,7 +672,7 @@
 // import "./dp/leetcode/hard/numDistinct";
 // import "./dp/leetcode/hard/distinctSubseqII";
 // import "./dp/leetcode/hard/isMatch";
-import "./dp/leetcode/hard/minimumChanges";
+// import "./dp/leetcode/hard/minimumChanges";
 // import "./dp/leetcode/medium/maximumProfit";
 // import "./dp/leetcode/medium/maximumAmount";
 // import "./dp/leetcode/medium/findMaxForm";
@@ -754,6 +754,7 @@ import "./dp/leetcode/hard/minimumChanges";
 // import "./greedy/leetcode/medium/minSumSquareDiff";
 // import "./greedy/leetcode/medium/maxAlternatingSum";
 // import "./greedy/leetcode/medium/maxSumOfSquares";
+import "./greedy/leetcode/medium/minChanges";
 // import "./greedy/leetcode/medium/minimumCost";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // import "./greedy/leetcode/easy/maxDistance";
