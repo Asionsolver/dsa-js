@@ -754,7 +754,7 @@
 // import "./greedy/leetcode/medium/minSumSquareDiff";
 // import "./greedy/leetcode/medium/maxAlternatingSum";
 // import "./greedy/leetcode/medium/maxSumOfSquares";
-import "./greedy/leetcode/medium/minChanges";
+import "./greedy/leetcode/medium/minimizeSum";
 // import "./greedy/leetcode/medium/minimumCost";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // import "./greedy/leetcode/easy/maxDistance";
