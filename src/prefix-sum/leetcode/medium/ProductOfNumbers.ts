@@ -50,29 +50,62 @@ Follow-up: Can you implement both GetProduct and Add to work in O(1) time comple
 */
 
 // Brute Force Approach
+// class ProductOfNumbers {
+//   private nums: number[];
+
+//   constructor() {
+//     // Initialize an empty array to store the stream of numbers.
+//     this.nums = [];
+//   }
+
+//   add(num: number): void {
+//     // Append the new number to the end of the array.
+//     this.nums.push(num);
+//   }
+
+//   getProduct(k: number): number {
+//     let product = 1;
+//     const n = this.nums.length;
+
+//     // Iterate backward through the last k elements and multiply them.
+//     for (let i = n - 1; i >= n - k; i--) {
+//       product *= this.nums[i];
+//     }
+
+//     return product;
+//   }
+// }
+
+// Optimization using Prefix Products
 class ProductOfNumbers {
-  private nums: number[];
+  private prefixProducts: number[];
 
   constructor() {
-    // Initialize an empty array to store the stream of numbers.
-    this.nums = [];
+    // Initialize with 1 as a base value for prefix product calculations.
+    this.prefixProducts = [1];
   }
 
   add(num: number): void {
-    // Append the new number to the end of the array.
-    this.nums.push(num);
+    if (num === 0) {
+      // Reset prefixProducts on 0 because any future product including this 0 will be 0.
+      this.prefixProducts = [1];
+    } else {
+      // Multiply the new number with the last prefix product and append it.
+      const lastProduct = this.prefixProducts[this.prefixProducts.length - 1];
+      this.prefixProducts.push(lastProduct * num);
+    }
   }
 
   getProduct(k: number): number {
-    let product = 1;
-    const n = this.nums.length;
+    const size = this.prefixProducts.length;
 
-    // Iterate backward through the last k elements and multiply them.
-    for (let i = n - 1; i >= n - k; i--) {
-      product *= this.nums[i];
+    // If k is greater than or equal to size, a 0 appeared within the last k elements.
+    if (k >= size) {
+      return 0;
     }
 
-    return product;
+    // Divide the total prefix product by the prefix product right before the last k elements.
+    return this.prefixProducts[size - 1] / this.prefixProducts[size - 1 - k];
   }
 }
 
