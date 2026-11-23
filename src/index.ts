@@ -412,7 +412,7 @@
 // import "./string/leetcode/easy/rotateString";
 // import "./string/leetcode/easy/numOfStrings";
 // import "./string/leetcode/easy/maxDepth";
-import "./string/leetcode/easy/checkString";
+// import "./string/leetcode/easy/checkString";
 
 // ! String End
 /**********************************************/
@@ -818,6 +818,7 @@ import "./string/leetcode/easy/checkString";
 // import "./prefix-sum/leetcode/medium/sumAndMultiply";
 // import "./prefix-sum/leetcode/medium/numberOfSets";
 // import "./prefix-sum/leetcode/medium/numOfSubarrays";
+import "./prefix-sum/leetcode/medium/ProductOfNumbers";
 // import "./prefix-sum/leetcode/hard/numberOfStableArrays";
 // import "./prefix-sum/leetcode/hard/canPartitionGrid";
 // import "./prefix-sum/leetcode/hard/possibleToStamp";
