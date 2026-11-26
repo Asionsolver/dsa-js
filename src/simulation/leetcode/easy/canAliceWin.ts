@@ -41,27 +41,40 @@ Constraints:
 */
 
 // Brute force approach to determine if Alice can win the game given n stones.
+// function canAliceWin(n: number): boolean {
+//   // Start with 10 stones to remove on Alice's first turn.
+//   let stonesToRemove = 10;
+
+//   // Track whose turn it currently is (true for Alice, false for Bob).
+//   let isAliceTurn = true;
+
+//   // Continue playing while enough stones remain for the current turn.
+//   while (n >= stonesToRemove) {
+//     // Subtract the required stones from the pile.
+//     n -= stonesToRemove;
+
+//     // Reduce the number of stones to remove by 1 for the next turn.
+//     stonesToRemove -= 1;
+
+//     // Switch turns between Alice and Bob.
+//     isAliceTurn = !isAliceTurn;
+//   }
+
+//   // If the loop stops on Bob's turn, Bob cannot move, so Alice wins.
+//   return !isAliceTurn;
+// }
+
+
+// Optimized mathematical approach to determine if Alice can win the game given n stones.
 function canAliceWin(n: number): boolean {
-  // Start with 10 stones to remove on Alice's first turn.
-  let stonesToRemove = 10;
+  // Calculate the discriminant (21^2 - 8 * n) from t * (21 - t) / 2 <= n.
+  const discriminant = 441 - 8 * n;
 
-  // Track whose turn it currently is (true for Alice, false for Bob).
-  let isAliceTurn = true;
+  // Find the maximum number of complete turns both players can make.
+  const completedTurns = Math.floor((21 - Math.sqrt(discriminant)) / 2);
 
-  // Continue playing while enough stones remain for the current turn.
-  while (n >= stonesToRemove) {
-    // Subtract the required stones from the pile.
-    n -= stonesToRemove;
-
-    // Reduce the number of stones to remove by 1 for the next turn.
-    stonesToRemove -= 1;
-
-    // Switch turns between Alice and Bob.
-    isAliceTurn = !isAliceTurn;
-  }
-
-  // If the loop stops on Bob's turn, Bob cannot move, so Alice wins.
-  return !isAliceTurn;
+  // Alice wins if and only if an odd number of turns were completed.
+  return completedTurns % 2 === 1;
 }
 
 // Example usage:
