@@ -708,7 +708,7 @@
 // import "./dp/leetcode/medium/uniquePaths";
 // import "./dp/leetcode/medium/minOperations";
 // import "./dp/leetcode/medium/climbStairs";
-import "./dp/leetcode/medium/maximumSaleItems";
+// import "./dp/leetcode/medium/maximumSaleItems";
 // ! Dynamic Programming end
 /**********************************************/
 
@@ -761,6 +761,7 @@ import "./dp/leetcode/medium/maximumSaleItems";
 // import "./greedy/leetcode/medium/maxSumOfSquares";
 // import "./greedy/leetcode/medium/minimizeSum";
 // import "./greedy/leetcode/medium/minimumCost";
+import "./greedy/leetcode/medium/maximumSaleItems";
 // import "./greedy/leetcode/easy/minimumBoxes";
 // import "./greedy/leetcode/easy/maxDistance";
 // import "./greedy/leetcode/easy/minimumCost";
